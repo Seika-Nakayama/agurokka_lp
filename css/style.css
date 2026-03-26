@@ -131,4 +131,10 @@ a.go-top {
   font-size: 15px;
 }
 
+.nav-link-insta img,
+.nav-link-facebook {
+  height: 40px;
+  width: auto;
+}
+
 /*# sourceMappingURL=style.css.map */
