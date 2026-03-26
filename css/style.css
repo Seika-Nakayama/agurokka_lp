@@ -141,4 +141,9 @@ a.go-top {
   position: relative;
 }
 
+.sns-in-menu img {
+  height: 30px;
+  margin: 28px 0;
+}
+
 /*# sourceMappingURL=style.css.map */
