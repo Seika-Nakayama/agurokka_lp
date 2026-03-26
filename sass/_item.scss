@@ -128,15 +128,15 @@ img.logo-in-navmenu{
 			transition: $transition-early;
 
 			&::before{
-				content:'';
-				width:5px;
-				height:5px;
-				border-radius:5px;
-				background-color:var(--title-color);
-				position:absolute;
-				top:50%;
-				left:0;
-				transform:translateY(-50%);
+				content: '';
+				width: 5px;
+				height: 5px;
+				border-radius: 5px;
+				background-color: var(--title-color);
+				position: absolute;
+				top: 50%;
+				left: 0;
+				transform: translateY(-50%);
 				transition: $transition-slow;
 			}
 		}
@@ -144,6 +144,11 @@ img.logo-in-navmenu{
 }
 
 .category-menu{
-	margin:35px 0 20px;
-	position:relative
+	margin: 35px 0 20px;
+	position: relative;
+}
+
+a.go-top{
+	color:var(--main-color);
+	font-size:15px;
 }

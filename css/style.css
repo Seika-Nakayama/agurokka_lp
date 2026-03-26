@@ -126,4 +126,9 @@ img.logo-in-navmenu {
   position: relative;
 }
 
+a.go-top {
+  color: var(--main-color);
+  font-size: 15px;
+}
+
 /*# sourceMappingURL=style.css.map */
