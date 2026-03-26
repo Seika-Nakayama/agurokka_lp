@@ -121,4 +121,9 @@ img.logo-in-navmenu {
   transition: 0.3s ease;
 }
 
+.category-menu {
+  margin: 35px 0 20px;
+  position: relative;
+}
+
 /*# sourceMappingURL=style.css.map */
