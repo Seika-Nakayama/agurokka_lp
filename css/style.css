@@ -28,4 +28,9 @@
   transform: translateY(-14px) rotate(-45deg);
 }
 
+.header-inner {
+  display: flex;
+  justify-content: flex-end;
+}
+
 /*# sourceMappingURL=style.css.map */

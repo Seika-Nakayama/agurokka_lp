@@ -177,10 +177,10 @@ img.category.is-show{
 .site-header.is-show{
 	transform:translateY(0)
 } */
-.header-inner{
+/* .header-inner{
 	display:flex;
 	justify-content:flex-end
-}
+} */
 .hamburger{
 	width:60px;
 	height:60px;
