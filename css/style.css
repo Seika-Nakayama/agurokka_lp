@@ -94,4 +94,31 @@ img.logo-in-navmenu {
   transition: 0.2s ease;
 }
 
+.sub-nav a {
+  color: var(--main-color);
+  font-family: "higuregothic";
+  font-size: 15px;
+  margin-bottom: 10px;
+}
+.sub-nav li {
+  position: relative;
+}
+.sub-nav li a {
+  margin-bottom: 7px;
+  margin-left: 40px;
+  transition: 0.2s ease;
+}
+.sub-nav li a::before {
+  content: "";
+  width: 5px;
+  height: 5px;
+  border-radius: 5px;
+  background-color: var(--title-color);
+  position: absolute;
+  top: 50%;
+  left: 0;
+  transform: translateY(-50%);
+  transition: 0.3s ease;
+}
+
 /*# sourceMappingURL=style.css.map */

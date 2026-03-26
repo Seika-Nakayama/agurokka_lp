@@ -258,17 +258,17 @@ img.category.is-show{
 	font-family:'utsukushi';
 	transition:.2s ease
 } */
-.sub-nav a{
+/* .sub-nav a{
 	color:var(--main-color);
 	font-family:'higuregothic';
 	font-size:15px;
 	margin-bottom:10px
-}
+} */
 .category-menu{
 	margin:35px 0 20px;
 	position:relative
 }
-.sub-nav li{
+/* .sub-nav li{
 	position:relative
 }
 .sub-nav li a{
@@ -287,7 +287,7 @@ img.category.is-show{
 	left:0;
 	transform:translateY(-50%);
 	transition:.3s ease
-}
+} */
 a.go-top{
 	color:var(--main-color);
 	font-size:15px

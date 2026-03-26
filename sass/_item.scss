@@ -94,19 +94,51 @@ $transition-slow: .3s ease;
 }
 
 img.logo-in-navmenu{
-	width:130px;
-	margin:auto;
+	width: 130px;
+	margin: auto;
 }
 
 .nav-list{
-	padding:0 30px;
+	padding: 0 30px;
 }
 
 .has-child{
 	a{
-		font-size:20px;
-		color:var(--accent-green-color);
-		font-family:'utsukushi';
-		transition: $transition-early;
+		font-size: 20px;
+		color: var(--accent-green-color);
+		font-family: 'utsukushi';
+		transition:  $transition-early;
+	}
+}
+
+.sub-nav{
+	a{
+		color: var(--main-color);
+		font-family: 'higuregothic';
+		font-size: 15px;
+		margin-bottom: 10px;
+	}
+
+	li{
+		position:  relative;
+
+		a{
+			margin-bottom: 7px;
+			margin-left: 40px;
+			transition: $transition-early;
+
+			&::before{
+				content:'';
+				width:5px;
+				height:5px;
+				border-radius:5px;
+				background-color:var(--title-color);
+				position:absolute;
+				top:50%;
+				left:0;
+				transform:translateY(-50%);
+				transition: $transition-slow;
+			}
+		}
 	}
 }
