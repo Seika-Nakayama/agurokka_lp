@@ -95,9 +95,18 @@ $transition-slow: .3s ease;
 
 img.logo-in-navmenu{
 	width:130px;
-	margin:auto
+	margin:auto;
 }
 
 .nav-list{
-	padding:0 30px
+	padding:0 30px;
+}
+
+.has-child{
+	a{
+		font-size:20px;
+		color:var(--accent-green-color);
+		font-family:'utsukushi';
+		transition: $transition-early;
+	}
 }

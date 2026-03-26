@@ -87,4 +87,11 @@ img.logo-in-navmenu {
   padding: 0 30px;
 }
 
+.has-child a {
+  font-size: 20px;
+  color: var(--accent-green-color);
+  font-family: "utsukushi";
+  transition: 0.2s ease;
+}
+
 /*# sourceMappingURL=style.css.map */

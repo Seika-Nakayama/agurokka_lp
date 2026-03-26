@@ -249,15 +249,15 @@ img.category.is-show{
 	width:130px;
 	margin:auto
 } */
-.nav-list{
+/* .nav-list{
 	padding:0 30px
-}
-.has-child a{
+} */
+/* .has-child a{
 	font-size:20px;
 	color:var(--accent-green-color);
 	font-family:'utsukushi';
 	transition:.2s ease
-}
+} */
 .sub-nav a{
 	color:var(--main-color);
 	font-family:'higuregothic';
