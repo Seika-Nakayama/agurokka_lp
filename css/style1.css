@@ -245,10 +245,10 @@ img.category.is-show{
 	transform:translateX(0);
 	border-left:dotted 4px var(--accent-green-color)
 } */
-img.logo-in-navmenu{
+/* img.logo-in-navmenu{
 	width:130px;
 	margin:auto
-}
+} */
 .nav-list{
 	padding:0 30px
 }
