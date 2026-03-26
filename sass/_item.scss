@@ -149,12 +149,16 @@ img.logo-in-navmenu{
 }
 
 a.go-top{
-	color:var(--main-color);
-	font-size:15px;
+	color: var(--main-color);
+	font-size: 15px;
 }
 
 .nav-link-insta img,
 .nav-link-facebook{
-	height:40px;
-	width:auto
+	height: 40px;
+	width: auto;
+}
+
+.sns-in-menu{
+	position: relative;
 }
