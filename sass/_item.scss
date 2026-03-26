@@ -153,7 +153,14 @@ a.go-top{
 	font-size: 15px;
 }
 
-.nav-link-insta img,
+.nav-link-insta{
+	img{
+		height: 40px;
+		width: auto;
+		margin-right: 30px
+	}
+}
+
 .nav-link-facebook{
 	height: 40px;
 	width: auto;
@@ -161,11 +168,13 @@ a.go-top{
 
 .sns-in-menu{
 	position: relative;
-}
 
-.sns-in-menu{
 	img{
 		height: 30px;
 		margin: 28px 0;
 	}
+}
+
+.innerfsns_lex{
+	display: flex;
 }
