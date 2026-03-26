@@ -45,3 +45,50 @@ $transition-slow: .3s ease;
 	display: flex;
 	justify-content: flex-end;
 }
+.hamburger{
+	width: 60px;
+	height: 60px;
+	cursor: pointer;
+	position: relative;
+	top: 20px;
+	right: 24px;
+	z-index: 1100;
+	background: none;
+	border: none;
+
+	span{
+		position: absolute;
+		left: 0;
+		width: 60px;
+		height: 1px;
+		background-color: var(--accent-green-color);
+		transition: $transition-bace;
+
+		&:nth-child(1){
+			top: 0;
+			left: -9px;
+			width: 70px;
+		}
+		&:nth-child(2){
+			top: 14px;
+			width: 60px;
+		}
+		&:nth-child(3){
+			top: 28px;
+			left: 10px;
+			width: 50px;
+		}
+	}
+
+	.global-nav{
+		position: fixed;
+		top: 0;
+		right: 0;
+		width: 350px;
+		height: 100vh;
+		background-color: var(--main-bg-color);
+		transform: translateX(100%);
+		transition: $transition-bace;
+		padding-top: 100px;
+	}
+}
