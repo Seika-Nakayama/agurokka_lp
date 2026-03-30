@@ -1,6 +1,6 @@
 // headder
 
-$transition-bace: .4s ease;
+$transition-base: .4s ease;
 $transition-early: .2s ease;
 $transition-slow: .3s ease;
 
@@ -12,7 +12,7 @@ $transition-slow: .3s ease;
 	width: 100%;
 	z-index: 1000;
 	transform: translateY(-100%);
-	transition: $transition-bace;
+	transition: $transition-base;
 
 	&.is-show{
 		transform: translateY(0);
@@ -62,7 +62,7 @@ $transition-slow: .3s ease;
 		width: 60px;
 		height: 1px;
 		background-color: var(--accent-green-color);
-		transition: $transition-bace;
+		transition: $transition-base;
 
 		&:nth-child(1){
 			top: 0;
@@ -89,7 +89,7 @@ $transition-slow: .3s ease;
 	height: 100vh;
 	background-color: var(--main-bg-color);
 	transform: translateX(100%);
-	transition: $transition-bace;
+	transition: $transition-base;
 	padding-top: 100px;
 }
 
