@@ -309,7 +309,7 @@ img.category.is-show{
 .innerfsns_lex{
 	display:flex
 } */
-@media (hover:hover){
+/* @media (hover:hover){
 	.has-child a:hover{
 		opacity:.5
 	}
@@ -320,7 +320,7 @@ img.category.is-show{
 		width:30px;
 		height:1px
 	}
-}
+} */
 @media screen and (max-width:1055px){
 	.sub-nav li a::before{
 		width:30px;

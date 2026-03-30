@@ -178,3 +178,30 @@ a.go-top{
 .sns_innerflex{
 	display: flex;
 }
+
+@media (hover:hover){
+	.has-child{
+		a{
+			&:hover{
+				opacity:.5;
+			}
+		}
+	}
+	.sub-nav{
+		li{
+			a{
+				&:hover{
+					color:var(--title-color);
+				}
+			}
+			&:hover{
+				a{
+					&::before{
+						width:30px;
+						height:1px;
+					}
+				}
+			}
+		}
+	}
+}

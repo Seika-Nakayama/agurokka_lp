@@ -154,4 +154,17 @@ a.go-top {
   display: flex;
 }
 
+@media (hover: hover) {
+  .has-child a:hover {
+    opacity: 0.5;
+  }
+  .sub-nav li a:hover {
+    color: var(--title-color);
+  }
+  .sub-nav li:hover a::before {
+    width: 30px;
+    height: 1px;
+  }
+}
+
 /*# sourceMappingURL=style.css.map */
