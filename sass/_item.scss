@@ -79,18 +79,18 @@ $transition-slow: .3s ease;
 			width: 50px;
 		}
 	}
+}
 
-	.global-nav{
-		position: fixed;
-		top: 0;
-		right: 0;
-		width: 350px;
-		height: 100vh;
-		background-color: var(--main-bg-color);
-		transform: translateX(100%);
-		transition: $transition-bace;
-		padding-top: 100px;
-	}
+.global-nav{
+	position: fixed;
+	top: 0;
+	right: 0;
+	width: 350px;
+	height: 100vh;
+	background-color: var(--main-bg-color);
+	transform: translateX(100%);
+	transition: $transition-bace;
+	padding-top: 100px;
 }
 
 img.logo-in-navmenu{
