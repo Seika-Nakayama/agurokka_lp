@@ -7,25 +7,20 @@
   transform: translateY(-100%);
   transition: 0.4s ease;
 }
-
 .site-header.is-show {
   transform: translateY(0);
 }
-
 .site-header.is-open .global-nav {
   transform: translateX(0);
   border-left: dotted 4px var(--accent-green-color);
 }
-
 .site-header.is-open .hamburger span:nth-child(1) {
   width: 60px;
   transform: translateY(14px) rotate(45deg);
 }
-
 .site-header.is-open .hamburger span:nth-child(2) {
   opacity: 0;
 }
-
 .site-header.is-open .hamburger span:nth-child(3) {
   width: 60px;
   top: 28px;
@@ -49,7 +44,6 @@
   background: none;
   border: none;
 }
-
 .hamburger span {
   position: absolute;
   left: 0;
@@ -58,18 +52,15 @@
   background-color: var(--accent-green-color);
   transition: 0.4s ease;
 }
-
 .hamburger span:nth-child(1) {
   top: 0;
   left: -9px;
   width: 70px;
 }
-
 .hamburger span:nth-child(2) {
   top: 14px;
   width: 60px;
 }
-
 .hamburger span:nth-child(3) {
   top: 28px;
   left: 10px;
@@ -110,17 +101,14 @@ img.logo-in-navmenu {
   font-size: 15px;
   margin-bottom: 10px;
 }
-
 .sub-nav li {
   position: relative;
 }
-
 .sub-nav li a {
   margin-bottom: 7px;
   margin-left: 40px;
   transition: 0.2s ease;
 }
-
 .sub-nav li a::before {
   content: "";
   width: 5px;
@@ -158,7 +146,6 @@ a.go-top {
 .sns-in-menu {
   position: relative;
 }
-
 .sns-in-menu img {
   height: 30px;
   margin: 28px;
@@ -220,25 +207,20 @@ ul, ol {
   transform: translateY(-100%);
   transition: 0.4s ease;
 }
-
 .site-header.is-show {
   transform: translateY(0);
 }
-
 .site-header.is-open .global-nav {
   transform: translateX(0);
   border-left: dotted 4px var(--accent-green-color);
 }
-
 .site-header.is-open .hamburger span:nth-child(1) {
   width: 60px;
   transform: translateY(14px) rotate(45deg);
 }
-
 .site-header.is-open .hamburger span:nth-child(2) {
   opacity: 0;
 }
-
 .site-header.is-open .hamburger span:nth-child(3) {
   width: 60px;
   top: 28px;
@@ -274,7 +256,6 @@ ul, ol {
   background: none;
   border: none;
 }
-
 .hamburger span {
   position: absolute;
   left: 0;
@@ -283,18 +264,15 @@ ul, ol {
   background-color: var(--accent-green-color);
   transition: 0.4s ease;
 }
-
 .hamburger span:nth-child(1) {
   top: 0;
   left: -9px;
   width: 70px;
 }
-
 .hamburger span:nth-child(2) {
   top: 14px;
   width: 60px;
 }
-
 .hamburger span:nth-child(3) {
   top: 28px;
   left: 10px;
@@ -305,6 +283,21 @@ ul, ol {
   padding: 0 30px;
 }
 
-
+.fixed-link {
+  position: fixed;
+  bottom: 0;
+  right: 6px;
+  z-index: 100;
+  opacity: 0;
+  transform: translateX(100%);
+  pointer-events: none;
+  transition: 0.4s ease;
+  width: 250px;
+  height: 170px;
+  background-image: url(../../../images/fv/caw.webp);
+  background-size: 100%;
+  background-position: left top;
+  background-repeat: no-repeat;
+}
 
 /*# sourceMappingURL=style.css.map */
