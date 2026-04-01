@@ -65,12 +65,12 @@ body{
 main{
 	overflow-x:hidden
 } */
-article.article-box{
+/* article.article-box{
 	position:relative;
 	width:100%;
 	margin:400px 0 100px
-}
-img.category{
+} */
+/* img.category{
 	width:890px;
 	position:absolute;
 	top:-230px;
@@ -80,7 +80,7 @@ img.category{
 }
 img.category.is-show{
 	opacity:1
-}
+} */
 @media screen and (max-width:1000px){
 	article.article-box{
 		margin:300px 0
