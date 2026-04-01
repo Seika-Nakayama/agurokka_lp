@@ -1,3 +1,76 @@
+:root {
+  --main-bg-color:#fffef8;
+  --sub-bg-color:#f8fafa;
+  --tx-bg-color:#ffffffa9;
+  --orange-bg-color:#ea773d66;
+  --tx-bg-green-color:#88a890;
+  --shadow-color:#06280627 ;
+}
+
+:root {
+  --main-color:#444943;
+  --sub-color:#fffefb;
+  --title-color:#658C6F;
+  --accent-green-color:#309E66;
+  --accent-orange-color:#ef9365;
+  --small-color:#b5b5b5 ;
+}
+
+@font-face {
+  font-family: "higuregothic";
+  src: url(../font/HigureGothic-Light.woff2) format("woff2");
+  font-weight: 400;
+  font-style: normal;
+}
+@font-face {
+  font-family: "aosagi";
+  src: url(../font/YDWaosagi.woff2) format("woff2");
+  font-weight: 400;
+  font-style: normal;
+}
+@font-face {
+  font-family: "utsukushi";
+  src: url(../font/UtsukushiFONT.woff2) format("woff2");
+  font-weight: 400;
+  font-style: normal;
+}
+@font-face {
+  font-family: "kokoro";
+  src: url(../font/Kokoro.woff2) format("woff2");
+  font-weight: 400;
+  font-style: normal;
+}
+body {
+  background-color: var(--main-bg-color);
+  min-width: 375px;
+  min-height: 370px;
+}
+
+main {
+  overflow-x: hidden;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  color: var(--main-color);
+  text-decoration: none;
+  font-family: "higuregothic";
+  scroll-behavior: smooth;
+  font-size: 20px;
+  letter-spacing: 0.1em;
+  line-height: 25px;
+}
+
+img, a {
+  display: block;
+}
+
+ul, ol {
+  list-style: none;
+}
+
 .site-header {
   position: fixed;
   top: 0;
@@ -166,36 +239,6 @@ a.go-top {
     width: 30px;
     height: 1px;
   }
-}
-body {
-  background-color: var(--main-bg-color);
-  min-width: 375px;
-  min-height: 370px;
-}
-
-main {
-  overflow-x: hidden;
-}
-
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-  color: var(--main-color);
-  text-decoration: none;
-  font-family: "higuregothic";
-  scroll-behavior: smooth;
-  font-size: 20px;
-  letter-spacing: 0.1em;
-  line-height: 25px;
-}
-
-img, a {
-  display: block;
-}
-
-ul, ol {
-  list-style: none;
 }
 
 .site-header {

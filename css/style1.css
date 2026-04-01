@@ -1,5 +1,5 @@
 @charset "utf-8";
-:root{
+/* :root{
 	--main-bg-color:#fffef8;
 	--sub-bg-color:#f8fafa;
 	--tx-bg-color:#ffffffa9;
@@ -38,7 +38,7 @@
 	src:url(../font/Kokoro.woff2) format('woff2');
 	font-weight:400;
 	font-style:normal
-}
+} */
 /* *{
 	margin:0;
 	padding:0;
