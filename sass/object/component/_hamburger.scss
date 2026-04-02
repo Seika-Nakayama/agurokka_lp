@@ -1,4 +1,4 @@
-@use "../../extension" as * ;
+@use "../../extension/variable" as * ;
 
 .hamburger{
 	width: 60px;
@@ -16,7 +16,7 @@
 		left: 0;
 		width: 60px;
 		height: 1px;
-		background-color: var(--accent-green-color);
+		background-color: $accent-green-color;
 		transition: $transition-base;
 
 		&:nth-child(1){
