@@ -1,29 +1,29 @@
 @font-face {
   font-family: "higuregothic";
-  src: url(../../font/HigureGothic-Light.woff2) format("woff2");
   font-weight: 400;
   font-style: normal;
+  src: url("../../font/HigureGothic-Light.woff2)'format('woff2");
 }
 @font-face {
   font-family: "aosagi";
-  src: url(../../font/YDWaosagi.woff2) format("woff2");
   font-weight: 400;
   font-style: normal;
+  src: url("../../font/YDWaosagi.woff2)'format('woff2");
 }
 @font-face {
   font-family: "utsukushi";
-  src: url(../../font/UtsukushiFONT.woff2) format("woff2");
   font-weight: 400;
   font-style: normal;
+  src: url("../../font/UtsukushiFONT.woff2)'format('woff2");
 }
 @font-face {
   font-family: "kokoro";
-  src: url(../../font/Kokoro.woff2) format("woff2");
   font-weight: 400;
   font-style: normal;
+  src: url("../../font/Kokoro.woff2)'format('woff2");
 }
 body {
-  background-color: var(--main-bg-color);
+  background-color: #fffef8;
   min-width: 375px;
   min-height: 370px;
 }
