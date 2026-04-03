@@ -52,9 +52,6 @@ img.category.is-show {
 }
 
 * {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
   color: var(--main-color);
   text-decoration: none;
   font-family: "higuregothic";
@@ -66,6 +63,12 @@ img.category.is-show {
 
 img, a {
   display: block;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
 ul, ol {

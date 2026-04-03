@@ -64,41 +64,41 @@
           "outputs": [
             {
               "name": "out",
-              "path": "/nix/store/zw0jwirlv9fx1v8h4jhix5xgcy0f19jm-php-with-extensions-8.5.4",
+              "path": "/nix/store/zw0jwirlv9fx1v8h4jhix5xgcy0f19jm-php-with-variables-8.5.4",
               "default": true
             }
           ],
-          "store_path": "/nix/store/zw0jwirlv9fx1v8h4jhix5xgcy0f19jm-php-with-extensions-8.5.4"
+          "store_path": "/nix/store/zw0jwirlv9fx1v8h4jhix5xgcy0f19jm-php-with-variables-8.5.4"
         },
         "aarch64-linux": {
           "outputs": [
             {
               "name": "out",
-              "path": "/nix/store/7jphmb6rqrmmx9bhfm6b8rcdq0dh5z66-php-with-extensions-8.5.4",
+              "path": "/nix/store/7jphmb6rqrmmx9bhfm6b8rcdq0dh5z66-php-with-variables-8.5.4",
               "default": true
             }
           ],
-          "store_path": "/nix/store/7jphmb6rqrmmx9bhfm6b8rcdq0dh5z66-php-with-extensions-8.5.4"
+          "store_path": "/nix/store/7jphmb6rqrmmx9bhfm6b8rcdq0dh5z66-php-with-variables-8.5.4"
         },
         "x86_64-darwin": {
           "outputs": [
             {
               "name": "out",
-              "path": "/nix/store/yg442046jyyclg3sj3pi8gvbf1d0m7xy-php-with-extensions-8.5.4",
+              "path": "/nix/store/yg442046jyyclg3sj3pi8gvbf1d0m7xy-php-with-variables-8.5.4",
               "default": true
             }
           ],
-          "store_path": "/nix/store/yg442046jyyclg3sj3pi8gvbf1d0m7xy-php-with-extensions-8.5.4"
+          "store_path": "/nix/store/yg442046jyyclg3sj3pi8gvbf1d0m7xy-php-with-variables-8.5.4"
         },
         "x86_64-linux": {
           "outputs": [
             {
               "name": "out",
-              "path": "/nix/store/5zk7di9mkm039nv6f6isg07mcbpixdz0-php-with-extensions-8.5.4",
+              "path": "/nix/store/5zk7di9mkm039nv6f6isg07mcbpixdz0-php-with-variables-8.5.4",
               "default": true
             }
           ],
-          "store_path": "/nix/store/5zk7di9mkm039nv6f6isg07mcbpixdz0-php-with-extensions-8.5.4"
+          "store_path": "/nix/store/5zk7di9mkm039nv6f6isg07mcbpixdz0-php-with-variables-8.5.4"
         }
       }
     }
