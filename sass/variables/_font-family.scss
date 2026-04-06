@@ -1,15 +1,19 @@
-@mixin font-face( $name, $file, $weight, $style, $exts: otf ttf woff2){
+@use "sass:map";
+@use "sass:list";
+
+@mixin font-face( $name, $file, $weight, $style, $exts: otf ttf woff woff2){
     $src: ();
 
     $formats: (
         woff2: 'woff2',
+        woff: 'woff',
         otf: 'opentype',
         ttf: 'truetype'
     );
 
     @each $ext in $exts{
         $format: map-get($formats, $ext);
-        $src: append($src, url("../../font/#{$file}.#{$ext})'format('#{$format}"), comma);
+        $src: append($src, url("../../font/#{$file}.#{$ext}") format('#{$format}'), comma);
     }
 
     @font-face{
@@ -20,7 +24,7 @@
     }
 }
 
-@include font-face('higuregothic', 'HigureGothic-Light', 400, normal, woff2);
+@include font-face('higuregothic', 'HigureGothic-Light', 400, normal, (woff2));
 @include font-face('aosagi', 'YDWaosagi', 400, normal, woff2);
 @include font-face('utsukushi', 'UtsukushiFONT', 400, normal, woff2);
 @include font-face('kokoro', 'Kokoro', 400, normal, woff2);
