@@ -1,11 +1,11 @@
-<header class="site-header" id="siteHeader">
+<header class="h-site-header" id="h-siteHeader">
 	<div class="h-inner">
-		<button class="hamburger" id="hamburger" aria-label="メニュー">
+		<button class="h-hamburger" id="h-hamburger" aria-label="メニュー">
 			<span></span>
 			<span></span>
 			<span></span>
 		</button>
-		<nav class="global-nav">
+		<nav class="h-global-nav">
 			<img src="images/logo/agurokka_logo.webp" alt="AguRokkaのロゴ" class="logo-in-navmenu">
 			<ul class="nav-list has-child">
 				<li class="nav-item has-child">

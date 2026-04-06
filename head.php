@@ -17,7 +17,8 @@
 	<link rel="stylesheet" href="css/slick-theme.css">
 	<script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
 	<script src="js/slick.min.js"></script>
-	<script src="js/script.js" defer></script>
+	<!-- <script src="js/script.js" defer></script> -->
+	<script src="js/script1.js" defer></script>
 	<link rel="stylesheet" href="css/style1.css">
 	<link rel="stylesheet" href="css/style.css">
 </head>

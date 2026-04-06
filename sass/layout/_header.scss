@@ -1,26 +1,26 @@
 @use "../variables/index" as *;
 
-.site-header{
+.h-site-header{
 	position: fixed;
 	top: 0;
 	right: 0;
 	width: 100%;
 	z-index: 1000;
-	transform: translateX(-100%);
+	transform: translateY(-100%);
 	transition: $transition-base;
 
 	&.is-show{
-		transform: translateX(0);
+		transform: translateY(0);
 	}
 
 	&.is-open{
-		.global-nav{
+		.h-global-nav{
 			transform: translateX(0);
 			border-left: dotted 4px $accent-green-color;
 			overflow-x: scroll;
 		}
 		
-		.hamburger span{
+		.h-hamburger span{
 			&:nth-child(1){
 				width: 60px;
 				transform: translateY(14px) rotate(45deg);
@@ -43,7 +43,7 @@
 	justify-content: flex-end;
 }
 
-.global-nav{
+.h-global-nav{
 	position: fixed;
 	top: 0;
 	right: 0;
@@ -173,7 +173,7 @@ a.go-top{
 // }
 
 @include media(mb){
-	.global-nav{
+	.h-global-nav{
 		width: 99vw;
 		padding-top: 45px;
 	}
@@ -189,7 +189,7 @@ a.go-top{
 	img.logo-in-navmenu{
 		width:100px
 	}
-	.global-nav{
+	.h-global-nav{
 		padding-top:19px
 	}
 	.category-menu{

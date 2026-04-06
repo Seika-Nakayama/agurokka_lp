@@ -75,7 +75,7 @@ ul, ol {
   list-style: none;
 }
 
-.site-header {
+.h-site-header {
   position: fixed;
   top: 0;
   right: 0;
@@ -84,22 +84,22 @@ ul, ol {
   transform: translateY(-100%);
   transition: 0.4s ease;
 }
-.site-header.is-show {
+.h-site-header.is-show {
   transform: translateY(0);
 }
-.site-header.is-open .global-nav {
+.h-site-header.is-open .h-global-nav {
   transform: translateX(0);
   border-left: dotted 4px #309E66;
   overflow-x: scroll;
 }
-.site-header.is-open .hamburger span:nth-child(1) {
+.h-site-header.is-open .h-hamburger span:nth-child(1) {
   width: 60px;
   transform: translateY(14px) rotate(45deg);
 }
-.site-header.is-open .hamburger span:nth-child(2) {
+.h-site-header.is-open .h-hamburger span:nth-child(2) {
   opacity: 0;
 }
-.site-header.is-open .hamburger span:nth-child(3) {
+.h-site-header.is-open .h-hamburger span:nth-child(3) {
   width: 60px;
   top: 28px;
   left: -10px;
@@ -111,7 +111,7 @@ ul, ol {
   justify-content: flex-end;
 }
 
-.global-nav {
+.h-global-nav {
   position: fixed;
   top: 0;
   right: 0;
@@ -208,7 +208,7 @@ a.go-top {
   }
 }
 @media screen and (max-width: 768px) {
-  .global-nav {
+  .h-global-nav {
     width: 99vw;
     padding-top: 45px;
   }
@@ -224,7 +224,7 @@ a.go-top {
   img.logo-in-navmenu {
     width: 100px;
   }
-  .global-nav {
+  .h-global-nav {
     padding-top: 19px;
   }
   .category-menu {
@@ -241,7 +241,7 @@ a.go-top {
     line-height: 2em;
   }
 }
-.hamburger {
+.h-hamburger {
   width: 60px;
   height: 60px;
   cursor: pointer;
@@ -252,7 +252,7 @@ a.go-top {
   background: none;
   border: none;
 }
-.hamburger span {
+.h-hamburger span {
   position: absolute;
   left: 0;
   width: 60px;
@@ -260,16 +260,16 @@ a.go-top {
   background-color: #309E66;
   transition: 0.4s ease;
 }
-.hamburger span:nth-child(1) {
+.h-hamburger span:nth-child(1) {
   top: 0;
   left: -9px;
   width: 70px;
 }
-.hamburger span:nth-child(2) {
+.h-hamburger span:nth-child(2) {
   top: 14px;
   width: 60px;
 }
-.hamburger span:nth-child(3) {
+.h-hamburger span:nth-child(3) {
   top: 28px;
   left: 10px;
   width: 50px;
