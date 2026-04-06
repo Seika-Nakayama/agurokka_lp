@@ -1,3 +1,307 @@
+@font-face {
+  font-family: "higuregothic";
+  font-weight: 400;
+  font-style: normal;
+  src: url("../../font/HigureGothic-Light.woff2)'format('woff2");
+}
+@font-face {
+  font-family: "aosagi";
+  font-weight: 400;
+  font-style: normal;
+  src: url("../../font/YDWaosagi.woff2)'format('woff2");
+}
+@font-face {
+  font-family: "utsukushi";
+  font-weight: 400;
+  font-style: normal;
+  src: url("../../font/UtsukushiFONT.woff2)'format('woff2");
+}
+@font-face {
+  font-family: "kokoro";
+  font-weight: 400;
+  font-style: normal;
+  src: url("../../font/Kokoro.woff2)'format('woff2");
+}
+body {
+  background-color: #fffef8;
+  min-width: 375px;
+  min-height: 370px;
+}
 
+main {
+  overflow-x: hidden;
+}
 
+article.article-box {
+  position: relative;
+  width: 100%;
+  margin: 400px 0 100px;
+}
+
+img.category {
+  width: 890px;
+  position: absolute;
+  top: -230px;
+  left: 25px;
+  opacity: 0;
+  transition: 1.5s;
+}
+
+img.category.is-show {
+  opacity: 1;
+}
+
+* {
+  color: var(--main-color);
+  text-decoration: none;
+  font-family: "higuregothic";
+  scroll-behavior: smooth;
+  font-size: 20px;
+  letter-spacing: 0.1em;
+  line-height: 25px;
+}
+
+img, a {
+  display: block;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+ul, ol {
+  list-style: none;
+}
+
+.h-site-header {
+  position: fixed;
+  top: 0;
+  right: 0;
+  width: 100%;
+  z-index: 1000;
+  transform: translateY(-100%);
+  transition: 0.4s ease;
+}
+.h-site-header.is-show {
+  transform: translateY(0);
+}
+.h-site-header.is-open .h-global-nav {
+  transform: translateX(0);
+  border-left: dotted 4px #309E66;
+  overflow-x: scroll;
+}
+.h-site-header.is-open .h-hamburger span:nth-child(1) {
+  width: 60px;
+  transform: translateY(14px) rotate(45deg);
+}
+.h-site-header.is-open .h-hamburger span:nth-child(2) {
+  opacity: 0;
+}
+.h-site-header.is-open .h-hamburger span:nth-child(3) {
+  width: 60px;
+  top: 28px;
+  left: -10px;
+  transform: translateY(-14px) rotate(-45deg);
+}
+
+.h-inner {
+  display: flex;
+  justify-content: flex-end;
+}
+
+.h-global-nav {
+  position: fixed;
+  top: 0;
+  right: 0;
+  width: 350px;
+  height: 100vh;
+  background-color: #fffef8;
+  transform: translateX(100%);
+  transition: 0.4s ease;
+  padding-top: 100px;
+}
+
+img.h-logo-in-navmenu {
+  width: 130px;
+  margin: auto;
+}
+
+.has-child a {
+  font-size: 20px;
+  color: #309E66;
+  font-family: "utsukushi";
+  transition: 0.2s ease;
+}
+
+.h-sub-nav a {
+  color: #444943;
+  font-family: "higuregothic";
+  font-size: 15px;
+  margin-bottom: 10px;
+}
+.h-sub-nav li {
+  position: relative;
+}
+.h-sub-nav li a {
+  margin-bottom: 7px;
+  margin-left: 40px;
+  transition: 0.2s ease;
+}
+.h-sub-nav li a::before {
+  content: "";
+  width: 5px;
+  height: 5px;
+  border-radius: 5px;
+  background-color: #658C6F;
+  position: absolute;
+  top: 50%;
+  left: 0;
+  transform: translateY(-50%);
+  transition: 0.3s ease;
+}
+
+.h-category-menu {
+  margin: 35px 0 20px;
+  position: relative;
+}
+
+a.h-go-top {
+  color: #444943;
+  font-size: 15px;
+}
+
+.h-nav-link-insta img {
+  height: 40px;
+  width: auto;
+  margin-right: 30px;
+}
+
+.h-nav-link-facebook {
+  height: 40px;
+  width: auto;
+}
+
+.h-sns-in-menu {
+  position: relative;
+}
+.h-sns-in-menu img {
+  height: 30px;
+  margin: 28px;
+}
+
+.h-sns_innerflex {
+  display: flex;
+}
+
+@media (hover: hover) {
+  .h-has-child a:hover {
+    opacity: 0.5;
+  }
+  .h-sub-nav li a:hover {
+    color: #658C6F;
+  }
+  .h-sub-nav li:hover a::before {
+    width: 30px;
+    height: 1px;
+  }
+}
+.h-nav-list {
+  padding: 0 30px;
+}
+
+@media screen and (max-width: 768px) {
+  .h-global-nav {
+    width: 99vw;
+    padding-top: 45px;
+  }
+}
+@media screen and (max-width: 768px) {
+  .h-nav-list {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+}
+@media screen and (max-width: 360px) {
+  img.h-logo-in-navmenu {
+    width: 100px;
+  }
+  .h-global-nav {
+    padding-top: 19px;
+  }
+  .h-category-menu {
+    margin: 15px 0 3px;
+  }
+  .h-has-child a {
+    font-size: 15px;
+  }
+  .h-sub-nav li a {
+    margin-bottom: 0;
+    font-size: 13px;
+  }
+  .h-sub-nav li a {
+    line-height: 2em;
+  }
+}
+.c-fixed-link {
+  position: fixed;
+  bottom: 0;
+  right: 6px;
+  z-index: 100;
+  opacity: 0;
+  transform: translateX(100%);
+  pointer-events: none;
+  transition: 0.4s ease;
+  width: 250px;
+  height: 170px;
+  background-image: url(../../../images/fv/caw.webp);
+  background-size: 100%;
+  background-position: left top;
+  background-repeat: no-repeat;
+}
+.c-fixed-link.is-show {
+  opacity: 1;
+  transform: translateX(0);
+  pointer-events: auto;
+}
+.c-fixed-link.is-hide {
+  opacity: 0;
+  pointer-events: none;
+}
+
+.h-hamburger {
+  width: 60px;
+  height: 60px;
+  cursor: pointer;
+  position: relative;
+  top: 20px;
+  right: 24px;
+  z-index: 1100;
+  background: none;
+  border: none;
+}
+.h-hamburger span {
+  position: absolute;
+  left: 0;
+  width: 60px;
+  height: 1px;
+  background-color: #309E66;
+  transition: 0.4s ease;
+}
+.h-hamburger span:nth-child(1) {
+  top: 0;
+  left: -9px;
+  width: 70px;
+}
+.h-hamburger span:nth-child(2) {
+  top: 14px;
+  width: 60px;
+}
+.h-hamburger span:nth-child(3) {
+  top: 28px;
+  left: 10px;
+  width: 50px;
+}
 /*# sourceMappingURL=style.css.map */

@@ -1,0 +1,26 @@
+@mixin font-face( $name, $file, $weight, $style, $exts: otf ttf woff2){
+    $src: ();
+
+    $formats: (
+        woff2: 'woff2',
+        otf: 'opentype',
+        ttf: 'truetype'
+    );
+
+    @each $ext in $exts{
+        $format: map-get($formats, $ext);
+        $src: append($src, url("../../font/#{$file}.#{$ext})'format('#{$format}"), comma);
+    }
+
+    @font-face{
+        font-family: $name;
+        font-weight: $weight;
+        font-style: $style;
+        src: $src;
+    }
+}
+
+@include font-face('higuregothic', 'HigureGothic-Light', 400, normal, woff2);
+@include font-face('aosagi', 'YDWaosagi', 400, normal, woff2);
+@include font-face('utsukushi', 'UtsukushiFONT', 400, normal, woff2);
+@include font-face('kokoro', 'Kokoro', 400, normal, woff2);
