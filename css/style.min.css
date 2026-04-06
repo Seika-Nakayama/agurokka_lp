@@ -33,7 +33,7 @@
   transform: translateY(-14px) rotate(-45deg);
 }
 
-.header-inner {
+.h-inner {
   display: flex;
   justify-content: flex-end;
 }
@@ -246,7 +246,7 @@ ul, ol {
   transform: translateY(-14px) rotate(-45deg);
 }
 
-.header-inner {
+.h-inner {
   display: flex;
   justify-content: flex-end;
 }

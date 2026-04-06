@@ -6,17 +6,18 @@
 	right: 0;
 	width: 100%;
 	z-index: 1000;
-	transform: translateY(-100%);
+	transform: translateX(-100%);
 	transition: $transition-base;
 
 	&.is-show{
-		transform: translateY(0);
+		transform: translateX(0);
 	}
 
 	&.is-open{
 		.global-nav{
 			transform: translateX(0);
 			border-left: dotted 4px $accent-green-color;
+			overflow-x: scroll;
 		}
 		
 		.hamburger span{
@@ -37,7 +38,7 @@
 	}
 }
 
-.header-inner{
+.h-inner{
 	display: flex;
 	justify-content: flex-end;
 }
@@ -140,7 +141,7 @@ a.go-top{
 	.has-child{
 		a{
 			&:hover{
-				opacity:.5;
+				opacity: .5;
 			}
 		}
 	}
@@ -148,17 +149,60 @@ a.go-top{
 		li{
 			a{
 				&:hover{
-					color:$title-color;
+					color: $title-color;
 				}
 			}
 			&:hover{
 				a{
 					&::before{
-						width:30px;
-						height:1px;
+						width: 30px;
+						height: 1px;
 					}
 				}
 			}
 		}
+	}
+}
+
+
+// @media screen and (max-width:1055px){
+// 	.sub-nav li a::before{
+// 		width: 30px;
+// 		height: 1px
+// 	}
+// }
+
+@include media(mb){
+	.global-nav{
+		width: 99vw;
+		padding-top: 45px;
+	}
+}
+@include media(mb){
+	.nav-list{
+		display: flex;
+		flex-direction: column;
+		align-items: center
+	}
+}
+@include media(sp2){
+	img.logo-in-navmenu{
+		width:100px
+	}
+	.global-nav{
+		padding-top:19px
+	}
+	.category-menu{
+		margin:15px 0 3px
+	}
+	.has-child a{
+		font-size:15px
+	}
+	.sub-nav li a{
+		margin-bottom:0;
+		font-size:13px
+	}
+	.sub-nav li a{
+		line-height:2em
 	}
 }

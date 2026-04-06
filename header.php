@@ -1,5 +1,5 @@
 <header class="site-header" id="siteHeader">
-	<div class="header-inner">
+	<div class="h-inner">
 		<button class="hamburger" id="hamburger" aria-label="メニュー">
 			<span></span>
 			<span></span>
