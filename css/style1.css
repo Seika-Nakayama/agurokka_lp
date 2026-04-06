@@ -397,11 +397,11 @@ img.category.is-show{
 		height:100px
 	}
 }
-.fv{
+/* .fv{
 	width:100%;
 	position:relative;
 	transition:0.3s ease;
-}
+} */
 .copy_flex{
 	position:relative;
 	top:50%;

@@ -245,6 +245,7 @@ a.h-go-top {
     line-height: 2em;
   }
 }
+
 .c-fixed-link {
   position: fixed;
   bottom: 0;
@@ -305,4 +306,9 @@ a.h-go-top {
   width: 50px;
 }
 
+.fv {
+  width: 100%;
+  position: relative;
+  transition: 0.3s ease;
+}
 /*# sourceMappingURL=style.css.map */
