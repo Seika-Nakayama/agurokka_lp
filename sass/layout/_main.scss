@@ -1,0 +1,8 @@
+@use "../foundation/index" as *;
+@use "../variables/index" as *;
+
+.fv{
+	width:100%;
+	position:relative;
+	transition:$transition-slow;
+}
