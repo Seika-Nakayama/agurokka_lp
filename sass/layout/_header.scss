@@ -176,13 +176,13 @@ a.h-go-top{
 	padding: 0 30px;
 }
 
-@include media(mb){
+@include media(mb2){
 	.h-global-nav{
 		width: 99vw;
 		padding-top: 45px;
 	}
 }
-@include media(mb){
+@include media(mb2){
 	.h-nav-list{
 		display: flex;
 		flex-direction: column;

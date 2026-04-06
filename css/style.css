@@ -330,11 +330,36 @@ a.h-go-top {
   transform: translateX(0);
   pointer-events: auto;
 }
+.c-fixed-link.is-show img {
+  opacity: 1;
+  right: 6px;
+}
 .c-fixed-link.is-hide {
   opacity: 0;
   pointer-events: none;
 }
+.c-fixed-link.is-hide img {
+  opacity: 0;
+  right: -300px;
+  bottom: -5%;
+}
+.c-fixed-link img {
+  position: fixed;
+  bottom: -25px;
+  right: -300px;
+  z-index: 9998;
+  width: 220px;
+  opacity: 0;
+  transition: 0.4s ease;
+}
 
+@media screen and (max-width: 1000px) {
+  .c-fixed-link {
+    width: 150px;
+    height: 100px img;
+    height-width: 190px;
+  }
+}
 .h-hamburger {
   width: 60px;
   height: 60px;
@@ -368,5 +393,4 @@ a.h-go-top {
   left: 10px;
   width: 50px;
 }
-
 /*# sourceMappingURL=style.css.map */

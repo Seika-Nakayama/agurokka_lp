@@ -391,13 +391,14 @@ img.category.is-show{
 	opacity:0;
 	pointer-events:none
 } */
-@media screen and (max-width:800px){
+/* @media screen and (max-width:800px){
 	.c-fixed-link{
 		width:150px;
 		height:100px
 	}
 }
-/* .fv{
+
+.fv{
 	width:100%;
 	position:relative;
 	transition:0.3s ease;
@@ -2564,7 +2565,7 @@ span.look-label{
 	text-align:center;
 	padding:10px
 }
-.c-fixed-link img{
+/* .c-fixed-link img{
 	position:fixed;
 	bottom:-25px;
 	right:-300px;
@@ -2581,7 +2582,7 @@ span.look-label{
 	opacity:0;
 	right:-300px;
 	bottom:-5%
-}
+} */
 .entory-link-img img{
 	width:500px;
 	margin:30px auto 10px
