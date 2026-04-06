@@ -2564,7 +2564,7 @@ span.look-label{
 	text-align:center;
 	padding:10px
 }
-.c-fixed-link img{
+/* .c-fixed-link img{
 	position:fixed;
 	bottom:-25px;
 	right:-300px;
@@ -2581,7 +2581,7 @@ span.look-label{
 	opacity:0;
 	right:-300px;
 	bottom:-5%
-}
+} */
 .entory-link-img img{
 	width:500px;
 	margin:30px auto 10px
@@ -2617,9 +2617,9 @@ span.look-label{
 }
 @media screen and (max-width:520px){
 	.bod-svg path{stroke-width: 3px;}
-	.c-fixed-link img{
+	/* .c-fixed-link img{
 		width:190px
-	}
+	} */
 	.entory-link-img img{
 		width:370px
 	}
