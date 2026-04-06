@@ -2617,9 +2617,9 @@ span.look-label{
 }
 @media screen and (max-width:520px){
 	.bod-svg path{stroke-width: 3px;}
-	.c-fixed-link img{
+	/* .c-fixed-link img{
 		width:190px
-	}
+	} */
 	.entory-link-img img{
 		width:370px
 	}
