@@ -1,6 +1,6 @@
 @use "../variables/index" as *;
 
-.loading{
+.l-loading{
 	width: 100%;
 	position: fixed;
 	top: 0;
@@ -12,10 +12,10 @@
 	justify-content: center;
 	align-items: center;
     
-    .loading-inner{
+    .l-loading-inner{
         text-align: center;
         
-        .loading-text{
+        .l-loading-text{
             display: flex;
             align-items: center;
             justify-content: center;
@@ -31,12 +31,12 @@
                 font-family: 'higuregothic';
             }
         }
-        .loading-bar{
+        .l-loading-bar{
             width: 100vw;
             height: 2px;
             overflow: hidden;
     
-            .loading-progress{
+            .l-loading-progress{
                 display: block;
                 width: 0%;
                 height: 100%;
@@ -44,7 +44,7 @@
                 transition: $transition-slow;
             }
         }
-        .loading-count{
+        .l-loading-count{
             margin-top: 50px;
             font-size: 25px;
             font-family: 'higuregothic';
@@ -53,9 +53,9 @@
 }
 
 @include media(mb){
-    .loading{
-        .loading-inner{
-            .loading-text{
+    .l-loading{
+        .l-loading-inner{
+            .l-loading-text{
                 writing-mode: vertical-rl;
                 text-orientation: upright;
                 flex-direction: row;
