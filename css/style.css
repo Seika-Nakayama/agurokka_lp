@@ -271,6 +271,12 @@ a.h-go-top {
   pointer-events: none;
 }
 
+@media screen and (max-width: 1000px) {
+  .c-fixed-link {
+    width: 150px;
+    height: 100px;
+  }
+}
 .h-hamburger {
   width: 60px;
   height: 60px;

@@ -391,12 +391,12 @@ img.category.is-show{
 	opacity:0;
 	pointer-events:none
 } */
-@media screen and (max-width:800px){
+/* @media screen and (max-width:800px){
 	.c-fixed-link{
 		width:150px;
 		height:100px
 	}
-}
+} */
 .fv{
 	width:100%;
 	position:relative;
