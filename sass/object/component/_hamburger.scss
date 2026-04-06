@@ -1,4 +1,4 @@
-@use "../../variables/color" as * ;
+@use "../../variables/index" as * ;
 
 .h-hamburger{
 	width: 60px;
@@ -34,8 +34,4 @@
 			width: 50px;
 		}
 	}
-}
-
-.nav-list{
-	padding: 0 30px;
 }

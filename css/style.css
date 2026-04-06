@@ -123,7 +123,7 @@ ul, ol {
   padding-top: 100px;
 }
 
-img.logo-in-navmenu {
+img.h-logo-in-navmenu {
   width: 130px;
   margin: auto;
 }
@@ -135,21 +135,21 @@ img.logo-in-navmenu {
   transition: 0.2s ease;
 }
 
-.sub-nav a {
+.h-sub-nav a {
   color: #444943;
   font-family: "higuregothic";
   font-size: 15px;
   margin-bottom: 10px;
 }
-.sub-nav li {
+.h-sub-nav li {
   position: relative;
 }
-.sub-nav li a {
+.h-sub-nav li a {
   margin-bottom: 7px;
   margin-left: 40px;
   transition: 0.2s ease;
 }
-.sub-nav li a::before {
+.h-sub-nav li a::before {
   content: "";
   width: 5px;
   height: 5px;
@@ -162,51 +162,55 @@ img.logo-in-navmenu {
   transition: 0.3s ease;
 }
 
-.category-menu {
+.h-category-menu {
   margin: 35px 0 20px;
   position: relative;
 }
 
-a.go-top {
+a.h-go-top {
   color: #444943;
   font-size: 15px;
 }
 
-.nav-link-insta img {
+.h-nav-link-insta img {
   height: 40px;
   width: auto;
   margin-right: 30px;
 }
 
-.nav-link-facebook {
+.h-nav-link-facebook {
   height: 40px;
   width: auto;
 }
 
-.sns-in-menu {
+.h-sns-in-menu {
   position: relative;
 }
-.sns-in-menu img {
+.h-sns-in-menu img {
   height: 30px;
   margin: 28px;
 }
 
-.sns_innerflex {
+.h-sns_innerflex {
   display: flex;
 }
 
 @media (hover: hover) {
-  .has-child a:hover {
+  .h-has-child a:hover {
     opacity: 0.5;
   }
-  .sub-nav li a:hover {
+  .h-sub-nav li a:hover {
     color: #658C6F;
   }
-  .sub-nav li:hover a::before {
+  .h-sub-nav li:hover a::before {
     width: 30px;
     height: 1px;
   }
 }
+.h-nav-list {
+  padding: 0 30px;
+}
+
 @media screen and (max-width: 768px) {
   .h-global-nav {
     width: 99vw;
@@ -214,33 +218,59 @@ a.go-top {
   }
 }
 @media screen and (max-width: 768px) {
-  .nav-list {
+  .h-nav-list {
     display: flex;
     flex-direction: column;
     align-items: center;
   }
 }
 @media screen and (max-width: 360px) {
-  img.logo-in-navmenu {
+  img.h-logo-in-navmenu {
     width: 100px;
   }
   .h-global-nav {
     padding-top: 19px;
   }
-  .category-menu {
+  .h-category-menu {
     margin: 15px 0 3px;
   }
-  .has-child a {
+  .h-has-child a {
     font-size: 15px;
   }
-  .sub-nav li a {
+  .h-sub-nav li a {
     margin-bottom: 0;
     font-size: 13px;
   }
-  .sub-nav li a {
+  .h-sub-nav li a {
     line-height: 2em;
   }
 }
+.c-fixed-link {
+  position: fixed;
+  bottom: 0;
+  right: 6px;
+  z-index: 100;
+  opacity: 0;
+  transform: translateX(100%);
+  pointer-events: none;
+  transition: 0.4s ease;
+  width: 250px;
+  height: 170px;
+  background-image: url(../../../images/fv/caw.webp);
+  background-size: 100%;
+  background-position: left top;
+  background-repeat: no-repeat;
+}
+.c-fixed-link.is-show {
+  opacity: 1;
+  transform: translateX(0);
+  pointer-events: auto;
+}
+.c-fixed-link.is-hide {
+  opacity: 0;
+  pointer-events: none;
+}
+
 .h-hamburger {
   width: 60px;
   height: 60px;
@@ -273,27 +303,6 @@ a.go-top {
   top: 28px;
   left: 10px;
   width: 50px;
-}
-
-.nav-list {
-  padding: 0 30px;
-}
-
-.fixed-link {
-  position: fixed;
-  bottom: 0;
-  right: 6px;
-  z-index: 100;
-  opacity: 0;
-  transform: translateX(100%);
-  pointer-events: none;
-  transition: 0.4s ease;
-  width: 250px;
-  height: 170px;
-  background-image: url(../../../images/fv/caw.webp);
-  background-size: 100%;
-  background-position: left top;
-  background-repeat: no-repeat;
 }
 
 /*# sourceMappingURL=style.css.map */

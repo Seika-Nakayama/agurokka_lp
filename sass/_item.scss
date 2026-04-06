@@ -100,11 +100,11 @@
 // 	margin: auto;
 // }
 
-// .nav-list{
+// .h-nav-list{
 // 	padding: 0 30px;
 // }
 
-// .has-child{
+// .h-has-child{
 // 	a{
 // 		font-size: 20px;
 // 		color: var(--accent-green-color);
@@ -113,7 +113,7 @@
 // 	}
 // }
 
-// .sub-nav{
+// .h-sub-nav{
 // 	a{
 // 		color: var(--main-color);
 // 		font-family: 'higuregothic';
@@ -145,17 +145,17 @@
 // 	}
 // }
 
-// .category-menu{
+// .h-category-menu{
 // 	margin: 35px 0 20px;
 // 	position: relative;
 // }
 
-// a.go-top{
+// a.h-go-top{
 // 	color: var(--main-color);
 // 	font-size: 15px;
 // }
 
-// .nav-link-insta{
+// .h-nav-link-insta{
 // 	img{
 // 		height: 40px;
 // 		width: auto;
@@ -168,7 +168,7 @@
 // 	width: auto;
 // }
 
-// .sns-in-menu{
+// .h-sns-in-menu{
 // 	position: relative;
 
 // 	img{
@@ -177,19 +177,19 @@
 // 	}
 // }
 
-// .sns_innerflex{
+// .h-sns_innerflex{
 // 	display: flex;
 // }
 
 // @media (hover:hover){
-// 	.has-child{
+// 	.h-has-child{
 // 		a{
 // 			&:hover{
 // 				opacity:.5;
 // 			}
 // 		}
 // 	}
-// 	.sub-nav{
+// 	.h-sub-nav{
 // 		li{
 // 			a{
 // 				&:hover{

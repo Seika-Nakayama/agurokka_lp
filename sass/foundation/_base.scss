@@ -1,4 +1,4 @@
-@use '../variables/color' as *;
+@use '../variables/index' as *;
 
 body{
 	background-color: $main-bg-color;

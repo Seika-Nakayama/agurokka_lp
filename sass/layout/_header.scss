@@ -55,7 +55,7 @@
 	padding-top: 100px;
 }
 
-img.logo-in-navmenu{
+img.h-logo-in-navmenu{
 	width: 130px;
 	margin: auto;
 }
@@ -69,7 +69,7 @@ img.logo-in-navmenu{
 	}
 }
 
-.sub-nav{
+.h-sub-nav{
 	a{
 		color: $main-color;
 		font-family: 'higuregothic';
@@ -101,17 +101,17 @@ img.logo-in-navmenu{
 	}
 }
 
-.category-menu{
+.h-category-menu{
 	margin: 35px 0 20px;
 	position: relative;
 }
 
-a.go-top{
+a.h-go-top{
 	color: $main-color;
 	font-size: 15px;
 }
 
-.nav-link-insta{
+.h-nav-link-insta{
 	img{
 		height: 40px;
 		width: auto;
@@ -119,12 +119,12 @@ a.go-top{
 	}
 }
 
-.nav-link-facebook{
+.h-nav-link-facebook{
 	height: 40px;
 	width: auto;
 }
 
-.sns-in-menu{
+.h-sns-in-menu{
 	position: relative;
 
 	img{
@@ -133,19 +133,19 @@ a.go-top{
 	}
 }
 
-.sns_innerflex{
+.h-sns_innerflex{
 	display: flex;
 }
 
 @media (hover:hover){
-	.has-child{
+	.h-has-child{
 		a{
 			&:hover{
 				opacity: .5;
 			}
 		}
 	}
-	.sub-nav{
+	.h-sub-nav{
 		li{
 			a{
 				&:hover{
@@ -166,11 +166,15 @@ a.go-top{
 
 
 // @media screen and (max-width:1055px){
-// 	.sub-nav li a::before{
+// 	.h-sub-nav li a::before{
 // 		width: 30px;
 // 		height: 1px
 // 	}
 // }
+
+.h-nav-list{
+	padding: 0 30px;
+}
 
 @include media(mb){
 	.h-global-nav{
@@ -179,30 +183,30 @@ a.go-top{
 	}
 }
 @include media(mb){
-	.nav-list{
+	.h-nav-list{
 		display: flex;
 		flex-direction: column;
 		align-items: center
 	}
 }
 @include media(sp2){
-	img.logo-in-navmenu{
+	img.h-logo-in-navmenu{
 		width:100px
 	}
 	.h-global-nav{
 		padding-top:19px
 	}
-	.category-menu{
+	.h-category-menu{
 		margin:15px 0 3px
 	}
-	.has-child a{
+	.h-has-child a{
 		font-size:15px
 	}
-	.sub-nav li a{
+	.h-sub-nav li a{
 		margin-bottom:0;
 		font-size:13px
 	}
-	.sub-nav li a{
+	.h-sub-nav li a{
 		line-height:2em
 	}
 }
