@@ -1,5 +1,5 @@
 @charset "utf-8";
-:root{
+/* :root{
 	--main-bg-color:#fffef8;
 	--sub-bg-color:#f8fafa;
 	--tx-bg-color:#ffffffa9;
@@ -38,8 +38,8 @@
 	src:url(../font/Kokoro.woff2) format('woff2');
 	font-weight:400;
 	font-style:normal
-}
-*{
+} */
+/* *{
 	margin:0;
 	padding:0;
 	box-sizing:border-box;
@@ -64,13 +64,13 @@ body{
 }
 main{
 	overflow-x:hidden
-}
-article.article-box{
+} */
+/* article.article-box{
 	position:relative;
 	width:100%;
 	margin:400px 0 100px
-}
-img.category{
+} */
+/* img.category{
 	width:890px;
 	position:absolute;
 	top:-230px;
@@ -80,8 +80,8 @@ img.category{
 }
 img.category.is-show{
 	opacity:1
-}
-@media screen and (max-width:1000px){
+} */
+/* @media screen and (max-width:1000px){
 	article.article-box{
 		margin:300px 0
 	}
@@ -110,7 +110,7 @@ img.category.is-show{
 		width:330px;
 		top:-90px
 	}
-}
+} */
 .loading{
 	width:100%;
 	position:fixed;
@@ -165,7 +165,7 @@ img.category.is-show{
 		margin:30px 0
 	}
 }
-.site-header{
+/* .h-site-header{
 	position:fixed;
 	top:0;
 	right:0;
@@ -174,14 +174,14 @@ img.category.is-show{
 	transform:translateY(-100%);
 	transition:.4s ease
 }
-.site-header.is-show{
+.h-site-header.is-show{
 	transform:translateY(0)
-}
-.header-inner{
+} */
+/* .h-inner{
 	display:flex;
 	justify-content:flex-end
-}
-.hamburger{
+} */
+/* .h-hamburger{
 	width:60px;
 	height:60px;
 	cursor:pointer;
@@ -192,15 +192,15 @@ img.category.is-show{
 	background:none;
 	border:none
 }
-.hamburger span{
+	.h-hamburger span{
 	position:absolute;
 	left:0;
 	width:60px;
 	height:1px;
 	background-color:var(--accent-green-color);
 	transition:.4s ease
-}
-.global-nav{
+} */
+/* .h-global-nav{
 	position:fixed;
 	top:0;
 	right:0;
@@ -210,73 +210,73 @@ img.category.is-show{
 	transform:translateX(100%);
 	transition:.4s ease;
 	padding-top:100px
-}
-.hamburger span:nth-child(1){
+} */
+/* .h-hamburger span:nth-child(1){
 	top:0;
 	left:-9px;
 	width:70px
 }
-.hamburger span:nth-child(2){
+.h-hamburger span:nth-child(2){
 	top:14px;
 	width:60px
 }
-.hamburger span:nth-child(3){
+.h-hamburger span:nth-child(3){
 	top:28px;
 	left:10px;
 	width:50px
-}
-.site-header.is-open .global-nav{
+} */
+/* .h-site-header.is-open .h-global-nav{
 	transform:translateX(0)
 }
-.site-header.is-open .hamburger span:nth-child(1){
+.h-site-header.is-open .h-hamburger span:nth-child(1){
 	width:60px;
 	transform:translateY(14px) rotate(45deg)
 }
-.site-header.is-open .hamburger span:nth-child(2){
+.h-site-header.is-open .h-hamburger span:nth-child(2){
 	opacity:0
 }
-.site-header.is-open .hamburger span:nth-child(3){
+.h-site-header.is-open .h-hamburger span:nth-child(3){
 	width:60px;
 	top:28px;
 	left:-10px;
 	transform:translateY(-14px) rotate(-45deg)
 }
-.site-header.is-open .global-nav{
+.h-site-header.is-open .h-global-nav{
 	transform:translateX(0);
 	border-left:dotted 4px var(--accent-green-color)
-}
-img.logo-in-navmenu{
+} */
+/* img.h-logo-in-navmenu{
 	width:130px;
 	margin:auto
-}
-.nav-list{
+} */
+/* .h-nav-list{
 	padding:0 30px
-}
-.has-child a{
+} */
+/* .h-has-child a{
 	font-size:20px;
 	color:var(--accent-green-color);
 	font-family:'utsukushi';
 	transition:.2s ease
-}
-.sub-nav a{
+} */
+/* .h-sub-nav a{
 	color:var(--main-color);
 	font-family:'higuregothic';
 	font-size:15px;
 	margin-bottom:10px
-}
-.category-menu{
+} */
+/* .category-menu{
 	margin:35px 0 20px;
 	position:relative
-}
-.sub-nav li{
+} */
+/* .h-sub-nav li{
 	position:relative
 }
-.sub-nav li a{
+.h-sub-nav li a{
 	margin-bottom:7px;
 	margin-left:40px;
 	transition:.2s ease
 }
-.sub-nav li a::before{
+.h-sub-nav li a::before{
 	content:'';
 	width:5px;
 	height:5px;
@@ -287,81 +287,81 @@ img.logo-in-navmenu{
 	left:0;
 	transform:translateY(-50%);
 	transition:.3s ease
-}
-a.go-top{
+} */
+/* a.h-go-top{
 	color:var(--main-color);
 	font-size:15px
 }
-.nav-link-insta img,.nav-link-facebook{
+.h-nav-link-insta img,.h-nav-link-facebook{
 	height:40px;
 	width:auto
 }
-.sns-in-menu{
+.h-sns-in-menu{
 	position:relative
 }
-.sns-in-menu img{
+.h-sns-in-menu img{
 	height:30px;
 	margin:28px 0
 }
-.nav-link-insta img{
+.h-nav-link-insta img{
 	margin-right:30px
 }
-.sns_innerflex{
+.innerfsns_lex{
 	display:flex
-}
-@media (hover:hover){
-	.has-child a:hover{
+} */
+/* @media (hover:hover){
+	.h-has-child a:hover{
 		opacity:.5
 	}
-	.sub-nav li a:hover{
+	.h-sub-nav li a:hover{
 		color:var(--title-color)
 	}
-	.sub-nav li:hover a::before{
+	.h-sub-nav li:hover a::before{
 		width:30px;
 		height:1px
 	}
-}
-@media screen and (max-width:1055px){
-	.sub-nav li a::before{
+} */
+/* @media screen and (max-width:1055px){
+	.h-sub-nav li a::before{
 		width:30px;
 		height:1px
 	}
 }
 @media screen and (max-width:800px){
-	.global-nav{
+	.h-global-nav{
 		width:99vw
 	}
-	.nav-list{
+	.h-nav-list{
 		display:flex;
 		flex-direction:column;
 		align-items:center
 	}
-	.global-nav{
+	.h-global-nav{
 		padding-top:45px
 	}
-}
-@media screen and (max-width:375px){
-	img.logo-in-navmenu{
+} */
+/* @media screen and (max-width:375px){
+	img.h-logo-in-navmenu{
 		width:100px
 	}
-	.global-nav{
+	.h-global-nav{
 		padding-top:19px
 	}
 	.category-menu{
 		margin:15px 0 3px
 	}
-	.has-child a{
+	.h-has-child a{
 		font-size:15px
 	}
-	.sub-nav li a{
+	.h-sub-nav li a{
 		margin-bottom:0;
 		font-size:13px
 	}
-	.sub-nav li a{
+	.h-sub-nav li a{
 		line-height:2em
 	}
-}
-.fixed-link{
+} */
+/* .c-fixed-link{
 	position:fixed;
 	bottom:0;
 	right:6px;
@@ -376,23 +376,23 @@ a.go-top{
 	background-size:100%;
 	background-position:left top;
 	background-repeat:no-repeat
-}
-.fixed-link.is-show{
+} */
+/* .c-fixed-link.is-show{
 	opacity:1;
 	transform:translateX(0);
 	pointer-events:none
 }
-.fixed-link.is-show{
+.c-fixed-link.is-show{
 	opacity:1;
 	transform:translateX(0);
 	pointer-events:auto
-}
-.fixed-link.is-hide{
+} */
+/* .c-fixed-link.is-hide{
 	opacity:0;
 	pointer-events:none
-}
+} */
 @media screen and (max-width:800px){
-	.fixed-link{
+	.c-fixed-link{
 		width:150px;
 		height:100px
 	}
@@ -2564,7 +2564,7 @@ span.look-label{
 	text-align:center;
 	padding:10px
 }
-.fixed-link img{
+.c-fixed-link img{
 	position:fixed;
 	bottom:-25px;
 	right:-300px;
@@ -2573,11 +2573,11 @@ span.look-label{
 	opacity:0;
 	transition:all .4s ease
 }
-.fixed-link.is-show img{
+.c-fixed-link.is-show img{
 	right:6px;
 	opacity:1
 }
-.fixed-link.is-hide img{
+.c-fixed-link.is-hide img{
 	opacity:0;
 	right:-300px;
 	bottom:-5%
@@ -2617,7 +2617,7 @@ span.look-label{
 }
 @media screen and (max-width:520px){
 	.bod-svg path{stroke-width: 3px;}
-	.fixed-link img{
+	.c-fixed-link img{
 		width:190px
 	}
 	.entory-link-img img{

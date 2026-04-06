@@ -40,13 +40,13 @@ const loadingTimer = setInterval(() => {
 }, 20);
 
 
-const header = document.getElementById('siteHeader');
+const header = document.getElementById('h-siteHeader');
 const fv = document.querySelector('.fv');
 const footer = document.querySelector('footer');
-const hamburger = document.getElementById('hamburger');
-const nav = document.querySelector('.global-nav');
+const hamburger = document.getElementById('h-hamburger');
+const nav = document.querySelector('.h-global-nav');
 const navLinks = nav.querySelectorAll('a');
-const fixedLink = document.querySelector('.fixed-link');
+const fixedLink = document.querySelector('.c-fixed-link');
 
 hamburger.addEventListener('click', () => {
 	header.classList.toggle('is-open')
