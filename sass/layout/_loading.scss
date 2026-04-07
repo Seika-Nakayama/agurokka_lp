@@ -12,10 +12,10 @@
 	justify-content: center;
 	align-items: center;
     
-    .l-loading-inner{
+    .l-load-inner{
         text-align: center;
         
-        .l-loading-text{
+        .l-load-text{
             display: flex;
             align-items: center;
             justify-content: center;
@@ -31,12 +31,12 @@
                 font-family: 'higuregothic';
             }
         }
-        .l-loading-bar{
+        .l-load-bar{
             width: 100vw;
             height: 2px;
             overflow: hidden;
     
-            .l-loading-progress{
+            .l-load-progress{
                 display: block;
                 width: 0%;
                 height: 100%;
@@ -44,7 +44,7 @@
                 transition: $transition-slow;
             }
         }
-        .l-loading-count{
+        .l-load-count{
             margin-top: 50px;
             font-size: 25px;
             font-family: 'higuregothic';
@@ -54,8 +54,8 @@
 
 @include media(mb){
     .l-loading{
-        .l-loading-inner{
-            .l-loading-text{
+        .l-load-inner{
+            .l-load-text{
                 writing-mode: vertical-rl;
                 text-orientation: upright;
                 flex-direction: row;

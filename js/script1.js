@@ -1,5 +1,5 @@
 const loading = document.getElementById('l-loading');
-const progress = document.querySelector('.l-loading-progress');
+const progress = document.querySelector('.l-load-progress');
 const count = document.getElementById('l-loadingCount');
 
 const fvImages = document.querySelectorAll('.fv img');
