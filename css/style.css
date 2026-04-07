@@ -303,10 +303,23 @@ a.h-go-top {
     height: 150px;
   }
 }
-.fv {
+.l-fv {
   width: 100%;
   position: relative;
   transition: 0.3s ease;
+}
+.l-fv svg.fv-svg {
+  width: 2345px;
+  position: absolute;
+  top: 52%;
+  left: 63%;
+  transform: translate(-50%, -50%);
+  z-index: 5;
+  opacity: 0;
+  transition: 0.4s ease;
+}
+.l-fv svg.fv-svg.is-ready {
+  opacity: 1;
 }
 
 .c-fixed-link {

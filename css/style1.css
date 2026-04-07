@@ -436,7 +436,7 @@ img.category.is-show{
 .up-margin{
 	margin-top:29px
 }
-.l-fv svg.fv-svg{
+/* .l-fv svg.fv-svg{
 	width:2345px;
 	position:absolute;
 	top:52%;
@@ -448,7 +448,7 @@ img.category.is-show{
 	opacity: 0;
 	transition: 0.5s ease;
 }
-.fv-svg.is-ready{opacity: 1;}
+.fv-svg.is-ready{opacity: 1;} */
 .top-logo{
 	position:absolute;
 	top:44%;
