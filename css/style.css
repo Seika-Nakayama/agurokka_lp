@@ -322,6 +322,26 @@ a.h-go-top {
   opacity: 1;
 }
 
+.copy_flex {
+  position: relative;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, 3%);
+  z-index: 1;
+  width: 100%;
+  padding: 0 2%;
+  display: flex;
+  flex-direction: row-reverse;
+  justify-content: space-between;
+  z-index: 9999;
+}
+.copy_flex__items img {
+  width: 165px;
+}
+.copy_flex__items img:nth-child(2) {
+  margin-top: 30%;
+}
+
 .c-fixed-link {
   position: fixed;
   bottom: 0;

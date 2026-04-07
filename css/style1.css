@@ -403,7 +403,7 @@ img.category.is-show{
 	position:relative;
 	transition:0.3s ease;
 } */
-.copy_flex{
+/* .copy_flex{
 	position:relative;
 	top:50%;
 	left:50%;
@@ -415,7 +415,7 @@ img.category.is-show{
 	flex-direction:row-reverse;
 	justify-content:space-between;
 	z-index:9999
-}
+} */
 .char{
 	display:block;
 	margin:0 auto;
@@ -427,12 +427,12 @@ img.category.is-show{
 	opacity:1;
 	transform:translateY(0)
 }
-.copy_flex__items img{
+/* .copy_flex__items img{
 	width:165px
-}
-.copy_flex__items img:nth-of-type(2){
+} */
+/* .copy_flex__items img:nth-of-type(2){
 	margin-top:30%
-}
+} */
 .up-margin{
 	margin-top:29px
 }
