@@ -292,8 +292,10 @@ a.h-go-top {
 @media screen and (max-width: 1000px) {
   .c-fixed-link {
     width: 150px;
-    height: 100px img;
-    height-width: 190px;
+    height: 100px;
+  }
+  .c-fixed-link img {
+    width: 190px;
   }
 }
 .h-hamburger {

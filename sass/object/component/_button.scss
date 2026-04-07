@@ -39,21 +39,21 @@
 	}
 
 	img{
-		position:fixed;
-		bottom:-25px;
-		right:-300px;
-		z-index:9998;
-		width:220px;
-		opacity:0;
-		transition: $transition-base;
+		position: fixed;
+		bottom: -25px;
+		right: -300px;
+		z-index: 9998;
+		width: 220px;
+		opacity: 0;
+		transition:  $transition-base;
 	}
 
 }
 
 @include media(mb){
 	.c-fixed-link{
-		width:150px;
-		height:100px
+		width: 150px;
+		height: 100px;
 
 		img{
 			width: 190px;
