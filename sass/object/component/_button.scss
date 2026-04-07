@@ -1,3 +1,5 @@
+@use "../../variables/index" as * ;
+
 .c-fixed-link{
 	position: fixed;
 	bottom: 0;
@@ -18,10 +20,43 @@
 		opacity: 1;
 		transform: translateX(0);
 		pointer-events: auto;
+
+		img{
+			opacity: 1;
+			right: 6px;
+		}
 	}
 
 	&.is-hide{
 		opacity: 0;
 		pointer-events: none;
+
+		img{
+			opacity: 0;
+			right: -300px;
+			bottom: -5%;
+		}
+	}
+
+	img{
+		position:fixed;
+		bottom:-25px;
+		right:-300px;
+		z-index:9998;
+		width:220px;
+		opacity:0;
+		transition: $transition-base;
+	}
+
+}
+
+@include media(mb){
+	.c-fixed-link{
+		width:150px;
+		height:100px
+
+		img{
+			width: 190px;
+		}
 	}
 }

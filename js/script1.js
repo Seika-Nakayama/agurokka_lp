@@ -1,6 +1,6 @@
-const loading = document.getElementById('loading');
-const progress = document.querySelector('.loading-progress');
-const count = document.getElementById('loadingCount');
+const loading = document.getElementById('l-loading');
+const progress = document.querySelector('.l-load-progress');
+const count = document.getElementById('l-loadingCount');
 
 const fvImages = document.querySelectorAll('.fv img');
 const totalImages = fvImages.length;
