@@ -2,25 +2,25 @@
   font-family: "higuregothic";
   font-weight: 400;
   font-style: normal;
-  src: url("../../font/HigureGothic-Light.woff2)'format('woff2");
+  src: url("../../font/HigureGothic-Light.woff2") format("woff2");
 }
 @font-face {
   font-family: "aosagi";
   font-weight: 400;
   font-style: normal;
-  src: url("../../font/YDWaosagi.woff2)'format('woff2");
+  src: url("../../font/YDWaosagi.woff2") format("woff2");
 }
 @font-face {
   font-family: "utsukushi";
   font-weight: 400;
   font-style: normal;
-  src: url("../../font/UtsukushiFONT.woff2)'format('woff2");
+  src: url("../../font/UtsukushiFONT.woff2") format("woff2");
 }
 @font-face {
   font-family: "kokoro";
   font-weight: 400;
   font-style: normal;
-  src: url("../../font/Kokoro.woff2)'format('woff2");
+  src: url("../../font/Kokoro.woff2") format("woff2");
 }
 body {
   background-color: #fffef8;
@@ -245,6 +245,70 @@ a.h-go-top {
     line-height: 2em;
   }
 }
+.l-loading {
+  width: 100%;
+  position: fixed;
+  top: 0;
+  left: 0;
+  inset: 0;
+  background-color: #fffef8;
+  z-index: 9999;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.l-loading .l-load-inner {
+  text-align: center;
+}
+.l-loading .l-load-inner .l-load-text {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 20px;
+  margin-bottom: 40px;
+}
+.l-loading .l-load-inner .l-load-text img {
+  height: 230px;
+  margin: 30px;
+}
+.l-loading .l-load-inner .l-load-text span {
+  font-family: "higuregothic";
+}
+.l-loading .l-load-inner .l-load-bar {
+  width: 100vw;
+  height: 2px;
+  overflow: hidden;
+}
+.l-loading .l-load-inner .l-load-bar .l-load-progress {
+  display: block;
+  width: 0%;
+  height: 100%;
+  background-color: #309E66;
+  transition: 0.3s ease;
+}
+.l-loading .l-load-inner .l-load-count {
+  margin-top: 50px;
+  font-size: 25px;
+  font-family: "higuregothic";
+}
+
+@media screen and (max-width: 1000px) {
+  .l-loading .l-load-inner .l-load-text {
+    writing-mode: vertical-rl;
+    text-orientation: upright;
+    flex-direction: row;
+    margin: 0 auto;
+  }
+  .l-loading .l-load-inner .l-load-text img {
+    height: 150px;
+  }
+}
+.fv {
+  width: 100%;
+  position: relative;
+  transition: 0.3s ease;
+}
+
 .c-fixed-link {
   position: fixed;
   bottom: 0;
@@ -329,4 +393,5 @@ a.h-go-top {
   left: 10px;
   width: 50px;
 }
+
 /*# sourceMappingURL=style.css.map */
