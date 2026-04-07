@@ -22,7 +22,7 @@ include 'header.php';
 <main>
 	<a href="https://docs.google.com/forms/d/1y0TlJKK-Ip5nqA4ef7zxUNKzVR2Dzr_bWXMSe7v3G1A/viewform?edit_requested=true" target="_blank" class="nav-link nyuukai"><div class="c-fixed-link">
 	</div></a>
-	<div class="fv js-fv">
+	<div class="l-fv js-fv">
 		<div class="copy_flex">
 			<div class="copy_flex__items">
 				<img src="images/fv/nougyouto.svg"  class="char js-svg" data-delay="0.2" alt="農業と">
