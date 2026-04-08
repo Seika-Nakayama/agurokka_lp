@@ -414,6 +414,24 @@ a.h-go-top {
   animation-delay: 3.6s;
 }
 
+@keyframes vegPop {
+  0% {
+    opacity: 0;
+    transform: translate(-50%, -50%) scale(0.6);
+  }
+  70% {
+    opacity: 1;
+    transform: translate(-50%, -50%) scale(1.05);
+  }
+  100% {
+    opacity: 1;
+    transform: translate(-50%, -50%) scale(1);
+  }
+}
+img.caw {
+  width: 295px;
+}
+
 .c-fixed-link {
   position: fixed;
   bottom: 0;

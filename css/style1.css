@@ -495,7 +495,7 @@ img.category.is-show{
 .spinach,.spinach2{
 	animation-delay:3.6s
 } */
-@keyframes vegPop{
+/* @keyframes vegPop{
 	0%{
 		opacity:0;
 		transform:translate(-50%,-50%) scale(.6)
@@ -508,7 +508,7 @@ img.category.is-show{
 		opacity:1;
 		transform:translate(-50%,-50%) scale(1)
 	}
-}
+} */
 .slider{
 	width:1000px;
 	position:absolute;
@@ -552,9 +552,9 @@ img.category.is-show{
 	right:2%;
 	z-index:100
 }
-img.caw{
+/* img.caw{
 	width:295px
-}
+} */
 @media screen and (max-width:1500px){
 	.copy_flex__items img{
 		width:115px
