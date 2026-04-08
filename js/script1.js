@@ -40,11 +40,11 @@ const loadingTimer = setInterval(() => {
 }, 20);
 
 
-const header = document.getElementById('h-siteHeader');
+const header = document.getElementById('l-siteHeader');
 const fv = document.querySelector('.l-fv');
 const footer = document.querySelector('footer');
-const hamburger = document.getElementById('h-hamburger');
-const nav = document.querySelector('.h-global-nav');
+const hamburger = document.getElementById('l-hamburger');
+const nav = document.querySelector('.l-global-nav');
 const navLinks = nav.querySelectorAll('a');
 const fixedLink = document.querySelector('.c-fixed-link');
 
@@ -59,7 +59,7 @@ navLinks.forEach(link => {
 });
 
 window.addEventListener('scroll', () => {
-	const lFvBottom = lFv.getBoundingClientRect().bottom;
+	const lFvBottom = fv.getBoundingClientRect().bottom;
 	const footerTop = footer.getBoundingClientRect().top;
 	const windowHeight = window.innerHeight;
 	if (lFvBottom < 0) {
