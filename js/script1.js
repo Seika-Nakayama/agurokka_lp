@@ -59,16 +59,16 @@ navLinks.forEach(link => {
 });
 
 window.addEventListener('scroll', () => {
-	const fvBottom = fv.getBoundingClientRect().bottom;
+	const lFvBottom = lFv.getBoundingClientRect().bottom;
 	const footerTop = footer.getBoundingClientRect().top;
 	const windowHeight = window.innerHeight;
-	if (fvBottom < 0) {
+	if (lFvBottom < 0) {
 		header.classList.add('is-show')
 	} else {
 		header.classList.remove('is-show');
 		header.classList.remove('is-open')
 	}
-	if (fvBottom < 0) {
+	if (lFvBottom < 0) {
 		fixedLink.classList.add('is-show')
 	} else {
 		fixedLink.classList.remove('is-show')
@@ -97,14 +97,14 @@ setInterval(() => {
 5000);
 
 window.addEventListener('load', () => {
-	const fvSvg = document.querySelector('.fv-svg');
+	const lFvSvg = document.querySelector('.fv-svg');
 	const path = document.querySelector('.fv-svg path');
-	if (!path || !fvSvg) return;
+	if (!path || !lFvSvg) return;
 	const length = path.getTotalLength();
 	path.style.strokeDasharray = length;
 	path.style.strokeDashoffset = length;
 
-	fvSvg.classList.add('is-ready');
+	lFvSvg.classList.add('is-ready');
 	const textAnimationTime = 6000;
 	setTimeout(() => {
 		path.style.transition = 'stroke-dashoffset 3.5s ease';
