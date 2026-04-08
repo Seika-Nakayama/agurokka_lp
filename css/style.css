@@ -335,12 +335,6 @@ a.h-go-top {
   justify-content: space-between;
   z-index: 9999;
 }
-.l-copy_flex__items img {
-  width: 165px;
-}
-.l-copy_flex__items img:nth-child(2) {
-  margin-top: 30%;
-}
 
 .char {
   display: block;
@@ -352,6 +346,10 @@ a.h-go-top {
 .char.is-show {
   opacity: 1;
   transform: translateY(0);
+  width: 140px;
+}
+.char.is-show:nth-child(2) {
+  margin-top: 30%;
 }
 
 .l-top-logo {
