@@ -597,7 +597,7 @@ img.category.is-show{
 	}
 } */
 /* @media screen and (max-width:1000px){
-	.copy_flex__items{
+	.l-copy__items{
 		width:40%;
 		height:100vh;
 		display:flex;
@@ -605,16 +605,16 @@ img.category.is-show{
 		justify-content:space-between;
 		align-items:flex-start
 	}
-	.copy_flex__items img{
+	.l-copy__items img{
 		width:100px
 	}
-	.copy_flex__items img:nth-of-type(2){
+	.l-copy__items img:nth-of-type(2){
 		margin-top:0
 	}
-	.top-logo{
+	.l-top-logo{
 		top:162px
 	}
-	.top-logo img{
+	.l-top-logo img{
 		width:250px
 	}
 	.slider{
@@ -630,12 +630,12 @@ img.category.is-show{
 		left:79%
 	}
 } */
-@media screen and (max-width:735px){
-	.top-logo img{
+/* @media screen and (max-width:735px){
+	.l-top-logo img{
 		display:block;
 		width:170px
 	}
-	.top-logo{
+	.l-top-logo{
 		top:50%;
 		left:50%;
 		transform:translate(-50%,-165%)
@@ -649,7 +649,7 @@ img.category.is-show{
 		width:1743px;
 		transform:translate(-50%,-50%)
 	}
-	.copy_flex__items img{
+	.l-copy__items img{
 		width:58px
 	}
 	.tomat{
@@ -677,12 +677,12 @@ img.category.is-show{
 	.lines-flex img{
 		width:190px
 	}
-}
-@media screen and (max-width:600px){
-	.copy_flex{
+} */
+/* @media screen and (max-width:600px){
+	.l-copy_flex{
 		transform:translate(-50%,1%)
 	}
-	.copy_flex__items img{
+	.l-copy__items img{
 		width:50px
 	}
 	.slider{
@@ -708,8 +708,8 @@ img.category.is-show{
 	.spinach{
 		width:200px
 	}
-}
-@media screen and (max-width:500px){
+} */
+/* @media screen and (max-width:500px){
 	.copy_flex__items img{
 		width:40px
 	}
@@ -740,8 +740,8 @@ img.category.is-show{
 	.l-fv svg.fv-svg{
 		width:1353px
 	}
-}
-@media screen and (max-width:435px){
+} */
+/* @media screen and (max-width:435px){
 	.slider{
 		width:500px
 	}
@@ -765,8 +765,8 @@ img.category.is-show{
 		top:93%;
 		right:5%
 	}
-}
-@media screen and (max-width:400px){
+} */
+/* @media screen and (max-width:400px){
 	.top-logo img{
 		width:160px
 	}
@@ -780,8 +780,8 @@ img.category.is-show{
 	.lines-flex{
 		right:15%
 	}
-}
-@media screen and (max-width:375px){
+} */
+/* @media screen and (max-width:375px){
 	p.copy span{
 		font-style:42px
 	}
@@ -814,7 +814,7 @@ img.category.is-show{
 	.lines-flex img{
 		width:168px
 	}
-}
+} */
 section.purpose{
 	width:100%;
 	padding:0 30px
