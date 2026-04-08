@@ -2,7 +2,7 @@ const loading = document.getElementById('l-loading');
 const progress = document.querySelector('.l-load-progress');
 const count = document.getElementById('l-loadingCount');
 
-const fvImages = document.querySelectorAll('.fv img');
+const fvImages = document.querySelectorAll('.l-fv img');
 const totalImages = fvImages.length;
 let loadedCount = 0;
 let percent = 0;
@@ -41,7 +41,7 @@ const loadingTimer = setInterval(() => {
 
 
 const header = document.getElementById('h-siteHeader');
-const fv = document.querySelector('.fv');
+const fv = document.querySelector('.l-fv');
 const footer = document.querySelector('footer');
 const hamburger = document.getElementById('h-hamburger');
 const nav = document.querySelector('.h-global-nav');
@@ -88,12 +88,14 @@ setTimeout(() => {
 	slides[current].classList.add('is-active')
 },
 50);
+
 setInterval(() => {
 	slides[current].classList.remove('is-active');
 	current = (current + 1) % slides.length;
 	slides[current].classList.add('is-active')
 },
 5000);
+
 window.addEventListener('load', () => {
 	const fvSvg = document.querySelector('.fv-svg');
 	const path = document.querySelector('.fv-svg path');
@@ -110,6 +112,7 @@ window.addEventListener('load', () => {
 	},
 	textAnimationTime);
 });
+
 const svgs = document.querySelectorAll('.scroll-svg');
 const svgObserver = new IntersectionObserver(entries => {
 	entries.forEach(entry => {
@@ -121,6 +124,7 @@ const svgObserver = new IntersectionObserver(entries => {
 {
 	threshold: 0.3
 });
+
 svgs.forEach(svg => svgObserver.observe(svg));
 const fadeTargets = document.querySelectorAll('.how-agurokka__flexarea, .category, .js-display');
 const fadeObserver = new IntersectionObserver((entries) => {
@@ -133,6 +137,7 @@ const fadeObserver = new IntersectionObserver((entries) => {
 },{
 	threshold: 0.1
 });
+
 fadeTargets.forEach(el => fadeObserver.observe(el));
 const splitTargets = document.querySelectorAll('.js-split');
 splitTargets.forEach(el => {
@@ -149,7 +154,8 @@ splitTargets.forEach(el => {
 			);
 		el.appendChild(span);
 	});
-});
+}); 
+
 const observer = new IntersectionObserver(entries => {
 	entries.forEach(entry => {
 		if (entry.isIntersecting) {
@@ -160,6 +166,7 @@ const observer = new IntersectionObserver(entries => {
 {
 	threshold: 0.4
 });
+
 splitTargets.forEach(el => observer.observe(el));
 function startFvCopyAnimation() {
 	const chars = document.querySelectorAll('.js-svg');
@@ -194,6 +201,7 @@ questions.forEach((q, index) => {
 		q.classList.add('is-active')
 	})
 });
+
 if (questions.length && answers.length) {
 	questions[0].classList.add('is-active');
 	answers[0].classList.add('is-show')

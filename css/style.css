@@ -303,8 +303,7 @@ a.h-go-top {
     height: 150px;
   }
 }
-
-.fv {
+.l-fv {
   width: 100%;
   position: relative;
   transition: 0.3s ease;

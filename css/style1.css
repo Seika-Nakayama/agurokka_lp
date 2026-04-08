@@ -436,7 +436,7 @@ img.category.is-show{
 .up-margin{
 	margin-top:29px
 }
-.fv svg.fv-svg{
+.l-fv svg.fv-svg{
 	width:2345px;
 	position:absolute;
 	top:52%;
@@ -567,7 +567,7 @@ img.caw{
 	.slider{
 		width:857px
 	}
-	.fv svg.fv-svg{
+	.l-fv svg.fv-svg{
 		width:2005px
 	}
 	.pepper{
@@ -626,7 +626,7 @@ img.caw{
 		width:870px;
 		transform:translate(-50%,-38%)
 	}
-	.fv svg.fv-svg{
+	.l-fv svg.fv-svg{
 		width:2025px
 	}
 	.tomat{
@@ -650,7 +650,7 @@ img.caw{
 		top:50%;
 		transform:translate(-50%,-24%)
 	}
-	.fv svg.fv-svg{
+	.l-fv svg.fv-svg{
 		width:1743px;
 		transform:translate(-50%,-50%)
 	}
@@ -694,7 +694,7 @@ img.caw{
 		width:700px;
 		transform:translate(-50%,-25%)
 	}
-	.fv svg.fv-svg{
+	.l-fv svg.fv-svg{
 		width:1633px
 	}
 	.lines-flex{
@@ -742,7 +742,7 @@ img.caw{
 		top:93%;
 		right:5%
 	}
-	.fv svg.fv-svg{
+	.l-fv svg.fv-svg{
 		width:1353px
 	}
 }
@@ -750,7 +750,7 @@ img.caw{
 	.slider{
 		width:500px
 	}
-	.fv svg.fv-svg{
+	.l-fv svg.fv-svg{
 		width:1191px
 	}
 	.pepper2{
@@ -793,7 +793,7 @@ img.caw{
 	.slider{
 		width:460px
 	}
-	.fv svg.fv-svg{
+	.l-fv svg.fv-svg{
 		width:1111px;
 		top:51%
 	}
@@ -2625,32 +2625,32 @@ span.look-label{
 		width:370px
 	}
 }
-body:not(.is-loaded) .fv svg path{
+body:not(.is-loaded) .l-fv svg path{
 	stroke-dashoffset:inherit
 }
-body.is-loaded .fv svg path{
+body.is-loaded .l-fv svg path{
 	stroke-dashoffset:0;
 	transition:stroke-dashoffset 5s ease
 }
-.fv .veg-img{
+.l-fv .veg-img{
 	opacity:0;
 	transform:scale(.8);
 	transition:0.6s ease
 }
-body.is-loaded .fv .veg-img{
+body.is-loaded .l-fv .veg-img{
 	opacity:1;
 	transform:scale(1)
 }
-body.is-loaded .fv .copy:nth-child(1){
+body.is-loaded .l-fv .copy:nth-child(1){
 	transition-delay:0.2s
 }
-body.is-loaded .fv .copy:nth-child(2){
+body.is-loaded .l-fv .copy:nth-child(2){
 	transition-delay:0.4s
 }
-body.is-loaded .fv .veg-img{
+body.is-loaded .l-fv .veg-img{
 	transition-delay:0.8s
 }
-body:not(.is-loaded) .fv *{
+body:not(.is-loaded) .l-fv *{
 	opacity:0!important;
 	transform:none!important;
 	animation:none!important
