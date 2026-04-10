@@ -509,8 +509,9 @@ img.category.is-show{
 		transform:translate(-50%,-50%) scale(1)
 	}
 } */
-.slider{
-	width:1000px;
+/* .slider{
+	width: 58%;
+	max-width: 1334px;
 	position:absolute;
 	top:50%;
 	left:50%;
@@ -547,11 +548,12 @@ img.category.is-show{
 	transform:scale(1.08)
 }
 .lines-flex{
+	width: 30%;
 	position:absolute;
-	top:579px;
-	right:2%;
+	top:80%;
+	right:0;
 	z-index:100
-}
+} */
 /* img.caw{
 	width:295px
 } */

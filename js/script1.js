@@ -219,4 +219,7 @@ toggleBtn.addEventListener('click', () => {
 		icon.textContent = '＋';
 		label.textContent = '全て見る(他9件)'
 	}
-})
+});
+
+window.history.scrollRestoration = 'manual';
+window.scrollTo(0, 0);
