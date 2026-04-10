@@ -1,8 +1,8 @@
-const loading = document.getElementById('loading');
-const progress = document.querySelector('.loading-progress');
-const count = document.getElementById('loadingCount');
+const loading = document.getElementById('l-loading');
+const progress = document.querySelector('.l-load-progress');
+const count = document.getElementById('l-loadingCount');
 
-const fvImages = document.querySelectorAll('.fv img');
+const fvImages = document.querySelectorAll('.l-fv img');
 const totalImages = fvImages.length;
 let loadedCount = 0;
 let percent = 0;
@@ -40,13 +40,13 @@ const loadingTimer = setInterval(() => {
 }, 20);
 
 
-const header = document.getElementById('siteHeader');
-const fv = document.querySelector('.fv');
+const header = document.getElementById('l-siteHeader');
+const fv = document.querySelector('.l-fv');
 const footer = document.querySelector('footer');
-const hamburger = document.getElementById('hamburger');
-const nav = document.querySelector('.global-nav');
+const hamburger = document.getElementById('l-hamburger');
+const nav = document.querySelector('.l-global-nav');
 const navLinks = nav.querySelectorAll('a');
-const fixedLink = document.querySelector('.fixed-link');
+const fixedLink = document.querySelector('.c-fixed-link');
 
 hamburger.addEventListener('click', () => {
 	header.classList.toggle('is-open')
@@ -59,16 +59,16 @@ navLinks.forEach(link => {
 });
 
 window.addEventListener('scroll', () => {
-	const fvBottom = fv.getBoundingClientRect().bottom;
+	const lFvBottom = fv.getBoundingClientRect().bottom;
 	const footerTop = footer.getBoundingClientRect().top;
 	const windowHeight = window.innerHeight;
-	if (fvBottom < 0) {
+	if (lFvBottom < 0) {
 		header.classList.add('is-show')
 	} else {
 		header.classList.remove('is-show');
 		header.classList.remove('is-open')
 	}
-	if (fvBottom < 0) {
+	if (lFvBottom < 0) {
 		fixedLink.classList.add('is-show')
 	} else {
 		fixedLink.classList.remove('is-show')
@@ -88,21 +88,23 @@ setTimeout(() => {
 	slides[current].classList.add('is-active')
 },
 50);
+
 setInterval(() => {
 	slides[current].classList.remove('is-active');
 	current = (current + 1) % slides.length;
 	slides[current].classList.add('is-active')
 },
 5000);
+
 window.addEventListener('load', () => {
-	const fvSvg = document.querySelector('.fv-svg');
+	const lFvSvg = document.querySelector('.fv-svg');
 	const path = document.querySelector('.fv-svg path');
-	if (!path || !fvSvg) return;
+	if (!path || !lFvSvg) return;
 	const length = path.getTotalLength();
 	path.style.strokeDasharray = length;
 	path.style.strokeDashoffset = length;
 
-	fvSvg.classList.add('is-ready');
+	lFvSvg.classList.add('is-ready');
 	const textAnimationTime = 6000;
 	setTimeout(() => {
 		path.style.transition = 'stroke-dashoffset 3.5s ease';
@@ -110,6 +112,7 @@ window.addEventListener('load', () => {
 	},
 	textAnimationTime);
 });
+
 const svgs = document.querySelectorAll('.scroll-svg');
 const svgObserver = new IntersectionObserver(entries => {
 	entries.forEach(entry => {
@@ -121,6 +124,7 @@ const svgObserver = new IntersectionObserver(entries => {
 {
 	threshold: 0.3
 });
+
 svgs.forEach(svg => svgObserver.observe(svg));
 const fadeTargets = document.querySelectorAll('.how-agurokka__flexarea, .category, .js-display');
 const fadeObserver = new IntersectionObserver((entries) => {
@@ -133,6 +137,7 @@ const fadeObserver = new IntersectionObserver((entries) => {
 },{
 	threshold: 0.1
 });
+
 fadeTargets.forEach(el => fadeObserver.observe(el));
 const splitTargets = document.querySelectorAll('.js-split');
 splitTargets.forEach(el => {
@@ -149,7 +154,8 @@ splitTargets.forEach(el => {
 			);
 		el.appendChild(span);
 	});
-});
+}); 
+
 const observer = new IntersectionObserver(entries => {
 	entries.forEach(entry => {
 		if (entry.isIntersecting) {
@@ -160,6 +166,7 @@ const observer = new IntersectionObserver(entries => {
 {
 	threshold: 0.4
 });
+
 splitTargets.forEach(el => observer.observe(el));
 function startFvCopyAnimation() {
 	const chars = document.querySelectorAll('.js-svg');
@@ -194,6 +201,7 @@ questions.forEach((q, index) => {
 		q.classList.add('is-active')
 	})
 });
+
 if (questions.length && answers.length) {
 	questions[0].classList.add('is-active');
 	answers[0].classList.add('is-show')
@@ -211,4 +219,7 @@ toggleBtn.addEventListener('click', () => {
 		icon.textContent = '＋';
 		label.textContent = '全て見る(他9件)'
 	}
-})
+});
+
+window.history.scrollRestoration = 'manual';
+window.scrollTo(0, 0);

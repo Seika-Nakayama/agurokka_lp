@@ -1,0 +1,61 @@
+@use "../../variables/index" as * ;
+
+.c-fixed-link{
+	position: fixed;
+	bottom: 0;
+	right: 6px;
+	z-index: 100;
+	opacity: 0;
+	transform: translateX(100%);
+	pointer-events: none;
+	transition: .4s ease;
+	width: 250px;
+	height: 170px;
+	background-image: url(../../../images/fv/caw.webp);
+	background-size: 100%;
+	background-position: left top;
+	background-repeat: no-repeat;
+
+	&.is-show{
+		opacity: 1;
+		transform: translateX(0);
+		pointer-events: auto;
+
+		img{
+			opacity: 1;
+			right: 6px;
+		}
+	}
+
+	&.is-hide{
+		opacity: 0;
+		pointer-events: none;
+
+		img{
+			opacity: 0;
+			right: -300px;
+			bottom: -5%;
+		}
+	}
+
+	img{
+		position:fixed;
+		bottom:-25px;
+		right:-300px;
+		z-index:9998;
+		width:220px;
+		opacity:0;
+		transition: $transition-base;
+	}
+
+}
+
+@include media(mb){
+	.c-fixed-link{
+		width: 150px;
+		height: 100px;
+		img{
+			width: 190px;
+		}
+	}
+}

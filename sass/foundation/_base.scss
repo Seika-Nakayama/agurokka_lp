@@ -1,0 +1,38 @@
+@use '../variables/index' as *;
+
+body{
+	background-color: var(--main-bg-color);
+	min-width: 360px;
+	min-height: 700px;
+}
+
+main{
+	overflow-x: hidden;
+}
+
+article{
+	&.article-box{
+		position:relative;
+		width:100%;
+		margin:400px 0 100px
+	}
+}
+
+img{
+	&.category{
+		width:890px;
+		position:absolute;
+		top:-230px;
+		left:25px;
+		opacity:0;
+		transition:1.5s
+	}
+}
+
+img{
+	&.category{
+		&.is-show{
+			opacity:1
+		}
+	}
+}
