@@ -385,80 +385,6 @@ a.l-go-top {
   display: none;
 }
 
-.lines-flex {
-  width: 30%;
-  position: absolute;
-  top: 80%;
-  right: 0;
-  z-index: 100;
-}
-
-.vegetable {
-  position: absolute;
-  transform: translate(-50%, -50%);
-  z-index: 5;
-  opacity: 0;
-  animation: vegPop 0.5s ease forwards;
-}
-
-.pepper {
-  width: 17%;
-  top: 10%;
-  left: 2%;
-}
-
-.corn {
-  width: 20%;
-  top: 5%;
-  left: 90%;
-}
-
-.tomat {
-  width: 12%;
-  top: 64%;
-  right: -11%;
-}
-
-.spinach {
-  width: 25%;
-  top: 85%;
-  left: 3%;
-}
-
-.pepper {
-  animation-delay: 3s;
-}
-
-.corn {
-  animation-delay: 3.2s;
-}
-
-.tomat {
-  animation-delay: 3.4s;
-}
-
-.spinach, .spinach2 {
-  animation-delay: 3.6s;
-}
-
-@keyframes vegPop {
-  0% {
-    opacity: 0;
-    transform: translate(-50%, -50%) scale(0.6);
-  }
-  70% {
-    opacity: 1;
-    transform: translate(-50%, -50%) scale(1.05);
-  }
-  100% {
-    opacity: 1;
-    transform: translate(-50%, -50%) scale(1);
-  }
-}
-img.caw {
-  width: 100%;
-}
-
 .c-fixed-link {
   position: fixed;
   bottom: 0;
@@ -583,6 +509,81 @@ img.caw {
 .slider .slider_inner.mask .slide.slide.slide.is-active {
   opacity: 1;
   transform: scale(1.08);
+}
+
+.lines-flex {
+  width: 30%;
+  position: absolute;
+  top: 80%;
+  right: 0;
+  z-index: 100;
+}
+
+img.caw {
+  width: 100%;
+}
+
+.vegetable {
+  position: absolute;
+  transform: translate(-50%, -50%);
+  z-index: 5;
+  opacity: 0;
+  animation: vegPop 0.5s ease forwards;
+}
+
+.pepper {
+  width: 17%;
+  top: 10%;
+  left: 2%;
+}
+
+.corn {
+  width: 20%;
+  top: 5%;
+  left: 90%;
+}
+
+.tomat {
+  width: 12%;
+  top: 64%;
+  right: -11%;
+}
+
+.spinach {
+  width: 25%;
+  top: 85%;
+  left: 3%;
+}
+
+.pepper {
+  animation-delay: 3s;
+}
+
+.corn {
+  animation-delay: 3.2s;
+}
+
+.tomat {
+  animation-delay: 3.4s;
+}
+
+.spinach, .spinach2 {
+  animation-delay: 3.6s;
+}
+
+@keyframes vegPop {
+  0% {
+    opacity: 0;
+    transform: translate(-50%, -50%) scale(0.6);
+  }
+  70% {
+    opacity: 1;
+    transform: translate(-50%, -50%) scale(1.05);
+  }
+  100% {
+    opacity: 1;
+    transform: translate(-50%, -50%) scale(1);
+  }
 }
 
 /*# sourceMappingURL=style.css.map */
