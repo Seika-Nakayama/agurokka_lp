@@ -1,9 +1,9 @@
 @use '../variables/index' as *;
 
 body{
-	background-color: $main-bg-color;
-	min-width: 375px;
-	min-height: 370px;
+	background-color: var(--main-bg-color);
+	min-width: 360px;
+	min-height: 700px;
 }
 
 main{
