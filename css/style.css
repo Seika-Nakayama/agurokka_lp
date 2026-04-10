@@ -425,19 +425,15 @@ a.l-go-top {
   left: 3%;
 }
 
-.pepper2, .corn2, .tomat2 {
-  display: none;
-}
-
-.pepper, .pepper2 {
+.pepper {
   animation-delay: 3s;
 }
 
-.corn, .corn2 {
+.corn {
   animation-delay: 3.2s;
 }
 
-.tomat, .tomat2 {
+.tomat {
   animation-delay: 3.4s;
 }
 
