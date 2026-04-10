@@ -16,6 +16,13 @@
   --small-color:#b5b5b5;
 }
 
+:root {
+  --animation-no1-delay: 3s;
+  --animation-no2-delay: 3.2s;
+  --animation-no3-delay: 3.4s;
+  --animation-no4-delay: 3.6s;
+}
+
 @font-face {
   font-family: "higuregothic";
   font-weight: 400;
@@ -534,40 +541,28 @@ a.l-go-top {
   width: 17%;
   top: 10%;
   left: 2%;
+  animation-delay: var(--animation-no1-delay);
 }
 
 .corn {
   width: 20%;
   top: 5%;
   left: 90%;
+  animation-delay: var(--animation-no2-delay);
 }
 
 .tomat {
   width: 12%;
   top: 64%;
   right: -11%;
+  animation-delay: var(--animation-no3-delay);
 }
 
 .spinach {
   width: 25%;
   top: 85%;
   left: 3%;
-}
-
-.pepper {
-  animation-delay: 3s;
-}
-
-.corn {
-  animation-delay: 3.2s;
-}
-
-.tomat {
-  animation-delay: 3.4s;
-}
-
-.spinach, .spinach2 {
-  animation-delay: 3.6s;
+  animation-delay: var(--animation-no4-delay);
 }
 
 @keyframes vegPop {
