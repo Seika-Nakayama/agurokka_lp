@@ -16,7 +16,7 @@
 	&.is-open{
 		.l-global-nav{
 			transform: translateX(0);
-			border-left: dotted 4px $accent-green-color;
+			border-left: dotted 4px var(--accent-green-color);
 			overflow-x: scroll;
 		}
 		
@@ -49,7 +49,7 @@
 	right: 0;
 	width: 350px;
 	height: 100vh;
-	background-color: $main-bg-color;
+	background-color: var(--main-bg-color);
 	transform: translateX(100%);
 	transition: $transition-base;
 	padding-top: 100px;
@@ -63,7 +63,7 @@ img.l-logo-in-navmenu{
 .has-child{
 	a{
 		font-size: 20px;
-		color: $accent-green-color;
+		color: var(--accent-green-color);
 		font-family: 'utsukushi';
 		transition:  $transition-early;
 	}
@@ -71,7 +71,7 @@ img.l-logo-in-navmenu{
 
 .l-sub-nav{
 	a{
-		color: $main-color;
+		color: var(--main-color);
 		font-family: 'higuregothic';
 		font-size: 15px;
 		margin-bottom: 10px;
@@ -90,7 +90,7 @@ img.l-logo-in-navmenu{
 				width: 5px;
 				height: 5px;
 				border-radius: 5px;
-				background-color: $title-color;
+				background-color: var(--title-color);
 				position: absolute;
 				top: 50%;
 				left: 0;
@@ -107,7 +107,7 @@ img.l-logo-in-navmenu{
 }
 
 a.l-go-top{
-	color: $main-color;
+	color: var(--main-color);
 	font-size: 15px;
 }
 
@@ -149,7 +149,7 @@ a.l-go-top{
 		li{
 			a{
 				&:hover{
-					color: $title-color;
+					color: var(--title-color);
 				}
 			}
 			&:hover{

@@ -1,3 +1,21 @@
+:root {
+  --main-bg-color:#fffef8;
+  --sub-bg-color:#f8fafa;
+  --tx-bg-color:#ffffffa9;
+  --orange-bg-color:#ea773d66;
+  --tx-bg-green-color:#88a890;
+  --shadow-color:#06280627;
+}
+
+:root {
+  --main-color:#444943;
+  --sub-color:#fffefb;
+  --title-color:#658C6F;
+  --accent-green-color:#309E66;
+  --accent-orange-color:#ef9365;
+  --small-color:#b5b5b5;
+}
+
 @font-face {
   font-family: "higuregothic";
   font-weight: 400;
@@ -23,7 +41,7 @@
   src: url("../../font/Kokoro.woff2") format("woff2");
 }
 body {
-  background-color: #fffef8;
+  background-color: var(--main-bg-color);
   min-width: 360px;
   min-height: 700px;
 }
@@ -89,7 +107,7 @@ ul, ol {
 }
 .l-site-header.is-open .l-global-nav {
   transform: translateX(0);
-  border-left: dotted 4px #309E66;
+  border-left: dotted 4px var(--accent-green-color);
   overflow-x: scroll;
 }
 .l-site-header.is-open .l-hamburger span:nth-child(1) {
@@ -117,7 +135,7 @@ ul, ol {
   right: 0;
   width: 350px;
   height: 100vh;
-  background-color: #fffef8;
+  background-color: var(--main-bg-color);
   transform: translateX(100%);
   transition: 0.4s ease;
   padding-top: 100px;
@@ -130,13 +148,13 @@ img.l-logo-in-navmenu {
 
 .has-child a {
   font-size: 20px;
-  color: #309E66;
+  color: var(--accent-green-color);
   font-family: "utsukushi";
   transition: 0.2s ease;
 }
 
 .l-sub-nav a {
-  color: #444943;
+  color: var(--main-color);
   font-family: "higuregothic";
   font-size: 15px;
   margin-bottom: 10px;
@@ -154,7 +172,7 @@ img.l-logo-in-navmenu {
   width: 5px;
   height: 5px;
   border-radius: 5px;
-  background-color: #658C6F;
+  background-color: var(--title-color);
   position: absolute;
   top: 50%;
   left: 0;
@@ -168,7 +186,7 @@ img.l-logo-in-navmenu {
 }
 
 a.l-go-top {
-  color: #444943;
+  color: var(--main-color);
   font-size: 15px;
 }
 
@@ -200,7 +218,7 @@ a.l-go-top {
     opacity: 0.5;
   }
   .l-sub-nav li a:hover {
-    color: #658C6F;
+    color: var(--title-color);
   }
   .l-sub-nav li:hover a::before {
     width: 30px;
@@ -251,7 +269,7 @@ a.l-go-top {
   top: 0;
   left: 0;
   inset: 0;
-  background-color: #fffef8;
+  background-color: var(--main-bg-color);
   z-index: 9999;
   display: flex;
   justify-content: center;
@@ -283,7 +301,7 @@ a.l-go-top {
   display: block;
   width: 0%;
   height: 100%;
-  background-color: #309E66;
+  background-color: var(--accent-green-color);
   transition: 0.3s ease;
 }
 .l-loading .l-load-inner .l-load-count {
@@ -751,7 +769,7 @@ img.caw {
   left: 0;
   width: 60px;
   height: 1px;
-  background-color: #309E66;
+  background-color: var(--accent-green-color);
   transition: 0.4s ease;
 }
 .l-hamburger span:nth-child(1) {
