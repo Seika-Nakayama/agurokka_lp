@@ -41,7 +41,7 @@
                 width: 0%;
                 height: 100%;
                 background-color: var(--accent-green-color);
-                transition: $transition-slow;
+                transition: var(--transition-slow);
             }
         }
         .l-load-count{

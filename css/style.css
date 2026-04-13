@@ -309,7 +309,7 @@ a.l-go-top {
   width: 0%;
   height: 100%;
   background-color: var(--accent-green-color);
-  transition: 0.3s ease;
+  transition: var(--transition-slow);
 }
 .l-loading .l-load-inner .l-load-count {
   margin-top: 50px;
