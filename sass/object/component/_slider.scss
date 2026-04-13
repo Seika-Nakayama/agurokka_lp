@@ -1,5 +1,5 @@
 @use "../../foundation/index" as *;
-@use "../../variables/index" as *;
+@use "../../abstracts/index" as *;
 
 .slider{
 	width: 58%;
@@ -43,3 +43,32 @@
 		}
 	}
 }
+
+@include media(mb){
+    .slider{
+        width: 95%;
+        top: 65%;
+    }
+}
+@include media(mb2){
+    .slider{
+        width: 95%;
+        top: 67%;
+    }
+}
+@include media(sp){
+    .slider{
+        width: 140%;
+    }
+}
+@include media(sp2){
+    .slider{
+        top: 65%;
+    }
+}
+@include media(sp3){
+    .slider{
+        width: 120%;
+    }
+}
+
