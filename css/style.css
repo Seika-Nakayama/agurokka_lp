@@ -322,7 +322,7 @@ a.l-go-top {
     writing-mode: vertical-rl;
     text-orientation: upright;
     flex-direction: row;
-    margin: 0 auto;
+    margin-block: auto;
   }
   .l-loading .l-load-inner .l-load-text img {
     height: 150px;
@@ -333,7 +333,7 @@ a.l-go-top {
   height: 100vh;
   max-width: 1920px;
   max-height: 1200px;
-  margin: 0 auto;
+  margin-inline: auto;
   position: relative;
   transition: 0.3s ease;
 }
@@ -367,7 +367,7 @@ a.l-go-top {
 
 .char {
   display: block;
-  margin: 0 auto;
+  margin-inline: auto;
   opacity: 0;
   transform: translateY(20px);
   transition: 1s ease;
