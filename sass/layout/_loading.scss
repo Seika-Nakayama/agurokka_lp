@@ -1,4 +1,4 @@
-@use "../variables/index" as *;
+@use "../abstracts/index" as *;
 
 .l-loading{
 	width: 100%;
@@ -6,7 +6,7 @@
 	top: 0;
 	left: 0;
 	inset: 0;
-	background-color: $main-bg-color;
+	background-color: var(--main-bg-color);
 	z-index: 9999;
 	display: flex;
 	justify-content: center;
@@ -40,8 +40,8 @@
                 display: block;
                 width: 0%;
                 height: 100%;
-                background-color: $accent-green-color;
-                transition: $transition-slow;
+                background-color: var(--accent-green-color);
+                transition: var(--transition-slow);
             }
         }
         .l-load-count{
@@ -59,7 +59,7 @@
                 writing-mode: vertical-rl;
                 text-orientation: upright;
                 flex-direction: row;
-                margin: 0 auto;
+                margin-block: auto;
                 
                 img{
                     height: 150px;

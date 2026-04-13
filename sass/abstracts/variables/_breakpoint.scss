@@ -27,10 +27,11 @@
 $breakpoints: (
   pc: 1440px,
   pc2: 1280px,
-  mb: 1000px,
+  mb: 1024px,
   mb2: 768px,
-  sp2: 360px,
-  sp3: 279px
+  sp: 550px,
+  sp2: 390px,
+  sp3: 376px
 );
 
 @mixin media($breakpoint) {

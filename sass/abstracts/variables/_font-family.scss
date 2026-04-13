@@ -13,7 +13,7 @@
 
     @each $ext in $exts{
         $format: map-get($formats, $ext);
-        $src: append($src, url("../../font/#{$file}.#{$ext}") format('#{$format}'), comma);
+        $src: append($src, url("../../../font/#{$file}.#{$ext}") format('#{$format}'), comma);
     }
 
     @font-face{
