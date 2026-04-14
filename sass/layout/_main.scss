@@ -6,6 +6,7 @@
 	height: 100vh;
 	max-width: 1920px;
 	max-height: 1000px;
+	min-height: 900px;
 	margin-inline: auto;
 	position: relative;
 	transition: $transition-slow;
@@ -101,7 +102,8 @@
 	}
 	.char{
 		 &.is-show{
-			width: 13vh;
+			width: 6vh;
+			min-width: 4rem;
 			&:nth-child(2){
 				margin-top: 0;
 			}
@@ -142,15 +144,15 @@
 	}
 	.l-top-logo img{
 		display: block;
-		width: 65%;
+		width: 55%;
 		margin: auto;
 		display: block;
 	}
-	.char{
-		 &.is-show{
-			width: 10vw;
-		}
-	}
+	// .char{
+	// 	 &.is-show{
+	// 		width: 10vw;
+	// 	}
+	// }
 	// .slider{
 	// 	width: 95%;
 	// 	top: 65%;
@@ -188,12 +190,18 @@
 }
 
 @include media(sp){
+	.l-fv{
+		min-height: 700px;
+	}
 	.l-top-logo img{
-		width: 100%;
+		// width: 100%;
+		width: 80%;
 	}
 	.char{
 		&.is-show{
-			width: 10vw;
+			// width: 10vw;
+			width: 2.5rem;
+			min-width: initial;
 		}
 	}
 	// .slider{
@@ -227,13 +235,16 @@
 }
 
 @include media(sp2){
+	.l-fv{
+		max-height: 800px;
+	}
 	.l-top-logo{
 		top: 27%;
 		transform: translate(-50%,-50%);
 	}
-	.l-top-logo img{
-		width: 90%;
-	}
+	// .l-top-logo img{
+	// 	width: 90%;
+	// }
 	.l-copy__items{
 		width: 45%;
 	}
@@ -264,6 +275,9 @@
 }
 
 @include media(sp3){
+	.l-fv{
+		min-height: 560px;
+	}
 	.l-top-logo img{
 		width: 80%;
 	}
