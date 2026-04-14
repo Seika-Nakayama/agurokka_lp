@@ -376,8 +376,8 @@ a.l-go-top {
 .char.is-show {
   opacity: 1;
   transform: translateY(0);
-  max-width: 145px;
   width: clamp(2.375rem, 0.8266625616rem + 6.5886699507vw, 9.0625rem);
+  max-width: 145px;
 }
 .char.is-show:nth-child(2) {
   margin-top: 30%;
@@ -411,32 +411,17 @@ a.l-go-top {
   }
 }
 @media screen and (max-width: 1024px) {
+  .l-fv {
+    max-height: 900px;
+  }
   .l-top-logo {
-    top: 30%;
+    top: 28%;
   }
   .l-top-logo img {
     display: block;
     width: 55%;
     margin: auto;
     display: block;
-  }
-}
-@media screen and (max-width: 768px) {
-  .tomat {
-    top: -9%;
-    left: 85%;
-  }
-  .pepper {
-    top: 5%;
-    left: 9%;
-  }
-  .spinach {
-    top: 93%;
-    left: 20%;
-  }
-  .lines-flex {
-    width: 35%;
-    right: 3%;
   }
 }
 @media screen and (max-width: 550px) {
@@ -599,7 +584,7 @@ a.l-go-top {
 @media screen and (max-width: 1024px) {
   .slider {
     width: 95%;
-    top: 65%;
+    top: 77%;
   }
 }
 @media screen and (max-width: 768px) {
