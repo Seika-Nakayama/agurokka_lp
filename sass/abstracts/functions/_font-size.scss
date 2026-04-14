@@ -9,3 +9,14 @@
   
   @return clamp(#{$minRem}rem, #{$baseOffsetRem}rem + #{$vwScaleRem}vw, #{$maxRem}rem);
 }
+
+// フォントサイズ pxをremに変換する関数
+$baseFontSize: 16px;
+
+@function rem($pxValue){
+    @return $pxValue / $baseFontSize * 1rem;
+}
+// 使用例
+// .example {
+//     font-size: rem(24px); // 24pxを16px基準の1.5remに変換
+// }
