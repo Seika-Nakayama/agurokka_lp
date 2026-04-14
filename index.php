@@ -1,15 +1,15 @@
 <body>
-<div class="loading" id="loading">
-	<div class="loading-inner">
-		<p class="loading-text">
+<div class="l-loading" id="l-loading">
+	<div class="l-load-inner">
+		<p class="l-load-text">
 			<span>一緒に未来ば</span>
 			<img src="images/logo/agurokka_logo.webp" alt="AguRokkaのロゴ">
 			<span>つくろっか。</span>
 		</p>
-		<div class="loading-bar">
-			<span class="loading-progress"></span>
+		<div class="l-load-bar">
+			<span class="l-load-progress"></span>
 		</div>
-		<p class="loading-count" style="color: #309E66;"><span id="loadingCount" style="font-size: 50px; color: #309E66;">0</span>%</p>
+		<p class="l-load-count" style="color: #309E66;"><span id="l-loadingCount" style="font-size: 50px; color: #309E66;">0</span>%</p>
 	</div>
 </div>
 <?php 
@@ -22,13 +22,13 @@ include 'header.php';
 <main>
 	<a href="https://docs.google.com/forms/d/1y0TlJKK-Ip5nqA4ef7zxUNKzVR2Dzr_bWXMSe7v3G1A/viewform?edit_requested=true" target="_blank" class="nav-link nyuukai"><div class="c-fixed-link">
 	</div></a>
-	<div class="fv js-fv">
-		<div class="copy_flex">
-			<div class="copy_flex__items">
+	<div class="l-fv">
+		<div class="l-copy_flex">
+			<div class="l-copy__items">
 				<img src="images/fv/nougyouto.svg"  class="char js-svg" data-delay="0.2" alt="農業と">
 				<img src="images/fv/hitoto.svg" class="char js-svg" data-delay="0.7" alt="人と">
 			</div>
-			<div class="copy_flex__items">
+			<div class="l-copy__items">
 				<img src="images/fv/tunagu.svg" class="char js-svg" data-delay="1.5" alt="繋ぐ">
 				<img src="images/fv/tunagaru.svg" class="char js-svg" data-delay="2" alt="繋がる">
 			</div>
@@ -49,10 +49,10 @@ include 'header.php';
 				<img src="images/fv/caw.webp" alt="入会フォーム誘導バナー" class="caw">
 			</a>
 		</div>
-		<img src="images/vegetables/pepper.webp" alt="ピーマンのイラスト" class="vegetable pepper2">
-		<img src="images/vegetables/corn.webp" alt="トウモロコシのイラスト" class="vegetable corn2">
-		<img src="images/vegetables/tomat.webp" alt="トマトのイラスト" class="vegetable tomat2">
-		<figure class="top-logo"><img src="images/logo/agurokka_logo.webp" alt="AguRokkaのロゴ" class="logo-green"></figure>
+		<!-- <img src="images/vegetables/pepper.webp" alt="ピーマンのイラスト" class="vegetable pepper2"> -->
+		<!-- <img src="images/vegetables/corn.webp" alt="トウモロコシのイラスト" class="vegetable corn2"> -->
+		<!-- <img src="images/vegetables/tomat.webp" alt="トマトのイラスト" class="vegetable tomat2"> -->
+		<figure class="l-top-logo"><img src="images/logo/agurokka_logo.webp" alt="AguRokkaのロゴ" class="logo-green"></figure>
 	</div>
 	<div class="contents_inner">
 		<article id="about-us" class="article-box">

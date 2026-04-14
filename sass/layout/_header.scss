@@ -1,6 +1,6 @@
-@use "../variables/index" as *;
+@use "../abstracts/index" as *;
 
-.h-site-header{
+.l-site-header{
 	position: fixed;
 	top: 0;
 	right: 0;
@@ -14,13 +14,13 @@
 	}
 
 	&.is-open{
-		.h-global-nav{
+		.l-global-nav{
 			transform: translateX(0);
-			border-left: dotted 4px $accent-green-color;
+			border-left: dotted 4px var(--accent-green-color);
 			overflow-x: scroll;
 		}
 		
-		.h-hamburger span{
+		.l-hamburger span{
 			&:nth-child(1){
 				width: 60px;
 				transform: translateY(14px) rotate(45deg);
@@ -38,24 +38,24 @@
 	}
 }
 
-.h-inner{
+.l-inner{
 	display: flex;
 	justify-content: flex-end;
 }
 
-.h-global-nav{
+.l-global-nav{
 	position: fixed;
 	top: 0;
 	right: 0;
 	width: 350px;
 	height: 100vh;
-	background-color: $main-bg-color;
+	background-color: var(--main-bg-color);
 	transform: translateX(100%);
 	transition: $transition-base;
 	padding-top: 100px;
 }
 
-img.h-logo-in-navmenu{
+img.l-logo-in-navmenu{
 	width: 130px;
 	margin: auto;
 }
@@ -63,15 +63,15 @@ img.h-logo-in-navmenu{
 .has-child{
 	a{
 		font-size: 20px;
-		color: $accent-green-color;
+		color: var(--accent-green-color);
 		font-family: 'utsukushi';
 		transition:  $transition-early;
 	}
 }
 
-.h-sub-nav{
+.l-sub-nav{
 	a{
-		color: $main-color;
+		color: var(--main-color);
 		font-family: 'higuregothic';
 		font-size: 15px;
 		margin-bottom: 10px;
@@ -90,7 +90,7 @@ img.h-logo-in-navmenu{
 				width: 5px;
 				height: 5px;
 				border-radius: 5px;
-				background-color: $title-color;
+				background-color: var(--title-color);
 				position: absolute;
 				top: 50%;
 				left: 0;
@@ -101,17 +101,17 @@ img.h-logo-in-navmenu{
 	}
 }
 
-.h-category-menu{
+.l-category-menu{
 	margin: 35px 0 20px;
 	position: relative;
 }
 
-a.h-go-top{
-	color: $main-color;
+a.l-go-top{
+	color: var(--main-color);
 	font-size: 15px;
 }
 
-.h-nav-link-insta{
+.l-nav-link-insta{
 	img{
 		height: 40px;
 		width: auto;
@@ -119,12 +119,12 @@ a.h-go-top{
 	}
 }
 
-.h-nav-link-facebook{
+.l-nav-link-facebook{
 	height: 40px;
 	width: auto;
 }
 
-.h-sns-in-menu{
+.l-sns-in-menu{
 	position: relative;
 
 	img{
@@ -133,23 +133,23 @@ a.h-go-top{
 	}
 }
 
-.h-sns_innerflex{
+.l-sns_innerflex{
 	display: flex;
 }
 
 @media (hover:hover){
-	.h-has-child{
+	.l-has-child{
 		a{
 			&:hover{
 				opacity: .5;
 			}
 		}
 	}
-	.h-sub-nav{
+	.l-sub-nav{
 		li{
 			a{
 				&:hover{
-					color: $title-color;
+					color: var(--title-color);
 				}
 			}
 			&:hover{
@@ -166,47 +166,47 @@ a.h-go-top{
 
 
 // @media screen and (max-width:1055px){
-// 	.h-sub-nav li a::before{
+// 	.l-sub-nav li a::before{
 // 		width: 30px;
 // 		height: 1px
 // 	}
 // }
 
-.h-nav-list{
+.l-nav-list{
 	padding: 0 30px;
 }
 
-@include media(mb){
-	.h-global-nav{
+@include media(mb2){
+	.l-global-nav{
 		width: 99vw;
 		padding-top: 45px;
 	}
 }
-@include media(mb){
-	.h-nav-list{
+@include media(mb2){
+	.l-nav-list{
 		display: flex;
 		flex-direction: column;
 		align-items: center
 	}
 }
 @include media(sp2){
-	img.h-logo-in-navmenu{
+	img.l-logo-in-navmenu{
 		width:100px
 	}
-	.h-global-nav{
+	.l-global-nav{
 		padding-top:19px
 	}
-	.h-category-menu{
+	.l-category-menu{
 		margin:15px 0 3px
 	}
-	.h-has-child a{
+	.l-has-child a{
 		font-size:15px
 	}
-	.h-sub-nav li a{
+	.l-sub-nav li a{
 		margin-bottom:0;
 		font-size:13px
 	}
-	.h-sub-nav li a{
+	.l-sub-nav li a{
 		line-height:2em
 	}
 }
