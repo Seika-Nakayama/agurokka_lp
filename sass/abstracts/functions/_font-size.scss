@@ -1,11 +1,11 @@
-@function rclamp($min, $mąx, $minViewport, $maxViewport) {
-$vwScale:($max- $min)/($maxviewport - $minviewport);//ww単位でのスケールを計算
-$baseoffset: $min - $minViewport * $vwScale;//基準となる最小値からのオフセットを計算
-$minRem: $min / 16;
-// 最小値をremに変換
-$maxRem: $max / 16;
-// 最大値をremに変換
-$base0ffsetRem: $base0ffset / 16;
-// オフセットをremに変換
-$vwScaleRem: $vwscale * 100;//vwスケールを調整
-@return clamp(#{$minRem}rem, #{$baseOffsetRem}rem + #{$vwScaleRem}vw, #{$maxRem}rem);}
+@function rclamp($min, $max, $minViewport, $maxViewport) {
+  $vwScale: ($max - $min) / ($maxViewport - $minViewport);
+  $baseOffset: $min - $minViewport * $vwScale;
+  
+  $minRem: $min / 16;
+  $maxRem: $max / 16;
+  $baseOffsetRem: $baseOffset / 16;
+  $vwScaleRem: $vwScale * 100;
+  
+  @return clamp(#{$minRem}rem, #{$baseOffsetRem}rem + #{$vwScaleRem}vw, #{$maxRem}rem);
+}
