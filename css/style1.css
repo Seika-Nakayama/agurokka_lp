@@ -377,7 +377,7 @@ img.category.is-show{
 	background-position:left top;
 	background-repeat:no-repeat
 } */
-.fixed-link.is-show{
+/* .fixed-link.is-show{
 	opacity:1;
 	transform:translateX(0);
 	pointer-events:none
@@ -390,7 +390,7 @@ img.category.is-show{
 .fixed-link.is-hide{
 	opacity:0;
 	pointer-events:none
-}
+} */
 @media screen and (max-width:800px){
 	.fixed-link{
 		width:150px;

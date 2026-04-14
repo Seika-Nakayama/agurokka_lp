@@ -52,9 +52,6 @@ img.category.is-show {
 }
 
 * {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
   color: var(--main-color);
   text-decoration: none;
   font-family: "higuregothic";
@@ -68,11 +65,17 @@ img, a {
   display: block;
 }
 
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
 ul, ol {
   list-style: none;
 }
 
-.site-header {
+.h-site-header {
   position: fixed;
   top: 0;
   right: 0;
@@ -81,33 +84,34 @@ ul, ol {
   transform: translateY(-100%);
   transition: 0.4s ease;
 }
-.site-header.is-show {
+.h-site-header.is-show {
   transform: translateY(0);
 }
-.site-header.is-open .global-nav {
+.h-site-header.is-open .h-global-nav {
   transform: translateX(0);
   border-left: dotted 4px #309E66;
+  overflow-x: scroll;
 }
-.site-header.is-open .hamburger span:nth-child(1) {
+.h-site-header.is-open .h-hamburger span:nth-child(1) {
   width: 60px;
   transform: translateY(14px) rotate(45deg);
 }
-.site-header.is-open .hamburger span:nth-child(2) {
+.h-site-header.is-open .h-hamburger span:nth-child(2) {
   opacity: 0;
 }
-.site-header.is-open .hamburger span:nth-child(3) {
+.h-site-header.is-open .h-hamburger span:nth-child(3) {
   width: 60px;
   top: 28px;
   left: -10px;
   transform: translateY(-14px) rotate(-45deg);
 }
 
-.header-inner {
+.h-inner {
   display: flex;
   justify-content: flex-end;
 }
 
-.global-nav {
+.h-global-nav {
   position: fixed;
   top: 0;
   right: 0;
@@ -119,7 +123,7 @@ ul, ol {
   padding-top: 100px;
 }
 
-img.logo-in-navmenu {
+img.h-logo-in-navmenu {
   width: 130px;
   margin: auto;
 }
@@ -131,21 +135,21 @@ img.logo-in-navmenu {
   transition: 0.2s ease;
 }
 
-.sub-nav a {
+.h-sub-nav a {
   color: #444943;
   font-family: "higuregothic";
   font-size: 15px;
   margin-bottom: 10px;
 }
-.sub-nav li {
+.h-sub-nav li {
   position: relative;
 }
-.sub-nav li a {
+.h-sub-nav li a {
   margin-bottom: 7px;
   margin-left: 40px;
   transition: 0.2s ease;
 }
-.sub-nav li a::before {
+.h-sub-nav li a::before {
   content: "";
   width: 5px;
   height: 5px;
@@ -158,52 +162,90 @@ img.logo-in-navmenu {
   transition: 0.3s ease;
 }
 
-.category-menu {
+.h-category-menu {
   margin: 35px 0 20px;
   position: relative;
 }
 
-a.go-top {
+a.h-go-top {
   color: #444943;
   font-size: 15px;
 }
 
-.nav-link-insta img {
+.h-nav-link-insta img {
   height: 40px;
   width: auto;
   margin-right: 30px;
 }
 
-.nav-link-facebook {
+.h-nav-link-facebook {
   height: 40px;
   width: auto;
 }
 
-.sns-in-menu {
+.h-sns-in-menu {
   position: relative;
 }
-.sns-in-menu img {
+.h-sns-in-menu img {
   height: 30px;
   margin: 28px;
 }
 
-.sns_innerflex {
+.h-sns_innerflex {
   display: flex;
 }
 
 @media (hover: hover) {
-  .has-child a:hover {
+  .h-has-child a:hover {
     opacity: 0.5;
   }
-  .sub-nav li a:hover {
+  .h-sub-nav li a:hover {
     color: #658C6F;
   }
-  .sub-nav li:hover a::before {
+  .h-sub-nav li:hover a::before {
     width: 30px;
     height: 1px;
   }
 }
-.hamburger {
+.h-nav-list {
+  padding: 0 30px;
+}
+
+@media screen and (max-width: 768px) {
+  .h-global-nav {
+    width: 99vw;
+    padding-top: 45px;
+  }
+}
+@media screen and (max-width: 768px) {
+  .h-nav-list {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+}
+@media screen and (max-width: 360px) {
+  img.h-logo-in-navmenu {
+    width: 100px;
+  }
+  .h-global-nav {
+    padding-top: 19px;
+  }
+  .h-category-menu {
+    margin: 15px 0 3px;
+  }
+  .h-has-child a {
+    font-size: 15px;
+  }
+  .h-sub-nav li a {
+    margin-bottom: 0;
+    font-size: 13px;
+  }
+  .h-sub-nav li a {
+    line-height: 2em;
+  }
+}
+.h-hamburger {
   width: 60px;
   height: 60px;
   cursor: pointer;
@@ -214,7 +256,7 @@ a.go-top {
   background: none;
   border: none;
 }
-.hamburger span {
+.h-hamburger span {
   position: absolute;
   left: 0;
   width: 60px;
@@ -222,26 +264,22 @@ a.go-top {
   background-color: #309E66;
   transition: 0.4s ease;
 }
-.hamburger span:nth-child(1) {
+.h-hamburger span:nth-child(1) {
   top: 0;
   left: -9px;
   width: 70px;
 }
-.hamburger span:nth-child(2) {
+.h-hamburger span:nth-child(2) {
   top: 14px;
   width: 60px;
 }
-.hamburger span:nth-child(3) {
+.h-hamburger span:nth-child(3) {
   top: 28px;
   left: 10px;
   width: 50px;
 }
 
-.nav-list {
-  padding: 0 30px;
-}
-
-.fixed-link {
+.c-fixed-link {
   position: fixed;
   bottom: 0;
   right: 6px;
@@ -256,6 +294,15 @@ a.go-top {
   background-size: 100%;
   background-position: left top;
   background-repeat: no-repeat;
+}
+.c-fixed-link.is-show {
+  opacity: 1;
+  transform: translateX(0);
+  pointer-events: auto;
+}
+.c-fixed-link.is-hide {
+  opacity: 0;
+  pointer-events: none;
 }
 
 /*# sourceMappingURL=style.css.map */

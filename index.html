@@ -15,10 +15,10 @@
 	<!-- CSS/JS -->
 	<link rel="stylesheet" href="css/slick.css">
 	<link rel="stylesheet" href="css/slick-theme.css">
-	<script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
-	<script src="js/slick.min.js"></script>
+	<script src="https://code.jquery.com/jquery-3.7.1.min.js" defer></script>
+	<script src="js/slick.min.js" defer></script>
 	<script src="js/script.js" defer></script>
-	<link rel="stylesheet" href="css/style1.css">
+	<!-- <link rel="stylesheet" href="css/style1.css"> -->
 	<link rel="stylesheet" href="css/style.css">
 </head>
 <body>
@@ -26,7 +26,7 @@
 	<div class="loading-inner">
 		<p class="loading-text">
 			<span>一緒に未来ば</span>
-			<img src="images/logo/agurokka_logo.webp" alt="AguRokkaのロゴ">
+			<img src="images/logo/agurokka_logo.webp" alt="AguRokkaのロゴ" width="100" height="100">
 			<span>つくろっか。</span>
 		</p>
 		<div class="loading-bar">
@@ -35,45 +35,45 @@
 		<p class="loading-count" style="color: #309E66;"><span id="loadingCount" style="font-size: 50px; color: #309E66;">0</span>%</p>
 	</div>
 </div>
-<header class="site-header" id="siteHeader">
-	<div class="header-inner">
-		<button class="hamburger" id="hamburger" aria-label="メニュー">
+<header class="h-site-header" id="h-siteHeader">
+	<div class="h-inner">
+		<button class="h-hamburger" id="h-hamburger" aria-label="メニュー">
 			<span></span>
 			<span></span>
 			<span></span>
 		</button>
-		<nav class="global-nav">
-			<img src="images/logo/agurokka_logo.webp" alt="AguRokkaのロゴ" class="logo-in-navmenu">
-			<ul class="nav-list has-child">
-				<li class="nav-item has-child">
-					<a href="#about-us" class="category-menu">AguRokkaについて</a>
-					<ul class="sub-nav">
+		<nav class="h-global-nav">
+			<img src="images/logo/agurokka_logo.webp" alt="AguRokkaのロゴ" class="h-logo-in-navmenu" width="130" height="100">
+			<ul class="h-nav-list h-has-child">
+				<li class="nav-item h-has-child">
+					<a href="#about-us" class="h-category-menu">AguRokkaについて</a>
+					<ul class="h-sub-nav">
 						<li><a href="#about-us">AguRokkaとは</a></li>
 						<li><a href="#why-agurokka">AguRokkaの由来</a></li>
 					</ul>
 				</li>
-				<li class="nav-item has-child">
-					<a href="#members" class="category-menu">メンバーについて</a>
-					<ul class="sub-nav">
+				<li class="nav-item h-has-child">
+					<a href="#members" class="h-category-menu">メンバーについて</a>
+					<ul class="h-sub-nav">
 						<li><a href="#members">メンバーインタビュー</a></li>
 						<li><a href="#all-mem-list">AguRokkaメンバー紹介</a></li>
 						<li><a href="#AguRokka-qanda">Q&A</a></li>
 					</ul>
 				</li>
-				<li class="nav-item has-child">
-					<a href="#activity" class="category-menu">活動情報</a>
-					<ul class="sub-nav">
+				<li class="nav-item h-has-child">
+					<a href="#activity" class="h-category-menu">活動情報</a>
+					<ul class="h-sub-nav">
 						<li><a href="#activity">活動履歴</a></li>
 						<li><a href="#">トップへ戻る</a></li>
 					</ul>
 				</li>
-				<li class="nav-item has-child">
+				<li class="nav-item h-has-child">
 					<a href="https://docs.google.com/forms/d/1y0TlJKK-Ip5nqA4ef7zxUNKzVR2Dzr_bWXMSe7v3G1A/viewform?edit_requested=true" target="_blank" class="go-entry-form" style="color: #ef9365;">入会フォームへ</a>
 				</li>
-				<li class="sns-in-menu">
-					<div class="sns_innerflex">
-						<a href="https://www.instagram.com/agurokka_kumamoto/" target="_blank" class="nav-link-insta"><img src="images/logo/Instagram_Glyph_Gradient.webp" alt="Instagramのアイコン"></a>
-						<a href="https://www.facebook.com/p/%E3%81%8F%E3%81%BE%E3%82%82%E3%81%A8%E8%BE%B2%E6%A5%AD%E5%A5%B3%E5%8F%B2%E3%82%B3%E3%83%9F%E3%83%A5%E3%83%8B%E3%83%86%E3%82%A3%E3%83%BC-Agurokka-61551086036877/" target="_blank" class=" nav-link-facebook"><img src="images/logo/Facebook_Logo_Primary.webp"alt="Facebookのアイコン"></a>
+				<li class="h-sns-in-menu">
+					<div class="h-sns_innerflex">
+						<a href="https://www.instagram.com/agurokka_kumamoto/" target="_blank" class="h-nav-link-insta"><img src="images/logo/Instagram_Glyph_Gradient.webp" alt="Instagramのアイコン" height="40"></a>
+						<a href="https://www.facebook.com/p/%E3%81%8F%E3%81%BE%E3%82%82%E3%81%A8%E8%BE%B2%E6%A5%AD%E5%A5%B3%E5%8F%B2%E3%82%B3%E3%83%9F%E3%83%A5%E3%83%8B%E3%83%86%E3%82%A3%E3%83%BC-Agurokka-61551086036877/" target="_blank" class="h-nav-link-facebook"><img src="images/logo/Facebook_Logo_Primary.webp"alt="Facebookのアイコン" width="auto" height="40"></a>
 					</div>
 				</li>
 			</ul>
@@ -81,36 +81,36 @@
 	</div>
 </header>
 <main>
-	<a href="https://docs.google.com/forms/d/1y0TlJKK-Ip5nqA4ef7zxUNKzVR2Dzr_bWXMSe7v3G1A/viewform?edit_requested=true" target="_blank" class="nav-link nyuukai"><div class="fixed-link">
+	<a href="https://docs.google.com/forms/d/1y0TlJKK-Ip5nqA4ef7zxUNKzVR2Dzr_bWXMSe7v3G1A/viewform?edit_requested=true" target="_blank" class="nav-link nyuukai"><div class="c-fixed-link">
 	</div></a>
 	<div class="fv js-fv">
 		<div class="copy_flex">
 			<div class="copy_flex__items">
-				<img src="images/fv/nougyouto.svg"  class="char js-svg" data-delay="0.2" alt="農業と">
-				<img src="images/fv/hitoto.svg" class="char js-svg" data-delay="0.7" alt="人と">
+				<img src="images/fv/nougyouto.svg"  class="char js-svg" data-delay="0.2" alt="農業と" width="100" height="100">
+				<img src="images/fv/hitoto.svg" class="char js-svg" data-delay="0.7" alt="人と" width="100" height="100">
 			</div>
 			<div class="copy_flex__items">
-				<img src="images/fv/tunagu.svg" class="char js-svg" data-delay="1.5" alt="繋ぐ">
-				<img src="images/fv/tunagaru.svg" class="char js-svg" data-delay="2" alt="繋がる">
+				<img src="images/fv/tunagu.svg" class="char js-svg" data-delay="1.5" alt="繋ぐ" width="100" height="100">
+				<img src="images/fv/tunagaru.svg" class="char js-svg" data-delay="2" alt="繋がる" width="100" height="100">
 			</div>
 		</div>
 		<div class="slider">
 			<div class="slider_inner mask">
-				<img class="slide is-active" src="images/fv/4.webp" alt="AguRokkaメンバー画像">
-				<img class="slide" src="images/fv/0.webp" alt="AguRokkaメンバー画像">
-				<img class="slide" src="images/fv/2.webp" alt="AguRokkaメンバー画像">
-				<img class="slide" src="images/fv/3.webp" alt="AguRokkaメンバー画像">
+				<img class="slide is-active" src="images/fv/4.webp" alt="AguRokkaメンバー画像" width="100%" height="100%">
+				<img class="slide" src="images/fv/0.webp" alt="AguRokkaメンバー画像" width="100%" height="100%">
+				<img class="slide" src="images/fv/2.webp" alt="AguRokkaメンバー画像" width="100%" height="100%">
+				<img class="slide" src="images/fv/3.webp" alt="AguRokkaメンバー画像" width="100%" height="100%">
 			</div>
-			<svg width="3174" height="1288" viewBox="0 0 3174 1288" fill="none" xmlns="http://www.w3.org/2000/svg" class="fv-svg"><path d="M3155.04 51.2607C3067.04 -65.2393 2724.04 55.2609 2724.04 55.2609C2484.96 157.996 2346.84 220.853 2178.54 232.261C2028.73 236.834 1909.02 207.76 1662.04 126.261C1404.01 53.9762 1255.5 28.5 986.537 60.761C863.5 75.5187 662.537 132.261 437.537 332.761C212.537 533.261 111.447 721.276 25.0369 935.761C25.0369 935.761 -35.4631 1082.26 33.5369 1177.26C102.537 1272.26 273.537 1285.26 273.537 1285.26C537.945 1291.93 681.247 1282.84 926.537 1239.76C1164.45 1201.75 1298.82 1174.53 1541.54 1107.76C1946.04 969.761 2065.04 809.261 2069.54 648.761C2063.04 499.761 1921.54 259.261 1551.04 172.761C1180.54 86.2609 943.037 256.261 943.037 256.261C820.538 334.261 728.818 457.352 709.537 600.761C703.455 646 709.537 901.261 981.037 1033.76C1252.54 1166.26 1530.54 1109.76 1530.54 1109.76C1878.54 1087.26 2405.54 814.261 2405.54 814.261C2677.73 660.493 2791.77 571.215 2973.54 410.261C2973.54 410.261 3243.04 167.761 3155.04 51.2607Z" stroke="#309E66" stroke-opacity="0.5" stroke-width="2"/></svg>
-			<img src="images/vegetables/pepper.webp" alt="ピーマンのイラスト" class="vegetable pepper">
-			<img src="images/vegetables/corn.webp" alt="とうもろこしのイラスト" class="vegetable corn">
-			<img src="images/vegetables/tomat.webp" alt="トマトのイラスト" class="vegetable tomat">
-			<img src="images/vegetables/spinach.webp" alt="ほうれん草のイラスト" class="vegetable spinach">
+			<svg width="3174" height="1288" viewBox="0 0 3174 1288" fill="none" class="fv-svg"><path d="M3155.04 51.2607C3067.04 -65.2393 2724.04 55.2609 2724.04 55.2609C2484.96 157.996 2346.84 220.853 2178.54 232.261C2028.73 236.834 1909.02 207.76 1662.04 126.261C1404.01 53.9762 1255.5 28.5 986.537 60.761C863.5 75.5187 662.537 132.261 437.537 332.761C212.537 533.261 111.447 721.276 25.0369 935.761C25.0369 935.761 -35.4631 1082.26 33.5369 1177.26C102.537 1272.26 273.537 1285.26 273.537 1285.26C537.945 1291.93 681.247 1282.84 926.537 1239.76C1164.45 1201.75 1298.82 1174.53 1541.54 1107.76C1946.04 969.761 2065.04 809.261 2069.54 648.761C2063.04 499.761 1921.54 259.261 1551.04 172.761C1180.54 86.2609 943.037 256.261 943.037 256.261C820.538 334.261 728.818 457.352 709.537 600.761C703.455 646 709.537 901.261 981.037 1033.76C1252.54 1166.26 1530.54 1109.76 1530.54 1109.76C1878.54 1087.26 2405.54 814.261 2405.54 814.261C2677.73 660.493 2791.77 571.215 2973.54 410.261C2973.54 410.261 3243.04 167.761 3155.04 51.2607Z" stroke="#309E66" stroke-opacity="0.5" stroke-width="2"/></svg>
+			<img src="images/vegetables/pepper.webp" alt="ピーマンのイラスト" class="vegetable pepper" width="175" height="auto">
+			<img src="images/vegetables/corn.webp" alt="とうもろこしのイラスト" class="vegetable corn" width="200" height="auto">
+			<img src="images/vegetables/tomat.webp" alt="トマトのイラスト" class="vegetable tomat" width="120" height="auto">
+			<img src="images/vegetables/spinach.webp" alt="ほうれん草のイラスト" class="vegetable spinach" width="300" height="auto">
 			<a href="https://docs.google.com/forms/d/1y0TlJKK-Ip5nqA4ef7zxUNKzVR2Dzr_bWXMSe7v3G1A/viewform?edit_requested=true" target="_blank" class="lines-flex">
-				<img src="images/fv/caw.webp" alt="入会フォーム誘導バナー" class="caw">
+				<img src="images/fv/caw.webp" alt="入会フォーム誘導バナー" class="caw" width="295" height="auto">
 			</a>
 		</div>
-		<img src="images/vegetables/pepper.webp" alt="ピーマンのイラスト" class="vegetable pepper2">
+		<img src="images/vegetables/pepper.webp" alt="ピーマンのイラスト" class="vegetable pepper2" width="175" height="auto">
 		<img src="images/vegetables/corn.webp" alt="トウモロコシのイラスト" class="vegetable corn2">
 		<img src="images/vegetables/tomat.webp" alt="トマトのイラスト" class="vegetable tomat2">
 		<figure class="top-logo"><img src="images/logo/agurokka_logo.webp" alt="AguRokkaのロゴ" class="logo-green"></figure>
@@ -155,7 +155,7 @@
 				</section>
 				<div class="svg-area">
 					<div class="svg-wrap">
-						<svg width="4955" height="848" viewBox="0 0 4955 848" fill="none" xmlns="http://www.w3.org/2000/svg" class="heart-svg scroll-svg"><path d="M4954.16 0.840576C4353.66 387.84 3533.16 562.34 2756.66 562.34C2692.16 562.34 2348.16 562.34 2149.66 562.34C1951.16 562.34 1756.02 541.873 1688.84 494.606C1621.66 447.34 1625.4 341.84 1642.66 304.34C1659.92 266.84 1706.66 195.839 1819.16 195.839C1899.56 199.878 1976.9 240.023 1961.09 250.875C1948.48 259.535 1951.66 195.495 1978.66 152.34C2006.11 108.459 2041.16 79.5869 2110.16 70.3399C2179.16 61.0928 2298.97 110.163 2303.51 206.501C2308.04 302.84 2260.93 379.625 2207.66 457.339C2157.75 530.148 2088.16 575.839 2088.16 575.839C1911.21 690.757 1615.46 877.243 1242.16 842.518C806.534 775.761 279.658 642.341 0.658325 398.341" stroke="#309E66" stroke-width="2"/></svg>
+						<svg width="4955" height="848" viewBox="0 0 4955 848" fill="none" class="heart-svg scroll-svg"><path d="M4954.16 0.840576C4353.66 387.84 3533.16 562.34 2756.66 562.34C2692.16 562.34 2348.16 562.34 2149.66 562.34C1951.16 562.34 1756.02 541.873 1688.84 494.606C1621.66 447.34 1625.4 341.84 1642.66 304.34C1659.92 266.84 1706.66 195.839 1819.16 195.839C1899.56 199.878 1976.9 240.023 1961.09 250.875C1948.48 259.535 1951.66 195.495 1978.66 152.34C2006.11 108.459 2041.16 79.5869 2110.16 70.3399C2179.16 61.0928 2298.97 110.163 2303.51 206.501C2308.04 302.84 2260.93 379.625 2207.66 457.339C2157.75 530.148 2088.16 575.839 2088.16 575.839C1911.21 690.757 1615.46 877.243 1242.16 842.518C806.534 775.761 279.658 642.341 0.658325 398.341" stroke="#309E66" stroke-width="2"/></svg>
 					</div>
 				</div>
 				<div class="recruit js-display">
@@ -263,7 +263,7 @@
 			<section class="contents_inner all-members" id="all-mem-list">
 				<h2 class="all-members-title">
 					AguRokkaメンバー紹介
-					<svg width="344" height="199" viewBox="0 0 344 199" fill="none" xmlns="http://www.w3.org/2000/svg" class="scroll-svg heart-svg2"><path d="M342.717 155.614C310.895 181.422 262.115 190.44 218.709 185.941C175.303 181.442 131.838 168.117 102.843 143.319C74.3348 118.939 59.1595 84.806 61.7667 53.1788C63.0284 37.8606 70.2145 21.1809 85.836 11.8224C101.709 2.3182 124.766 4.59195 141.145 11.2742C153.516 16.3174 161.91 23.3642 163.414 35.2156C163.884 38.9072 163.52 43.6174 159.592 45.0291C155.705 46.4266 151.667 43.1894 150.107 39.7963C141.914 21.8898 167.844 8.32664 183.397 3.59042C196.813 -0.490882 211.727 -0.814999 224.705 4.34019C238.186 9.69718 245.685 19.1971 250.199 31.6342C255.96 47.4811 256.793 67.523 252.567 83.8649C247.172 104.683 234.393 123.561 217.8 139.057C182.103 172.396 138.155 191.608 80.7268 197.513C50.3073 200.635 21.2951 195.286 0.169006 187.701" stroke="#309E66" stroke-miterlimit="10"/></svg>
+					<svg width="344" height="199" viewBox="0 0 344 199" fill="none" class="scroll-svg heart-svg2"><path d="M342.717 155.614C310.895 181.422 262.115 190.44 218.709 185.941C175.303 181.442 131.838 168.117 102.843 143.319C74.3348 118.939 59.1595 84.806 61.7667 53.1788C63.0284 37.8606 70.2145 21.1809 85.836 11.8224C101.709 2.3182 124.766 4.59195 141.145 11.2742C153.516 16.3174 161.91 23.3642 163.414 35.2156C163.884 38.9072 163.52 43.6174 159.592 45.0291C155.705 46.4266 151.667 43.1894 150.107 39.7963C141.914 21.8898 167.844 8.32664 183.397 3.59042C196.813 -0.490882 211.727 -0.814999 224.705 4.34019C238.186 9.69718 245.685 19.1971 250.199 31.6342C255.96 47.4811 256.793 67.523 252.567 83.8649C247.172 104.683 234.393 123.561 217.8 139.057C182.103 172.396 138.155 191.608 80.7268 197.513C50.3073 200.635 21.2951 195.286 0.169006 187.701" stroke="#309E66" stroke-miterlimit="10"/></svg>
 				</h2>
 				<p class="members-read">AguRokkaには、熊本の様々な地域・作物・想いを持った仲間が集まっています。</p>
 				<div class="members-list_inner">
@@ -916,7 +916,7 @@
 			<section class="alittle-question" id="AguRokka-qanda">
 				<h2 class="qanda">
 					<img src="images/main-img/Qand.webp" alt="メンバーのアイコン">
-					<svg width="978" height="419" viewBox="0 0 978 419" fill="none" xmlns="http://www.w3.org/2000/svg" class="fukidashi-svg scroll-svg"><path d="M1.68961 182.142C-6.81039 266.142 64.1896 353.963 167.69 384.465C271.19 414.968 383.952 421.925 451.374 414.968C490.203 410.977 576.405 399.712 584.844 351.442C587.159 337.229 578.427 316.165 567.058 319.653C555.69 323.142 549.69 347.642 558.35 366.484C584.844 440.142 749.086 394.089 777.054 330.652C810.513 352.414 843.709 367.928 880.89 384.465C859.146 360.604 839.778 335.115 823.074 308.339C859.542 304.796 885.904 281.643 890.97 245.759C895.403 214.416 873.765 171.759 838.194 166.587C860.36 146.585 867.775 115.111 856.455 89.0965C845.134 63.0824 804.69 42.7622 783.888 41.7671C763.086 40.772 765.586 54.7622 783.888 54.7622C783.888 54.7622 871.19 62.3822 902.19 54.7622C921.615 49.9872 955.69 36.1301 955.69 10.1422C955.69 -0.85778 946.19 1.14222 946.19 1.14222C939.956 3.34638 940.69 13.1426 940.69 13.1426C940.69 13.1426 936.19 1.1416 928.69 3.1416C921.19 5.1416 922.19 15.6416 925.19 19.6416C928.19 23.6416 935.69 30.2329 946.19 30.9372C956.69 31.6416 964.19 30.9372 976.69 19.4382" stroke="#309E66" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/></svg>
+					<svg width="978" height="419" viewBox="0 0 978 419" fill="none" class="fukidashi-svg scroll-svg"><path d="M1.68961 182.142C-6.81039 266.142 64.1896 353.963 167.69 384.465C271.19 414.968 383.952 421.925 451.374 414.968C490.203 410.977 576.405 399.712 584.844 351.442C587.159 337.229 578.427 316.165 567.058 319.653C555.69 323.142 549.69 347.642 558.35 366.484C584.844 440.142 749.086 394.089 777.054 330.652C810.513 352.414 843.709 367.928 880.89 384.465C859.146 360.604 839.778 335.115 823.074 308.339C859.542 304.796 885.904 281.643 890.97 245.759C895.403 214.416 873.765 171.759 838.194 166.587C860.36 146.585 867.775 115.111 856.455 89.0965C845.134 63.0824 804.69 42.7622 783.888 41.7671C763.086 40.772 765.586 54.7622 783.888 54.7622C783.888 54.7622 871.19 62.3822 902.19 54.7622C921.615 49.9872 955.69 36.1301 955.69 10.1422C955.69 -0.85778 946.19 1.14222 946.19 1.14222C939.956 3.34638 940.69 13.1426 940.69 13.1426C940.69 13.1426 936.19 1.1416 928.69 3.1416C921.19 5.1416 922.19 15.6416 925.19 19.6416C928.19 23.6416 935.69 30.2329 946.19 30.9372C956.69 31.6416 964.19 30.9372 976.69 19.4382" stroke="#309E66" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/></svg>
 				</h2>
 				<div class="questions">
 					<ul>
@@ -995,21 +995,21 @@
 	</div>
 </main>
 <footer class="site-footer">
-	<svg width="1806" height="88" viewBox="0 0 1806 88" fill="none" xmlns="http://www.w3.org/2000/svg" class="scroll-svg bod-svg"><path d="M0.0825195 63.3779C0.0825195 63.3779 218.083 81.9559 566.583 30.1389C915.083 -21.6781 1371.41 78.6949 1371.41 78.6949C1370.79 56.8785 1371.01 44.2537 1372.28 21.0087L1399.03 30.1389C1408.67 33.0439 1418.64 30.1389 1420.39 23.0837C1422.15 16.0286 1414.81 10.6335 1405.49 9.38844C1396.17 8.14341 1380.85 13.508 1372.28 19.3486C1361.82 12.0812 1355.19 -0.157716 1344.23 1.08826C1333.27 2.33423 1329.48 8.5399 1332.39 16.4436C1335.3 24.3473 1340.28 23.9138 1342.47 23.9138C1344.67 23.9138 1361.44 22.7257 1371.41 21.0087C1368.82 44.2975 1370.71 56.654 1374.04 78.6949C1374.04 78.6949 1532.58 96.6676 1614.08 78.6949C1695.58 60.7223 1764.58 56.3779 1805.58 68.3779" stroke="#309E66" stroke-width="1"/></svg>
+	<svg width="1806" height="88" viewBox="0 0 1806 88" fill="none" class="scroll-svg bod-svg"><path d="M0.0825195 63.3779C0.0825195 63.3779 218.083 81.9559 566.583 30.1389C915.083 -21.6781 1371.41 78.6949 1371.41 78.6949C1370.79 56.8785 1371.01 44.2537 1372.28 21.0087L1399.03 30.1389C1408.67 33.0439 1418.64 30.1389 1420.39 23.0837C1422.15 16.0286 1414.81 10.6335 1405.49 9.38844C1396.17 8.14341 1380.85 13.508 1372.28 19.3486C1361.82 12.0812 1355.19 -0.157716 1344.23 1.08826C1333.27 2.33423 1329.48 8.5399 1332.39 16.4436C1335.3 24.3473 1340.28 23.9138 1342.47 23.9138C1344.67 23.9138 1361.44 22.7257 1371.41 21.0087C1368.82 44.2975 1370.71 56.654 1374.04 78.6949C1374.04 78.6949 1532.58 96.6676 1614.08 78.6949C1695.58 60.7223 1764.58 56.3779 1805.58 68.3779" stroke="#309E66" stroke-width="1"/></svg>
 	<div class="footer-top">
 		<div class="footer-logo">
 			<img src="images/logo/agurokka_logo.webp" alt="AguRokkaのロゴ">
 		</div>
 		<div class="footer-menu">
 				<ul class="footer-nav-list">
-					<li class="footer-nav-item has-child">
+					<li class="footer-nav-item h-has-child">
 						<a href="#about-us" class="footer-menu-category">AguRokkaについて</a>
 						<ul class="sub-footer-nav">
 							<li><a href="#about-us">AguRokkaとは</a></li>
 							<li><a href="#why-agurokka">AguRokkaの由来</a></li>
 						</ul>
 					</li>
-					<li class="footer-nav-item has-child">
+					<li class="footer-nav-item h-has-child">
 						<a href="#members" class="footer-menu-category">メンバー紹介</a>
 						<ul class="sub-footer-nav">
 							<li><a href="#members">メンバーインタビュー</a></li>
@@ -1017,7 +1017,7 @@
 							<li><a href="#AguRokka-qanda">Q&A</a></li>
 						</ul>
 					</li>
-					<li class="footer-nav-item has-child">
+					<li class="footer-nav-item h-has-child">
 						<a href="#activity" class="footer-menu-category">活動情報</a>
 						<ul class="sub-footer-nav">
 							<li><a href="#activity">活動履歴</a></li>
