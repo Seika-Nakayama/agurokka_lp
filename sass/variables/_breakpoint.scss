@@ -1,0 +1,45 @@
+// @mixin breakpoint($breakpoint) {
+//   @if $breakpoint == pc {
+//     @media (max-width: 1440px) {
+//       @content;
+//     }
+//   } @else if $breakpoint == pc2 {
+//     @media (max-width: 1280px) {
+//       @content;
+//     }
+//   } @else if $breakpoint == mb {
+//     @media (max-width: 768px) {
+//       @content;
+//     }
+//   } @else if $breakpoint == sp2 {
+//     @media (max-width: 360px) {
+//       @content;
+//     }
+//   } @else if $breakpoint == sp3 {
+//     @media (max-width: 279px) {
+//       @content;
+//     }
+//   }
+// }
+
+@use "sass:map";
+
+$breakpoints: (
+  pc: 1440px,
+  pc2: 1280px,
+  mb: 768px,
+  sp2: 360px,
+  sp3: 279px
+);
+
+@mixin media($breakpoint) {
+  @media screen and (max-width: map.get($breakpoints, $breakpoint)) {
+    @content;
+  }
+}
+
+// @mixin breakpoint($breakpoint) {
+//   @media screen and (max-width:'$breakpoint') {
+//     @content;
+//   }
+// }
