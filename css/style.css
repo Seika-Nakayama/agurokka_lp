@@ -1,4 +1,3 @@
-@charset "UTF-8";
 :root {
   --main-bg-color:#fffef8;
   --sub-bg-color:#f8fafa;
@@ -334,6 +333,7 @@ a.l-go-top {
   height: 100vh;
   max-width: 1920px;
   max-height: 1000px;
+  min-height: 900px;
   margin-inline: auto;
   position: relative;
   transition: 0.3s ease;
@@ -409,7 +409,8 @@ a.l-go-top {
     align-items: flex-start;
   }
   .char.is-show {
-    width: 13vh;
+    width: 6vh;
+    min-width: 4rem;
   }
   .char.is-show:nth-child(2) {
     margin-top: 0;
@@ -426,12 +427,9 @@ a.l-go-top {
   }
   .l-top-logo img {
     display: block;
-    width: 65%;
+    width: 55%;
     margin: auto;
     display: block;
-  }
-  .char.is-show {
-    width: 10vw;
   }
 }
 @media screen and (max-width: 768px) {
@@ -453,20 +451,24 @@ a.l-go-top {
   }
 }
 @media screen and (max-width: 550px) {
+  .l-fv {
+    min-height: 700px;
+  }
   .l-top-logo img {
-    width: 100%;
+    width: 80%;
   }
   .char.is-show {
-    width: 10vw;
+    width: 2.5rem;
+    min-width: initial;
   }
 }
 @media screen and (max-width: 390px) {
+  .l-fv {
+    max-height: 800px;
+  }
   .l-top-logo {
     top: 27%;
     transform: translate(-50%, -50%);
-  }
-  .l-top-logo img {
-    width: 90%;
   }
   .l-copy__items {
     width: 45%;
@@ -476,6 +478,9 @@ a.l-go-top {
   }
 }
 @media screen and (max-width: 376px) {
+  .l-fv {
+    min-height: 560px;
+  }
   .l-top-logo img {
     width: 80%;
   }
