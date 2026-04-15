@@ -1,9 +1,10 @@
+@use "../abstracts/index" as *;
+
 *{
 	color: var(--main-color);
-	text-decoration: none;
 	font-family: 'higuregothic';
 	scroll-behavior: smooth;
-	font-size: 20px;
+	font-size: to-rem(18);
 	letter-spacing: .1em;
 	line-height: 25px;
 }
