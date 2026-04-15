@@ -80,7 +80,7 @@ img.category.is-show {
   color: var(--main-color);
   font-family: "higuregothic";
   scroll-behavior: smooth;
-  font-size: 1.125rem;
+  font-size: 1.25rem;
   letter-spacing: 0.1em;
   line-height: 25px;
 }
@@ -194,7 +194,7 @@ img.l-logo-in-navmenu {
 
 a.l-go-top {
   color: var(--main-color);
-  font-size: 0.9375rem;
+  font-size: 15px;
 }
 
 .l-nav-link-insta img {
@@ -260,11 +260,11 @@ a.l-go-top {
     margin: 15px 0 3px;
   }
   .l-has-child a {
-    font-size: 0.9375rem;
+    font-size: 15px;
   }
   .l-sub-nav li a {
     margin-bottom: 0;
-    font-size: 0.8125rem;
+    font-size: 13px;
   }
   .l-sub-nav li a {
     line-height: 2em;
@@ -289,7 +289,7 @@ a.l-go-top {
   display: flex;
   align-items: center;
   justify-content: center;
-  font-size: to-rem(20px);
+  font-size: 20px;
   margin-bottom: 40px;
 }
 .l-loading .l-load-inner .l-load-text img {
@@ -313,7 +313,7 @@ a.l-go-top {
 }
 .l-loading .l-load-inner .l-load-count {
   margin-top: 50px;
-  font-size: to-rem(25px);
+  font-size: 25px;
   font-family: "higuregothic";
 }
 
@@ -768,4 +768,4 @@ a.l-go-top {
   }
 }
 
-/*# sourceMappingURL=style.css.map */
+/*# sourceMappingURL=test-style.css.map */
