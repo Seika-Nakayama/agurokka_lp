@@ -53,7 +53,7 @@
     &.is-show{
         opacity: 1;
         transform: translateY(0);
-		width: rclamp(38,145,376,2000);
+		width: fluid(38,145,376,2000);
 		max-width: 145px;
 
 			&:nth-child(2){
