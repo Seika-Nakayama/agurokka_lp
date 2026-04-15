@@ -289,7 +289,7 @@ a.l-go-top {
   display: flex;
   align-items: center;
   justify-content: center;
-  font-size: 20px;
+  font-size: to-rem(20px);
   margin-bottom: 40px;
 }
 .l-loading .l-load-inner .l-load-text img {
@@ -313,7 +313,7 @@ a.l-go-top {
 }
 .l-loading .l-load-inner .l-load-count {
   margin-top: 50px;
-  font-size: 25px;
+  font-size: to-rem(25px);
   font-family: "higuregothic";
 }
 
