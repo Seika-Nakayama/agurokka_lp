@@ -80,7 +80,7 @@ img.category.is-show {
   color: var(--main-color);
   font-family: "higuregothic";
   scroll-behavior: smooth;
-  font-size: 1.25rem;
+  font-size: 1.125rem;
   letter-spacing: 0.1em;
   line-height: 25px;
 }
@@ -194,7 +194,7 @@ img.l-logo-in-navmenu {
 
 a.l-go-top {
   color: var(--main-color);
-  font-size: 15px;
+  font-size: 0.9375rem;
 }
 
 .l-nav-link-insta img {
@@ -260,11 +260,11 @@ a.l-go-top {
     margin: 15px 0 3px;
   }
   .l-has-child a {
-    font-size: 15px;
+    font-size: 0.9375rem;
   }
   .l-sub-nav li a {
     margin-bottom: 0;
-    font-size: 13px;
+    font-size: 0.8125rem;
   }
   .l-sub-nav li a {
     line-height: 2em;
