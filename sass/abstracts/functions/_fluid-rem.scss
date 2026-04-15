@@ -1,4 +1,4 @@
-@function rclamp($min, $max, $minViewport, $maxViewport) {
+@function fluid($min, $max, $minViewport, $maxViewport) {
   $vwScale: ($max - $min) / ($maxViewport - $minViewport);
   $baseOffset: $min - $minViewport * $vwScale;
   
