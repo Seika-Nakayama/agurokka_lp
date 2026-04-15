@@ -62,7 +62,7 @@ img.l-logo-in-navmenu{
 
 .has-child{
 	a{
-		font-size: 20px;
+		font-size: to-rem(20);
 		color: var(--accent-green-color);
 		font-family: 'utsukushi';
 		transition:  $transition-early;
@@ -73,7 +73,7 @@ img.l-logo-in-navmenu{
 	a{
 		color: var(--main-color);
 		font-family: 'higuregothic';
-		font-size: 15px;
+		font-size: to-rem(15);
 		margin-bottom: 10px;
 	}
 
@@ -108,7 +108,7 @@ img.l-logo-in-navmenu{
 
 a.l-go-top{
 	color: var(--main-color);
-	font-size: 15px;
+	font-size: to-rem(15);
 }
 
 .l-nav-link-insta{
@@ -186,27 +186,27 @@ a.l-go-top{
 	.l-nav-list{
 		display: flex;
 		flex-direction: column;
-		align-items: center
+		align-items: center;
 	}
 }
 @include media(sp2){
 	img.l-logo-in-navmenu{
-		width:100px
+		width: 100px;
 	}
 	.l-global-nav{
-		padding-top:19px
+		padding-top: 19px;
 	}
 	.l-category-menu{
-		margin:15px 0 3px
+		margin: 15px 0 3px;
 	}
 	.l-has-child a{
-		font-size:15px
+		font-size: to-rem(15);
 	}
 	.l-sub-nav li a{
-		margin-bottom:0;
-		font-size:13px
+		margin-bottom: 0;
+		font-size: to-rem(13);
 	}
 	.l-sub-nav li a{
-		line-height:2em
+		line-height: 2em;
 	}
 }
