@@ -1,19 +1,49 @@
 @use "sass:math";
+@use "sass:map";
+@use "../variables/breakpoint" as *;
 
-// フォントサイズ pxをremに変換する関数
-$baseFontSize: 16px;
 
-@function to-rem($pxValue) {
-    // 1px で割ることで単位を消し、純粋な数値にしてから計算します
-    $strip-pxValue: math.div($pxValue, ($pxValue * 0 + 1));
-    $strip-baseSize: math.div($baseFontSize, ($baseFontSize * 0 + 1));
+// pxをremに変換する関数
+// $baseUnitSize: 16px;
 
-    // 数値同士で計算してから 1rem を掛ける
-    @return math.div($strip-pxValue, $strip-baseSize) * 1rem;
+// @function to-rem($pxValue) {
+//     $strip-pxValue: math.div($pxValue, ($pxValue * 0 + 1));
+//     $strip-baseSize: math.div($baseUnitSize, ($baseUnitSize * 0 + 1));
+    
+//     @return math.div($strip-pxValue, $strip-baseSize) * 1rem;
+// }
+
+// 単位をなくす
+@function strip-unit($value) {
+    @return math.div($value, ($value * 0 + 1));
 }
 
+// rem変換
+$base-px: 16px;
 
-// 使用例
-// .example {
-//     font-size: rem(24px); // 24pxを16px基準の1.5remに変換
+@function to-rem($px) {
+    @return math.div(strip-unit($px), strip-unit($base-px)) * 1rem;
+}
+
+// vw変換
+@function to-vw($px, $mode) {
+    $viewport: map.get($breakpoints, $mode);
+    @return math.div(strip-unit($px), strip-unit($viewport)) * 100vw;
+}
+
+// %変換
+@function pc($px, $mode) {
+    $viewport: map.get($breakpoints, $mode);
+    $base: if($viewport, $viewport, $mode);
+    @return math.div(strip-unit($px), strip-unit($base)) * 100%;
+}
+// width: pc(300px, "pc"); 1440pxが基準になる
+// width: pc(200px, 800px); 800pxが基準になる
+
+
+// --- 実際の使い方の例 ---
+// .sample {
+    // font-size: rem(20px);   1.25rem
+//     width: vw(300px);   80vw
+//     margin-left: pc(10px, 100px);  10%
 // }
