@@ -8,7 +8,7 @@
 	max-height: 1000px;
 	min-height: 900px;
 	margin-inline: auto;
-	@include positon-relative;
+	@include position-relative;
 	transition: $transition-slow;
 
     svg{

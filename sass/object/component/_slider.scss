@@ -9,7 +9,7 @@
 	.slider_inner{
 		aspect-ratio: 841 / 598;
 		overflow: hidden;
-		position: relative;
+		@include position-relative;
 
 		&.mask{
 			mask-image: url(../../../images/fv/vector.svg);

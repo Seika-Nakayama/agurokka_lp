@@ -59,6 +59,8 @@ main {
 
 article.article-box {
   position: relative;
+  top: 0;
+  left: 0;
   width: 100%;
   margin: 400px 0 100px;
 }
@@ -190,6 +192,8 @@ img.l-logo-in-navmenu {
 .l-category-menu {
   margin: 35px 0 20px;
   position: relative;
+  top: 0;
+  left: 0;
 }
 
 a.l-go-top {
@@ -210,6 +214,8 @@ a.l-go-top {
 
 .l-sns-in-menu {
   position: relative;
+  top: 0;
+  left: 0;
 }
 .l-sns-in-menu img {
   height: 30px;
@@ -516,6 +522,7 @@ a.l-go-top {
   cursor: pointer;
   position: relative;
   top: 20px;
+  left: initial;
   right: 24px;
   z-index: 1100;
   background: none;
@@ -556,6 +563,8 @@ a.l-go-top {
   aspect-ratio: 841/598;
   overflow: hidden;
   position: relative;
+  top: 0;
+  left: 0;
 }
 .slider .slider_inner.mask {
   mask-image: url(../../../images/fv/vector.svg);

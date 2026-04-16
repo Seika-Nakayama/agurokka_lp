@@ -103,7 +103,7 @@ img.l-logo-in-navmenu{
 
 .l-category-menu{
 	margin: 35px 0 20px;
-	position: relative;
+	@include position-relative;
 }
 
 a.l-go-top{
@@ -125,7 +125,7 @@ a.l-go-top{
 }
 
 .l-sns-in-menu{
-	position: relative;
+	@include position-relative;
 
 	img{
 		height: 30px;
