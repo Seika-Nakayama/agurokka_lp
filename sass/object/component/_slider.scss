@@ -4,7 +4,7 @@
 .slider{
 	width: 58%;
 	max-width: 1334px;
-	@include flex-center-absolute;
+	@include positon-center-absolute;
 
 	.slider_inner{
 		aspect-ratio: 841 / 598;

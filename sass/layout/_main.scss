@@ -8,14 +8,14 @@
 	max-height: 1000px;
 	min-height: 900px;
 	margin-inline: auto;
-	position: relative;
+	@include positon-relative;
 	transition: $transition-slow;
 
     svg{
         &.fv-svg{
 			width: 233%;
 			
-			@include flex-center-absolute(52%,63%);
+			@include positon-center-absolute(52%,63%);
             z-index: 5;
             opacity: 0;
 	        transition:  $transition-base;
@@ -28,7 +28,7 @@
 }
 
 .l-copy_flex{
-    @include flex-center-absolute;
+    @include positon-center-absolute;
 	z-index: 1;
 	width: 100%;
 	padding: 0 2%;
@@ -58,7 +58,7 @@
 }
 
 .l-top-logo{
-	@include flex-center-absolute(44%,50%);
+	@include positon-center-absolute(44%,50%);
 
     img{
         display: none;

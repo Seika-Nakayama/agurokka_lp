@@ -336,6 +336,8 @@ a.l-go-top {
   min-height: 900px;
   margin-inline: auto;
   position: relative;
+  top: 0;
+  left: 0;
   transition: 0.3s ease;
 }
 .l-fv svg.fv-svg {
