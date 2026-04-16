@@ -1,0 +1,33 @@
+@use "sass:map";
+
+$heights: (
+  pc-max-height: 1000px,
+  pc-min-height: 900px,
+  mb-max-height: 900px,
+  mb-min-height: 700px,
+  sp-max-height: 800px,
+  sp-min-height: 560px
+);
+
+@function Heights($key) {
+  @return map.get($heights, $key);
+}
+// 書き方
+// min-height だけ 500px にしたい（heightはデフォルトのauto）
+// @include height-size($min: 500px);}
+
+// height: 30px; 最小・最大は出力されない
+// @include height-size(30px);
+
+// @include height-size($maxHeight: Heights(mb-max-height));
+// min-widthのみ書くとき
+// @include height-size($minHeight: 700px);
+
+// 高さを一括で出力するmixin
+@mixin height-size($normalHeight: auto, $minHeight: null, $maxHeight: null){
+    height: $normalHeight;
+    @if $minHeight{min-height: $minHeight;}
+    @if $maxHeight{max-height: $maxHeight;}
+}
+// 書き方
+// @include height-size(100vh, fv-h(pc-min), fv-h(pc-max));
