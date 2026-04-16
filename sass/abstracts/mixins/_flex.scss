@@ -1,6 +1,12 @@
-@mixin flex-center-absolute($top-p: 50%, $left-p: 50%){
+@mixin flex-center-absolute($top-a: 50%, $left-a: 50%){
     position: absolute;
-    top: $top-p;
-    left: $left-p;
+    top: $top-a;
+    left: $left-a;
     transform: translate(-50%,-50%);
+}
+
+@mixin flex-relative($top-r: 50%, $left-r: 50%){
+    position: relative;
+    top: $top-r;
+    left: $left-r;
 }
