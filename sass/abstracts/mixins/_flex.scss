@@ -5,7 +5,7 @@
     transform: translate(-50%,-50%);
 }
 
-@mixin flex-relative($top-r: 50%, $left-r: 50%){
+@mixin flex-relative($top-r, $left-r){
     position: relative;
     top: $top-r;
     left: $left-r;
