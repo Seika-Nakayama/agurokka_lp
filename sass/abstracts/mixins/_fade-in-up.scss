@@ -1,4 +1,4 @@
-@mixin fade-in-up($dist: 20px, $duration: 1s){
+@mixin fade-in-up($dist: 0, $duration: 1s){
     opacity: 0;
     transform: translateY($dist);
     transition: $duration ease;
