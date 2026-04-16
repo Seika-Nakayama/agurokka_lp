@@ -48,7 +48,7 @@
 	top: 0;
 	right: 0;
 	width: 350px;
-	height: 100vh;
+	@include height-size(100vh);
 	background-color: var(--main-bg-color);
 	transform: translateX(100%);
 	transition: $transition-base;
@@ -87,6 +87,7 @@ img.l-logo-in-navmenu{
 
 			&::before{
 				content: '';
+				// 丸を作るミクシンを作る？
 				width: 5px;
 				height: 5px;
 				border-radius: 5px;
@@ -113,6 +114,7 @@ a.l-go-top{
 
 .l-nav-link-insta{
 	img{
+		// 違う考え方のheightのほうがいいかも（グローバルなものではない？）
 		height: 40px;
 		width: auto;
 		margin-right: 30px

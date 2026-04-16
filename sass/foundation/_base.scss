@@ -3,7 +3,7 @@
 body{
 	background-color: var(--main-bg-color);
 	min-width: 360px;
-	min-height: 700px;
+	@include height-size($minHeight: 700px);
 }
 
 main{

@@ -50,6 +50,7 @@
 body {
   background-color: var(--main-bg-color);
   min-width: 360px;
+  height: auto;
   min-height: 700px;
 }
 
@@ -425,6 +426,7 @@ a.l-go-top {
 }
 @media screen and (max-width: 1024px) {
   .l-fv {
+    height: auto;
     max-height: 900px;
   }
   .l-top-logo {
@@ -439,6 +441,7 @@ a.l-go-top {
 }
 @media screen and (max-width: 550px) {
   .l-fv {
+    height: auto;
     min-height: 700px;
   }
   .l-top-logo img {
@@ -450,6 +453,7 @@ a.l-go-top {
 }
 @media screen and (max-width: 390px) {
   .l-fv {
+    height: auto;
     max-height: 800px;
   }
   .l-top-logo {
@@ -461,6 +465,7 @@ a.l-go-top {
 }
 @media screen and (max-width: 376px) {
   .l-fv {
+    height: auto;
     min-height: 560px;
   }
   .l-top-logo img {
