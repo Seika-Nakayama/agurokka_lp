@@ -14,10 +14,8 @@
     svg{
         &.fv-svg{
 			width: 233%;
-            position: absolute;
-            top: 52%;
-            left: 63%;
-            transform: translate(-50%,-50%);
+			
+			@include flex-center-absolute(52%,63%);
             z-index: 5;
             opacity: 0;
 	        transition:  $transition-base;
@@ -30,10 +28,7 @@
 }
 
 .l-copy_flex{
-    position: absolute;
-	top: 50%;
-	left: 50%;
-	transform: translate(-50%,-50%);
+    @include flex-center-absolute;
 	z-index: 1;
 	width: 100%;
 	padding: 0 2%;
@@ -63,10 +58,7 @@
 }
 
 .l-top-logo{
-	position: absolute;
-	top: 44%;
-	left: 50%;
-	transform: translate(-50%,-50%);
+	@include flex-center-absolute(44%,50%);
 
     img{
         display: none;
