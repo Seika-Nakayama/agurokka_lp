@@ -14,7 +14,6 @@
     svg{
         &.fv-svg{
 			width: 233%;
-			
 			@include positon-center-absolute(52%,63%);
             z-index: 5;
             opacity: 0;
@@ -45,9 +44,9 @@
 	transform: translateY(20px);
 	transition: 1s ease;
 
+	@include fade-in-up(20px ,1s);
+
     &.is-show{
-        opacity: 1;
-        transform: translateY(0);
 		width: fluid(38,145,376,2000);
 		max-width: 145px;
 

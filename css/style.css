@@ -380,10 +380,15 @@ a.l-go-top {
   opacity: 0;
   transform: translateY(20px);
   transition: 1s ease;
+  opacity: 0;
+  transform: translateY(20px);
+  transition: 1s ease;
 }
-.char.is-show {
+.char.is-ready, .char.is-show {
   opacity: 1;
   transform: translateY(0);
+}
+.char.is-show {
   width: clamp(2.375rem, 0.8266625616rem + 6.5886699507vw, 9.0625rem);
   max-width: 145px;
 }
