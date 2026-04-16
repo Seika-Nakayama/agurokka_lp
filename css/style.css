@@ -336,14 +336,14 @@ a.l-go-top {
 }
 .l-fv {
   width: 100%;
-  height: 100vh;
   max-width: 1920px;
-  max-height: 1000px;
+  height: 100vh;
   min-height: 900px;
-  margin-inline: auto;
+  max-height: 1000px;
   position: relative;
   top: 0;
   left: 0;
+  margin-inline: auto;
   transition: 0.3s ease;
 }
 .l-fv svg.fv-svg {
@@ -454,7 +454,6 @@ a.l-go-top {
   }
   .l-top-logo {
     top: 27%;
-    transform: translate(-50%, -50%);
   }
   .l-copy__items {
     width: 45%;

@@ -1,0 +1,23 @@
+@use "sass:map";
+
+// 1. プロジェクトの共通数値を定義（マップ）
+$heights: (
+  pc-max-height: 1000px,
+  pc-min-height: 900px,
+  mb-max-height: 900px,
+  mb-min-height: 700px,
+  sp-max-height: 800px,
+  sp-min-height: 560px
+);
+
+// 2. マップから数値を安全に取り出す関数
+@function Heights($key) {
+  @return map.get($heights, $key);
+}
+
+// 高さを一括で出力するmixin
+@mixin height-size($normalHeight: auto, $minHeight: null, $maxHeight: null){
+    height: $normalHeight;
+    @if $minHeight{min-height: $minHeight;}
+    @if $maxHeight{max-height: $maxHeight;}
+}
