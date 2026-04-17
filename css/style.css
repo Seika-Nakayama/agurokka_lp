@@ -107,16 +107,21 @@ ul, ol {
   position: fixed;
   top: 0;
   right: 0;
-  width: 100%;
-  z-index: 1000;
-  transform: translateY(-100%);
+  z-index: 900;
+  opacity: 0;
+  transform: translateX(100%);
+  pointer-events: none;
   transition: 0.4s ease;
 }
-.l-site-header.is-show {
-  transform: translateY(0);
+.l-site-header.is-show, .l-site-header.is-open, .is-open .l-site-header {
+  opacity: 1;
+  transform: translate(0, 0);
+  pointer-events: auto;
+}
+.l-site-header {
+  width: 100%;
 }
 .l-site-header.is-open .l-global-nav {
-  transform: translateX(0);
   border-left: dotted 4px var(--accent-green-color);
   overflow-x: scroll;
 }
@@ -129,9 +134,11 @@ ul, ol {
 }
 .l-site-header.is-open .l-hamburger span:nth-child(3) {
   width: 60px;
+  transform: translateY(-14px) rotate(-45deg);
+}
+.l-site-header.is-open .l-hamburger span:nth-child(3) {
   top: 28px;
   left: -10px;
-  transform: translateY(-14px) rotate(-45deg);
 }
 
 .l-inner {
@@ -143,12 +150,21 @@ ul, ol {
   position: fixed;
   top: 0;
   right: 0;
-  width: 350px;
-  height: 100vh;
-  background-color: var(--main-bg-color);
+  opacity: 0;
   transform: translateX(100%);
+  pointer-events: none;
   transition: 0.4s ease;
+}
+.l-global-nav.is-show, .l-global-nav.is-open, .is-open .l-global-nav {
+  opacity: 1;
+  transform: translate(0, 0);
+  pointer-events: auto;
+}
+.l-global-nav {
+  height: 100vh;
+  width: 350px;
   padding-top: 100px;
+  background-color: var(--main-bg-color);
 }
 
 img.l-logo-in-navmenu {
@@ -281,10 +297,11 @@ a.l-go-top {
   width: 100%;
   position: fixed;
   top: 0;
+  right: 0;
+  bottom: 0;
   left: 0;
-  inset: 0;
-  background-color: var(--main-bg-color);
   z-index: 9999;
+  background-color: var(--main-bg-color);
   display: flex;
   justify-content: center;
   align-items: center;
@@ -366,7 +383,6 @@ a.l-go-top {
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
-  z-index: 1;
   width: 100%;
   padding: 0 2%;
   display: flex;
@@ -474,57 +490,33 @@ a.l-go-top {
 }
 .c-fixed-link {
   position: fixed;
-  bottom: 0;
   right: 6px;
+  bottom: 0;
   z-index: 100;
   opacity: 0;
   transform: translateX(100%);
   pointer-events: none;
   transition: 0.4s ease;
-  width: 250px;
-  height: 170px;
-  background-image: url(../../../images/fv/caw.webp);
-  background-size: 100%;
-  background-position: left top;
-  background-repeat: no-repeat;
 }
-.c-fixed-link.is-show {
+.c-fixed-link.is-show, .c-fixed-link.is-open, .is-open .c-fixed-link {
   opacity: 1;
-  transform: translateX(0);
+  transform: translate(0, 0);
   pointer-events: auto;
 }
-.c-fixed-link.is-show img {
-  opacity: 1;
-  right: 6px;
+.c-fixed-link {
+  width: clamp(9.375rem, 2.8176229508rem + 10.2459016393vw, 15.625rem);
+  aspect-ratio: 250/170;
+  height: auto;
+  background: url(../../../images/fv/caw.webp) no-repeat left top/100%;
+}
+.c-fixed-link.is-show {
+  pointer-events: auto;
 }
 .c-fixed-link.is-hide {
-  opacity: 0;
+  transform: translateX(105%);
   pointer-events: none;
 }
-.c-fixed-link.is-hide img {
-  opacity: 0;
-  right: -300px;
-  bottom: -5%;
-}
-.c-fixed-link img {
-  position: fixed;
-  bottom: -25px;
-  right: -300px;
-  z-index: 9998;
-  width: 220px;
-  opacity: 0;
-  transition: 0.4s ease;
-}
 
-@media screen and (max-width: 1024px) {
-  .c-fixed-link {
-    width: 150px;
-    height: 100px;
-  }
-  .c-fixed-link img {
-    width: 190px;
-  }
-}
 .l-hamburger {
   width: 60px;
   height: 60px;
@@ -533,31 +525,33 @@ a.l-go-top {
   top: 20px;
   left: initial;
   right: 24px;
-  z-index: 1100;
+  z-index: 1000;
   background: none;
   border: none;
 }
 .l-hamburger span {
   position: absolute;
   left: 0;
+  display: block;
   width: 60px;
   height: 1px;
   background-color: var(--accent-green-color);
   transition: 0.4s ease;
 }
 .l-hamburger span:nth-child(1) {
+  width: 70px;
   top: 0;
   left: -9px;
-  width: 70px;
 }
 .l-hamburger span:nth-child(2) {
-  top: 14px;
   width: 60px;
+  top: 14px;
+  left: 0;
 }
 .l-hamburger span:nth-child(3) {
+  width: 50px;
   top: 28px;
   left: 10px;
-  width: 50px;
 }
 
 .slider {

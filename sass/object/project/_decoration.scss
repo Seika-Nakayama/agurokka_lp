@@ -3,8 +3,8 @@
 
 .lines-flex{
 	width:  30%;
-	@include positon-center-absolute(90%,85%);
-	z-index: 100;
+	@include absolute-position(90%,85%);
+	z-index: z-index(100);
 
     img.caw{
         width: 100%;
@@ -12,8 +12,8 @@
 }
 
 .vegetable{
-	@include positon-center-absolute;
-	z-index: 5;
+	@include absolute-position;
+	z-index: z-index(5);
 	opacity: 0;
 	animation: vegPop 0.5s ease forwards;
 }

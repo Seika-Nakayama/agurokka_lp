@@ -1,38 +1,21 @@
 @use "../abstracts/index" as *;
 
 .l-site-header{
-	position: fixed;
-	top: 0;
-	right: 0;
+	@include fixed-position(0, 0, null, null, 900);
+	@include slide-in($trs-right, $transition-base);
 	width: 100%;
-	z-index: 1000;
-	transform: translateY(-100%);
-	transition: $transition-base;
-
-	&.is-show{
-		transform: translateY(0);
-	}
 
 	&.is-open{
 		.l-global-nav{
-			transform: translateX(0);
 			border-left: dotted 4px var(--accent-green-color);
 			overflow-x: scroll;
 		}
 		
 		.l-hamburger span{
-			&:nth-child(1){
-				width: 60px;
-				transform: translateY(14px) rotate(45deg);
-			}
-			&:nth-child(2){
-				opacity: 0;
-			}
+			@include hamburger-cross(60px, 60px, 14px, 45deg);
 			&:nth-child(3){
-				width: 60px;
 				top: 28px;
 				left: -10px;
-				transform: translateY(-14px) rotate(-45deg);
 			}
 		}
 	}
@@ -44,15 +27,12 @@
 }
 
 .l-global-nav{
-	position: fixed;
-	top: 0;
-	right: 0;
-	width: 350px;
+	@include fixed-position(0, 0, null, null, null);
+	@include slide-in($trs-right, $transition-base);
 	@include height-size(100vh);
-	background-color: var(--main-bg-color);
-	transform: translateX(100%);
-	transition: $transition-base;
+	width: 350px;
 	padding-top: 100px;
+	background-color: var(--main-bg-color);
 }
 
 img.l-logo-in-navmenu{
@@ -104,7 +84,7 @@ img.l-logo-in-navmenu{
 
 .l-category-menu{
 	margin: 35px 0 20px;
-	@include position-relative;
+	@include relative-position;
 }
 
 a.l-go-top{
@@ -127,7 +107,7 @@ a.l-go-top{
 }
 
 .l-sns-in-menu{
-	@include position-relative;
+	@include relative-position;
 
 	img{
 		height: 30px;
@@ -165,14 +145,6 @@ a.l-go-top{
 		}
 	}
 }
-
-
-// @media screen and (max-width:1055px){
-// 	.l-sub-nav li a::before{
-// 		width: 30px;
-// 		height: 1px
-// 	}
-// }
 
 .l-nav-list{
 	padding: 0 30px;

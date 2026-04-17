@@ -1,12 +1,16 @@
 @forward "functions/fluid-rem";
 @forward "functions/to-rem";
 
-@forward "mixins/breakpoint";
 @forward "mixins/position";
 @forward "mixins/fade-in-up";
+@forward "mixins/slide-in";
 
+@forward "variables/breakpoint";
 @forward "variables/color";
 @forward "variables/delay";
 @forward "variables/font-family";
+@forward "variables/hambuger-span";
 @forward "variables/height";
 @forward "variables/transition";
+@forward "variables/translate";
+@forward "variables/z-index";
