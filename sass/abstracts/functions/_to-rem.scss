@@ -1,6 +1,6 @@
 @use "sass:math";
 @use "sass:map";
-@use "../mixins/breakpoint" as *;
+@use "../variables/breakpoint" as *;
 
 
 // pxをremに変換する関数

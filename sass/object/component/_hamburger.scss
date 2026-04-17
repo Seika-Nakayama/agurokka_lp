@@ -4,33 +4,20 @@
 	width: 60px;
 	height: 60px;
 	cursor: pointer;
-	@include position-relative(20px,initial);
+	@include relative-position(20px,initial);
 	right: 24px;
-	z-index: 1100;
+	z-index: z-index(1000);
 	background: none;
 	border: none;
 
 	span{
 		position: absolute;
 		left: 0;
-		width: 60px;
-		height: 1px;
-		background-color: var(--accent-green-color);
-		transition: $transition-base;
-
-		&:nth-child(1){
-			top: 0;
-			left: -9px;
-			width: 70px;
-		}
-		&:nth-child(2){
-			top: 14px;
-			width: 60px;
-		}
-		&:nth-child(3){
-			top: 28px;
-			left: 10px;
-			width: 50px;
-		}
+		@include hamburger-lines(60px,1px,var(--accent-green-color));
+		@include hamburger-lines-init(
+			70px, 60px, 50px,
+			0, 14px, 28px,
+			-9px, 0, 10px
+		);
 	}
 }

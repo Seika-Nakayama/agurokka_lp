@@ -5,15 +5,15 @@
 	width: 100%;
 	max-width: 1920px;
 	@include height-size(100vh, Heights(pc-min-height), Heights(pc-max-height));
-	@include position-relative;
+	@include relative-position;
 	margin-inline: auto;
 	transition: $transition-slow;
 
     svg{
         &.fv-svg{
 			width: 233%;
-			@include positon-center-absolute(52%,63%);
-            z-index: 5;
+			@include absolute-position(52%,63%);
+            z-index: z-index(5);
             opacity: 0;
 	        transition:  $transition-base;
 
@@ -25,14 +25,13 @@
 }
 
 .l-copy_flex{
-    @include positon-center-absolute;
-	z-index: 1;
+    @include absolute-position;
 	width: 100%;
 	padding: 0 2%;
 	display: flex;
 	flex-direction: row-reverse;
 	justify-content: space-between;
-	z-index: 9999;
+	z-index: z-index(9999);
 }
 
 .char{
@@ -55,7 +54,7 @@
 }
 
 .l-top-logo{
-	@include positon-center-absolute(44%,50%);
+	@include absolute-position(44%,50%);
 
     img{
         display: none;
@@ -99,9 +98,16 @@
 	}
 }
 
+@include media(mb3){
+	.l-top-logo img{
+		width: 61%;
+	}
+}
+
 @include media(sp){
 	.l-fv{
-		@include height-size($minHeight: 700px);
+		// @include height-size($minHeight: 750px);
+		@include height-size($minHeight: 800px);
 	}
 	.l-top-logo img{
 		width: 80%;
@@ -114,9 +120,9 @@
 }
 
 @include media(sp2){
-	.l-fv{
-		@include height-size($maxHeight: 800px);
-	}
+	// .l-fv{
+	// 	@include height-size($maxHeight: 800px);
+	// }
 	.l-top-logo{
 		top: 27%;
 	}
@@ -127,7 +133,7 @@
 
 @include media(sp3){
 	.l-fv{
-		@include height-size($minHeight: 560px);
+		@include height-size($minHeight: 667px);
 	}
 	.l-top-logo img{
 		width: 80%;
