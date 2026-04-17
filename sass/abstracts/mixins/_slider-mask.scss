@@ -1,0 +1,23 @@
+// 固定値
+@mixin mask-vector($url){
+    mask-image: url($url);
+    mask-size: 100% 100%;
+    mask-repeat: no-repeat;
+    mask-position: center;
+    -webkit-mask-image: url($url);
+    -webkit-mask-size: 100% 100%;
+    -webkit-mask-repeat: no-repeat;
+    -webkit-mask-position: center;
+}
+
+// サイズや位置も変えたい時
+// @mixin mask-vector($url, $size: 100% 100%, $pos: center) {
+//   -webkit-mask-image: url($url);
+//   -webkit-mask-size: $size;
+//   -webkit-mask-repeat: no-repeat;
+//   -webkit-mask-position: $pos;
+//   mask-image: url($url);
+//   mask-size: $size;
+//   mask-repeat: no-repeat;
+//   mask-position: $pos;
+// }

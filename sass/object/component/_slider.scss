@@ -12,18 +12,11 @@
 		@include relative-position;
 
 		&.mask{
-			mask-image: url(../../../images/fv/vector.svg);
-			mask-size: 100% 100%;
-			mask-repeat: no-repeat;
-			mask-position: center;
-			-webkit-mask-image: url(../../../images/fv/vector.svg);
-			-webkit-mask-size: 100% 100%;
-			-webkit-mask-repeat: no-repeat;
-			-webkit-mask-position: center;
+			@include mask-vector("../../../images/fv/vector.svg");
 			
 			.slide{
-				position: absolute;
-				inset: 0;   
+				@include absolute-position();
+				inset: 0;
 				width: 100%;
 				height: 100%;
 				object-fit: cover;
@@ -32,7 +25,7 @@
 				transition: opacity 1.5s ease,transform 8s ease;
 				z-index: z-index(1);
 				
-				&.slide.slide.is-active{
+				&.is-active{
 					opacity: 1;
 					transform: scale(1.08);
 				}

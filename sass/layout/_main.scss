@@ -98,9 +98,16 @@
 	}
 }
 
+@include media(mb3){
+	.l-top-logo img{
+		width: 61%;
+	}
+}
+
 @include media(sp){
 	.l-fv{
-		@include height-size($minHeight: 700px);
+		// @include height-size($minHeight: 750px);
+		@include height-size($minHeight: 800px);
 	}
 	.l-top-logo img{
 		width: 80%;
@@ -113,9 +120,9 @@
 }
 
 @include media(sp2){
-	.l-fv{
-		@include height-size($maxHeight: 800px);
-	}
+	// .l-fv{
+	// 	@include height-size($maxHeight: 800px);
+	// }
 	.l-top-logo{
 		top: 27%;
 	}
@@ -126,7 +133,7 @@
 
 @include media(sp3){
 	.l-fv{
-		@include height-size($minHeight: 560px);
+		@include height-size($minHeight: 667px);
 	}
 	.l-top-logo img{
 		width: 80%;
