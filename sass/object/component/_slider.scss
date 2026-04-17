@@ -4,35 +4,28 @@
 .slider{
 	width: 58%;
 	max-width: 1334px;
-	@include positon-center-absolute;
+	@include absolute-position;
 
 	.slider_inner{
 		aspect-ratio: 841 / 598;
 		overflow: hidden;
-		@include position-relative;
+		@include relative-position;
 
 		&.mask{
-			mask-image: url(../../../images/fv/vector.svg);
-			mask-size: 100% 100%;
-			mask-repeat: no-repeat;
-			mask-position: center;
-			-webkit-mask-image: url(../../../images/fv/vector.svg);
-			-webkit-mask-size: 100% 100%;
-			-webkit-mask-repeat: no-repeat;
-			-webkit-mask-position: center;
+			@include mask-vector("../../../images/fv/vector.svg");
 			
 			.slide{
-				position: absolute;
-				inset: 0;   
+				@include absolute-position();
+				inset: 0;
 				width: 100%;
 				height: 100%;
 				object-fit: cover;
 				opacity: 0;
 				transform: scale(1);
 				transition: opacity 1.5s ease,transform 8s ease;
-				z-index: 1;
+				z-index: z-index(1);
 				
-				&.slide.slide.is-active{
+				&.is-active{
 					opacity: 1;
 					transform: scale(1.08);
 				}
