@@ -62,13 +62,13 @@
 	}
 }
 
-@include media(pc){
+@include media(pc2){
 	.spinach{
 		top: 97%;
 		left: 10%;
 	}
 }
-@include media(pc2){
+@include media(pc3){
 	.corn{
 		display: none;
 	}
