@@ -885,7 +885,7 @@ h2 img{
 }
 p.about-agurokka{
 	line-height:50px;
-	letter-spacing:.3em;
+	/* letter-spacing:.3em; */
 	text-align:center
 }
 .how-agurokka__items img{
