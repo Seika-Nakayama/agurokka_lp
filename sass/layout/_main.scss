@@ -3,7 +3,7 @@
 
 .l-fv{
 	width: 100%;
-	max-width: 1920px;
+	// max-width: 1920px;
 	@include height-size(100vh, Heights(pc-min-height), Heights(pc-max-height));
 	@include relative-position;
 	margin-inline: auto;
@@ -61,6 +61,12 @@
     }
 }
 
+@include media(pc){
+	.l-fv{
+		@include height-size(100vh, Heights(pc-min-height), Heights(pc-normal-height));
+	}
+
+}
 @include media(pc2){
 	.l-copy__items{
 		width: 40%;
