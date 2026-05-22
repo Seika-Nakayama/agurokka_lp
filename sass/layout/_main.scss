@@ -61,13 +61,13 @@
     }
 }
 
-@include media(pc2){
+@include media(pc){
 	.l-fv{
 		@include height-size(100vh, Heights(pc-min-height), Heights(pc-normal-height));
 	}
 
 }
-@include media(pc3){
+@include media(pc2){
 	.l-copy__items{
 		width: 40%;
 		display: flex;
