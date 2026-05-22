@@ -3,7 +3,7 @@
 .l-loading{
 	width: 100%;
     @include fixed-full(9999);
-	background-color: var(--main-bg-color);
+	background-color: var(--bg-primary);
 	display: flex;
 	justify-content: center;
 	align-items: center;
@@ -36,7 +36,7 @@
                 display: block;
                 width: 0%;
                 height: 100%;
-                background-color: var(--accent-green-color);
+                background-color: var(--primary-00);
                 transition: var(--transition-slow);
             }
         }

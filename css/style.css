@@ -1,19 +1,19 @@
 :root {
-  --main-bg-color:#fffef8;
-  --sub-bg-color:#f8fafa;
-  --tx-bg-color:#ffffffa9;
-  --orange-bg-color:#ea773d66;
-  --tx-bg-green-color:#88a890;
-  --shadow-color:#06280627;
+  --bg-primary:#fffef8;
+  --bg-secondary:#f8fafa;
+  --bg-overlay:#ffffffa9;
+  --bg-accent:#ea773d66;
+  --bg-muted:#88a890;
+  --shadow-base:#06280627;
 }
 
 :root {
-  --main-color:#444943;
-  --sub-color:#fffefb;
-  --title-color:#658C6F;
-  --accent-green-color:#309E66;
-  --accent-orange-color:#ef9365;
-  --small-color:#b5b5b5;
+  --text-primary:#444943;
+  --text-inverse:#fffefb;
+  --text-title:#658C6F;
+  --primary-00:#309E66;
+  --highlight-00:#ef9365;
+  --text-muted:#b5b5b5;
 }
 
 :root {
@@ -48,7 +48,7 @@
   src: url("../../../font/Kokoro.woff2") format("woff2");
 }
 body {
-  background-color: var(--main-bg-color);
+  background-color: var(--bg-primary);
   min-width: 360px;
   height: auto;
   min-height: 700px;
@@ -80,7 +80,7 @@ img.category.is-show {
 }
 
 * {
-  color: var(--main-color);
+  color: var(--text-primary);
   font-family: "higuregothic";
   scroll-behavior: smooth;
   font-size: 1.125rem;
@@ -122,7 +122,7 @@ ul, ol {
   width: 100%;
 }
 .l-site-header.is-open .l-global-nav {
-  border-left: dotted 4px var(--accent-green-color);
+  border-left: dotted 4px var(--primary-00);
   overflow-x: scroll;
 }
 .l-site-header.is-open .l-hamburger span:nth-child(1) {
@@ -164,7 +164,7 @@ ul, ol {
   height: 100vh;
   width: 350px;
   padding-top: 100px;
-  background-color: var(--main-bg-color);
+  background-color: var(--bg-primary);
 }
 
 img.l-logo-in-navmenu {
@@ -174,13 +174,13 @@ img.l-logo-in-navmenu {
 
 .has-child a {
   font-size: 1.25rem;
-  color: var(--accent-green-color);
+  color: var(--primary-00);
   font-family: "utsukushi";
   transition: 0.2s ease;
 }
 
 .l-sub-nav a {
-  color: var(--main-color);
+  color: var(--text-primary);
   font-family: "higuregothic";
   font-size: 0.9375rem;
   margin-bottom: 10px;
@@ -198,7 +198,7 @@ img.l-logo-in-navmenu {
   width: 5px;
   height: 5px;
   border-radius: 5px;
-  background-color: var(--title-color);
+  background-color: var(--text-title);
   position: absolute;
   top: 50%;
   left: 0;
@@ -214,7 +214,7 @@ img.l-logo-in-navmenu {
 }
 
 a.l-go-top {
-  color: var(--main-color);
+  color: var(--text-primary);
   font-size: 0.9375rem;
 }
 
@@ -248,7 +248,7 @@ a.l-go-top {
     opacity: 0.5;
   }
   .l-sub-nav li a:hover {
-    color: var(--title-color);
+    color: var(--text-title);
   }
   .l-sub-nav li:hover a::before {
     width: 30px;
@@ -301,7 +301,7 @@ a.l-go-top {
   bottom: 0;
   left: 0;
   z-index: 9999;
-  background-color: var(--main-bg-color);
+  background-color: var(--bg-primary);
   display: flex;
   justify-content: center;
   align-items: center;
@@ -332,7 +332,7 @@ a.l-go-top {
   display: block;
   width: 0%;
   height: 100%;
-  background-color: var(--accent-green-color);
+  background-color: var(--primary-00);
   transition: var(--transition-slow);
 }
 .l-loading .l-load-inner .l-load-count {
@@ -371,10 +371,10 @@ a.l-go-top {
   transform: translate(-50%, -50%);
   z-index: 5;
   opacity: 0;
-  transition: 0.4s ease;
 }
 .l-fv svg.fv-svg.is-ready {
   opacity: 1;
+  transition: opacity 0.4s ease;
 }
 
 .l-copy_flex {
@@ -395,21 +395,16 @@ a.l-go-top {
   margin-inline: auto;
   opacity: 0;
   transform: translateY(20px);
-  transition: 1s ease;
-  opacity: 0;
-  transform: translateY(20px);
-  transition: 1s ease;
-}
-.char.is-ready, .char.is-show {
-  opacity: 1;
-  transform: translateY(0);
-}
-.char.is-show {
   width: clamp(2.375rem, 0.8266625616rem + 6.5886699507vw, 9.0625rem);
   max-width: 145px;
 }
-.char.is-show:nth-child(2) {
+.char:nth-child(2) {
   margin-top: 30%;
+}
+.char.is-show {
+  opacity: 1;
+  transform: translateY(0);
+  transition: opacity 1s ease, transform 1s ease;
 }
 
 .l-top-logo {
@@ -437,7 +432,7 @@ a.l-go-top {
     justify-content: space-between;
     align-items: flex-start;
   }
-  .char.is-show:nth-child(2) {
+  .char:nth-child(2) {
     margin-top: 0;
   }
   .l-copy_flex {
@@ -542,7 +537,7 @@ a.l-go-top {
   display: block;
   width: 60px;
   height: 1px;
-  background-color: var(--accent-green-color);
+  background-color: var(--primary-00);
   transition: 0.4s ease;
 }
 .l-hamburger span:nth-child(1) {

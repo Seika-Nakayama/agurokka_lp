@@ -7,7 +7,7 @@
 	@include height-size(100vh, Heights(pc-min-height), Heights(pc-max-height));
 	@include relative-position;
 	margin-inline: auto;
-	transition: $transition-slow;
+	transition: $transition-md;
 
     svg{
         &.fv-svg{
@@ -15,10 +15,10 @@
 			@include absolute-position(52%,63%);
             z-index: z-index(5);
             opacity: 0;
-	        transition:  $transition-base;
 
             &.is-ready {
                 opacity: 1;
+                transition: opacity $transition-lg;
             }
         }
     }
@@ -39,17 +39,17 @@
 	margin-inline: auto;
 	opacity: 0;
 	transform: translateY(20px);
-	transition: 1s ease;
+	width: fluid(38,145,376,2000);
+	max-width: 145px;
 
-	@include fade-in-up(20px ,1s);
+	&:nth-child(2){
+		margin-top: 30%;
+	}
 
     &.is-show{
-		width: fluid(38,145,376,2000);
-		max-width: 145px;
-
-			&:nth-child(2){
-                margin-top: 30%;
-            }
+		opacity: 1;
+		transform: translateY(0);
+		transition: opacity 1s ease, transform 1s ease;
     }
 }
 
@@ -76,10 +76,8 @@
 		align-items: flex-start;
 	}
 	.char{
-		 &.is-show{
-			&:nth-child(2){
-				margin-top: 0;
-			}
+		&:nth-child(2){
+			margin-top: 0;
 		}
 	}
 	.l-copy_flex{
