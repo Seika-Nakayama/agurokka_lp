@@ -7,7 +7,7 @@
 	@include height-size(100vh, Heights(pc-min-height), Heights(pc-max-height));
 	@include relative-position;
 	margin-inline: auto;
-	transition: $transition-slow;
+	transition: $transition-md;
 
     svg{
         &.fv-svg{
@@ -15,7 +15,7 @@
 			@include absolute-position(52%,63%);
             z-index: z-index(5);
             opacity: 0;
-	        transition:  $transition-base;
+	        transition:  $transition-lg;
 
             &.is-ready {
                 opacity: 1;

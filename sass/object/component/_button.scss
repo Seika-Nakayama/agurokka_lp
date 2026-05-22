@@ -2,7 +2,7 @@
 
 .c-fixed-link{
 	@include fixed-position(null, 6px, 0, null, 100);
-	@include slide-in($trs-right, $transition-base);
+	@include slide-in($translate-right, $transition-lg);
 	width: fluid(150, 250, 1024, 2000);
 	aspect-ratio: 250 / 170;
 	height: auto;

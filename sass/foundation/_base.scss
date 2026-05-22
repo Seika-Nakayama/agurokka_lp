@@ -1,7 +1,7 @@
 @use '../abstracts/index' as *;
 
 body{
-	background-color: var(--main-bg-color);
+	background-color: var(--bg-primary);
 	min-width: 360px;
 	@include height-size($minHeight: 700px);
 }
