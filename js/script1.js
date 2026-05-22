@@ -45,18 +45,20 @@ const fv = document.querySelector('.l-fv');
 const footer = document.querySelector('footer');
 const hamburger = document.getElementById('l-hamburger');
 const nav = document.querySelector('.l-global-nav');
-const navLinks = nav.querySelectorAll('a');
 const fixedLink = document.querySelector('.c-fixed-link');
 
 hamburger.addEventListener('click', () => {
 	header.classList.toggle('is-open')
 });
 
-navLinks.forEach(link => {
-	link.addEventListener('click', () => {
-		header.classList.remove('is-open')
-	})
-});
+if (nav) {
+	const navLinks = nav.querySelectorAll('a');
+	navLinks.forEach(link => {
+		link.addEventListener('click', () => {
+			header.classList.remove('is-open')
+		})
+	});
+}
 
 window.addEventListener('scroll', () => {
 	const lFvBottom = fv.getBoundingClientRect().bottom;
@@ -83,18 +85,20 @@ window.addEventListener('scroll', () => {
 const slides = document.querySelectorAll('.slide');
 let current = 0;
 
-slides[current].classList.remove('is-active');
-setTimeout(() => {
-	slides[current].classList.add('is-active')
-},
-50);
-
-setInterval(() => {
+if (slides.length > 0) {
 	slides[current].classList.remove('is-active');
-	current = (current + 1) % slides.length;
-	slides[current].classList.add('is-active')
-},
-5000);
+	setTimeout(() => {
+		slides[current].classList.add('is-active')
+	},
+	50);
+
+	setInterval(() => {
+		slides[current].classList.remove('is-active');
+		current = (current + 1) % slides.length;
+		slides[current].classList.add('is-active')
+	},
+	5000);
+}
 
 window.addEventListener('load', () => {
 	const lFvSvg = document.querySelector('.fv-svg');
@@ -118,6 +122,7 @@ const svgObserver = new IntersectionObserver(entries => {
 	entries.forEach(entry => {
 		if (entry.isIntersecting) {
 			entry.target.classList.add('is-show')
+			svgObserver.unobserve(entry.target)
 		}
 	})
 },
@@ -160,6 +165,7 @@ const observer = new IntersectionObserver(entries => {
 	entries.forEach(entry => {
 		if (entry.isIntersecting) {
 			entry.target.classList.add('is-show')
+			observer.unobserve(entry.target)
 		}
 	})
 },
@@ -208,18 +214,20 @@ if (questions.length && answers.length) {
 }
 const toggleBtn = document.getElementById('activity-toggle');
 const pastArea = document.getElementById('activity-past');
-const icon = toggleBtn.querySelector('.open-icon');
-const label = toggleBtn.querySelector('.look-label');
-toggleBtn.addEventListener('click', () => {
-	const isOpen = pastArea.classList.toggle('is-open');
-	if (isOpen) {
-		icon.textContent = '−';
-		label.textContent = '閉じる'
-	} else {
-		icon.textContent = '＋';
-		label.textContent = '全て見る(他9件)'
-	}
-});
+if (toggleBtn) {
+	const icon = toggleBtn.querySelector('.open-icon');
+	const label = toggleBtn.querySelector('.look-label');
+	toggleBtn.addEventListener('click', () => {
+		const isOpen = pastArea.classList.toggle('is-open');
+		if (isOpen) {
+			icon.textContent = '−';
+			label.textContent = '閉じる'
+		} else {
+			icon.textContent = '＋';
+			label.textContent = '全て見る(他9件)'
+		}
+	});
+}
 
 window.history.scrollRestoration = 'manual';
 window.scrollTo(0, 0);

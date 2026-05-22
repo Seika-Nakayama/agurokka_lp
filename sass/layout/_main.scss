@@ -15,10 +15,10 @@
 			@include absolute-position(52%,63%);
             z-index: z-index(5);
             opacity: 0;
-	        transition:  $transition-lg;
 
             &.is-ready {
                 opacity: 1;
+                transition: opacity $transition-lg;
             }
         }
     }
