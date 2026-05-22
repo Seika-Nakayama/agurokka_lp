@@ -1,7 +1,7 @@
 @use "../variables/translate" as *;
 @use "../variables/transition" as *;
 
-@mixin slide-in($start-trs: $trs-right, $duration: $transition-base){
+@mixin slide-in($start-trs: $translate-right, $duration: $transition-lg){
     opacity: 0;
     transform: $start-trs;
     pointer-events: none;
@@ -9,17 +9,17 @@
 
     &.is-show, &.is-open, .is-open & {
         opacity: 1;
-        transform: $trs-reset;
+        transform: $translate-reset;
         pointer-events: auto;
     }
 }
 
-// 何も書かなければ $transition-base (.4s)
+// 何も書かなければ $transition-lg (.4s)
 // .c-fixed-link {
 //   @include slide-in-right;
 // }
 
 // サッと出したいときは .2s
 // .l-global-nav {
-//   @include slide-in-right($transition-early);
+//   @include slide-in-right($transition-sm);
 // }

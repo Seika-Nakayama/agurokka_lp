@@ -1,7 +1,7 @@
 @use "../abstracts/index" as *;
 
 *{
-	color: var(--main-color);
+	color: var(--text-primary);
 	font-family: 'higuregothic';
 	scroll-behavior: smooth;
 	font-size: to-rem(18);

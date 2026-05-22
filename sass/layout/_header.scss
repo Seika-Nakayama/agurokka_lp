@@ -2,12 +2,12 @@
 
 .l-site-header{
 	@include fixed-position(0, 0, null, null, 900);
-	@include slide-in($trs-right, $transition-base);
+	@include slide-in($translate-right, $transition-lg);
 	width: 100%;
 
 	&.is-open{
 		.l-global-nav{
-			border-left: dotted 4px var(--accent-green-color);
+			border-left: dotted 4px var(--primary-00);
 			overflow-x: scroll;
 		}
 		
@@ -28,11 +28,11 @@
 
 .l-global-nav{
 	@include fixed-position(0, 0, null, null, null);
-	@include slide-in($trs-right, $transition-base);
+	@include slide-in($translate-right, $transition-lg);
 	@include height-size(100vh);
 	width: 350px;
 	padding-top: 100px;
-	background-color: var(--main-bg-color);
+	background-color: var(--bg-primary);
 }
 
 img.l-logo-in-navmenu{
@@ -43,15 +43,15 @@ img.l-logo-in-navmenu{
 .has-child{
 	a{
 		font-size: to-rem(20);
-		color: var(--accent-green-color);
+		color: var(--primary-00);
 		font-family: 'utsukushi';
-		transition:  $transition-early;
+		transition:  $transition-sm;
 	}
 }
 
 .l-sub-nav{
 	a{
-		color: var(--main-color);
+		color: var(--text-primary);
 		font-family: 'higuregothic';
 		font-size: to-rem(15);
 		margin-bottom: 10px;
@@ -63,7 +63,7 @@ img.l-logo-in-navmenu{
 		a{
 			margin-bottom: 7px;
 			margin-left: 40px;
-			transition: $transition-early;
+			transition: $transition-sm;
 
 			&::before{
 				content: '';
@@ -71,12 +71,12 @@ img.l-logo-in-navmenu{
 				width: 5px;
 				height: 5px;
 				border-radius: 5px;
-				background-color: var(--title-color);
+				background-color: var(--text-title);
 				position: absolute;
 				top: 50%;
 				left: 0;
 				transform: translateY(-50%);
-				transition: $transition-slow;
+				transition: $transition-md;
 			}
 		}
 	}
@@ -88,7 +88,7 @@ img.l-logo-in-navmenu{
 }
 
 a.l-go-top{
-	color: var(--main-color);
+	color: var(--text-primary);
 	font-size: to-rem(15);
 }
 
@@ -131,7 +131,7 @@ a.l-go-top{
 		li{
 			a{
 				&:hover{
-					color: var(--title-color);
+					color: var(--text-title);
 				}
 			}
 			&:hover{
