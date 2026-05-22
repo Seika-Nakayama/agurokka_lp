@@ -1,5 +1,6 @@
 <article id="about-us" class="article-box">
-	<img src="images/main-img/category-bg-about-us.webp" alt="categoryの文字の画像" class="category">
+	<!-- <img src="images/main-img/category-bg-about-us.webp" alt="categoryの文字の画像" class="category"> -->
+	<img src="images/main-img/category-bg-about-us.svg" alt="categoryの文字の画像" class="category">
 	<div class="category_inner">
 		<section class="purpose">
 			<div class="js-display">
