@@ -422,14 +422,14 @@ a.l-go-top {
   display: none;
 }
 
-@media screen and (max-width: 1440px) {
+@media screen and (max-width: 1980px) {
   .l-fv {
     height: 100vh;
     min-height: 900px;
     max-height: 1000px;
   }
 }
-@media screen and (max-width: 1280px) {
+@media screen and (max-width: 1440px) {
   .l-copy__items {
     width: 40%;
     display: flex;
