@@ -2,8 +2,9 @@
 @use "../../abstracts/index" as *;
 
 .slider{
-	width: 58%;
-	max-width: 1385px;
+	// width: 58%;
+	width: 50%;
+	// max-width: 1385px;
 	@include absolute-position;
 
 	.slider_inner{
