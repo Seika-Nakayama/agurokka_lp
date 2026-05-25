@@ -63,15 +63,12 @@ article.article-box {
   top: 0;
   left: 0;
   width: 100%;
-  margin: 400px 0 100px;
+  margin: 100px auto;
 }
 
 img.category {
   width: 60vw;
   max-width: 1000px;
-  position: absolute;
-  top: -230px;
-  left: 25px;
   opacity: 0;
   transition: 1.5s;
 }
