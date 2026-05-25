@@ -1,0 +1,7 @@
+@use "../functions/fluid-rem" as *;
+@use "../variables/breakpoint" as *;
+@use "../variables/height" as *;
+
+@mixin height-fluid($min, $max, $minVp, $maxVp) {
+    height: fluid($min, $max, $minVp, $maxVp);
+}

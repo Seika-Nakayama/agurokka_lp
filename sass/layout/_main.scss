@@ -1,10 +1,12 @@
 @use "../foundation/index" as *;
 @use "../abstracts/index" as *;
+@use "../abstracts/mixins/height-fluid" as *;
 
 .l-fv{
 	width: 100%;
-	// max-width: 1920px;
-	@include height-size(100vh, Heights(pc-min-height), Heights(pc-max-height));
+	height: 100vh;
+	max-width: 1920px;
+	// @include height-size(100vh, Heights(pc-min-height), Heights(pc-max-height));
 	@include relative-position;
 	margin-inline: auto;
 	transition: $transition-md;
@@ -63,9 +65,11 @@
 
 @include media(pc){
 	.l-fv{
-		@include height-size(100vh, Heights(pc-min-height), Heights(pc-normal-height));
+		// @include height-size(100vh, Heights(pc-min-height), Heights(pc-normal-height));
+		@include height-fluid(750, 1200, 1025, 1980);
+		// min-height: initial;
+		// max-height: initial;
 	}
-
 }
 @include media(pc2){
 	.l-copy__items{
@@ -86,33 +90,40 @@
 		transform: translate(0,0);
 	}
 }
+@include media(pc3){
+	.slider{
+		width: 68%;
+	}
+}
 
 @include media(mb){
 	.l-fv{
-		@include height-size($maxHeight: Heights(mb-max-height));
+		// @include height-size($maxHeight: Heights(mb-max-height));
+		@include height-fluid(800, 1300, 431, 1024);
 	}
 	.l-top-logo{
-		top: 28%;
+		// top: 28%;
+		top: 25%;
 	}
 	.l-top-logo img{
 		display: block;
-		width: 55%;
+		// width: 55%;
+		width: fluid(180, 250, 551, 1024);
 		margin: auto;
-		display: block;
 	}
 }
 
 @include media(mb3){
-	.l-top-logo img{
-		width: 61%;
+	.l-fv{
+		@include height-fluid(670, 940, 375, 430);
 	}
 }
 
 @include media(sp){
-	.l-fv{
+	// .l-fv{
 		// @include height-size($minHeight: 750px);
-		@include height-size($minHeight: 800px);
-	}
+		// @include height-size($minHeight: 800px);
+	// }
 	.l-top-logo img{
 		width: 80%;
 	}
@@ -125,7 +136,7 @@
 
 @include media(sp2){
 	// .l-fv{
-	// 	@include height-size($maxHeight: 800px);
+		// @include height-size($maxHeight: 930px);;
 	// }
 	.l-top-logo{
 		top: 27%;
@@ -136,9 +147,9 @@
 }
 
 @include media(sp3){
-	.l-fv{
-		@include height-size($minHeight: 667px);
-	}
+	// .l-fv{
+	// 	@include height-size($minHeight: 667px);
+	// }
 	.l-top-logo img{
 		width: 80%;
 	}
