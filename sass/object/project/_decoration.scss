@@ -62,13 +62,13 @@
 	}
 }
 
+// @include media(pc2){
+// 	.spinach{
+// 		top: 97%;
+// 		left: 10%;
+// 	}
+// }
 @include media(pc2){
-	.spinach{
-		top: 97%;
-		left: 10%;
-	}
-}
-@include media(pc3){
 	.corn{
 		display: none;
 	}
@@ -82,7 +82,8 @@
 		left: -15%;
 	}
 	.spinach{
-		top: 88%;
+		top: 90%;
+		left: 10%;
 	}
 }
 @include media(mb){
@@ -96,21 +97,21 @@
 	}
 }
 @include media(mb2){
-	.tomat{
-		top: -9%;
-		left: 85%;
-	}
-	.pepper{
-		top: 5%;
-		left: 9%;
-	}
-	.spinach{
-		top: 93%;
-		left: 20%;
-	}
-	.lines-flex{
-		width: 35%;
-	}
+	// .tomat{
+	// 	top: -9%;
+	// 	left: 85%;
+	// }
+	// .pepper{
+	// 	top: 5%;
+	// 	left: 9%;
+	// }
+	// .spinach{
+	// 	top: 93%;
+	// 	left: 20%;
+	// }
+	// .lines-flex{
+	// 	width: 35%;
+	// }
 }
 @include media(sp){
 	.lines-flex{

@@ -77,6 +77,10 @@ img.category.is-show {
   opacity: 1;
 }
 
+html {
+  font-size: 16px;
+}
+
 * {
   color: var(--text-primary);
   font-family: "higuregothic";
@@ -353,8 +357,7 @@ a.l-go-top {
 .l-fv {
   width: 100%;
   height: 100vh;
-  min-height: 900px;
-  max-height: 100vh;
+  max-width: 1920px;
   position: relative;
   top: 0;
   left: 0;
@@ -417,9 +420,7 @@ a.l-go-top {
 
 @media screen and (max-width: 1980px) {
   .l-fv {
-    height: 100vh;
-    min-height: 900px;
-    max-height: 1000px;
+    height: clamp(46.875rem, 16.6884816754rem + 47.1204188482vw, 75rem);
   }
 }
 @media screen and (max-width: 1440px) {
@@ -439,31 +440,30 @@ a.l-go-top {
     transform: translate(0, 0);
   }
 }
+@media screen and (max-width: 1280px) {
+  .slider {
+    width: 68%;
+  }
+}
 @media screen and (max-width: 1024px) {
   .l-fv {
-    height: auto;
-    max-height: 900px;
+    height: clamp(50rem, 27.2870994941rem + 84.3170320405vw, 81.25rem);
   }
   .l-top-logo {
-    top: 28%;
+    top: 25%;
   }
   .l-top-logo img {
     display: block;
-    width: 55%;
+    width: clamp(11.25rem, 6.1535412262rem + 14.799154334vw, 15.625rem);
     margin: auto;
-    display: block;
   }
 }
 @media screen and (max-width: 720px) {
-  .l-top-logo img {
-    width: 61%;
+  .l-fv {
+    height: clamp(41.875rem, -73.1818181818rem + 490.9090909091vw, 58.75rem);
   }
 }
 @media screen and (max-width: 550px) {
-  .l-fv {
-    height: auto;
-    min-height: 800px;
-  }
   .l-top-logo img {
     width: 80%;
   }
@@ -480,10 +480,6 @@ a.l-go-top {
   }
 }
 @media screen and (max-width: 376px) {
-  .l-fv {
-    height: auto;
-    min-height: 667px;
-  }
   .l-top-logo img {
     width: 80%;
   }
@@ -601,13 +597,7 @@ a.l-go-top {
 @media screen and (max-width: 1024px) {
   .slider {
     width: 95%;
-    top: 77%;
-  }
-}
-@media screen and (max-width: 768px) {
-  .slider {
-    width: 95%;
-    top: 67%;
+    top: 60%;
   }
 }
 @media screen and (max-width: 550px) {
@@ -691,12 +681,6 @@ a.l-go-top {
   }
 }
 @media screen and (max-width: 1440px) {
-  .spinach {
-    top: 97%;
-    left: 10%;
-  }
-}
-@media screen and (max-width: 1280px) {
   .corn {
     display: none;
   }
@@ -710,7 +694,8 @@ a.l-go-top {
     left: -15%;
   }
   .spinach {
-    top: 88%;
+    top: 90%;
+    left: 10%;
   }
 }
 @media screen and (max-width: 1024px) {
@@ -721,23 +706,6 @@ a.l-go-top {
   .tomat {
     top: 21%;
     left: 92%;
-  }
-}
-@media screen and (max-width: 768px) {
-  .tomat {
-    top: -9%;
-    left: 85%;
-  }
-  .pepper {
-    top: 5%;
-    left: 9%;
-  }
-  .spinach {
-    top: 93%;
-    left: 20%;
-  }
-  .lines-flex {
-    width: 35%;
   }
 }
 @media screen and (max-width: 550px) {
