@@ -5,7 +5,7 @@
 .l-fv{
 	width: 100%;
 	height: 100vh;
-	max-width: 1920px;
+	// max-width: 2100px;
 	// @include height-size(100vh, Heights(pc-min-height), Heights(pc-max-height));
 	@include relative-position;
 	margin-inline: auto;
@@ -13,8 +13,9 @@
 
     svg{
         &.fv-svg{
-			width: 233%;
-			@include absolute-position(52%,63%);
+			// width: 233%;
+			width: 160%;
+			@include absolute-position(50%,63%);
             z-index: z-index(5);
             opacity: 0;
 
@@ -29,7 +30,8 @@
 .l-copy_flex{
     @include absolute-position;
 	width: 100%;
-	padding: 0 2%;
+	// padding: 0 2%;
+	padding: 0 5%;
 	display: flex;
 	flex-direction: row-reverse;
 	justify-content: space-between;
@@ -41,11 +43,12 @@
 	margin-inline: auto;
 	opacity: 0;
 	transform: translateY(20px);
-	width: fluid(38,145,376,2000);
-	max-width: 145px;
+	width: fluid(38,160,376,2000);
+	// max-width: 145px;
 
 	&:nth-child(2){
-		margin-top: 30%;
+		// margin-top: 30%;
+		margin-top: 35%;
 	}
 
     &.is-show{
@@ -66,7 +69,7 @@
 @include media(pc){
 	.l-fv{
 		// @include height-size(100vh, Heights(pc-min-height), Heights(pc-normal-height));
-		@include height-fluid(750, 1200, 1025, 1980);
+		@include height-fluid(750, 1080, 1025, 1980);
 		// min-height: initial;
 		// max-height: initial;
 	}
