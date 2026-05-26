@@ -36,7 +36,7 @@
 	z-index: z-index(9999);
 }
 
-.char{
+.p-char{
 	display: block;
 	margin-inline: auto;
 	opacity: 0;
@@ -79,7 +79,7 @@
 		justify-content: space-between;
 		align-items: flex-start;
 	}
-	.char{
+	.p-char{
 		&:nth-child(2){
 			margin-top: 0;
 		}
@@ -127,7 +127,7 @@
 	.l-top-logo img{
 		width: 80%;
 	}
-	.char{
+	.p-char{
 		&.is-show{
 			min-width: initial;
 		}
