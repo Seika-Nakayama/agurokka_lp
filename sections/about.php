@@ -5,7 +5,7 @@
 		<section class="purpose">
 			<div class="js-display">
 				<h2 class="contents-title">
-					<img src="images/icon/flower.webp" alt="肥後六花モチーフアイコン" class="flower-icon">AguRokka<span>とは</span>
+					<img src="images/icon/flower.svg" alt="肥後六花モチーフアイコン" class="flower-icon">AguRokka<span>とは</span>
 				</h2>
 			</div>
 			<div class="how-agurokka__items">
@@ -49,7 +49,7 @@
 	<section class="contents_inner" id="why-agurokka">
 		<div class="js-display">
 			<h2 class="contents-title">
-				<img src="images/icon/flower.webp" alt="肥後六花モチーフアイコン" class="flower-icon">AguRokka<span>の由来</span>
+				<img src="images/icon/flower.svg" alt="肥後六花モチーフアイコン" class="flower-icon">AguRokka<span>の由来</span>
 			</h2>
 		</div>
 		<div class="origin__flex-inner">
