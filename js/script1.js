@@ -43,7 +43,7 @@ const loadingTimer = setInterval(() => {
 const header = document.getElementById('l-siteHeader');
 const fv = document.querySelector('.l-fv');
 const footer = document.querySelector('footer');
-const hamburger = document.getElementById('l-hamburger');
+const hamburger = document.getElementById('c-hamburger');
 const nav = document.querySelector('.l-global-nav');
 const fixedLink = document.querySelector('.c-fixed-link');
 

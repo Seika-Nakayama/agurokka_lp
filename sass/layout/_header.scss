@@ -11,7 +11,7 @@
 			overflow-x: scroll;
 		}
 		
-		.l-hamburger span{
+		.c-hamburger span{
 			@include hamburger-cross(60px, 60px, 14px, 45deg);
 			&:nth-child(3){
 				top: 28px;
@@ -40,7 +40,7 @@ img.l-logo-in-navmenu{
 	margin: auto;
 }
 
-.has-child{
+.l-has-child{
 	a{
 		font-size: to-rem(20);
 		color: var(--primary-00);
