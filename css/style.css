@@ -127,18 +127,18 @@ ul, ol {
   border-left: dotted 4px var(--primary-00);
   overflow-x: scroll;
 }
-.l-site-header.is-open .l-hamburger span:nth-child(1) {
+.l-site-header.is-open .c-hamburger span:nth-child(1) {
   width: 60px;
   transform: translateY(14px) rotate(45deg);
 }
-.l-site-header.is-open .l-hamburger span:nth-child(2) {
+.l-site-header.is-open .c-hamburger span:nth-child(2) {
   opacity: 0;
 }
-.l-site-header.is-open .l-hamburger span:nth-child(3) {
+.l-site-header.is-open .c-hamburger span:nth-child(3) {
   width: 60px;
   transform: translateY(-14px) rotate(-45deg);
 }
-.l-site-header.is-open .l-hamburger span:nth-child(3) {
+.l-site-header.is-open .c-hamburger span:nth-child(3) {
   top: 28px;
   left: -10px;
 }
@@ -357,6 +357,7 @@ a.l-go-top {
 .l-fv {
   width: 100%;
   height: 100vh;
+  max-width: 1920px;
   position: relative;
   top: 0;
   left: 0;
@@ -364,9 +365,9 @@ a.l-go-top {
   transition: 0.3s ease;
 }
 .l-fv svg.fv-svg {
-  width: 160%;
+  width: 233%;
   position: absolute;
-  top: 50%;
+  top: 52%;
   left: 63%;
   transform: translate(-50%, -50%);
   z-index: 5;
@@ -383,7 +384,7 @@ a.l-go-top {
   left: 50%;
   transform: translate(-50%, -50%);
   width: 100%;
-  padding: 0 5%;
+  padding: 0 2%;
   display: flex;
   flex-direction: row-reverse;
   justify-content: space-between;
@@ -395,10 +396,11 @@ a.l-go-top {
   margin-inline: auto;
   opacity: 0;
   transform: translateY(20px);
-  width: clamp(2.375rem, 0.6096059113rem + 7.5123152709vw, 10rem);
+  width: clamp(2.375rem, 0.8266625616rem + 6.5886699507vw, 9.0625rem);
+  max-width: 145px;
 }
 .char:nth-child(2) {
-  margin-top: 35%;
+  margin-top: 30%;
 }
 .char.is-show {
   opacity: 1;
@@ -418,7 +420,7 @@ a.l-go-top {
 
 @media screen and (max-width: 1980px) {
   .l-fv {
-    height: clamp(46.875rem, 24.7382198953rem + 34.554973822vw, 67.5rem);
+    height: clamp(46.875rem, 16.6884816754rem + 47.1204188482vw, 75rem);
   }
 }
 @media screen and (max-width: 1440px) {
@@ -439,7 +441,7 @@ a.l-go-top {
   }
 }
 @media screen and (max-width: 1280px) {
-  .slider {
+  .c-slider {
     width: 68%;
   }
 }
@@ -511,7 +513,7 @@ a.l-go-top {
   pointer-events: none;
 }
 
-.l-hamburger {
+.c-hamburger {
   width: 60px;
   height: 60px;
   cursor: pointer;
@@ -523,7 +525,7 @@ a.l-go-top {
   background: none;
   border: none;
 }
-.l-hamburger span {
+.c-hamburger span {
   position: absolute;
   left: 0;
   display: block;
@@ -532,37 +534,37 @@ a.l-go-top {
   background-color: var(--primary-00);
   transition: 0.4s ease;
 }
-.l-hamburger span:nth-child(1) {
+.c-hamburger span:nth-child(1) {
   width: 70px;
   top: 0;
   left: -9px;
 }
-.l-hamburger span:nth-child(2) {
+.c-hamburger span:nth-child(2) {
   width: 60px;
   top: 14px;
   left: 0;
 }
-.l-hamburger span:nth-child(3) {
+.c-hamburger span:nth-child(3) {
   width: 50px;
   top: 28px;
   left: 10px;
 }
 
-.slider {
+.c-slider {
   width: 50%;
   position: absolute;
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
 }
-.slider .slider_inner {
+.c-slider .c-slider__inner {
   aspect-ratio: 841/598;
   overflow: hidden;
   position: relative;
   top: 0;
   left: 0;
 }
-.slider .slider_inner.mask {
+.c-slider .c-slider__inner.mask {
   mask-image: url("../../../images/fv/vector.svg");
   mask-size: 100% 100%;
   mask-repeat: no-repeat;
@@ -572,7 +574,7 @@ a.l-go-top {
   -webkit-mask-repeat: no-repeat;
   -webkit-mask-position: center;
 }
-.slider .slider_inner.mask .slide {
+.c-slider .c-slider__inner.mask .slide {
   position: absolute;
   top: 50%;
   left: 50%;
@@ -586,29 +588,29 @@ a.l-go-top {
   transition: opacity 1.5s ease, transform 8s ease;
   z-index: 1;
 }
-.slider .slider_inner.mask .slide.is-active {
+.c-slider .c-slider__inner.mask .slide.is-active {
   opacity: 1;
   transform: scale(1.08);
 }
 
 @media screen and (max-width: 1024px) {
-  .slider {
+  .c-slider {
     width: 95%;
     top: 60%;
   }
 }
 @media screen and (max-width: 550px) {
-  .slider {
+  .c-slider {
     width: 140%;
   }
 }
 @media screen and (max-width: 390px) {
-  .slider {
+  .c-slider {
     top: 65%;
   }
 }
 @media screen and (max-width: 376px) {
-  .slider {
+  .c-slider {
     width: 120%;
   }
 }

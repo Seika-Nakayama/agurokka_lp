@@ -1,13 +1,13 @@
 @use "../../foundation/index" as *;
 @use "../../abstracts/index" as *;
 
-.slider{
+.c-slider{
 	// width: 58%;
 	width: 50%;
 	// max-width: 1385px;
 	@include absolute-position;
 
-	.slider_inner{
+	.c-slider__inner{
 		aspect-ratio: 841 / 598;
 		overflow: hidden;
 		@include relative-position;
@@ -36,30 +36,30 @@
 }
 
 @include media(mb){
-    .slider{
+    .c-slider{
         width: 95%;
         // top: 77%;
 		top: 60%;
     }
 }
 // @include media(mb2){
-//     .slider{
+//     .c-slider{
 //         width: 95%;
 //         top: 67%;
 //     }
 // }
 @include media(sp){
-    .slider{
+    .c-slider{
         width: 140%;
     }
 }
 @include media(sp2){
-    .slider{
+    .c-slider{
         top: 65%;
     }
 }
 @include media(sp3){
-    .slider{
+    .c-slider{
         width: 120%;
     }
 }

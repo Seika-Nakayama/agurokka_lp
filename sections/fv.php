@@ -11,8 +11,8 @@
 			<img src="images/fv/tunagaru.svg" class="char js-svg" data-delay="2" alt="繋がる">
 		</div>
 	</div>
-	<div class="slider">
-		<div class="slider_inner mask">
+	<div class="c-slider">
+		<div class="c-slider__inner mask">
 			<img class="slide is-active" src="images/fv/4.webp" alt="AguRokkaメンバー画像">
 			<img class="slide" src="images/fv/0.webp" alt="AguRokkaメンバー画像">
 			<img class="slide" src="images/fv/2.webp" alt="AguRokkaメンバー画像">

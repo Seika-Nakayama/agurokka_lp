@@ -11,7 +11,7 @@
 			overflow-x: scroll;
 		}
 		
-		.l-hamburger span{
+		.c-hamburger span{
 			@include hamburger-cross(60px, 60px, 14px, 45deg);
 			&:nth-child(3){
 				top: 28px;

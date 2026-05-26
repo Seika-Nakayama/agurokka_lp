@@ -1,6 +1,6 @@
 <header class="l-site-header" id="l-siteHeader">
 	<div class="l-inner">
-		<button class="l-hamburger" id="l-hamburger" aria-label="メニュー">
+		<button class="c-hamburger" id="c-hamburger" aria-label="メニュー">
 			<span></span>
 			<span></span>
 			<span></span>
