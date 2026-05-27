@@ -1,12 +1,11 @@
-<a href="https://docs.google.com/forms/d/1y0TlJKK-Ip5nqA4ef7zxUNKzVR2Dzr_bWXMSe7v3G1A/viewform?edit_requested=true" target="_blank" class="nav-link nyuukai"><div class="c-fixed-link">
-</div></a>
+<a href="https://docs.google.com/forms/d/1y0TlJKK-Ip5nqA4ef7zxUNKzVR2Dzr_bWXMSe7v3G1A/viewform?edit_requested=true" target="_blank"><div class="c-fixed-link"></div></a>
 <div class="l-fv">
-	<div class="l-copy_flex">
-		<div class="l-copy__items">
-			<img src="images/fv/nougyouto.svg"  class="p-char js-svg" data-delay="0.2" alt="農業と">
+	<div class="l-fv__copy">
+		<div class="l-fv__copy-items">
+			<img src="images/fv/nougyouto.svg" class="p-char js-svg" data-delay="0.2" alt="農業と">
 			<img src="images/fv/hitoto.svg" class="p-char js-svg" data-delay="0.7" alt="人と">
 		</div>
-		<div class="l-copy__items">
+		<div class="l-fv__copy-items">
 			<img src="images/fv/tunagu.svg" class="p-char js-svg" data-delay="1.5" alt="繋ぐ">
 			<img src="images/fv/tunagaru.svg" class="p-char js-svg" data-delay="2" alt="繋がる">
 		</div>
@@ -27,8 +26,5 @@
 			<img src="images/fv/caw.webp" alt="入会フォーム誘導バナー" class="caw">
 		</a>
 	</div>
-	<!-- <img src="images/vegetables/pepper.webp" alt="ピーマンのイラスト" class="vegetable pepper2"> -->
-	<!-- <img src="images/vegetables/corn.webp" alt="トウモロコシのイラスト" class="vegetable corn2"> -->
-	<!-- <img src="images/vegetables/tomat.webp" alt="トマトのイラスト" class="vegetable tomat2"> -->
-	<figure class="l-top-logo"><img src="images/logo/agurokka_logo.webp" alt="AguRokkaのロゴ" class="logo-green"></figure>
+	<figure class="l-top-logo"><img src="images/logo/agurokka_logo.webp" alt="AguRokkaのロゴ"></figure>
 </div>
