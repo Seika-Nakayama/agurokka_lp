@@ -27,10 +27,9 @@
     }
 }
 
-.l-copy_flex{
+.l-fv__copy{
     @include absolute-position;
 	width: 100%;
-	// padding: 0 2%;
 	padding: 0 5%;
 	display: flex;
 	flex-direction: row-reverse;
@@ -75,7 +74,7 @@
 	}
 }
 @include media(pc2){
-	.l-copy__items{
+	.l-fv__copy-items{
 		width: 40%;
 		display: flex;
 		flex-direction: row-reverse;
@@ -87,7 +86,7 @@
 			margin-top: 0;
 		}
 	}
-	.l-copy_flex{
+	.l-fv__copy{
 		top: 3%;
 		left: 0;
 		transform: translate(0,0);
@@ -144,7 +143,7 @@
 	.l-top-logo{
 		top: 27%;
 	}
-	.l-copy__items{
+	.l-fv__copy-items{
 		width: 45%;
 	}
 }
