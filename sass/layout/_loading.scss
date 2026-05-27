@@ -2,65 +2,63 @@
 
 .l-loading{
 	width: 100%;
-    @include fixed-full(9999);
+	@include fixed-full(9999);
 	background-color: var(--bg-primary);
 	display: flex;
 	justify-content: center;
 	align-items: center;
+}
 
-    .l-load-inner{
-        text-align: center;
-        
-        .l-load-text{
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            font-size: to-rem(20px);
-            margin-bottom: 40px;
-            
-            img{
-                height: 230px;
-                margin: 30px;
-            }
-            
-            span{
-                font-family: 'higuregothic';
-            }
-        }
-        .l-load-bar{
-            width: 100vw;
-            height: 2px;
-            overflow: hidden;
-    
-            .l-load-progress{
-                display: block;
-                width: 0%;
-                height: 100%;
-                background-color: var(--primary-00);
-                transition: var(--transition-slow);
-            }
-        }
-        .l-load-count{
-            margin-top: 50px;
-            font-size: to-rem(25px);
-            font-family: 'higuregothic';
-        }
-    }
+.l-loading__inner{
+	text-align: center;
+}
+
+.l-loading__text{
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	font-size: to-rem(20px);
+	margin-bottom: 40px;
+
+	img{
+		height: 230px;
+		margin: 30px;
+	}
+
+	span{
+		font-family: 'higuregothic';
+	}
+}
+
+.l-loading__bar{
+	width: 100vw;
+	height: 2px;
+	overflow: hidden;
+}
+
+.l-loading__progress{
+	display: block;
+	width: 0%;
+	height: 100%;
+	background-color: var(--primary-00);
+	transition: var(--transition-slow);
+}
+
+.l-loading__count{
+	margin-top: 50px;
+	font-size: to-rem(25px);
+	font-family: 'higuregothic';
 }
 
 @include media(mb){
-    .l-loading{
-        .l-load-inner{
-            .l-load-text{
-                writing-mode: vertical-rl;
-                text-orientation: upright;
-                flex-direction: row;
-                margin-block: auto;
-                
-                img{
-                    height: 150px;
-                }
-            }
-        }
-    }
+	.l-loading__text{
+		writing-mode: vertical-rl;
+		text-orientation: upright;
+		flex-direction: row;
+		margin-block: auto;
+
+		img{
+			height: 150px;
+		}
+	}
 }

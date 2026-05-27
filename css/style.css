@@ -330,49 +330,54 @@ a.l-go-top {
   justify-content: center;
   align-items: center;
 }
-.l-loading .l-load-inner {
+
+.l-loading__inner {
   text-align: center;
 }
-.l-loading .l-load-inner .l-load-text {
+
+.l-loading__text {
   display: flex;
   align-items: center;
   justify-content: center;
   font-size: 1.25rem;
   margin-bottom: 40px;
 }
-.l-loading .l-load-inner .l-load-text img {
+.l-loading__text img {
   height: 230px;
   margin: 30px;
 }
-.l-loading .l-load-inner .l-load-text span {
+.l-loading__text span {
   font-family: "higuregothic";
 }
-.l-loading .l-load-inner .l-load-bar {
+
+.l-loading__bar {
   width: 100vw;
   height: 2px;
   overflow: hidden;
 }
-.l-loading .l-load-inner .l-load-bar .l-load-progress {
+
+.l-loading__progress {
   display: block;
   width: 0%;
   height: 100%;
   background-color: var(--primary-00);
   transition: var(--transition-slow);
 }
-.l-loading .l-load-inner .l-load-count {
+
+.l-loading__count {
   margin-top: 50px;
   font-size: 1.5625rem;
   font-family: "higuregothic";
 }
 
 @media screen and (max-width: 1024px) {
-  .l-loading .l-load-inner .l-load-text {
+  .l-loading__text {
     writing-mode: vertical-rl;
     text-orientation: upright;
     flex-direction: row;
     margin-block: auto;
   }
-  .l-loading .l-load-inner .l-load-text img {
+  .l-loading__text img {
     height: 150px;
   }
 }
