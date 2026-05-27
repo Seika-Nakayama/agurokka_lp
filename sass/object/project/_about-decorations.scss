@@ -1,0 +1,78 @@
+.svg-wrap{
+	position:relative;
+	top:50%;
+	left:0;
+	transform:translateY(10%);
+}
+.heart-svg{
+	width:100vw;
+	height:auto;
+}
+.svg-wrap,.heart-svg,.roll-svg{
+	z-index:-1;
+	pointer-events:none;
+}
+.heart-svg path{
+	stroke-dasharray:8000;
+	stroke-dashoffset:8000;
+	transition:stroke-dashoffset 5s ease;
+}
+
+
+
+@media screen and (max-width:1205px){
+	.svg-wrap{
+		top:52%
+	}
+}
+
+@media screen and (max-width:1055px){
+	.svg-wrap{
+		top:58%
+	}
+}
+
+@media screen and (max-width:1000px){
+	.svg-wrap{
+		top:49%
+	}
+	.heart-svg path{stroke-width: 3px;}
+}
+
+@media screen and (max-width:900px){
+	.svg-wrap{
+		top:48%
+	}
+}
+
+@media screen and (max-width:869px){
+	svg.roll-svg{
+		left:0!important;
+		top:0!important;
+		z-index:10!important
+	}
+	.svg-area{
+		overflow:visible!important
+	}
+}
+
+@media screen and (max-width:840px){
+	.svg-wrap{
+		top:47%
+	}
+}
+
+@media screen and (max-width:675px){
+	.svg-wrap{
+		top:46%
+	}
+	.heart-svg path{
+		stroke-width: 5px;
+	}
+}
+
+@media screen and (max-width:605px){
+	.svg-wrap{
+		top:47%
+	}
+}
