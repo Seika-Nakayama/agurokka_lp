@@ -10,7 +10,7 @@
 			border-left: dotted 4px var(--primary-00);
 			overflow-x: scroll;
 		}
-		
+
 		.c-hamburger span{
 			@include hamburger-cross(60px, 60px, 14px, 45deg);
 			&:nth-child(3){
@@ -21,7 +21,7 @@
 	}
 }
 
-.l-inner{
+.l-site-header__inner{
 	display: flex;
 	justify-content: flex-end;
 }
@@ -30,26 +30,34 @@
 	@include fixed-position(0, 0, null, null, null);
 	@include slide-in($translate-right, $transition-lg);
 	@include height-size(100vh);
-	width: 350px;
-	padding-top: 100px;
+	width: to-rem(350);
+	padding-top: to-rem(100);
 	background-color: var(--bg-primary);
 }
 
-img.l-logo-in-navmenu{
-	width: 130px;
+.l-global-nav__logo{
+	width: to-rem(130);
+	height: auto;
 	margin: auto;
+	display: block;
 }
 
-.l-has-child{
-	a{
+.l-nav__list{
+	padding: 0 30px;
+}
+
+.l-nav__item{
+	& > .l-nav__link{
 		font-size: to-rem(20);
 		color: var(--primary-00);
 		font-family: 'utsukushi';
-		transition:  $transition-sm;
+		transition: $transition-sm;
+		margin: 35px 0 20px;
+		display: block;
 	}
 }
 
-.l-sub-nav{
+.l-nav__sub{
 	a{
 		color: var(--text-primary);
 		font-family: 'higuregothic';
@@ -58,7 +66,7 @@ img.l-logo-in-navmenu{
 	}
 
 	li{
-		position:  relative;
+		position: relative;
 
 		a{
 			margin-bottom: 7px;
@@ -67,10 +75,9 @@ img.l-logo-in-navmenu{
 
 			&::before{
 				content: '';
-				// 丸を作るミクシンを作る？
 				width: 5px;
 				height: 5px;
-				border-radius: 5px;
+				border-radius: $radius-full;
 				background-color: var(--text-title);
 				position: absolute;
 				top: 50%;
@@ -82,72 +89,40 @@ img.l-logo-in-navmenu{
 	}
 }
 
-.l-category-menu{
-	margin: 35px 0 20px;
-	@include relative-position;
-}
-
-a.l-go-top{
+.l-nav__entry-link{
 	color: var(--text-primary);
 	font-size: to-rem(15);
 }
 
-.l-nav-link-insta{
-	img{
-		// 違う考え方のheightのほうがいいかも（グローバルなものではない？）
-		height: 40px;
-		width: auto;
-		margin-right: 30px
-	}
-}
-
-.l-nav-link-facebook{
-	height: 40px;
-	width: auto;
-}
-
-.l-sns-in-menu{
-	@include relative-position;
-
-	img{
-		height: 30px;
-		margin: 28px;
-	}
-}
-
-.l-sns_innerflex{
+.l-nav__sns{
 	display: flex;
+	justify-content: space-around;
+	margin: to-rem(28);
 }
 
-@media (hover:hover){
-	.l-has-child{
-		a{
-			&:hover{
-				opacity: .5;
-			}
-		}
-	}
-	.l-sub-nav{
-		li{
-			a{
-				&:hover{
-					color: var(--text-title);
-				}
-			}
-			&:hover{
-				a{
-					&::before{
-						width: 30px;
-						height: 1px;
-					}
-				}
-			}
-		}
+.l-nav__sns-link{
+	img{
+		height: to-rem(40);
+		width: auto;
+		// margin-right: 30px;
 	}
 }
 
-.l-nav-list{
-	padding: 0 30px;
+@media (hover: hover){
+	.l-nav__item > .l-nav__link{
+		&:hover{
+			opacity: .5;
+		}
+	}
+	.l-nav__sub li{
+		a:hover{
+			color: var(--text-title);
+		}
+		&:hover a::before{
+			width: 30px;
+			height: 1px;
+		}
+	}
 }
 
 @include media(mb2){
@@ -155,32 +130,27 @@ a.l-go-top{
 		width: 99vw;
 		padding-top: 45px;
 	}
-}
-@include media(mb2){
-	.l-nav-list{
+	.l-nav__list{
 		display: flex;
 		flex-direction: column;
 		align-items: center;
 	}
 }
+
 @include media(sp2){
-	img.l-logo-in-navmenu{
-		width: 100px;
+	.l-global-nav__logo{
+		width: to-rem(100);
 	}
 	.l-global-nav{
-		padding-top: 19px;
+		padding-top: to-rem(19);
 	}
-	.l-category-menu{
+	.l-nav__item > .l-nav__link{
 		margin: 15px 0 3px;
-	}
-	.l-has-child a{
 		font-size: to-rem(15);
 	}
-	.l-sub-nav li a{
+	.l-nav__sub li a{
 		margin-bottom: 0;
 		font-size: to-rem(13);
-	}
-	.l-sub-nav li a{
 		line-height: 2em;
 	}
 }
