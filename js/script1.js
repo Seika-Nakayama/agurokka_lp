@@ -1,5 +1,5 @@
 const loading = document.getElementById('l-loading');
-const progress = document.querySelector('.l-load-progress');
+const progress = document.querySelector('.l-loading__progress');
 const count = document.getElementById('l-loadingCount');
 
 const fvImages = document.querySelectorAll('.l-fv img');
@@ -131,7 +131,7 @@ const svgObserver = new IntersectionObserver(entries => {
 });
 
 svgs.forEach(svg => svgObserver.observe(svg));
-const fadeTargets = document.querySelectorAll('.how-agurokka__flexarea, .category, .js-display');
+const fadeTargets = document.querySelectorAll('.l-about__panel, .category, .js-display');
 const fadeObserver = new IntersectionObserver((entries) => {
 	entries.forEach(entry => {
 		if (entry.isIntersecting) {

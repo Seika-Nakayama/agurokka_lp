@@ -1,6 +1,6 @@
 <section class="contents_inner">
 	<h2 class="haw-agrokka">
-		<img src="images/icon/flower.webp" alt="肥後六花モチーフアイコン" class="flower-icon">メンバーインタビュー
+		<img src="images/icon/flower.svg" alt="肥後六花モチーフアイコン" class="flower-icon">メンバーインタビュー
 	</h2>
 	<div class="question">
 		<div class="member-slider">
