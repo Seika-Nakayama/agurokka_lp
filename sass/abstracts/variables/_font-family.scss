@@ -1,7 +1,7 @@
 @use "sass:map";
 @use "sass:list";
 
-@mixin font-face( $name, $file, $weight, $style, $exts: otf ttf woff woff2){
+@mixin load-font( $name, $file, $weight: 400, $style: normal, $exts: woff2){
     $src: ();
 
     $formats: (
@@ -24,7 +24,7 @@
     }
 }
 
-@include font-face('higuregothic', 'HigureGothic-Light', 400, normal, (woff2));
-@include font-face('aosagi', 'YDWaosagi', 400, normal, woff2);
-@include font-face('utsukushi', 'UtsukushiFONT', 400, normal, woff2);
-@include font-face('kokoro', 'Kokoro', 400, normal, woff2);
+@include load-font('higuregothic', 'HigureGothic-Light', 400, normal, (woff2));
+@include load-font('aosagi', 'YDWaosagi', 400, normal, woff2);
+@include load-font('utsukushi', 'UtsukushiFONT', 400, normal, woff2);
+@include load-font('kokoro', 'Kokoro', 400, normal, woff2);

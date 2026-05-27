@@ -3,7 +3,7 @@
 	<section class="contents_inner">
 		<div class="js-display">
 			<h2 class="contents-title">
-				<img src="images/icon/flower.webp" alt="肥後六花モチーフアイコン" class="flower-icon">AgurRokka&nbsp;活動情報
+				<img src="images/icon/flower.svg" alt="肥後六花モチーフアイコン" class="flower-icon">AgurRokka&nbsp;活動情報
 			</h2>
 		</div>
 		<div class="activities-area">

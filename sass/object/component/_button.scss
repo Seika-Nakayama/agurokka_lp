@@ -17,3 +17,43 @@
 		pointer-events: none;
 	}
 }
+
+.c-recruit{
+	height: 220px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	margin: 50px auto;
+	position: relative;
+	overflow: hidden;
+
+	p{
+		position: relative;
+		font-family: 'utsukushi';
+		color: var(--accent-orange-color);
+	}
+
+	img{
+		height: 100px;
+		display: block;
+	}
+}
+
+@include media(sp3){
+	.c-recruit{
+		margin: 65px auto 50px;
+
+		p{
+			font-size: to-rem(15px);
+		}
+	}
+}
+
+@media screen and (max-width:530px){
+	.recruit p{
+		font-size:15px
+	}
+	.recruit{
+		margin:65px auto 50px
+	}
+}

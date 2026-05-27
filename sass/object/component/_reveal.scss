@@ -1,0 +1,84 @@
+@use "../../abstracts/index" as *;
+
+.js-display{
+	overflow: hidden;
+    &>*{
+        transform: translateY(120%);
+        transition: 0.9s cubic-bezier(.2,.8,.2,1);
+    }
+    
+    &.is-show>*{
+        transform: translateY(0);
+    }
+}
+
+.js-split{
+    
+    span{
+        display: inline-block;
+        line-height: 1.2;
+		opacity: 0;
+		transform: translateY(20px);
+		filter: blur(6px);
+	}
+    
+	&.is-show span{
+        animation: charUp 0.6s ease forwards;
+		animation-delay: var(--delay);
+	}
+}
+
+@keyframes charUp{
+	to{
+		opacity: 1;
+		transform: translateY(0);
+		filter: blur(0);
+	}
+}
+
+.scroll-svg.is-show path{
+	stroke-dashoffset: 0;
+}
+
+.svg-area{
+	position: absolute;
+	inset: 0;
+	overflow: hidden;
+	pointer-events: none;
+	z-index: -1;
+}
+
+.contents_inner{
+	overflow-x: visible;
+	position: relative;
+}
+
+.from-left{
+	transform: translateX(-100vw);
+}
+.is-show .from-left{
+	animation: slideIn 4s ease-out forwards;
+}
+@keyframes slideIn{
+	0%{
+		transform: translateX(-100vw);
+	}
+	10%{
+		transform: translateX(-100vw);
+	}
+	80%{
+		transform: translateX(0);
+	}
+	85%{
+		transform: translateY(20px);
+	}
+	90%{
+		transform: translateY(-5px);
+	}
+	95%{
+		transform: translateY(10px);
+	}
+	100%{
+		transform: translateY(0);
+	}
+}
