@@ -1,4 +1,3 @@
-<a href="https://docs.google.com/forms/d/1y0TlJKK-Ip5nqA4ef7zxUNKzVR2Dzr_bWXMSe7v3G1A/viewform?edit_requested=true" target="_blank"><div class="c-fixed-link"></div></a>
 <div class="l-fv">
 	<div class="l-fv__copy">
 		<div class="l-fv__copy-items">

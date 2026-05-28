@@ -6,6 +6,7 @@ include 'head.php';
 $description = "AguRokka（アグロッカ）は、熊本で農業に関わる女性たちが交流し、学び合うコミュニティです。2013年に農林水産省が「農業女子プロジェクト」など、女性の就農を応援する動きとともに、地域から農業の魅力を発信しています。";
 
 include 'header.php';
+include 'fixed-link-btn.php';
 ?>
 <main>
 	<?php include 'sections/fv.php'; ?>
