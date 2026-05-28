@@ -68,25 +68,28 @@
 // 		left: 10%;
 // 	}
 // }
-@include media(pc2){
+// @include media(pc2){
+// 	.p-corn{
+// 		display: none;
+// 	}
+// 	.p-tomat{
+// 		width: 13%;
+// 		top: 64%;
+// 		left: 115%;
+// 	}
+// 	.p-pepper{
+// 		top: 65%;
+// 		left: -15%;
+// 	}
+// 	.p-spinach{
+// 		top: 90%;
+// 		left: 10%;
+// 	}
+// }
+@include media(mb){
 	.p-corn{
 		display: none;
 	}
-	.p-tomat{
-		width: 13%;
-		top: 64%;
-		left: 115%;
-	}
-	.p-pepper{
-		top: 65%;
-		left: -15%;
-	}
-	.p-spinach{
-		top: 90%;
-		left: 10%;
-	}
-}
-@include media(mb){
 	.p-pepper{
 		top: 3%;
 		left: 8%;
@@ -96,7 +99,7 @@
 		left: 92%;
 	}
 }
-@include media(mb2){
+// @include media(mb2){
 	// .p-tomat{
 	// 	top: -9%;
 	// 	left: 85%;
@@ -112,7 +115,7 @@
 	// .p-lines-flex{
 	// 	width: 35%;
 	// }
-}
+// }
 @include media(sp){
 	.p-lines-flex{
 		left: 77%;
