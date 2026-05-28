@@ -187,7 +187,7 @@ ul, ol {
 .l-global-nav {
   height: 100vh;
   width: 500px;
-  padding: 100px 30px 0;
+  padding: clamp(3.125rem, 2.4038461538rem + 3.0769230769vw, 6.25rem) 1.875rem 0;
   background-color: var(--bg-primary);
 }
 
@@ -199,47 +199,15 @@ ul, ol {
 }
 
 .l-nav__list {
-  padding: 30px 0;
+  padding: 1.875rem 0;
 }
 
 .l-nav__item > .l-nav__link {
   font-family: "utsukushi";
   text-align: center;
   transition: 0.2s ease;
-  margin: 50px 0;
+  margin: clamp(1.875rem, 1.5865384615rem + 1.2307692308vw, 3.125rem) 0;
   display: block;
-}
-
-.l-nav__sub a {
-  color: var(--text-primary);
-  font-family: "higuregothic";
-  font-size: 0.9375rem;
-  margin-bottom: 10px;
-}
-.l-nav__sub li {
-  position: relative;
-}
-.l-nav__sub li a {
-  margin-bottom: 7px;
-  margin-left: 40px;
-  transition: 0.2s ease;
-}
-.l-nav__sub li a::before {
-  content: "";
-  width: 5px;
-  height: 5px;
-  border-radius: 9999px;
-  background-color: var(--text-title);
-  position: absolute;
-  top: 50%;
-  left: 0;
-  transform: translateY(-50%);
-  transition: 0.3s ease;
-}
-
-.l-nav__entry-link {
-  color: var(--text-primary);
-  font-size: 0.9375rem;
 }
 
 .l-nav__sns {
@@ -248,49 +216,19 @@ ul, ol {
 }
 
 .l-nav__sns-link img {
-  height: 1.875rem;
+  height: clamp(1.25rem, 1.1057692308rem + 0.6153846154vw, 1.875rem);
   width: auto;
-  margin: 0 20px;
+  margin: 0 1.25rem;
 }
 
 @media (hover: hover) {
   .l-nav__item > .l-nav__link:hover {
     opacity: 0.5;
   }
-  .l-nav__sub li a:hover {
-    color: var(--text-title);
-  }
-  .l-nav__sub li:hover a::before {
-    width: 30px;
-    height: 1px;
-  }
 }
 @media screen and (max-width: 768px) {
   .l-global-nav {
     width: 99vw;
-    padding-top: 45px;
-  }
-  .l-nav__list {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-  }
-}
-@media screen and (max-width: 390px) {
-  .l-global-nav__logo {
-    width: 6.25rem;
-  }
-  .l-global-nav {
-    padding-top: 1.1875rem;
-  }
-  .l-nav__item > .l-nav__link {
-    margin: 15px 0 3px;
-    font-size: 0.9375rem;
-  }
-  .l-nav__sub li a {
-    margin-bottom: 0;
-    font-size: 0.8125rem;
-    line-height: 2em;
   }
 }
 .l-loading {
@@ -482,7 +420,7 @@ ul, ol {
   position: fixed;
   right: 6px;
   bottom: 0;
-  z-index: 100;
+  z-index: 1000;
   opacity: 0;
   transform: translateX(100%);
   pointer-events: none;
@@ -493,11 +431,8 @@ ul, ol {
   transform: translate(0, 0);
   pointer-events: auto;
 }
-.c-fixed-link {
-  width: clamp(9.375rem, 2.8176229508rem + 10.2459016393vw, 15.625rem);
-  aspect-ratio: 250/170;
-  height: auto;
-  background: url(../../../images/main-img/entory-link.webp) no-repeat left top/100%;
+.c-fixed-link img {
+  width: clamp(9.375rem, 7.2115384615rem + 9.2307692308vw, 18.75rem);
 }
 .c-fixed-link.is-show {
   pointer-events: auto;
@@ -507,41 +442,6 @@ ul, ol {
   pointer-events: none;
 }
 
-.c-recruit {
-  height: 220px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  margin: 50px auto;
-  position: relative;
-  overflow: hidden;
-}
-.c-recruit p {
-  position: relative;
-  font-family: "utsukushi";
-  color: var(--accent-orange-color);
-}
-.c-recruit img {
-  height: 100px;
-  display: block;
-}
-
-@media screen and (max-width: 376px) {
-  .c-recruit {
-    margin: 65px auto 50px;
-  }
-  .c-recruit p {
-    font-size: 0.9375rem;
-  }
-}
-@media screen and (max-width: 530px) {
-  .recruit p {
-    font-size: 15px;
-  }
-  .recruit {
-    margin: 65px auto 50px;
-  }
-}
 .c-hamburger {
   width: 60px;
   height: 60px;
