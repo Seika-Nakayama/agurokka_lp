@@ -295,7 +295,7 @@ ul, ol {
   }
 }
 .l-loading {
-  width: 100%;
+  width: 100vw;
   position: fixed;
   top: 0;
   right: 0;
@@ -317,11 +317,11 @@ ul, ol {
   align-items: center;
   justify-content: center;
   font-size: 1.25rem;
-  margin-bottom: 40px;
+  margin-bottom: 2.5rem;
 }
 .l-loading__text img {
-  height: 230px;
-  margin: 30px;
+  height: 14.375rem;
+  margin: 1.875rem;
 }
 .l-loading__text span {
   font-family: "higuregothic";
@@ -329,7 +329,7 @@ ul, ol {
 
 .l-loading__bar {
   width: 100vw;
-  height: 2px;
+  height: 0.125rem;
   overflow: hidden;
 }
 
@@ -342,7 +342,7 @@ ul, ol {
 }
 
 .l-loading__count {
-  margin-top: 50px;
+  margin-top: 3.125rem;
   font-size: 1.5625rem;
   font-family: "higuregothic";
 }
@@ -355,7 +355,7 @@ ul, ol {
     margin-block: auto;
   }
   .l-loading__text img {
-    height: 150px;
+    height: 9.375rem;
   }
 }
 .l-fv {
