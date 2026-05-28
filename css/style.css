@@ -186,8 +186,8 @@ ul, ol {
 }
 .l-global-nav {
   height: 100vh;
-  width: 21.875rem;
-  padding-top: 6.25rem;
+  width: 500px;
+  padding: 100px 30px 0;
   background-color: var(--bg-primary);
 }
 
@@ -199,15 +199,14 @@ ul, ol {
 }
 
 .l-nav__list {
-  padding: 0 30px;
+  padding: 30px 0;
 }
 
 .l-nav__item > .l-nav__link {
-  font-size: 1.25rem;
-  color: var(--primary-00);
   font-family: "utsukushi";
+  text-align: center;
   transition: 0.2s ease;
-  margin: 35px 0 20px;
+  margin: 50px 0;
   display: block;
 }
 
@@ -245,13 +244,13 @@ ul, ol {
 
 .l-nav__sns {
   display: flex;
-  justify-content: space-around;
-  margin: 1.75rem;
+  justify-content: center;
 }
 
 .l-nav__sns-link img {
-  height: 2.5rem;
+  height: 1.875rem;
   width: auto;
+  margin: 0 20px;
 }
 
 @media (hover: hover) {
@@ -498,7 +497,7 @@ ul, ol {
   width: clamp(9.375rem, 2.8176229508rem + 10.2459016393vw, 15.625rem);
   aspect-ratio: 250/170;
   height: auto;
-  background: url(../../../images/fv/caw.webp) no-repeat left top/100%;
+  background: url(../../../images/main-img/entory-link.webp) no-repeat left top/100%;
 }
 .c-fixed-link.is-show {
   pointer-events: auto;
