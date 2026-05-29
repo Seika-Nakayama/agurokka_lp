@@ -1371,7 +1371,7 @@ a.p-about__link{
 		margin:21% auto 55% 0
 	}
 } */
-.l-origin__items{
+/* .l-origin__items{
 	display:flex;
 	justify-content:space-around;
 	align-items:flex-end;
@@ -1401,12 +1401,13 @@ h3.p-origin__title{
 .l-origin__image{
 	width:250px;
 	height:250px;
+	overflow: hidden;
 	background-position:center;
 	background-size:cover;
 	background-repeat:no-repeat;
-	border-radius:10px
-}
-.l-origin__image--agriculture{
+	border-radius:10px;
+} */
+/* .l-origin__image--agriculture{
 	background-image:url(../images/main-img/about-origin1.webp)
 }
 .l-origin__image--higorokka{
@@ -1414,8 +1415,8 @@ h3.p-origin__title{
 }
 .l-origin__image--together{
 	background-image:url(../images/main-img/about-origin3.webp)
-}
-.c-separator img{
+} */
+/* .c-separator img{
 	transform:translate(12px,-100px)
 }
 .c-separator--light img,.c-separator--light img{
@@ -1452,8 +1453,8 @@ h3.p-origin__title{
 }
 .l-origin__item.pop-up.is-show:nth-of-type(3){
 	animation-delay:.7s
-}
-@media screen and (max-width:1000px){
+} */
+/* @media screen and (max-width:1000px){
 	.l-origin__items{
 		display:block;
 		width:100%;
@@ -1463,10 +1464,10 @@ h3.p-origin__title{
 	.l-origin__image{
 		width:100%;
 		height:300px;
-		border-radius:0
+		border-radius:0;
 	}
 	.l-origin__item{
-		position:relative
+		position:relative;
 	}
 	h3.p-origin__title{
 		position:absolute;
@@ -1521,7 +1522,7 @@ h3.p-origin__title{
 	.p-origin__title--agriculture span{
 		margin-bottom:0
 	}
-}
+} */
 .question{
 	width:100%
 }
