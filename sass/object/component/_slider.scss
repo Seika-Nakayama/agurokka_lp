@@ -2,9 +2,7 @@
 @use "../../abstracts/index" as *;
 
 .c-slider{
-	// width: 58%;
 	width: 50%;
-	// max-width: 1385px;
 	@include absolute-position;
 
 	.c-slider__inner{
@@ -38,29 +36,25 @@
 @include media(mb){
     .c-slider{
         width: 95%;
-        // top: 77%;
 		top: 60%;
     }
 }
-// @include media(mb2){
-//     .c-slider{
-//         width: 95%;
-//         top: 67%;
-//     }
-// }
+
 @include media(sp){
     .c-slider{
         width: 140%;
     }
 }
+
 @include media(sp2){
     .c-slider{
-        top: 65%;
-    }
-}
-@include media(sp3){
-    .c-slider{
-        width: 120%;
+        top: 73%;
     }
 }
 
+@include media(sp3){
+    .c-slider{
+        width: 120%;
+		top: 65%;
+    }
+}
