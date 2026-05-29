@@ -832,7 +832,7 @@ ul, ol {
 .l-about__visual {
   position: relative;
   width: 100%;
-  padding: 0 30px;
+  padding: 0 1.875rem;
 }
 .l-about__visual img {
   width: clamp(9.375rem, 6.5625rem + 9vw, 17.8125rem);
@@ -852,20 +852,17 @@ ul, ol {
   align-items: flex-start;
   gap: clamp(1.25rem, 0.0961538462rem + 4.9230769231vw, 6.25rem);
 }
-
 .l-about__panel-grp {
   position: relative;
 }
-
 .l-about__panel-txt {
   position: absolute;
   display: flex;
   flex-direction: row-reverse;
   align-items: flex-start;
-  gap: 20px;
+  gap: 1.25rem;
   z-index: 1;
 }
-
 .l-about__panel-txt p {
   width: fit-content;
   writing-mode: vertical-rl;
@@ -878,7 +875,6 @@ ul, ol {
 .l-about__panel-txt p span {
   text-orientation: upright;
 }
-
 .l-about__panel-img {
   width: clamp(26.6875rem, 8.75rem + 28vw, 43.75rem);
   display: block;
@@ -922,6 +918,17 @@ ul, ol {
   .l-about__panel {
     display: initial;
   }
+  .l-about__panel-txt {
+    display: inline;
+  }
+  .l-about__panel-txt p {
+    writing-mode: initial;
+    padding: 0.1875rem 0.3125rem;
+    letter-spacing: 0;
+  }
+  .l-about__panel-img {
+    width: clamp(16.875rem, 8.5689522342rem + 35.4391371341vw, 31.25rem);
+  }
   .l-about__panel-grp--l .l-about__panel-img {
     margin-right: auto;
   }
@@ -940,26 +947,15 @@ ul, ol {
     bottom: 0.3125rem;
     left: 0;
   }
-  .l-about__panel-img {
-    width: clamp(16.875rem, 8.5689522342rem + 35.4391371341vw, 31.25rem);
-  }
-  .l-about__panel-txt {
-    display: inline;
-  }
-  .l-about__panel-txt p {
-    writing-mode: initial;
-    padding: 0.1875rem 0.3125rem;
-    letter-spacing: 0;
-  }
   .l-about__panel--01 {
     width: 100%;
-    padding: 0 30px;
+    padding: 0 1.875rem;
   }
   .l-about__panel--01 .l-about__panel-txt p:nth-child(2) {
     margin-top: 0.3125rem;
   }
   .l-about__panel--02 .l-about__panel-img {
-    margin: 20px auto;
+    margin: 1.25rem auto;
   }
   .l-about__panel--02 .l-about__panel-txt p {
     margin: 0 auto;
