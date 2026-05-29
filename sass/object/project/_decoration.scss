@@ -47,20 +47,6 @@
     animation-delay: var(--animation-no4-delay);
 }
 
-@keyframes vegPop{
-	0%{
-		opacity: 0;
-		transform: translate(-50%,-50%) scale(.6);
-	}
-	70%{
-		opacity: 1;
-		transform: translate(-50%,-50%) scale(1.05);
-	}
-	100%{
-		opacity: 1;
-		transform: translate(-50%,-50%) scale(1);;
-	}
-}
 
 @include media(mb){
 	.p-corn{

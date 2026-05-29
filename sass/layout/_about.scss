@@ -6,20 +6,6 @@
 	margin: 0 auto;
 }
 
-.p-about__lead{
-	line-height: fluid( 30, 50, 1024, 2000);
-	text-align: center;
-
-	& span.en-font{
-		font-size: larger;
-	}
-
-	a{
-		display: inline-block;
-		color: var(--highlight-00);
-	}
-}
-
 .l-about__visual{
 	position: relative;
 	width: 100%;
@@ -98,7 +84,6 @@
 	}
 }
 
-
 .l-about__panel--02{
 	align-items: center;
 
@@ -108,21 +93,13 @@
 	}
 }
 
-.emphasis span{
+.l-emphasis span{
 	font-size: larger;
 }
 
 @include media(mb){
 	.l-about__panel{
 		display: initial;
-	}
-
-	.p-about__lead{
-		text-align: left;
-
-		br{
-			display: none;
-		}
 	}
 
 	.l-about__panel-grp--l{
@@ -190,16 +167,6 @@
 	width: fluid( 950, 1500, 1025, 2000);
 	margin: auto;
 	position: relative;
-
-	.p-origin__title{
-		font-size: fluid( 20, 30, 375, 2000);
-		line-height: fluid( 30, 40, 375, 2000);
-		margin: to-rem(60) 0 fluid( 20, 30, 1025, 2000);
-		font-family: 'kokoro';
-		letter-spacing: 0;
-		white-space: nowrap;
-		text-align: center;
-	}
 }
 
 
@@ -220,41 +187,15 @@
 	transform: translateY(fluid( 215, 255, 1025, 2000));
 }
 
-.pop-up{
-	opacity: 0;
-	transform: translateY(40px) scale(.7);
-}
-
-.pop-up.is-show{
-	animation: popUp 0.9s cubic-bezier(.34,1.56,.64,1) forwards;
-}
-
-@keyframes popUp{
-	0%{
-		opacity: 0;
-		transform: translateY(40px) scale(.7);
-	}
-	60%{
-		transform: translateY(-6px) scale(1.05);
-	}
-	80%{
-		transform: translateY(2px) scale(.98);
-	}
-	100%{
-		opacity: 1;
-		transform: translateY(0) scale(1);
-	}
-}
-
-.l-origin__item.pop-up.is-show:nth-of-type(1){
+.l-origin__item.p-pop-up.is-show:nth-of-type(1){
 	animation-delay: .1s;
 }
 
-.l-origin__item.pop-up.is-show:nth-of-type(2){
+.l-origin__item.p-pop-up.is-show:nth-of-type(2){
 	animation-delay: .4s;
 }
 
-.l-origin__item.pop-up.is-show:nth-of-type(3){
+.l-origin__item.p-pop-up.is-show:nth-of-type(3){
 	animation-delay: .7s;
 }
 
@@ -263,15 +204,6 @@
 		display: block;
 		width: 100%;
 		margin: to-rem(60) 0 to-rem(100);
-
-		.p-origin__title{
-			@include absolute-position(50%, 50%); 
-			z-index: z-index(1);
-			background-color: var(--bg-overlay);
-			padding: to-rem(3) to-rem(10);
-			margin: 0;
-			border-radius: $radius-sm;
-		}
 	}
 
 	.l-origin__img{
@@ -298,15 +230,6 @@
 
 		& svg path {
 			fill: var(--text-inverse);
-		}
-	}
-
-	.pop-up{
-		transform: unset;
-		opacity:1;
-		
-		&.is-show{
-			animation: unset;
 		}
 	}
 }

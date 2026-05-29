@@ -1,0 +1,11 @@
+@use "../../abstracts/index" as *;
+
+.c-svg-wrap{
+	@include relative-position($top-r: 50%, $left-r: 0);
+	transform: translateY(10%);
+}
+
+.c-svg-wrap,.roll-svg{
+	z-index: z-index(-1);
+	pointer-events: none;
+}
