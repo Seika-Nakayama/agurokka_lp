@@ -42,7 +42,7 @@
 		gap: to-rem(20);
 		z-index: 1;
 
-		& p{
+		p{
 			width: fit-content;
 			writing-mode: vertical-rl;
 			background-color: var(--bg-overlay);
@@ -66,8 +66,8 @@
 
 .l-about__panel--01 .l-about__panel-txt,
 .l-about__panel--02 .l-about__panel-txt{
-	& p:nth-child(2){ margin-top: to-rem(15); }
-	& p:nth-child(3){ margin-top: to-rem(30); }
+	p:nth-child(2){ margin-top: to-rem(15); }
+	p:nth-child(3){ margin-top: to-rem(30); }
 }
 
 .l-about__panel-grp--l .l-about__panel-txt{

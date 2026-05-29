@@ -6,14 +6,13 @@
         transform: translateY(120%);
         transition: 0.9s cubic-bezier(.2,.8,.2,1);
     }
-    
+
     &.is-show>*{
         transform: translateY(0);
     }
 }
 
 .js-split{
-    
     span{
         display: inline-block;
         line-height: 1.2;
@@ -21,13 +20,12 @@
 		transform: translateY(20px);
 		filter: blur(6px);
 	}
-    
+
 	&.is-show span{
         animation: charUp 0.6s ease forwards;
 		animation-delay: var(--delay);
 	}
 }
-
 
 .scroll-svg.is-show path{
 	stroke-dashoffset: 0;
@@ -49,6 +47,7 @@
 .from-left{
 	transform: translateX(-100vw);
 }
+
 .is-show .from-left{
 	animation: slideIn 4s ease-out forwards;
 }
