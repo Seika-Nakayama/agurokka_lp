@@ -9,7 +9,7 @@
 .l-about__visual{
 	position: relative;
 	width: 100%;
-	padding: 0 30px;
+	padding: 0 to-rem(30);
 
 	img{
 		width:  fluid( 150, 285, 500, 2000);
@@ -29,39 +29,39 @@
 	justify-content: center;
 	align-items: flex-start;
 	gap: fluid(20, 100, 375, 2000);
-}
 
-.l-about__panel-grp{
-	position: relative;
-}
-
-.l-about__panel-txt{
-	position: absolute;
-	display: flex;
-	flex-direction: row-reverse;
-	align-items: flex-start;
-	gap: 20px;
-	z-index: 1;
-}
-
-.l-about__panel-txt p{
-	width: fit-content;
-	writing-mode: vertical-rl;
-	background-color: var(--bg-overlay);
-	padding: to-rem(10) to-rem(5.4);
-	border-radius: $radius-sm;
-	position: relative;
-	z-index: 1;
-
-	span{
-		text-orientation: upright;
+	&-grp{
+		position: relative;
 	}
-}
 
-.l-about__panel-img{
-	width: fluid(427, 700, 1025, 2000);
-	display: block;
-	border-radius: $radius-md;
+	&-txt{
+		position: absolute;
+		display: flex;
+		flex-direction: row-reverse;
+		align-items: flex-start;
+		gap: to-rem(20);
+		z-index: 1;
+
+		& p{
+			width: fit-content;
+			writing-mode: vertical-rl;
+			background-color: var(--bg-overlay);
+			padding: to-rem(10) to-rem(5.4);
+			border-radius: $radius-sm;
+			position: relative;
+			z-index: 1;
+
+			span{
+				text-orientation: upright;
+			}
+		}
+	}
+
+	&-img{
+		width: fluid(427, 700, 1025, 2000);
+		display: block;
+		border-radius: $radius-md;
+	}
 }
 
 .l-about__panel--01 .l-about__panel-txt,
@@ -89,7 +89,6 @@
 
 	.l-about__panel-txt{
 		position: static;
-		
 	}
 }
 
@@ -100,11 +99,25 @@
 @include media(mb){
 	.l-about__panel{
 		display: initial;
+
+		&-txt{
+			display: inline;
+			
+			p{
+				writing-mode: initial;
+				padding: to-rem(3) to-rem(5);
+				letter-spacing: 0;
+			}
+		}
+
+		&-img{
+			width: fluid(270, 500, 375, 1024);
+		}
 	}
 
 	.l-about__panel-grp--l{
 		.l-about__panel-img{
-		margin-right: auto;
+			margin-right: auto;
 		}
 
 		.l-about__panel-txt{
@@ -115,34 +128,21 @@
 
 	.l-about__panel-grp--r{
 		margin-top: fluid( 30, 80, 375, 1024);
+
 		.l-about__panel-img{
 			margin-left: auto;
 		}
 
 		.l-about__panel-txt{
-		top: initial;
-		bottom: to-rem(5);
-		left: 0;
-		}
-	}
-
-	.l-about__panel-img{
-		width: fluid(270, 500, 375, 1024);
-	}
-
-	.l-about__panel-txt{
-		display: inline;
-		
-		p{
-			writing-mode: initial;
-			padding: to-rem(3) to-rem(5);
-			letter-spacing: 0;
+			top: initial;
+			bottom: to-rem(5);
+			left: 0;
 		}
 	}
 
 	.l-about__panel--01{
 		width: 100%;
-		padding: 0 30px;
+		padding: 0 to-rem(30);
 		
 		.l-about__panel-txt p:nth-child(2){
 			margin-top: to-rem(5);
@@ -151,7 +151,7 @@
 
 	.l-about__panel--02{
 		.l-about__panel-img{
-			margin: 20px auto;
+			margin: to-rem(20) auto;
 		}
 
 		.l-about__panel-txt p{
