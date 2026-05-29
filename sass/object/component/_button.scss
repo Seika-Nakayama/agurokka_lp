@@ -3,13 +3,8 @@
 .c-fixed-link{
 	@include fixed-position(null, 6px, 0, null, 1000);
 	@include slide-in($translate-right, $transition-lg);
-	// width: fluid(150, 250, 1024, 2000);
-	// aspect-ratio: 250 / 170;
-	// height: auto;
-	// background: url(../../../images/main-img/entory-link.webp) no-repeat left top / 100%;
 
 	img{
-		// width: fluid(300, 500, 1024, 2000);
 		width: fluid(150, 300, 375, 2000);
 	}
 
@@ -22,43 +17,3 @@
 		pointer-events: none;
 	}
 }
-
-// .c-recruit{
-// 	height: 220px;
-// 	display: flex;
-// 	justify-content: center;
-// 	align-items: center;
-// 	margin: 50px auto;
-// 	position: relative;
-// 	overflow: hidden;
-
-// 	p{
-// 		position: relative;
-// 		font-family: 'utsukushi';
-// 		color: var(--accent-orange-color);
-// 	}
-
-// 	img{
-// 		height: 100px;
-// 		display: block;
-// 	}
-// }
-
-// @include media(sp3){
-// 	.c-recruit{
-// 		margin: 65px auto 50px;
-
-// 		p{
-// 			font-size: to-rem(15px);
-// 		}
-// 	}
-// }
-
-// @media screen and (max-width:530px){
-// 	.recruit p{
-// 		font-size:15px
-// 	}
-// 	.recruit{
-// 		margin:65px auto 50px
-// 	}
-// }
