@@ -1,11 +1,11 @@
 @use "../../abstracts/index" as * ;
 
 .c-hamburger{
-	width: 60px;
-	height: 60px;
+	width: to-rem(60);
+	height: to-rem(60);
 	cursor: pointer;
-	@include relative-position(20px,initial);
-	right: 24px;
+	@include relative-position(to-rem(20),initial);
+	right: to-rem(24);
 	z-index: z-index(1000);
 	background: none;
 	border: none;
@@ -13,11 +13,11 @@
 	span{
 		position: absolute;
 		left: 0;
-		@include hamburger-lines(60px,1px,var(--primary-00));
+		@include hamburger-lines(to-rem(60),1px,var(--primary-00));
 		@include hamburger-lines-init(
-			70px, 60px, 50px,
-			0, 14px, 28px,
-			-9px, 0, 10px
+			to-rem(70), to-rem(60), to-rem(50),
+			0, to-rem(14), to-rem(28),
+			to-rem(-9), 0, to-rem(10)
 		);
 	}
 }
