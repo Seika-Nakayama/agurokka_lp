@@ -5,7 +5,7 @@
 	width: 50%;
 	@include absolute-position;
 
-	.c-slider__inner{
+	&__inner{
 		aspect-ratio: 841 / 598;
 		overflow: hidden;
 		@include relative-position;

@@ -22,16 +22,9 @@ img{
 	&.category{
 		width: 60vw;
 		max-width: 1000px;
-		// position: absolute;
-		// top: -230px;
-		// left: 25px;
 		opacity: 0;
 		transition: 1.5s;
-	}
-}
 
-img{
-	&.category{
 		&.is-show{
 			opacity: 0.5;
 		}

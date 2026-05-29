@@ -7,47 +7,47 @@
 	display: flex;
 	justify-content: center;
 	align-items: center;
-}
 
-.l-loading__inner{
-	text-align: center;
-}
-
-.l-loading__text{
-	display: flex;
-	align-items: center;
-	justify-content: center;
-	font-size: to-rem(20);
-	margin-bottom: to-rem(40);
-
-	img{
-		height:  to-rem(230);
-		margin: to-rem(30);
+	&__inner{
+		text-align: center;
 	}
 
-	span{
+	&__text{
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		font-size: to-rem(20);
+		margin-bottom: to-rem(40);
+
+		img{
+			height:  to-rem(230);
+			margin: to-rem(30);
+		}
+
+		span{
+			font-family: 'higuregothic';
+		}
+	}
+
+	&__bar{
+		width: 100vw;
+		height: to-rem(2);
+		overflow: hidden;
+	}
+
+	&__progress{
+		display: block;
+		width: 0%;
+		height: 100%;
+		background-color: var(--primary-00);
+		transition: 1s ease;
+	}
+
+	&__count{
+		margin-top: to-rem(50);
+		font-size: to-rem(25);
 		font-family: 'higuregothic';
 	}
-}
-
-.l-loading__bar{
-	width: 100vw;
-	height: to-rem(2);
-	overflow: hidden;
-}
-
-.l-loading__progress{
-	display: block;
-	width: 0%;
-	height: 100%;
-	background-color: var(--primary-00);
-	transition: var(--transition-slow);
-}
-
-.l-loading__count{
-	margin-top: to-rem(50);
-	font-size: to-rem(25);
-	font-family: 'higuregothic';
 }
 
 @include media(mb){
