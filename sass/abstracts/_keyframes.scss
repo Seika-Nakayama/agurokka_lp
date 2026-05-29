@@ -1,0 +1,67 @@
+// FV 野菜デコレーション用（その場でスケールアップ）
+@keyframes vegPop{
+	0%{
+		opacity: 0;
+		transform: translate(-50%,-50%) scale(.6);
+	}
+	70%{
+		opacity: 1;
+		transform: translate(-50%,-50%) scale(1.05);
+	}
+	100%{
+		opacity: 1;
+		transform: translate(-50%,-50%) scale(1);
+	}
+}
+
+// Aboutセクション 由来カード用（下から浮き上がりながらスケールアップ）
+@keyframes popUp{
+	0%{
+		opacity: 0;
+		transform: translateY(40px) scale(.7);
+	}
+	60%{
+		transform: translateY(-6px) scale(1.05);
+	}
+	80%{
+		transform: translateY(2px) scale(.98);
+	}
+	100%{
+		opacity: 1;
+		transform: translateY(0) scale(1);
+	}
+}
+
+// js-split 文字ごとのフェードイン用
+@keyframes charUp{
+	to{
+		opacity: 1;
+		transform: translateY(0);
+		filter: blur(0);
+	}
+}
+
+// from-left 要素が左からスライドイン用
+@keyframes slideIn{
+	0%{
+		transform: translateX(-100vw);
+	}
+	10%{
+		transform: translateX(-100vw);
+	}
+	80%{
+		transform: translateX(0);
+	}
+	85%{
+		transform: translateY(20px);
+	}
+	90%{
+		transform: translateY(-5px);
+	}
+	95%{
+		transform: translateY(10px);
+	}
+	100%{
+		transform: translateY(0);
+	}
+}
