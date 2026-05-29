@@ -62,96 +62,49 @@
 	}
 }
 
-// @include media(pc2){
-// 	.spinach{
-// 		top: 97%;
-// 		left: 10%;
-// 	}
-// }
-// @include media(pc2){
-// 	.p-corn{
-// 		display: none;
-// 	}
-// 	.p-tomat{
-// 		width: 13%;
-// 		top: 64%;
-// 		left: 115%;
-// 	}
-// 	.p-pepper{
-// 		top: 65%;
-// 		left: -15%;
-// 	}
-// 	.p-spinach{
-// 		top: 90%;
-// 		left: 10%;
-// 	}
-// }
 @include media(mb){
 	.p-corn{
 		display: none;
 	}
+
 	.p-pepper{
 		top: 3%;
 		left: 8%;
 	}
+
 	.p-tomat{
 		top: 21%;
 		left: 92%;
 	}
 }
-// @include media(mb2){
-	// .p-tomat{
-	// 	top: -9%;
-	// 	left: 85%;
-	// }
-	// .p-pepper{
-	// 	top: 5%;
-	// 	left: 9%;
-	// }
-	// .p-spinach{
-	// 	top: 93%;
-	// 	left: 20%;
-	// }
-	// .p-lines-flex{
-	// 	width: 35%;
-	// }
-// }
+
 @include media(sp){
 	.p-lines-flex{
 		left: 77%;
 	}
+
 	.p-lines-flex img.caw{
 		width: 80%;
 	}
+
 	.p-pepper{
 		width: 16%;
 		top: 0;
 		left: 23%;
 	}
+
 	.p-tomat{
 		width: 74px;
 		left: 79%;
 	}
+
 	.p-spinach{
 		width: 25%;
 		top: 104%;
 		left: 27%;
 	}
-}
-@include media(sp2){
-	.p-pepper{
-		top: 3%;
-		left: 22%;
-	}
-	.p-tomat{
-		width: 65px;
-		top: 0;
-		left: 80%;
-	}
-	}
 
-@include media(sp3){
-	.p-lines-flex img.caw{
-		width: 100%;
+	.p-lines-flex{
+		top: 100%;
 	}
 }
