@@ -1042,7 +1042,7 @@ a.p-about__link{
 	pointer-events:none;
 	z-index:-1
 }
-.svg-wrap{
+.c-svg-wrap{
 	position:relative;
 	top:50%;
 	left:0;
@@ -1052,7 +1052,7 @@ a.p-about__link{
 	width:100vw;
 	height:auto
 }
-.svg-wrap,.heart-svg,.roll-svg{
+.c-svg-wrap,.heart-svg,.roll-svg{
 	z-index:-1;
 	pointer-events:none
 }
@@ -1115,7 +1115,7 @@ a.p-about__link{
 	}
 }
 @media screen and (max-width:1205px){
-	.svg-wrap{
+	.c-svg-wrap{
 		top:52%
 	}
 	.l-about__text{
@@ -1205,12 +1205,12 @@ a.p-about__link{
 		font-size:22px;
 		color:var(--accent-green-color)
 	}
-	.svg-wrap{
+	.c-svg-wrap{
 		top:58%
 	}
 }
 @media screen and (max-width:1000px){
-	.svg-wrap{
+	.c-svg-wrap{
 		top:49%
 	}
 	.heart-svg path{stroke-width: 3px;}
@@ -1219,7 +1219,7 @@ a.p-about__link{
 	}
 }
 @media screen and (max-width:900px){
-	.svg-wrap{
+	.c-svg-wrap{
 		top:48%
 	}
 	.l-about__text{
@@ -1237,7 +1237,7 @@ a.p-about__link{
 	}
 }
 @media screen and (max-width:840px){
-	.svg-wrap{
+	.c-svg-wrap{
 		top:47%
 	}
 }
@@ -1279,7 +1279,7 @@ a.p-about__link{
 	}
 }
 @media screen and (max-width:675px){
-	.svg-wrap{
+	.c-svg-wrap{
 		top:46%
 	}
 	.heart-svg path{
@@ -1287,7 +1287,7 @@ a.p-about__link{
 	}
 }
 @media screen and (max-width:605px){
-	.svg-wrap{
+	.c-svg-wrap{
 		top:47%
 	}
 	.l-about__panels img.l-about__panel-img{
@@ -1422,11 +1422,11 @@ h3.p-origin__title{
 .c-separator--light img,.c-separator--light img{
 	display:none
 }
-.pop-up{
+.p-pop-up{
 	opacity:0;
 	transform:translateY(40px) scale(.7)
 }
-.pop-up.is-show{
+.p-pop-up.is-show{
 	animation:popUp 0.9s cubic-bezier(.34,1.56,.64,1) forwards
 }
 @keyframes popUp{
@@ -1445,13 +1445,13 @@ h3.p-origin__title{
 		transform:translateY(0) scale(1)
 	}
 }
-.l-origin__item.pop-up.is-show:nth-of-type(1){
+.l-origin__item.p-pop-up.is-show:nth-of-type(1){
 	animation-delay:.1s
 }
-.l-origin__item.pop-up.is-show:nth-of-type(2){
+.l-origin__item.p-pop-up.is-show:nth-of-type(2){
 	animation-delay:.4s
 }
-.l-origin__item.pop-up.is-show:nth-of-type(3){
+.l-origin__item.p-pop-up.is-show:nth-of-type(3){
 	animation-delay:.7s
 } */
 /* @media screen and (max-width:1000px){
@@ -1506,11 +1506,11 @@ h3.p-origin__title{
 	.l-origin__item.js-display{
 		transform:unset
 	}
-	.pop-up{
+	.p-pop-up{
 		transform:unset;
 		opacity:1
 	}
-	.pop-up.is-show{
+	.p-pop-up.is-show{
 		animation:unset
 	}
 }
