@@ -874,7 +874,7 @@ ul, ol {
 .l-about__panel-img {
   width: clamp(26.6875rem, 8.75rem + 28vw, 43.75rem);
   display: block;
-  border-radius: 10px;
+  border-radius: 5px;
 }
 
 .l-about__panel--01 .l-about__panel-txt p:nth-child(2),
@@ -1025,3 +1025,258 @@ ul, ol {
     fill: var(--text-inverse);
   }
 }
+@font-face {
+  font-family: "higuregothic";
+  font-weight: 400;
+  font-style: normal;
+  src: url("../../../font/HigureGothic-Light.woff2") format("woff2");
+}
+@font-face {
+  font-family: "kokoro";
+  font-weight: 400;
+  font-style: normal;
+  src: url("../../../font/Kokoro.woff2") format("woff2");
+}
+.l-interview {
+  width: 100%;
+}
+.l-interview__item {
+  display: flex;
+  flex-direction: row-reverse;
+}
+.l-interview__item--reverse {
+  flex-direction: row;
+}
+.l-interview__body {
+  width: 450px;
+  height: fit-content;
+  padding: 1.875rem 2.1875rem;
+  background-color: var(--bg-muted);
+  border-radius: 5px;
+  position: relative;
+  z-index: -1;
+}
+.l-interview__image {
+  position: relative;
+}
+
+.p-member__farm,
+h3.p-member__name,
+.p-member__name-end,
+.l-interview__body p,
+[class*=p-tag--] {
+  font-family: "kokoro";
+  color: var(--text-inverse);
+}
+
+.p-member__farm {
+  font-size: 1.25rem;
+}
+
+h3.p-member__name {
+  font-size: clamp(1.5rem, 1.2692307692rem + 0.9846153846vw, 2.5rem);
+  letter-spacing: -0.3125rem;
+  margin: 1.25rem 0 1.875rem;
+}
+
+.l-interview__item--01 .p-member__name {
+  margin: 1.25rem 0.25rem 1.875rem -0.25rem;
+}
+
+.p-member__name-end {
+  font-size: clamp(1.125rem, 0.9519230769rem + 0.7384615385vw, 1.875rem);
+  letter-spacing: -0.3125rem;
+}
+
+p.p-member__intro {
+  font-family: "higuregothic";
+  line-height: 30px;
+}
+
+[class*=p-tag--] {
+  position: absolute;
+  background-color: var(--bg-muted);
+}
+@font-face {
+  font-family: "kokoro";
+  font-weight: 400;
+  font-style: normal;
+  src: url("../../../font/Kokoro.woff2") format("woff2");
+}
+[class*=p-tag--] {
+  font-size: 1.875rem;
+  padding: 0.5625rem;
+  border-radius: 5px;
+}
+
+.p-tag--vertical {
+  writing-mode: vertical-rl;
+  text-orientation: upright;
+}
+
+.p-tag--01a {
+  top: -1.875rem;
+  left: 23.3125rem;
+}
+
+.p-tag--01b {
+  top: 1.875rem;
+  left: 19.6875rem;
+}
+
+.p-tag--02a {
+  top: -1.875rem;
+  right: 20.625rem;
+}
+
+.p-tag--02b {
+  top: 1.25rem;
+  right: 24.0625rem;
+}
+
+.p-tag--03a {
+  top: -1.875rem;
+  left: 24.0625rem;
+}
+
+.p-tag--03b {
+  top: 6.25rem;
+  left: 1.5625rem;
+}
+
+.p-tag--04a {
+  top: -1.875rem;
+  left: 0.625rem;
+}
+
+.p-tag--04b {
+  top: 1.875rem;
+  left: 3.5625rem;
+}
+
+.p-member__face {
+  width: 450px;
+  height: 450px;
+  overflow: hidden;
+  border-radius: 5px;
+  position: relative;
+}
+.p-member__face img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.p-member__sns {
+  width: 3.125rem;
+  height: 3.125rem;
+  margin: auto;
+  background-color: var(--bg-primary);
+  border-radius: 9999px;
+  position: absolute;
+  bottom: 0.625rem;
+  right: 0.625rem;
+}
+.p-member__sns img {
+  width: auto;
+  height: 1.875rem;
+  margin: 0.625rem;
+}
+
+.l-interview__body {
+  padding: 1.875rem 2.5rem;
+}
+
+.p-comment01 {
+  transform: translate(10px, 100px);
+}
+
+.p-comment02 {
+  transform: translate(-10px, 100px);
+}
+
+.p-comment03 {
+  transform: translate(10px, 60px);
+}
+
+.p-comment04 {
+  transform: translate(-10px, 40px);
+}
+
+.c-member-slider {
+  overflow: visible !important;
+}
+.c-member-slider .swiper-wrapper {
+  height: auto;
+  margin: 100px auto 110px;
+}
+.c-member-slider .swiper-slide {
+  display: flex;
+  justify-content: center;
+  width: auto;
+  overflow: visible;
+  opacity: 0.7;
+  transform: scale(0.8);
+  transition: transform 600ms ease, opacity 600ms ease;
+}
+.c-member-slider .swiper-slide.swiper-slide-active {
+  opacity: 1;
+  transform: scale(1);
+}
+.c-member-slider .swiper-btn-prev,
+.c-member-slider .swiper-btn-next {
+  display: block;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 11.25rem;
+  height: 11.25rem;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+  z-index: 100;
+}
+.c-member-slider .swiper-btn-prev::after,
+.c-member-slider .swiper-btn-next::after {
+  content: none;
+}
+.c-member-slider .swiper-btn-prev {
+  left: 3%;
+  background-image: url(../images/main-img/interviews/arrow-prev.svg);
+  background-size: 100%;
+}
+.c-member-slider .swiper-btn-next {
+  right: 3%;
+  background-image: url(../images/main-img/interviews/arrow-next.svg);
+  background-size: 100%;
+}
+.c-member-slider .swiper-pagination {
+  position: relative;
+  z-index: 100;
+  margin-top: 0.3125rem;
+  gap: 1.25rem;
+  display: flex;
+  justify-content: center;
+}
+.c-member-slider .swiper-pagination .swiper-pagination-bullet {
+  width: 2.5rem;
+  height: 2.5rem;
+  font-size: 1.25rem;
+  color: var(--text-primary);
+  background-color: var(--bg-primary);
+  border-radius: 0;
+  opacity: 0.5;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.c-member-slider .swiper-pagination .swiper-pagination-bullet.swiper-pagination-bullet-active {
+  color: var(--highlight-00);
+  border-bottom: solid 1px var(--highlight-00);
+  background-color: var(--bg-primary);
+  opacity: 1;
+}
+
+/*# sourceMappingURL=style.css.map */
