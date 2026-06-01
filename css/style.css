@@ -603,6 +603,106 @@ ul, ol {
     top: 65%;
   }
 }
+.c-member-slider {
+  overflow: visible !important;
+}
+.c-member-slider .swiper-wrapper {
+  height: auto;
+  margin: 6.25rem auto 6.875rem;
+}
+.c-member-slider .swiper-slide {
+  display: flex;
+  justify-content: center;
+  width: auto;
+  margin: 0 clamp(3.75rem, -0.7041029207rem + 5.5632823366vw, 6.25rem);
+  overflow: visible;
+  opacity: 0.7;
+  transform: scale(0.7);
+  transition: transform 600ms ease, opacity 600ms ease;
+}
+.c-member-slider .swiper-slide-active {
+  opacity: 1;
+  transform: scale(1);
+}
+.c-member-slider .swiper-btn-prev,
+.c-member-slider .swiper-btn-next {
+  display: block;
+  position: absolute;
+  top: clamp(33.75rem, 31.6026096669rem + 4.4679122665vw, 37.1875rem);
+  transform: translateY(-50%);
+  width: clamp(2.5rem, 1.6346153846rem + 3.6923076923vw, 6.25rem);
+  height: clamp(2.5rem, 1.6346153846rem + 3.6923076923vw, 6.25rem);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+  z-index: 300;
+}
+.c-member-slider .swiper-btn-prev::after,
+.c-member-slider .swiper-btn-next::after {
+  content: none;
+}
+.c-member-slider .swiper-btn-prev {
+  left: 20%;
+  background-image: url(../../../images/main-img/interviews/arrow-prev.svg);
+  background-size: 100%;
+}
+.c-member-slider .swiper-btn-next {
+  right: 20%;
+  background-image: url(../../../images/main-img/interviews/arrow-next.svg);
+  background-size: 100%;
+}
+.c-member-slider .swiper-pagination {
+  position: relative;
+  z-index: 100;
+  margin-top: 0.3125rem;
+  gap: 1.25rem;
+  display: flex;
+  justify-content: center;
+}
+.c-member-slider .swiper-pagination-bullet {
+  width: 2.5rem;
+  height: 2.5rem;
+  font-size: 1.25rem;
+  color: var(--text-primary);
+  background-color: var(--bg-primary);
+  border-radius: 0;
+  opacity: 0.5;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.c-member-slider .swiper-pagination-bullet-active {
+  color: var(--highlight-00);
+  border-bottom: solid 1px var(--highlight-00);
+  background-color: var(--bg-primary);
+  opacity: 1;
+}
+
+@media screen and (max-width: 1280px) {
+  .c-member-slider .swiper-btn-prev {
+    left: 3%;
+  }
+  .c-member-slider .swiper-btn-next {
+    right: 3%;
+  }
+}
+@media screen and (max-width: 768px) {
+  .c-member-slider .swiper-btn-prev,
+  .c-member-slider .swiper-btn-next {
+    top: initial;
+    bottom: clamp(-1.25rem, -0.3554389313rem + -3.8167938931vw, -2.1875rem);
+  }
+  .c-member-slider .swiper-wrapper {
+    margin: 5rem auto clamp(1.25rem, -1.1354961832rem + 10.1781170483vw, 3.75rem);
+  }
+  .c-member-slider .swiper-slide {
+    width: 100vw;
+    margin: 0;
+    flex-direction: column;
+  }
+}
 .js-display {
   overflow: hidden;
 }
@@ -820,6 +920,199 @@ ul, ol {
     animation: unset;
   }
 }
+@font-face {
+  font-family: "higuregothic";
+  font-weight: 400;
+  font-style: normal;
+  src: url("../../../font/HigureGothic-Light.woff2") format("woff2");
+}
+@font-face {
+  font-family: "kokoro";
+  font-weight: 400;
+  font-style: normal;
+  src: url("../../../font/Kokoro.woff2") format("woff2");
+}
+.p-member__farm,
+.p-member__name,
+.p-member__name-end,
+.l-interview__body p,
+[class*=p-tag--] {
+  font-family: "kokoro";
+  color: var(--text-inverse);
+}
+
+.p-member__farm {
+  font-size: clamp(0.9375rem, 0.8076923077rem + 0.5538461538vw, 1.5rem);
+}
+
+.p-member__name {
+  font-size: clamp(1.5rem, 1.2692307692rem + 0.9846153846vw, 2.5rem);
+  letter-spacing: -0.3125rem;
+  margin: clamp(0.625rem, 0.4807692308rem + 0.6153846154vw, 1.25rem) 0 clamp(1.25rem, 1.1057692308rem + 0.6153846154vw, 1.875rem);
+}
+
+.p-member__name-end {
+  font-size: clamp(1.125rem, 0.9519230769rem + 0.7384615385vw, 1.875rem);
+  letter-spacing: -0.3125rem;
+}
+
+p.p-member__intro {
+  font-family: "higuregothic";
+  line-height: clamp(1.5625rem, 1.4903846154rem + 0.3076923077vw, 1.875rem);
+}
+
+[class*=p-tag--] {
+  position: absolute;
+  background-color: var(--bg-muted);
+}
+@font-face {
+  font-family: "kokoro";
+  font-weight: 400;
+  font-style: normal;
+  src: url("../../../font/Kokoro.woff2") format("woff2");
+}
+[class*=p-tag--] {
+  writing-mode: vertical-rl;
+  text-orientation: upright;
+  font-size: clamp(1.125rem, 0.6564784728rem + 0.9748172218vw, 1.875rem);
+  padding: 0.625rem 0.3125rem;
+  border-radius: 5px;
+}
+
+.p-tag--01a {
+  top: -1.875rem;
+  left: clamp(19.0625rem, 16.4075446791rem + 5.5239642567vw, 23.3125rem);
+}
+
+.p-tag--01b {
+  top: 1.875rem;
+  left: clamp(15.9375rem, 13.5948923639rem + 4.8740861089vw, 19.6875rem);
+}
+
+.p-tag--02a {
+  top: -1.875rem;
+  right: clamp(16.25rem, 13.5169577579rem + 5.6864337937vw, 20.625rem);
+}
+
+.p-tag--02b {
+  top: 1.25rem;
+  right: clamp(19.375rem, 16.4467404549rem + 6.0926076361vw, 24.0625rem);
+}
+
+.p-tag--03a {
+  top: -1.875rem;
+  left: clamp(4.0625rem, 3.476848091rem + 1.2185215272vw, 5rem);
+}
+
+.p-tag--03b {
+  top: 6.25rem;
+  left: clamp(0.9375rem, 0.547065394rem + 0.8123476848vw, 1.5625rem);
+}
+
+.p-tag--04a {
+  top: -1.875rem;
+  left: clamp(3.75rem, 3.554782697rem + 0.4061738424vw, 4.0625rem);
+}
+
+.p-tag--04b {
+  top: 1.875rem;
+  left: 0.625rem;
+}
+
+.p-member__face {
+  width: clamp(23.125rem, 20.0015231519rem + 6.4987814785vw, 28.125rem);
+  height: clamp(23.125rem, 20.0015231519rem + 6.4987814785vw, 28.125rem);
+  overflow: hidden;
+  border-radius: 5px;
+  position: relative;
+}
+.p-member__face img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.p-member__sns {
+  width: 2.1875rem;
+  height: 2.1875rem;
+  margin: auto;
+  background-color: var(--bg-primary);
+  border-radius: 9999px;
+  position: absolute;
+  bottom: 0.625rem;
+  right: 0.625rem;
+}
+.p-member__sns img {
+  width: auto;
+  height: 1.25rem;
+  margin: 0.5rem;
+}
+
+.p-comment01 {
+  transform: translate(0, 6.25rem);
+}
+
+.p-comment02 {
+  transform: translate(0, 6.25rem);
+}
+
+.p-comment03 {
+  transform: translate(0, 3.75rem);
+}
+
+.p-comment04 {
+  transform: translate(0, 2.5rem);
+}
+
+@media screen and (max-width: 768px) {
+  .p-member__face {
+    width: 100%;
+    height: clamp(18.75rem, 11.9565217391rem + 28.9855072464vw, 25rem);
+    border-radius: 0;
+  }
+  .p-comment01, .p-comment02, .p-comment03, .p-comment04 {
+    transform: initial;
+    border-radius: 0;
+  }
+  .p-member__name {
+    letter-spacing: -0.05rem;
+  }
+  [class*=p-tag--] {
+    font-size: clamp(1.125rem, 0.7671755725rem + 1.5267175573vw, 1.5rem);
+  }
+  .p-tag--01a {
+    top: -1.25rem;
+    left: clamp(18.75rem, -2.7194656489rem + 91.6030534351vw, 41.25rem);
+  }
+  .p-tag--01b {
+    top: 1.875rem;
+    left: clamp(15.9375rem, -5.233778626rem + 90.3307888041vw, 38.125rem);
+  }
+  .p-tag--02a {
+    top: -1.25rem;
+    right: clamp(16.5625rem, -3.7142175573rem + 86.5139949109vw, 37.8125rem);
+  }
+  .p-tag--02b {
+    top: 1.25rem;
+    right: clamp(19.375rem, -1.1999045802rem + 87.786259542vw, 40.9375rem);
+  }
+  .p-tag--03a {
+    top: -1.25rem;
+    left: clamp(3.75rem, 2.8554389313rem + 3.8167938931vw, 4.6875rem);
+  }
+  .p-tag--03b {
+    top: 3.125rem;
+    left: clamp(0.9375rem, 0.3411259542rem + 2.5445292621vw, 1.5625rem);
+  }
+  .p-tag--04a {
+    top: -1.25rem;
+    left: clamp(4.6875rem, 3.1965648855rem + 6.3613231552vw, 6.25rem);
+  }
+  .p-tag--04b {
+    top: 1.25rem;
+    left: clamp(1.875rem, 0.6822519084rem + 5.0890585242vw, 3.125rem);
+  }
+}
 .l-about__intro {
   width: 100%;
   margin: 0 auto;
@@ -874,7 +1167,7 @@ ul, ol {
 .l-about__panel-img {
   width: clamp(26.6875rem, 8.75rem + 28vw, 43.75rem);
   display: block;
-  border-radius: 10px;
+  border-radius: 5px;
 }
 
 .l-about__panel--01 .l-about__panel-txt p:nth-child(2),
@@ -1023,6 +1316,60 @@ ul, ol {
   }
   .l-separator svg path {
     fill: var(--text-inverse);
+  }
+}
+@font-face {
+  font-family: "higuregothic";
+  font-weight: 400;
+  font-style: normal;
+  src: url("../../../font/HigureGothic-Light.woff2") format("woff2");
+}
+@font-face {
+  font-family: "kokoro";
+  font-weight: 400;
+  font-style: normal;
+  src: url("../../../font/Kokoro.woff2") format("woff2");
+}
+.l-interview {
+  width: 100%;
+}
+.l-interview__item {
+  display: flex;
+  flex-direction: row-reverse;
+}
+.l-interview__item--reverse {
+  flex-direction: row;
+}
+.l-interview__body {
+  width: clamp(21.875rem, 17.9706539399rem + 8.1234768481vw, 28.125rem);
+  height: fit-content;
+  padding: 1.875rem 2.1875rem;
+  background-color: var(--bg-muted);
+  border-radius: 5px;
+  position: relative;
+  z-index: -1;
+}
+.l-interview__image {
+  position: relative;
+}
+
+.l-interview__item--01 .p-member__name {
+  margin: 1.25rem 0.25rem 1.875rem -0.25rem;
+}
+
+.l-interview__body {
+  padding: 1.875rem 2.5rem;
+}
+
+@media screen and (max-width: 768px) {
+  .l-interview__image {
+    width: 100%;
+  }
+  .l-interview__body {
+    width: 100%;
+    height: auto;
+    border-radius: 0;
+    padding: 1.875rem;
   }
 }
 

@@ -1,0 +1,124 @@
+@use "../../abstracts/index" as *;
+
+@include load-font('higuregothic', 'HigureGothic-Light', 400, normal, (woff2));
+@include load-font('kokoro', 'Kokoro', 400, normal, woff2);
+
+
+.p-member__farm,
+.p-member__name,
+.p-member__name-end,
+.l-interview__body p,
+[class*="p-tag--"]{
+	font-family: 'kokoro';
+	color: var(--text-inverse);
+}
+
+.p-member__farm{
+	font-size: fluid( 15, 24, 375, 2000);
+}
+
+.p-member__name{
+	font-size: fluid( 24, 40, 375, 2000);
+	letter-spacing: to-rem(-5);
+	margin: fluid(10, 20, 375, 2000) 0 fluid(20, 30, 375, 2000);
+}
+
+.p-member__name-end{
+	font-size: fluid( 18, 30, 375, 2000);
+	letter-spacing: to-rem(-5);
+}
+
+p.p-member__intro{
+	font-family: 'higuregothic';
+    line-height: fluid(25, 30, 375, 2000);
+}
+
+[class*="p-tag--"]{
+	position: absolute;
+	background-color: var(--bg-muted);
+    @include load-font('kokoro', 'Kokoro', 400, normal, woff2);
+    writing-mode: vertical-rl;
+    text-orientation: upright;
+	font-size: fluid( 18, 30, 769, 2000);
+	padding: to-rem(10) to-rem(5);
+	border-radius: $radius-sm;
+}
+
+.p-tag--01a{ top: to-rem(-30); left: fluid( 305, 373, 769, 2000);}
+.p-tag--01b{ top: to-rem(30);  left: fluid( 255, 315, 769, 2000);}
+.p-tag--02a{ top: to-rem(-30); right: fluid( 260, 330, 769, 2000);}
+.p-tag--02b{ top: to-rem(20);  right: fluid( 310, 385, 769, 2000);}
+.p-tag--03a{ top: to-rem(-30); left: fluid( 65, 80, 769, 2000);}
+.p-tag--03b{ top: to-rem(100); left: fluid( 15, 25, 769, 2000);}
+.p-tag--04a{ top: to-rem(-30); left: fluid( 60, 65, 769, 2000);}
+.p-tag--04b{ top: to-rem(30); left: to-rem(10);}
+
+.p-member__face{
+    width: fluid(370, 450, 769, 2000);
+    height: fluid(370, 450, 769, 2000);
+    overflow: hidden;
+    border-radius: $radius-sm;
+    position: relative;
+
+    img{
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+    }
+}
+
+.p-member__sns{
+	width: to-rem(35);
+	height: to-rem(35);
+	margin: auto;
+	background-color: var(--bg-primary);
+	border-radius: $radius-full;
+	position: absolute;
+	bottom: to-rem(10);
+	right: to-rem(10);
+
+	img{
+		width: auto;
+		height: to-rem(20);
+		margin: to-rem(8);
+	}
+}
+
+.p-comment01{
+    transform: translate(0,to-rem(100));
+}
+.p-comment02{
+    transform: translate(0,to-rem(100));
+}
+.p-comment03{
+    transform: translate(0,to-rem(60));
+}
+.p-comment04{
+    transform: translate(0,to-rem(40));
+}
+
+@include media(mb2){
+    .p-member__face{
+        width: 100%;
+        height: fluid(300, 400, 375, 720);
+        border-radius: 0;
+    }
+    .p-comment01,.p-comment02,.p-comment03,.p-comment04{
+        transform: initial;
+        border-radius: 0;
+    }
+    .p-member__name{
+        letter-spacing: -0.05rem;
+    }
+    [class*="p-tag--"]{
+        font-size: fluid( 18, 24, 375, 768);
+    }
+    .p-tag--01a{ top: to-rem(-20); left: fluid( 300, 660, 375, 768);}
+    .p-tag--01b{ top: to-rem(30);  left: fluid( 255, 610, 375, 768);}
+    .p-tag--02a{ top: to-rem(-20); right: fluid( 265, 605, 375, 768);}
+    .p-tag--02b{ top: to-rem(20);  right: fluid( 310, 655, 375, 768);}
+    .p-tag--03a{ top: to-rem(-20); left: fluid( 60, 75, 375, 768);}
+    .p-tag--03b{ top: to-rem(50); left: fluid( 15, 25, 375, 768);}
+    .p-tag--04a{ top: to-rem(-20); left: fluid( 75, 100, 375, 768);}
+    .p-tag--04b{ top: to-rem(20); left: fluid( 30, 50, 375, 768);}
+}
