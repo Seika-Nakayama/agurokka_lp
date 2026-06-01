@@ -13,10 +13,8 @@
 	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 	<link href="https://fonts.googleapis.com/css2?family=Sawarabi+Mincho&family=Shippori+Mincho&display=swap" rel="stylesheet">
 	<!-- CSS/JS -->
-	<link rel="stylesheet" href="css/slick.css">
-	<link rel="stylesheet" href="css/slick-theme.css">
-	<script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
-	<script src="js/slick.min.js"></script>
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css">
+	<script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
 	<script src="js/script1.js" defer></script>
 	<link rel="stylesheet" href="css/style1.css">
 	<link rel="stylesheet" href="css/style.css">

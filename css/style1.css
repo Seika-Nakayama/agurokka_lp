@@ -1523,7 +1523,7 @@ h3.p-origin__title{
 		margin-bottom:0
 	}
 } */
-.question{
+/* .question{
 	width:100%
 }
 ul.question-btn{
@@ -1770,8 +1770,8 @@ p.member4:nth-of-type(2){
 }
 .slick-list{
 	padding:80px 0 50px
-}
-@media screen and (max-width:1400px){
+} */
+/* @media screen and (max-width:1400px){
 	.member-slider .slick-prev{
 		left:1%;
 		width:100px
@@ -2032,7 +2032,7 @@ p.member4:nth-of-type(2){
 		width:35px;
 		bottom:-161px
 	}
-}
+} */
 .all-members{
 	margin:170px 0
 }
