@@ -210,7 +210,7 @@ if (sliderEl) {
 		speed: 600,
 		slidesPerView: 'auto',
 		centeredSlides: true,
-		spaceBetween: 100,
+		spaceBetween: 0,
 		watchOverflow: false,
 		on: {
 			slideChangeTransitionEnd(swiper) {
