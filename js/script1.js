@@ -185,16 +185,77 @@ function startFvCopyAnimation() {
 	})
 }
 
-$('.c-member-slider').slick({
-	slidesToShow: 1,
-	slidesToScroll: 1,
-	arrows: true,
-	dots: true,
-	infinite:true,
-	speed: 600,
-	prevArrow: `<button class="slick-prev slider-nav" aria-label="前の記事"></button>`,
-	nextArrow: `<button class="slick-next slider-nav" aria-label="次の記事"></button>`
-});
+const sliderEl = document.querySelector('.c-member-slider');
+if (sliderEl) {
+	const wrapper = sliderEl.querySelector('.swiper-wrapper');
+	const originalSlides = [...wrapper.querySelectorAll('.swiper-slide')];
+	const realCount = originalSlides.length;
+	const clonesBefore = 2;
+
+	// 末尾2枚のクローンを先頭に挿入（逆順）
+	for (let i = realCount - 1; i >= realCount - clonesBefore; i--) {
+		const clone = originalSlides[i].cloneNode(true);
+		clone.setAttribute('aria-hidden', 'true');
+		wrapper.insertBefore(clone, wrapper.firstChild);
+	}
+	// 先頭2枚のクローンを末尾に追加
+	for (let i = 0; i < clonesBefore; i++) {
+		const clone = originalSlides[i].cloneNode(true);
+		clone.setAttribute('aria-hidden', 'true');
+		wrapper.appendChild(clone);
+	}
+
+	const memberSwiper = new Swiper('.c-member-slider', {
+		initialSlide: clonesBefore,
+		speed: 600,
+		slidesPerView: 'auto',
+		centeredSlides: true,
+		spaceBetween: 100,
+		watchOverflow: false,
+		on: {
+			slideChangeTransitionEnd(swiper) {
+				const idx = swiper.activeIndex;
+				if (idx < clonesBefore || idx >= clonesBefore + realCount) {
+					const slides = [...swiper.slides];
+					slides.forEach(s => { s.style.transition = 'none'; });
+					void swiper.wrapperEl.offsetWidth;
+					if (idx < clonesBefore) {
+						swiper.slideTo(idx + realCount, 0, false);
+					} else {
+						swiper.slideTo(idx - realCount, 0, false);
+					}
+					requestAnimationFrame(() => requestAnimationFrame(() => {
+						slides.forEach(s => { s.style.transition = ''; });
+					}));
+				}
+			}
+		}
+	});
+
+	// ページネーション手動構築
+	const paginationEl = sliderEl.querySelector('.swiper-pagination');
+	if (paginationEl) {
+		paginationEl.innerHTML = '';
+		for (let i = 1; i <= realCount; i++) {
+			const bullet = document.createElement('span');
+			bullet.className = 'swiper-pagination-bullet';
+			bullet.textContent = String(i);
+			bullet.addEventListener('click', () => memberSwiper.slideTo(i + clonesBefore - 1));
+			paginationEl.appendChild(bullet);
+		}
+
+		const bullets = [...paginationEl.querySelectorAll('.swiper-pagination-bullet')];
+		function updatePagination() {
+			const displayIdx = ((memberSwiper.activeIndex - clonesBefore) % realCount + realCount) % realCount;
+			bullets.forEach((b, i) => b.classList.toggle('swiper-pagination-bullet-active', i === displayIdx));
+		}
+		memberSwiper.on('slideChange', updatePagination);
+		updatePagination();
+	}
+
+	sliderEl.querySelector('.swiper-btn-prev')?.addEventListener('click', () => memberSwiper.slidePrev());
+	sliderEl.querySelector('.swiper-btn-next')?.addEventListener('click', () => memberSwiper.slideNext());
+}
 
 
 const questions = document.querySelectorAll('.select-q');
