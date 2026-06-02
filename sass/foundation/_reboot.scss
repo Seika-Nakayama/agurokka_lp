@@ -10,7 +10,7 @@ html{
 	scroll-behavior: smooth;
 	font-size: fluid( 13, 20, 550, 2000);
 	letter-spacing: .05em;
-	line-height: to-rem(25);
+	line-height: fluid( 20, 25, 550, 2000);
 }
 img,a{
 	display: block;

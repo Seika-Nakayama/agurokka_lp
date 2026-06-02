@@ -21,12 +21,16 @@
 	font-size: fluid( 24, 40, 375, 2000);
 	letter-spacing: to-rem(-5);
 	margin: fluid(10, 20, 375, 2000) 0 fluid(20, 30, 375, 2000);
+    display: flex;
+    align-items: baseline;
+    gap: to-rem(3);
+
+    &-end{
+        font-size: fluid( 18, 30, 375, 2000);
+        letter-spacing: to-rem(-5);
+    }
 }
 
-.p-member__name-end{
-	font-size: fluid( 18, 30, 375, 2000);
-	letter-spacing: to-rem(-5);
-}
 
 p.p-member__intro{
 	font-family: 'higuregothic';

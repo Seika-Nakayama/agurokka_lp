@@ -1,0 +1,34 @@
+@use "../../abstracts/index" as *;
+
+.p-heart-svg2{
+    @include absolute-position(80%, 46.5%);
+	z-index: z-index(under);
+
+    path{
+	stroke-dasharray: 2000;
+	stroke-dashoffset: 2000;
+    }
+
+    &.is-show path{
+        @include transition(4.5s, ease);
+        stroke-dashoffset: 0;
+    }
+}
+
+.p-member-list{
+    &__title{
+        position: relative;
+    }
+    
+    &__lead{
+        margin: fluid( 90, 150, 1000, 2000) auto fluid( 20, 50, 1000, 2000);
+        text-align: center;
+        padding: 0 to-rem(30);
+    }
+}
+
+@include media(mb3){
+	.p-member-list__lead{
+        text-align: left;
+	}
+}
