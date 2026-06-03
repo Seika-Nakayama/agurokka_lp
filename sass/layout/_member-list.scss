@@ -1,0 +1,28 @@
+@use "../abstracts/index" as *;
+
+.l-member-list{
+	margin: fluid( 120, 170, 1000, 2000) 0;
+    position: relative;
+
+    &__slider{
+        display: flex;
+        overflow-x: hidden;
+
+        &--rl{
+            display: flex;
+            animation: loopslider-rl 40s linear infinite;
+        }
+        &--lr{
+            display: flex;
+            animation: loopslider-lr 40s linear infinite;
+        }
+    }
+
+    &__row{
+        display: flex;
+        flex: wrap;
+        justify-content: center;
+        gap: 5px;
+        margin-right: 5px;
+    }
+}
