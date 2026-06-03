@@ -3,9 +3,7 @@
 	<div class="category_inner">
 		<section class="l-about__intro">
 			<div class="js-display">
-				<h2 class="contents-title">
-					<img src="images/icon/flower.svg" alt="肥後六花モチーフアイコン" class="flower-icon">AguRokka<span>とは</span>
-				</h2>
+				<?php contents_title('AguRokka','とは') ?>
 			</div>
 			<div class="l-about__visual">
 				<figure class="js-display"><img src="images/logo/agurokka_logo.webp" alt="AguRokkaのロゴ"></figure>
@@ -51,15 +49,13 @@
 	</div>
 	<section class="contents_inner" id="why-agurokka">
 		<div class="js-display">
-			<h2 class="contents-title">
-				<img src="images/icon/flower.svg" alt="肥後六花モチーフアイコン" class="flower-icon">AguRokka<span>の由来</span>
-			</h2>
+			<?php contents_title('AguRokka', 'の由来'); ?>
 		</div>
 		<div class="l-origin__items">
 			<section class="l-origin__item p-pop-up blur-in js-display">
 				<h3 class="p-origin__title p-origin__title--agriculture">Aguricultyre<span class="p-origin__rubi">(農業)</span></h3>
 				<div class="l-origin__img">
-					<img src="images/main-img/about-origin1.webp" alt="" class="l-origin__img--agriculture blur-in">
+					<img src="images/main-img/about-origin/about-origin01.webp" alt="" class="l-origin__img--agriculture blur-in">
 				</div>
 			</section>
 			<p class="l-separator separat-on">
@@ -68,7 +64,7 @@
 			<section class="l-origin__item p-pop-up js-display">
 				<h3 class="p-origin__title p-origin__title--higorokka">肥後六花</h3>
 				<div class="l-origin__img">
-					<img src="images/main-img/about-origin2.webp" alt="" class="l-origin__img--higorokka blur-in">
+					<img src="images/main-img/about-origin/about-origin02.webp" alt="" class="l-origin__img--higorokka blur-in">
 				</div>
 			</section>
 			<p class="l-separator separat-under">
@@ -77,7 +73,7 @@
 			<section class="l-origin__item p-pop-up blur-in js-display">
 				<h3 class="p-origin__title p-origin__title--together">一緒に〇〇しよっか</h3>
 				<div class="l-origin__img">
-					<img src="images/main-img/about-origin3.webp" alt="" class="l-origin__img--together blur-in">
+					<img src="images/main-img/about-origin/about-origin03.webp" alt="" class="l-origin__img--together blur-in">
 				</div>
 			</section>
 		</div>

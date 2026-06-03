@@ -1,7 +1,7 @@
 <section class="l-interview">
-	<h2 class="contents-title">
-		<img src="images/icon/flower.svg" alt="肥後六花モチーフアイコン" class="flower-icon">Interview
-	</h2>
+	<div class="js-display">
+		<?php contents_title('メンバーインタビュー'); ?>
+	</div>
 	<div class="l-interview">
 		<div class="c-member-slider swiper">
 			<div class="swiper-wrapper">

@@ -1,10 +1,8 @@
 <article id="activity" class="article-box">
-	<img src="images/main-img/category-bg-activity.webp" alt="categoryの文字の画像" class="category">
+	<img src="images/main-img/category-bg-activity.svg" alt="categoryの文字の画像" class="category">
 	<section class="contents_inner">
 		<div class="js-display">
-			<h2 class="contents-title">
-				<img src="images/icon/flower.svg" alt="肥後六花モチーフアイコン" class="flower-icon">AgurRokka&nbsp;活動情報
-			</h2>
+			<?php contents_title('活動情報'); ?>
 		</div>
 		<div class="activities-area">
 			<dl class="activities">
