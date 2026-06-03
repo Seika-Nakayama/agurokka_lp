@@ -40,7 +40,7 @@
 		width: 0%;
 		height: 100%;
 		background-color: var(--primary-00);
-		transition: 1s ease;
+		@include transition(1s, ease);
 	}
 
 	&__count{
