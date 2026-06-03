@@ -4,11 +4,11 @@
 	width: fluid( 300, 350,375, 2000);
 	margin-bottom: to-rem(5);
 	padding: fluid( 20, 25, 375, 2000);
-    gap: 10px;
+    gap: to-rem(10);
 	display: flex;
 	justify-content: flex-start;
 	flex-direction: column;
-	transition: .3s ease;
+	transition: $transition-md;
 	border-radius: $radius-lg;
 	background-color: var(--card-color);
 
@@ -67,7 +67,7 @@ p.c-member-card__farm{
     font-family: 'kokoro';
     font-size: fluid( 15, 18, 375, 2000);
     letter-spacing: -0.01rem;
-    margin-bottom: 5px;
+    margin-bottom: to-rem(5);
 }
 
 p.c-member-card__voice{
@@ -75,6 +75,6 @@ p.c-member-card__voice{
     height: stretch;
     padding: fluid( 5, 8, 375, 2000) fluid( 8, 10, 375, 2000);
     color: var(--text-primary);
-    margin-top: 5px;
+    margin-top: to-rem(5);
     border-radius: $radius-md;
 }

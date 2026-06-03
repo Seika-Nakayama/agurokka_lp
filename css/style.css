@@ -635,7 +635,7 @@ ul, ol {
   overflow: visible;
   opacity: 0.7;
   transform: scale(0.7);
-  transition: transform 600ms ease, opacity 600ms ease;
+  transition: 600ms ease;
 }
 .c-member-slider .swiper-slide-active {
   opacity: 1;
@@ -673,7 +673,7 @@ ul, ol {
 .c-member-slider .swiper-pagination {
   position: relative;
   z-index: 100;
-  margin-top: 0.3125rem;
+  margin: 0.3125rem auto clamp(9.375rem, 3.125rem + 10vw, 15.625rem);
   gap: 1.25rem;
   display: flex;
   justify-content: center;
@@ -692,7 +692,7 @@ ul, ol {
 }
 .c-member-slider .swiper-pagination-bullet-active {
   color: var(--highlight-00);
-  border-bottom: solid 1px var(--highlight-00);
+  border-bottom: solid 0.0625rem var(--highlight-00);
   background-color: var(--bg-primary);
   opacity: 1;
 }
@@ -783,7 +783,7 @@ ul, ol {
   width: clamp(18.75rem, 18.0288461538rem + 3.0769230769vw, 21.875rem);
   margin-bottom: 0.3125rem;
   padding: clamp(1.25rem, 1.1778846154rem + 0.3076923077vw, 1.5625rem);
-  gap: 10px;
+  gap: 0.625rem;
   display: flex;
   justify-content: flex-start;
   flex-direction: column;
@@ -846,7 +846,7 @@ p.c-member-card__farm {
   font-family: "kokoro";
   font-size: clamp(0.9375rem, 0.8942307692rem + 0.1846153846vw, 1.125rem);
   letter-spacing: -0.01rem;
-  margin-bottom: 5px;
+  margin-bottom: 0.3125rem;
 }
 
 p.c-member-card__voice {
@@ -854,7 +854,7 @@ p.c-member-card__voice {
   height: stretch;
   padding: clamp(0.3125rem, 0.2692307692rem + 0.1846153846vw, 0.5rem) clamp(0.5rem, 0.4711538462rem + 0.1230769231vw, 0.625rem);
   color: var(--text-primary);
-  margin-top: 5px;
+  margin-top: 0.3125rem;
   border-radius: 10px;
 }
 
@@ -1540,6 +1540,7 @@ p.p-member__intro {
   }
 }
 .l-member-list {
+  margin: 0 0 clamp(9.375rem, 3.125rem + 10vw, 15.625rem);
   position: relative;
 }
 .l-member-list__slider {
@@ -1558,8 +1559,8 @@ p.p-member__intro {
   display: flex;
   flex: wrap;
   justify-content: center;
-  gap: 5px;
-  margin-right: 5px;
+  gap: 0.3125rem;
+  margin-right: 0.3125rem;
 }
 
 .l-faq {
