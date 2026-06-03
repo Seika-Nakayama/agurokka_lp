@@ -11,70 +11,71 @@
 	transition: .3s ease;
 	border-radius: 34px;
 	background-color: var(--card-color);
-}
 
-.c-member-card p{
-	font-size: fluid( 13, 15, 375, 2000);
-    color: var(--text-inverse);
-    display: flex;
-    align-items: flex-start;
+    & p{
+        font-size: fluid( 13, 15, 375, 2000);
+        color: var(--text-inverse);
+        display: flex;
+        align-items: flex-start;
+    }
+
+    &__head{
+        display: flex;
+        justify-content: space-between;
+        position: relative;
+    }
+
+    &__face img{
+        display: block;
+        height: fluid( 75, 90, 375, 2000);
+        @include absolute-position( fluid( 36, 45, 375, 2000), fluid( 218, 257, 375, 2000));
+        border-radius: $radius-full;
+    }
+
+    &__sns{
+        @include absolute-position( fluid( 60, 80, 375, 2000), fluid( 250, 290, 375, 2000));
+        width: fluid( 27, 30, 375, 2000);
+        height: fluid( 27, 30, 375, 2000);
+        border-radius: $radius-full;
+        background-color: var(--bg-primary);
+        display: flex;
+        align-items: center;
+        justify-content: center;
+
+        img{
+            width: fluid( 28, 30, 375, 2000);
+            height: fluid( 28, 30, 375, 2000);
+            padding: to-rem(7);
+            display: block;
+        }
+    }
+
+    &__cap{
+        display: inline-block;
+        font-size: fluid( 11, 13, 375, 2000);
+        line-height: fluid( 18, 20, 375, 2000);
+        background-color: var(--bg-primary);
+        color: var(--card-color);
+        padding: to-rem(0) to-rem(10) to-rem(2);
+        text-align: center;
+        border-radius: $radius-full;
+        margin-right: to-rem(12);
+    }    
 }
 
 p.c-member-card__farm{
     font-family: 'kokoro';
-	font-size: fluid( 15, 18, 375, 2000);
+    font-size: fluid( 15, 18, 375, 2000);
     letter-spacing: -0.01rem;
-	margin-bottom: 5px;
-}
-
-.c-member-card__head{
-	display: flex;
-	justify-content: space-between;
-	position: relative;
-}
-
-.c-member-card__face img{
-	display: block;
-	height: fluid( 75, 90, 375, 2000);
-    @include absolute-position( fluid( 36, 45, 375, 2000), fluid( 218, 257, 375, 2000));
-    border-radius: $radius-full;
-}
-
-.c-member-card__sns{
-    @include absolute-position( fluid( 60, 80, 375, 2000), fluid( 250, 290, 375, 2000));
-	width: fluid( 27, 30, 375, 2000);
-	height: fluid( 27, 30, 375, 2000);
-	border-radius: $radius-full;
-	background-color: var(--bg-primary);
-	display: flex;
-	align-items: center;
-	justify-content: center;
-}
-
-.c-member-card__sns img{
-	width: fluid( 28, 30, 375, 2000);
-	height: fluid( 28, 30, 375, 2000);
-    padding: to-rem(7);
-	display: block;
-}
-
-.c-member-card__cap{
-    display: inline-block;
-	font-size: fluid( 11, 13, 375, 2000);
-	line-height: fluid( 18, 20, 375, 2000);
-	background-color: var(--bg-primary);
-	padding: to-rem(0) to-rem(10) to-rem(2);
-	text-align: center;
-	border-radius: $radius-full;
-	margin-right: to-rem(12);
+    margin-bottom: 5px;
 }
 
 p.c-member-card__voice{
-	background-color: var(--bg-primary);
+    background-color: var(--bg-primary);
     height: stretch;
-	padding: fluid( 5, 8, 375, 2000) fluid( 8, 10, 375, 2000);
-	border-radius: 5px;
-	color: var(--text-primary);
-	margin-top: 5px;
-	border-radius: 15px;
+    padding: fluid( 5, 8, 375, 2000) fluid( 8, 10, 375, 2000);
+    border-radius: 5px;
+    color: var(--text-primary);
+    margin-top: 5px;
+    border-radius: 15px;
 }

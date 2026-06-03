@@ -156,7 +156,7 @@ h2 {
   display: flex;
   align-items: baseline;
   justify-content: center;
-  font-family: "utsukushi";
+  font-family: "kokoro";
   font-size: clamp(1.5625rem, 1.3170347003rem + 0.9463722397vw, 2.5rem);
   letter-spacing: 0;
   line-height: 65px;
@@ -790,27 +790,17 @@ ul, ol {
   border-radius: 34px;
   background-color: var(--card-color);
 }
-
 .c-member-card p {
   font-size: clamp(0.8125rem, 0.7836538462rem + 0.1230769231vw, 0.9375rem);
   color: var(--text-inverse);
   display: flex;
   align-items: flex-start;
 }
-
-p.c-member-card__farm {
-  font-family: "kokoro";
-  font-size: clamp(0.9375rem, 0.8942307692rem + 0.1846153846vw, 1.125rem);
-  letter-spacing: -0.01rem;
-  margin-bottom: 5px;
-}
-
 .c-member-card__head {
   display: flex;
   justify-content: space-between;
   position: relative;
 }
-
 .c-member-card__face img {
   display: block;
   height: clamp(4.6875rem, 4.4711538462rem + 0.9230769231vw, 5.625rem);
@@ -820,7 +810,6 @@ p.c-member-card__farm {
   transform: translate(-50%, -50%);
   border-radius: 9999px;
 }
-
 .c-member-card__sns {
   position: absolute;
   top: clamp(3.75rem, 3.4615384615rem + 1.2307692308vw, 5rem);
@@ -834,23 +823,29 @@ p.c-member-card__farm {
   align-items: center;
   justify-content: center;
 }
-
 .c-member-card__sns img {
   width: clamp(1.75rem, 1.7211538462rem + 0.1230769231vw, 1.875rem);
   height: clamp(1.75rem, 1.7211538462rem + 0.1230769231vw, 1.875rem);
   padding: 0.4375rem;
   display: block;
 }
-
 .c-member-card__cap {
   display: inline-block;
   font-size: clamp(0.6875rem, 0.6586538462rem + 0.1230769231vw, 0.8125rem);
   line-height: clamp(1.125rem, 1.0961538462rem + 0.1230769231vw, 1.25rem);
   background-color: var(--bg-primary);
+  color: var(--card-color);
   padding: 0rem 0.625rem 0.125rem;
   text-align: center;
   border-radius: 9999px;
   margin-right: 0.75rem;
+}
+
+p.c-member-card__farm {
+  font-family: "kokoro";
+  font-size: clamp(0.9375rem, 0.8942307692rem + 0.1846153846vw, 1.125rem);
+  letter-spacing: -0.01rem;
+  margin-bottom: 5px;
 }
 
 p.c-member-card__voice {
@@ -1021,18 +1016,6 @@ p.c-member-card__voice {
     animation: unset;
   }
 }
-@font-face {
-  font-family: "higuregothic";
-  font-weight: 400;
-  font-style: normal;
-  src: url("../../../font/HigureGothic-Light.woff2") format("woff2");
-}
-@font-face {
-  font-family: "kokoro";
-  font-weight: 400;
-  font-style: normal;
-  src: url("../../../font/Kokoro.woff2") format("woff2");
-}
 .p-member__farm,
 .p-member__name,
 .p-member__name-end,
@@ -1061,20 +1044,13 @@ p.c-member-card__voice {
 
 p.p-member__intro {
   font-family: "higuregothic";
-  line-height: clamp(1.5625rem, 1.4903846154rem + 0.3076923077vw, 1.875rem);
+  font-size: clamp(0.8125rem, 0.7403846154rem + 0.3076923077vw, 1.125rem);
+  line-height: clamp(1.625rem, 1.4807692308rem + 0.6153846154vw, 2.25rem);
 }
 
 [class*=p-tag--] {
   position: absolute;
   background-color: var(--bg-muted);
-}
-@font-face {
-  font-family: "kokoro";
-  font-weight: 400;
-  font-style: normal;
-  src: url("../../../font/Kokoro.woff2") format("woff2");
-}
-[class*=p-tag--] {
   writing-mode: vertical-rl;
   text-orientation: upright;
   font-size: clamp(1.125rem, 0.6564784728rem + 0.9748172218vw, 1.875rem);
@@ -1216,10 +1192,26 @@ p.p-member__intro {
     left: clamp(1.875rem, 0.6822519084rem + 5.0890585242vw, 3.125rem);
   }
 }
+.p-member-list__title-text {
+  display: inline-block;
+  position: relative;
+  font-family: "kokoro";
+  font-size: clamp(1.5625rem, 1.3170347003rem + 0.9463722397vw, 2.5rem);
+  letter-spacing: 0;
+  line-height: 65px;
+}
+.p-member-list__lead {
+  margin: clamp(5.625rem, 1.875rem + 6vw, 9.375rem) auto clamp(1.25rem, -0.625rem + 3vw, 3.125rem);
+  text-align: center;
+  padding: 0 1.875rem;
+}
+
 .p-heart-svg2 {
+  width: clamp(12.5rem, 12.2115384615rem + 1.2307692308vw, 13.75rem);
+  height: auto;
   position: absolute;
-  top: 80%;
-  left: 46.5%;
+  top: 50%;
+  left: 35%;
   transform: translate(-50%, -50%);
   z-index: -1;
 }
@@ -1230,15 +1222,6 @@ p.p-member__intro {
 .p-heart-svg2.is-show path {
   transition: 4.5s ease;
   stroke-dashoffset: 0;
-}
-
-.p-member-list__title {
-  position: relative;
-}
-.p-member-list__lead {
-  margin: clamp(5.625rem, 1.875rem + 6vw, 9.375rem) auto clamp(1.25rem, -0.625rem + 3vw, 3.125rem);
-  text-align: center;
-  padding: 0 1.875rem;
 }
 
 @media screen and (max-width: 720px) {
@@ -1490,6 +1473,7 @@ p.p-member__intro {
 }
 .l-member-list {
   margin: clamp(7.5rem, 4.375rem + 5vw, 10.625rem) 0;
+  position: relative;
 }
 .l-member-list__slider {
   display: flex;
