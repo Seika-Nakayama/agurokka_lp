@@ -17,8 +17,8 @@
         overflow: visible;
         opacity: 0.7;
         transform: scale(0.7);
-        transition: transform 600ms ease, opacity 600ms ease;
-    
+        @include transition(600ms, ease);
+
         &-active{
             opacity: 1;
             transform: scale(1);
@@ -60,7 +60,7 @@
     .swiper-pagination{
         position: relative;
         z-index: z-index(100);
-        margin-top: to-rem(5);
+        margin: to-rem(5) auto fluid( 150, 250, 1000, 2000);
         gap: to-rem(20);
         display: flex;
         justify-content: center;
@@ -72,14 +72,14 @@
             color: var(--text-primary);
             background-color: var(--bg-primary);
             border-radius: 0;
-            opacity: .5;
+            opacity: 0.5;
             display: flex;
             align-items: center;
             justify-content: center;
     
             &-active{
                 color: var(--highlight-00);
-                border-bottom: solid 1px var(--highlight-00);
+                border-bottom: solid to-rem(1) var(--highlight-00);
                 background-color: var(--bg-primary);
                 opacity: 1;
             }
