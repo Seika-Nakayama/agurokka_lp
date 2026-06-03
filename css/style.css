@@ -788,7 +788,7 @@ ul, ol {
   justify-content: flex-start;
   flex-direction: column;
   transition: 0.3s ease;
-  border-radius: 34px;
+  border-radius: 20px;
   background-color: var(--card-color);
 }
 .c-member-card p {
@@ -853,10 +853,9 @@ p.c-member-card__voice {
   background-color: var(--bg-primary);
   height: stretch;
   padding: clamp(0.3125rem, 0.2692307692rem + 0.1846153846vw, 0.5rem) clamp(0.5rem, 0.4711538462rem + 0.1230769231vw, 0.625rem);
-  border-radius: 5px;
   color: var(--text-primary);
   margin-top: 5px;
-  border-radius: 15px;
+  border-radius: 10px;
 }
 
 .p-lines-flex {
@@ -1199,7 +1198,7 @@ p.p-member__intro {
   font-family: "kokoro";
   font-size: clamp(1.5625rem, 1.3170347003rem + 0.9463722397vw, 2.5rem);
   letter-spacing: 0;
-  line-height: 65px;
+  line-height: 4.0625rem;
 }
 .p-member-list__lead {
   margin: clamp(5.625rem, 1.875rem + 6vw, 9.375rem) auto clamp(1.25rem, -0.625rem + 3vw, 3.125rem);
@@ -1208,7 +1207,7 @@ p.p-member__intro {
 }
 
 .p-heart-svg2 {
-  width: clamp(12.5rem, 12.2115384615rem + 1.2307692308vw, 13.75rem);
+  width: clamp(9.375rem, 8.3653846154rem + 4.3076923077vw, 13.75rem);
   height: auto;
   position: absolute;
   top: 50%;

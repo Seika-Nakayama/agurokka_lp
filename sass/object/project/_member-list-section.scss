@@ -8,7 +8,7 @@
             font-family: 'kokoro';
             font-size: fluid(25, 40, 415, 2000);
             letter-spacing: 0;
-            line-height: 65px;
+            line-height: to-rem(65);
         }
     }
     
@@ -20,7 +20,7 @@
 }
 
 .p-heart-svg2{
-    width: fluid( 200, 220, 375, 2000);
+    width: fluid( 150, 220, 375, 2000);
     height: auto;
 
     @include absolute-position( 50%, 35%);

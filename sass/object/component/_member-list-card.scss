@@ -9,7 +9,7 @@
 	justify-content: flex-start;
 	flex-direction: column;
 	transition: .3s ease;
-	border-radius: 34px;
+	border-radius: $radius-lg;
 	background-color: var(--card-color);
 
     & p{
@@ -74,8 +74,7 @@ p.c-member-card__voice{
     background-color: var(--bg-primary);
     height: stretch;
     padding: fluid( 5, 8, 375, 2000) fluid( 8, 10, 375, 2000);
-    border-radius: 5px;
     color: var(--text-primary);
     margin-top: 5px;
-    border-radius: 15px;
+    border-radius: $radius-md;
 }
