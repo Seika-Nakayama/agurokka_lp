@@ -1,8 +1,5 @@
 @use "../abstracts/index" as *;
 
-@include load-font('higuregothic', 'HigureGothic-Light', 400, normal, (woff2));
-@include load-font('kokoro', 'Kokoro', 400, normal, woff2);
-
 .l-interview{
 	width: 100%;
 
@@ -18,7 +15,7 @@
     &__body{
         width: fluid(350, 450, 769, 2000);
         height: fit-content;
-        padding: to-rem(30) to-rem(35);
+        padding: to-rem(30) to-rem(40);
         background-color: var(--bg-muted);
         border-radius: $radius-sm;
         position: relative;
@@ -28,24 +25,24 @@
     &__image{
         position: relative;
     }
+
+    &__item--01 .p-member__name{
+        margin: to-rem(20) to-rem(4) to-rem(30) to-rem(-4);
+    }
 }
 
-.l-interview__item--01 .p-member__name{
-	margin: to-rem(20) to-rem(4) to-rem(30) to-rem(-4);
-}
-
-.l-interview__body{
-    padding: to-rem(30) to-rem(40);
-}
 
 @include media(mb2){
-    .l-interview__image{
-        width: 100%;
-    }
-    .l-interview__body{
-        width: 100%;
-        height: auto;
-        border-radius: 0;
-        padding: to-rem(30);
+    .l-interview{
+        &__image{
+            width: 100%;
+        }
+
+        &__body{
+            width: 100%;
+            height: auto;
+            border-radius: 0;
+            padding: to-rem(30);
+        }
     }
 }

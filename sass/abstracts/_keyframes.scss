@@ -65,3 +65,24 @@
 		transform: translateY(0);
 	}
 }
+
+// memberセクション　一覧のスライダー
+// 右から
+@keyframes loopslider-rl{
+	0%{
+		translate: 0%;
+	}
+	100%{
+		translate: -100%;
+    }
+}
+
+// 左から
+@keyframes loopslider-lr{
+	0%{
+		translate: -100%;
+	}
+	100%{
+		translate: 0%;
+	}
+}
