@@ -258,8 +258,8 @@ if (sliderEl) {
 }
 
 
-const questions = document.querySelectorAll('.select-q');
-const answers = document.querySelectorAll('.select-a');
+const questions = document.querySelectorAll('.p-faq__question');
+const answers = document.querySelectorAll('.p-faq__answer');
 questions.forEach((q, index) => {
 	q.addEventListener('click', () => {
 		answers.forEach(a => a.classList.remove('is-show'));

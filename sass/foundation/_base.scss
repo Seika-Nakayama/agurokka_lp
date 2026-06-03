@@ -44,7 +44,7 @@ h2{
 		font-family: 'higuregothic';
 		font-size:  fluid(15, 25, 415, 2000);
 		letter-spacing: 0;
-		margin-left: 12px;
+		margin-left: to-rem(5);
 	}
 
 	img{
