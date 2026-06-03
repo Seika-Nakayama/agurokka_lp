@@ -30,7 +30,7 @@
 	@include fixed-position(0, 0, null, null, null);
 	@include slide-in($translate-right, $transition-lg);
 	@include height-size(100vh);
-	width: 500px;
+	width: to-rem(500);
 	padding: fluid( 50, 100, 375, 2000) to-rem(30) 0;
 	background-color: var(--bg-primary);
 
@@ -43,7 +43,7 @@
 }
 
 .l-nav__list{
-	padding: to-rem(30px) 0;
+	padding: to-rem(30) 0;
 }
 
 .l-nav__item{
@@ -73,12 +73,12 @@
 @media (hover:hover){
 	.l-nav__item > .l-nav__link{
 		&:hover{
-			opacity: .5;
+			opacity: 0.5;
 		}
 	}
 	.l-nav__sns-link{
 		img:hover{
-			opacity: .5;
+			opacity: 0.5;
 		}
 	}
 }
@@ -86,29 +86,5 @@
 @include media(mb2){
 	.l-global-nav{
 		width: 99vw;
-		// padding-top: 45px;
 	}
-	// .l-nav__list{
-	// 	display: flex;
-	// 	flex-direction: column;
-	// 	align-items: center;
-	// }
 }
-
-// @include media(sp2){
-// 	.l-global-nav__logo{
-// 		width: to-rem(100);
-// 	}
-// 	.l-global-nav{
-// 		padding-top: to-rem(19);
-// 	}
-// 	.l-nav__item > .l-nav__link{
-// 		margin: 15px 0 3px;
-// 		font-size: to-rem(15);
-// 	}
-// 	.l-nav__sub li a{
-// 		margin-bottom: 0;
-// 		font-size: to-rem(13);
-// 		line-height: 2em;
-// 	}
-// }
