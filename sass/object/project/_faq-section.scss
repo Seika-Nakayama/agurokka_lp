@@ -4,26 +4,7 @@
 	position: relative;
     display: flex;
     align-items: baseline;
-
-	// margin-bottom: 100px;
-
-    // img{
-    //     width: auto;
-    //     height: 105px;
-    //     margin: 0 768px 0 0;
-    // }
-
-    // &::before{
-    //     content: '';
-    //     background-image: url(../images/main-img/faq/qand.webp);
-    //     background-size: contain;
-    //     background-position: center;
-    //     background-repeat: no-repeat;
-    //     width: 200px;
-    //     height: 80px;
-    //     position: absolute;
-    //     @include absolute-position(50%,42%);
-    // }
+    margin: to-rem(100) auto fluid( 30, 60, 375, 2000);
 
     &-decoration{
         position: relative;
@@ -43,7 +24,7 @@
         }
         &.en-title{
             font-size: fluid(25, 40, 415, 2000);
-            letter-spacing: 0em;
+            letter-spacing: 0;
             margin-left: 0;
             color: var(--text-primary);
             font-family: 'kokoro';
@@ -60,11 +41,6 @@
 
 .p-faq__svg{
 	width: fluid( 100, 150, 375,2000);
-	// position: absolute;
-	// top: -120px;
-	// left: 50%;
-	// transform: translateX(-191%);
-	// z-index: -1;
 
     path{
         stroke-dasharray: 2000;
@@ -88,11 +64,11 @@
 }
 
 .p-faq__answer{
-        display: none;
+    display: none;
 
-        &.is-show{
-            display: flex;
-            align-self: center;
-            justify-content: center;
-        }
+    &.is-show{
+        display: flex;
+        align-self: center;
+        justify-content: center;
     }
+}
