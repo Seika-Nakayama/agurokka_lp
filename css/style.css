@@ -781,7 +781,7 @@ ul, ol {
 
 .c-member-card {
   width: clamp(18.75rem, 18.0288461538rem + 3.0769230769vw, 21.875rem);
-  margin-bottom: 5px;
+  margin-bottom: 0.3125rem;
   padding: clamp(1.25rem, 1.1778846154rem + 0.3076923077vw, 1.5625rem);
   gap: 10px;
   display: flex;
@@ -1016,6 +1016,33 @@ p.c-member-card__voice {
     animation: unset;
   }
 }
+.p-member-interview__title-text {
+  display: inline-block;
+  position: relative;
+  font-family: "kokoro";
+  font-size: clamp(1.5625rem, 1.3170347003rem + 0.9463722397vw, 2.5rem);
+  letter-spacing: 0;
+  line-height: 4.0625rem;
+}
+
+.p-heart-svg2 {
+  width: clamp(9.375rem, 8.3653846154rem + 4.3076923077vw, 13.75rem);
+  height: auto;
+  position: absolute;
+  top: 50%;
+  left: 17%;
+  transform: translate(-50%, -50%);
+  z-index: -1;
+}
+.p-heart-svg2 path {
+  stroke-dasharray: 2000;
+  stroke-dashoffset: 2000;
+}
+.p-heart-svg2.is-show path {
+  transition: 4.5s ease;
+  stroke-dashoffset: 0;
+}
+
 .p-member__farm,
 .p-member__name,
 .p-member__name-end,
@@ -1192,36 +1219,10 @@ p.p-member__intro {
     left: clamp(1.875rem, 0.6822519084rem + 5.0890585242vw, 3.125rem);
   }
 }
-.p-member-list__title-text {
-  display: inline-block;
-  position: relative;
-  font-family: "kokoro";
-  font-size: clamp(1.5625rem, 1.3170347003rem + 0.9463722397vw, 2.5rem);
-  letter-spacing: 0;
-  line-height: 4.0625rem;
-}
 .p-member-list__lead {
-  margin: clamp(5.625rem, 1.875rem + 6vw, 9.375rem) auto clamp(1.25rem, -0.625rem + 3vw, 3.125rem);
+  margin: clamp(1.875rem, 0rem + 3vw, 3.75rem) auto clamp(1.25rem, -0.625rem + 3vw, 3.125rem);
   text-align: center;
   padding: 0 1.875rem;
-}
-
-.p-heart-svg2 {
-  width: clamp(9.375rem, 8.3653846154rem + 4.3076923077vw, 13.75rem);
-  height: auto;
-  position: absolute;
-  top: 50%;
-  left: 35%;
-  transform: translate(-50%, -50%);
-  z-index: -1;
-}
-.p-heart-svg2 path {
-  stroke-dasharray: 2000;
-  stroke-dashoffset: 2000;
-}
-.p-heart-svg2.is-show path {
-  transition: 4.5s ease;
-  stroke-dashoffset: 0;
 }
 
 @media screen and (max-width: 720px) {
@@ -1539,7 +1540,6 @@ p.p-member__intro {
   }
 }
 .l-member-list {
-  margin: clamp(7.5rem, 4.375rem + 5vw, 10.625rem) 0;
   position: relative;
 }
 .l-member-list__slider {
