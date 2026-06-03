@@ -38,7 +38,7 @@ h2{
 	font-family: 'kokoro';
 	font-size: fluid(25, 40, 415, 2000);
 	letter-spacing: 0;
-	line-height: to-rem(65);
+	line-height: fluid( 40, 65, 415, 2000);
 
 	span{
 		font-family: 'higuregothic';

@@ -160,7 +160,7 @@ h2 {
   font-family: "kokoro";
   font-size: clamp(1.5625rem, 1.3170347003rem + 0.9463722397vw, 2.5rem);
   letter-spacing: 0;
-  line-height: 4.0625rem;
+  line-height: clamp(2.5rem, 2.0908911672rem + 1.5772870662vw, 4.0625rem);
 }
 h2 span {
   font-family: "higuregothic";
