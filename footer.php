@@ -18,7 +18,7 @@
 						<ul class="sub-footer-nav">
 							<li><a href="#members">メンバーインタビュー</a></li>
 							<li><a href="#all-mem-list">AguRokkaメンバー紹介</a></li>
-							<li><a href="#AguRokka-qanda">Q&A</a></li>
+							<li><a href="#faq">Q&A</a></li>
 						</ul>
 					</li>
 					<li class="footer-nav-item has-child">
