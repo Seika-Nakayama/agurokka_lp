@@ -388,7 +388,7 @@ ul, ol {
 }
 .l-fv svg.fv-svg.is-ready {
   opacity: 1;
-  transition: opacity 0.4s ease;
+  transition: 0.4s ease;
 }
 
 .l-fv__copy {
@@ -417,7 +417,7 @@ ul, ol {
 .p-char.is-show {
   opacity: 1;
   transform: translateY(0);
-  transition: opacity 1s ease, transform 1s ease;
+  transition: 1s ease;
 }
 
 .l-top-logo {
@@ -776,6 +776,7 @@ ul, ol {
 }
 
 .c-svg-wrap, .roll-svg {
+  z-index: -1;
   pointer-events: none;
 }
 
@@ -881,21 +882,21 @@ p.c-member-card__voice {
 }
 
 .p-pepper {
-  width: 17%;
+  width: clamp(5.625rem, 0.272943038rem + 8.3544303797vw, 15.9375rem);
   top: 10%;
   left: 2%;
   animation-delay: var(--animation-no1-delay);
 }
 
 .p-corn {
-  width: 20%;
+  width: clamp(8.125rem, 2.6107594937rem + 8.6075949367vw, 18.75rem);
   top: 5%;
   left: 90%;
   animation-delay: var(--animation-no2-delay);
 }
 
 .p-tomat {
-  width: 12%;
+  width: clamp(3.75rem, -0.1424050633rem + 6.0759493671vw, 11.25rem);
   top: 64%;
   left: initial;
   right: -11%;
@@ -903,7 +904,7 @@ p.c-member-card__voice {
 }
 
 .p-spinach {
-  width: 25%;
+  width: clamp(8.125rem, 0.1780063291rem + 12.4050632911vw, 23.4375rem);
   top: 85%;
   left: 3%;
   animation-delay: var(--animation-no4-delay);
@@ -914,12 +915,18 @@ p.c-member-card__voice {
     display: none;
   }
   .p-pepper {
+    width: clamp(5.625rem, 0.1645084567rem + 15.8562367865vw, 10.3125rem);
     top: 3%;
     left: 8%;
   }
   .p-tomat {
+    width: clamp(4.0625rem, 0.4221723044rem + 10.5708245243vw, 7.1875rem);
     top: 21%;
     left: 92%;
+  }
+  .p-spinach {
+    width: clamp(8.125rem, 0.1162790698rem + 23.2558139535vw, 15rem);
+    left: 10%;
   }
 }
 @media screen and (max-width: 550px) {
@@ -930,16 +937,16 @@ p.c-member-card__voice {
     width: 80%;
   }
   .p-pepper {
-    width: 16%;
+    width: clamp(4.5rem, -2.3303571429rem + 29.1428571429vw, 7.6875rem);
     top: 0;
     left: 23%;
   }
   .p-tomat {
-    width: 74px;
+    width: clamp(2.8125rem, -1.4732142857rem + 18.2857142857vw, 4.8125rem);
     left: 79%;
   }
   .p-spinach {
-    width: 25%;
+    width: clamp(7.0625rem, -3.6517857143rem + 45.7142857143vw, 12.0625rem);
     top: 104%;
     left: 27%;
   }
