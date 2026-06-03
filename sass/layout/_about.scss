@@ -60,7 +60,7 @@
 	&-img{
 		width: fluid(427, 700, 1025, 2000);
 		display: block;
-		border-radius: $radius-sm;
+		border-radius: $radius-md;
 	}
 }
 
@@ -209,7 +209,7 @@
 	.l-origin__img{
 		width: 100%;
 		height: to-rem(300);
-		border-radius:0;
+		border-radius: 0;
 	}
 
 	.l-origin__item{
