@@ -2,8 +2,8 @@
 
 body{
 	background-color: var(--bg-primary);
-	min-width: 375px;
-	@include height-size($minHeight: 700px);
+	min-width: to-rem(375);
+	@include height-size($minHeight: to-rem(700));
 }
 
 main{
@@ -14,16 +14,16 @@ article{
 	&.article-box{
 		@include relative-position;
 		width: 100%;
-		margin: 100px auto;
+		margin: fluid( 150, 200, 375, 200) auto 0;
 	}
 }
 
 img{
 	&.category{
 		width: 60vw;
-		max-width: 1000px;
+		max-width: to-rem(1000);
 		opacity: 0;
-		transition: 1.5s;
+		@include transition( 1.5s, ease);
 
 		&.is-show{
 			opacity: 0.5;
@@ -38,7 +38,7 @@ h2{
 	font-family: 'kokoro';
 	font-size: fluid(25, 40, 415, 2000);
 	letter-spacing: 0;
-	line-height: 65px;
+	line-height: to-rem(65);
 
 	span{
 		font-family: 'higuregothic';
@@ -50,7 +50,7 @@ h2{
 	img{
 		width: auto;
 		@include height-fluid(20, 33, 415, 2000);
-		margin-right: 10px;
-		transform: translateY(3px);
+		margin-right: to-rem(10);
+		transform: translateY(to-rem(3));
 	}
 }
