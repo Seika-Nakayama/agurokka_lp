@@ -15,8 +15,8 @@ include 'fixed-link-btn.php';
 		<?php include 'sections/about.php'; ?>
 		<article id="members" class="article-box">
 			<img src="images/main-img/category-bg-member.svg" alt="categoryの文字の画像" class="category">
-			<?php include 'sections/member-interview.php'; ?>
 			<?php include 'sections/member-list.php'; ?>
+			<?php include 'sections/member-interview.php'; ?>
 			<?php include 'sections/qanda.php'; ?>
 		</article>
 		<?php include 'sections/activity.php'; ?>

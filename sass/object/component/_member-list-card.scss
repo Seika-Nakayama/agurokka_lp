@@ -2,7 +2,7 @@
 
 .c-member-card{
 	width: fluid( 300, 350,375, 2000);
-	margin-bottom: 5px;
+	margin-bottom: to-rem(5);
 	padding: fluid( 20, 25, 375, 2000);
     gap: 10px;
 	display: flex;

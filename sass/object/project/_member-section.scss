@@ -1,5 +1,36 @@
 @use "../../abstracts/index" as *;
 
+.p-member-interview{
+    &__title{
+        &-text{
+            display: inline-block;
+            position: relative;
+            font-family: 'kokoro';
+            font-size: fluid(25, 40, 415, 2000);
+            letter-spacing: 0;
+            line-height: to-rem(65);
+        }
+    }
+}
+
+.p-heart-svg2{
+    width: fluid( 150, 220, 375, 2000);
+    height: auto;
+    @include absolute-position( 50%, 17%);
+	z-index: z-index(under);
+
+    path{
+	stroke-dasharray: 2000;
+	stroke-dashoffset: 2000;
+    }
+
+    &.is-show path{
+        @include transition(4.5s, ease);
+        stroke-dashoffset: 0;
+    }
+}
+
+
 .p-member__farm,
 .p-member__name,
 .p-member__name-end,
