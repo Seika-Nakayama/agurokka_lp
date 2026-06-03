@@ -2,7 +2,7 @@ $transition-sm: .2s ease;
 $transition-md: .3s ease;
 $transition-lg: .4s ease;
 
-@mixin transition($duration: .3s, $easing: ease) {
+@mixin transition($duration: 1s, $easing: ease) {
     transition: $duration $easing;
 }
 
