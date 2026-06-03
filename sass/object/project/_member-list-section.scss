@@ -1,40 +1,9 @@
 @use "../../abstracts/index" as *;
 
-.p-member-list{
-    &__title{
-        &-text{
-            display: inline-block;
-            position: relative;
-            font-family: 'kokoro';
-            font-size: fluid(25, 40, 415, 2000);
-            letter-spacing: 0;
-            line-height: to-rem(65);
-        }
-    }
-    
-    &__lead{
-        margin: fluid( 90, 150, 1000, 2000) auto fluid( 20, 50, 1000, 2000);
-        text-align: center;
-        padding: 0 to-rem(30);
-    }
-}
-
-.p-heart-svg2{
-    width: fluid( 150, 220, 375, 2000);
-    height: auto;
-
-    @include absolute-position( 50%, 35%);
-	z-index: z-index(under);
-
-    path{
-	stroke-dasharray: 2000;
-	stroke-dashoffset: 2000;
-    }
-
-    &.is-show path{
-        @include transition(4.5s, ease);
-        stroke-dashoffset: 0;
-    }
+.p-member-list__lead{
+    margin: fluid( 30, 60, 1000, 2000) auto fluid( 20, 50, 1000, 2000);
+    text-align: center;
+    padding: 0 to-rem(30);
 }
 
 @include media(mb3){
