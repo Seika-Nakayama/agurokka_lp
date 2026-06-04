@@ -1303,6 +1303,82 @@ p.p-member__intro {
   justify-content: center;
 }
 
+.p-activity__list {
+  margin-top: clamp(1.875rem, 1.4423076923rem + 1.8461538462vw, 3.75rem);
+}
+
+.p-activity__detail {
+  padding-bottom: 5px;
+  border-bottom: solid 0.0625rem var(--primary-00);
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.p-activity__date {
+  font-size: clamp(0.6875rem, 0.6298076923rem + 0.2461538462vw, 0.9375rem);
+  font-weight: 700;
+  margin-top: 20px;
+  white-space: nowrap;
+  color: var(--primary-00);
+}
+.p-activity__date--soon {
+  color: var(--highlight-00);
+}
+
+.p-activity__detail--soon {
+  border-bottom: solid 0.0625rem var(--highlight-00);
+}
+
+.p-activity__insta a {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+  transition: 0.3s ease;
+}
+.p-activity__insta a span {
+  font-size: 0.8125rem;
+  font-weight: 700;
+  transition: 0.3s ease;
+}
+.p-activity__insta a img {
+  width: auto;
+  height: clamp(0.9375rem, 0.8451086957rem + 0.1739130435vw, 1.0625rem);
+  color: var(--text-inverse);
+  transition: 0.3s ease;
+}
+
+.p-activity__toggle {
+  background: none;
+  border: none;
+  cursor: pointer;
+  display: block;
+  margin: 2.5rem auto;
+}
+.p-activity__toggle .p-activity__toggle-label {
+  font-size: clamp(0.8125rem, 0.7836538462rem + 0.1230769231vw, 0.9375rem);
+  font-family: "utsukushi";
+}
+.p-activity__toggle-icon, .p-activity__toggle-label {
+  transition: 0.3s ease;
+}
+
+@media (hover: hover) {
+  .p-activity__insta:hover {
+    opacity: 0.5;
+  }
+}
+@media screen and (max-width: 1024px) {
+  .p-activity__detail {
+    align-items: end;
+  }
+  .p-activity__insta a span {
+    display: none;
+  }
+  .p-activity__insta a img {
+    margin-left: 20px;
+  }
+}
 .l-about__intro {
   width: 100%;
   margin: 0 auto;
@@ -1633,6 +1709,21 @@ p.p-member__intro {
   .l-faq__answers ul {
     border: solid 0.0625rem var(--main-bg-color);
   }
+}
+.l-activity__inner {
+  width: 100%;
+  padding: 1.875rem;
+  max-width: 81.25rem;
+  margin: 0 auto;
+}
+
+.l-activity__accordion {
+  max-height: 0;
+  overflow: hidden;
+  transition: 0.4s ease;
+}
+.l-activity__accordion.is-open {
+  max-height: 125rem;
 }
 
 /*# sourceMappingURL=style.css.map */
