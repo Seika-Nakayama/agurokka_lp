@@ -17,7 +17,6 @@
 .p-heart-svg{
 	width: 100vw;
 	height: auto;
-	z-index: z-index(-1);
 	pointer-events: none;
 }
 
@@ -39,7 +38,7 @@
 
 .p-pop-up{
 	opacity: 0;
-	transform: translateY(40px) scale(.7);
+	transform: translateY(40px) scale(0.7);
 }
 
 .p-pop-up.is-show{

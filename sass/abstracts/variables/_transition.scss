@@ -1,11 +1,11 @@
-$transition-sm: .2s ease;
-$transition-md: .3s ease;
-$transition-lg: .4s ease;
+$transition-sm: 0.2s ease;
+$transition-md: 0.3s ease;
+$transition-lg: 0.4s ease;
 
 @mixin transition($duration: 1s, $easing: ease) {
     transition: $duration $easing;
 }
 
-// @mixin transition($duration: .3s, $easing: ease, $property: all) {
+// @mixin transition-post($duration: .3s, $easing: ease, $property: all) {
 //     transition: $property $duration $easing;
 // }
