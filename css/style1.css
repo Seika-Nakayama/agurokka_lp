@@ -2494,43 +2494,43 @@ span.p-activity__insta{
 .bod-svg{
 	width:100%
 }
-.footer-logo img{
+.p-footer__logo img{
 	width:180px;
 	margin:0 auto
 }
-.footer-nav-list{
+.p-footer__nav-list{
 	width:850px;
 	margin:0 auto;
 	display:flex;
 	justify-content:space-evenly
 }
-.footer-nav-item{
+.p-footer__nav-item{
 	width:225px;
 	margin:20px;
 	position:relative;
 	margin-left:40px
 }
-.footer-nav-item li{
+.p-footer__nav-item li{
 	position:relative;
 	margin-left:40px
 }
-.footer-nav-item a{
+.p-footer__nav-item a{
 	font-size:17px;
 	margin-top:12px;
 	transition:.2s ease;
 	color:var(--main-color)
 }
-.footer-nav-item li a{
+.p-footer__nav-item li a{
 	font-family:'higuregothic';
 	font-size:15px;
 	line-height:17px;
 	transition:.2s ease
 }
-.footer-menu-category{
+.p-footer__nav-category{
 	margin:30px 0 20px;
 	font-family:'utsukushi'
 }
-.footer-nav-item li::before{
+.p-footer__nav-item li::before{
 	content:'';
 	width:30px;
 	height:1px;
@@ -2540,18 +2540,18 @@ span.p-activity__insta{
 	left:-15%;
 	transform:translate(-50%,-50%)
 }
-.footer-sns-menu{
+.p-footer__sns{
 	width:150px;
 	margin:0 auto;
 	display:flex;
 	justify-content:space-between
 }
-.footer-sns-insta img,.footer-sns-facebook img{
+.p-footer__sns-item--insta img,.p-footer__sns-item--facebook img{
 	width:40px;
 	margin:20px;
 	transition:.2s ease
 }
-.copy-right{
+.p-footer__copyright{
 	font-size:13px;
 	color:var(--sub-color);
 	background-color:var(--title-color);
@@ -2576,48 +2576,48 @@ span.p-activity__insta{
 	right:-300px;
 	bottom:-5%
 } */
-.entory-link-img img{
+/* .p-footer__entry-link img{
 	width:500px;
 	margin:30px auto 10px
 }
 @media (hover:hover){
-	.footer-nav-item a:hover,.footer-nav-item li a:hover{
+	.p-footer__nav-item a:hover,.p-footer__nav-item li a:hover{
 		opacity:.7
 	}
-	.footer-sns-insta img:hover,.footer-sns-facebook img:hover{
+	.p-footer__sns-item--insta img:hover,.p-footer__sns-item--facebook img:hover{
 		opacity:.7
 	}
 }
 @media screen and (max-width:830px){
 	.bod-svg path{stroke-width: 2px;}
-	.footer-logo img{
+	.p-footer__logo img{
 		width:130px
 	}
-	.footer-nav-list{
+	.p-footer__nav-list{
 		flex-direction:column
 	}
-	.footer-nav-list{
+	.p-footer__nav-list{
 		width:140px
 	}
-	.footer-nav-item{
+	.p-footer__nav-item{
 		margin:0
 	}
-	.footer-nav-item a{
+	.p-footer__nav-item a{
 		font-size:15px
 	}
-	.footer-menu-category{
+	.p-footer__nav-category{
 		margin:15px 0 5px
 	}
 }
 @media screen and (max-width:520px){
 	.bod-svg path{stroke-width: 3px;}
-	/* .c-fixed-link img{
+	.c-fixed-link img{
 		width:190px
-	} */
-	.entory-link-img img{
+	}
+	.p-footer__entry-link img{
 		width:370px
 	}
-}
+} */
 body:not(.is-loaded) .l-fv svg path{
 	stroke-dashoffset:inherit
 }

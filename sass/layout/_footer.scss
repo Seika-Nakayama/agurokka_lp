@@ -1,0 +1,45 @@
+@use "../abstracts/index" as *;
+@use "../object/index" as *;
+
+.p-footer__entry-link img{
+	width:500px;
+	margin:30px auto 10px
+}
+@media (hover:hover){
+	.p-footer__nav-item a:hover,.p-footer__nav-item li a:hover{
+		opacity:.7
+	}
+	.p-footer__sns-item--insta img:hover,.p-footer__sns-item--facebook img:hover{
+		opacity:.7
+	}
+}
+@media screen and (max-width:830px){
+	.bod-svg path{stroke-width: 2px;}
+	.p-footer__logo img{
+		width:130px
+	}
+	.p-footer__nav-list{
+		flex-direction:column
+	}
+	.p-footer__nav-list{
+		width:140px
+	}
+	.p-footer__nav-item{
+		margin:0
+	}
+	.p-footer__nav-item a{
+		font-size:15px
+	}
+	.p-footer__nav-category{
+		margin:15px 0 5px
+	}
+}
+@media screen and (max-width:520px){
+	.bod-svg path{stroke-width: 3px;}
+	/* .c-fixed-link img{
+		width:190px
+	} */
+	.p-footer__entry-link img{
+		width:370px
+	}
+}
