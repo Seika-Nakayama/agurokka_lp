@@ -134,16 +134,20 @@ p.p-member__intro{
         height: fluid(300, 400, 375, 720);
         border-radius: 0;
     }
+
     .p-comment01,.p-comment02,.p-comment03,.p-comment04{
         transform: initial;
         border-radius: 0;
     }
+
     .p-member__name{
         letter-spacing: -0.05rem;
     }
+
     [class*="p-tag--"]{
         font-size: fluid( 18, 24, 375, 768);
     }
+
     .p-tag--01a{ top: to-rem(-20); left: fluid( 300, 660, 375, 768);}
     .p-tag--01b{ top: to-rem(30);  left: fluid( 255, 610, 375, 768);}
     .p-tag--02a{ top: to-rem(-20); right: fluid( 265, 605, 375, 768);}
