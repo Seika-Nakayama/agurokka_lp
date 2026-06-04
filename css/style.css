@@ -1308,7 +1308,7 @@ p.p-member__intro {
 }
 
 .p-activity__detail {
-  padding-bottom: 5px;
+  padding-bottom: 0.3125rem;
   border-bottom: solid 0.0625rem var(--primary-00);
   display: flex;
   align-items: center;
@@ -1318,7 +1318,7 @@ p.p-member__intro {
 .p-activity__date {
   font-size: clamp(0.6875rem, 0.6298076923rem + 0.2461538462vw, 0.9375rem);
   font-weight: 700;
-  margin-top: 20px;
+  margin-top: 1.25rem;
   white-space: nowrap;
   color: var(--primary-00);
 }
@@ -1333,7 +1333,7 @@ p.p-member__intro {
 .p-activity__insta a {
   display: flex;
   align-items: center;
-  gap: 5px;
+  gap: 0.3125rem;
   transition: 0.3s ease;
 }
 .p-activity__insta a span {
@@ -1344,7 +1344,7 @@ p.p-member__intro {
 .p-activity__insta a img {
   width: auto;
   height: clamp(0.9375rem, 0.8451086957rem + 0.1739130435vw, 1.0625rem);
-  color: var(--text-inverse);
+  margin-left: 1.25rem;
   transition: 0.3s ease;
 }
 
@@ -1374,9 +1374,6 @@ p.p-member__intro {
   }
   .p-activity__insta a span {
     display: none;
-  }
-  .p-activity__insta a img {
-    margin-left: 20px;
   }
 }
 .l-about__intro {
