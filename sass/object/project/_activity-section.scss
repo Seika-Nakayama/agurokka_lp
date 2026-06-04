@@ -1,5 +1,84 @@
 @use "../../abstracts/index" as *;
 
-.l-footer{
-    margin: 180px 0 0;
+.p-activity__list{
+    margin-top: fluid( 30, 60, 375, 2000);
+}
+
+.p-activity__detail{
+    padding-bottom: to-rem(5);
+	border-bottom: solid to-rem(1) var(--primary-00);
+	display: flex;
+	align-items: center;
+    justify-content: space-between;
+}
+
+.p-activity__date{
+    font-size: fluid( 11, 15, 375, 2000);
+	font-weight: 700;
+    margin-top: to-rem(20);
+	white-space: nowrap;
+	color: var(--primary-00);
+
+    &--soon{
+        color: var(--highlight-00);
+    }
+}
+
+.p-activity__detail--soon{
+	border-bottom: solid to-rem(1) var(--highlight-00);
+}
+
+.p-activity__insta a{
+    display: flex;
+    align-items: center;
+    gap: to-rem(5);
+    transition: $transition-md;
+
+    span{
+        font-size: to-rem(13);
+        font-weight: 700;
+        transition: $transition-md;
+    }
+
+    img{
+        width: auto;
+        height: fluid( 15, 17, 850, 2000);
+        margin-left: to-rem(20);
+        transition: $transition-md;
+    }
+}
+
+.p-activity__toggle{
+	background: none;
+	border: none;
+	cursor: pointer;
+	display: block;
+	margin: to-rem(40) auto;
+
+    & .p-activity__toggle-label{
+        font-size: fluid( 13, 15, 375, 2000);
+        font-family: 'utsukushi';
+    }
+
+    &-icon,
+    &-label{
+        transition: $transition-md;
+    }
+}
+
+@media (hover:hover){
+	.p-activity__insta:hover{
+        opacity: 0.5;
+	}
+}
+
+@include media(mb){
+    .p-activity__detail{
+        align-items: end;
+    }
+    .p-activity__insta a{
+        span{
+            display: none;
+        }
+    }
 }
