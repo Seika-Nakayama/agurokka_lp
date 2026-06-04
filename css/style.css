@@ -776,7 +776,6 @@ ul, ol {
 }
 
 .c-svg-wrap, .roll-svg {
-  z-index: -1;
   pointer-events: none;
 }
 
