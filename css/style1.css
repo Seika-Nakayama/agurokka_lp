@@ -2388,12 +2388,12 @@ p.member4:nth-of-type(2){
 		transform: translateX(-163%);
 	}
 } */
-#activity .contents_inner{
+/* #activity .contents_inner{
 	width:95%;
 	max-width:800px;
 	margin:0 auto
 }
-.activities__inner-flex{
+.p-activity__detail{
 	position:relative;
 	padding:20px 20px 15px;
 	border-radius:10px;
@@ -2402,9 +2402,8 @@ p.member4:nth-of-type(2){
 	display:flex;
 	align-items:center
 }
-dt.past-activity{
+dt.p-activity__date{
 	width:fit-content;
-	padding:5px 10px;
 	margin:5px 0;
 	border-radius:30px;
 	position:relative;
@@ -2414,20 +2413,17 @@ dt.past-activity{
 	padding:0 12px;
 	background-color:#fff;
 	font-weight:700;
+	white-space:nowrap;
 	color:var(--accent-green-color);
 	z-index:2
 }
-dt.com-soon{
+dt.p-activity__date--soon{
 	color:var(--accent-orange-color)
 }
-dd.com-soon{
+dd.p-activity__detail--soon{
 	border:solid 1px var(--accent-orange-color)
 }
-.past-activity_display dt{
-	font-weight:700;
-	white-space:nowrap
-}
-span.go-insta{
+span.p-activity__insta{
 	margin-left:10px;
 	font-size:13px;
 	font-weight:700;
@@ -2438,55 +2434,55 @@ span.go-insta{
 	padding:5px 10px 7px;
 	transition:0.3s ease
 }
-#activity-past{
+.l-activity__accordion{
 	max-height:0;
 	overflow:hidden;
 	transition:0.5s ease
 }
-#activity-past.is-open{
+.l-activity__accordion.is-open{
 	max-height:2000px
 }
-.accordion-toggle{
+.p-activity__toggle{
 	background:none;
 	border:none;
 	cursor:pointer;
 	display:block;
 	margin:40px auto
 }
-.accordion-toggle span.look-label{
+.p-activity__toggle .p-activity__toggle-label{
 	font-size:17px;
 	font-family:'utsukushi'
 }
-span.open-icon{
+.p-activity__toggle-icon{
 	transition:0.3s ease
 }
-span.look-label{
+.p-activity__toggle-label{
 	transition:0.3s ease
 }
 @media (hover:hover){
-	button.accordion-toggle:hover span.look-label{
+	.p-activity__toggle:hover .p-activity__toggle-label{
 		color:var(--accent-orange-color)
 	}
-	button.accordion-toggle:hover span.open-icon{
+	.p-activity__toggle:hover .p-activity__toggle-icon{
 		color:var(--accent-orange-color)
 	}
-	span.go-insta:hover{
+	span.p-activity__insta:hover{
 		background-color:#fff;
 		border:solid 1px #ea763d;
 		color:var(--accent-orange-color)
 	}
 }
 @media screen and (max-width:850px){
-	.activities__inner-flex{
+	.p-activity__detail{
 		font-size:14px;
 		line-height:20px;
 		padding:15px 15px 10px
 	}
-	span.go-insta{
+	span.p-activity__insta{
 		font-size:10px;
 		border:none
 	}
-}
+} */
 .bod-svg path{
 	stroke-dasharray:3000;
 	stroke-dashoffset:3000

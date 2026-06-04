@@ -1,0 +1,20 @@
+@use "../abstracts/index" as *;
+@use "../object/index" as *;
+
+.l-activity__inner{
+	width: 100%;
+    padding: to-rem(30);
+	max-width: to-rem(1300);
+	margin: 0 auto;
+}
+
+.l-activity__accordion{
+	max-height: 0;
+	overflow: hidden;
+    transition: $transition-lg;
+
+    &.is-open{
+        max-height: to-rem(2000);
+    }
+}
+
