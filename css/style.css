@@ -1756,6 +1756,12 @@ p.p-member__intro {
 }
 
 @media (hover: hover) {
+  .p-activity__toggle:hover .p-activity__toggle-label {
+    color: var(--highlight-00);
+  }
+  .p-activity__toggle:hover .p-activity__toggle-icon {
+    color: var(--highlight-00);
+  }
   .p-activity__insta:hover {
     opacity: 0.5;
   }
@@ -1923,3 +1929,5 @@ p.p-member__intro {
     margin: 1.875rem auto 0;
   }
 }
+
+/*# sourceMappingURL=style.css.map */
