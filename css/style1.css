@@ -2483,7 +2483,7 @@ span.p-activity__insta{
 		border:none
 	}
 } */
-.bod-svg path{
+/* .bod-svg path{
 	stroke-dasharray:3000;
 	stroke-dashoffset:3000
 }
@@ -2557,7 +2557,7 @@ span.p-activity__insta{
 	background-color:var(--title-color);
 	text-align:center;
 	padding:10px
-}
+} */
 /* .c-fixed-link img{
 	position:fixed;
 	bottom:-25px;
