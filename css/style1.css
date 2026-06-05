@@ -2618,7 +2618,7 @@ span.p-activity__insta{
 		width:370px
 	}
 } */
-body:not(.is-loaded) .l-fv svg path{
+/* body:not(.is-loaded) .l-fv svg path{
 	stroke-dashoffset:inherit
 }
 body.is-loaded .l-fv svg path{
@@ -2647,4 +2647,4 @@ body:not(.is-loaded) .l-fv *{
 	opacity:0!important;
 	transform:none!important;
 	animation:none!important
-}
+} */
