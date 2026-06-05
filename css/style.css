@@ -1400,15 +1400,14 @@ p.p-member__intro {
   justify-content: space-between;
 }
 .p-footer__nav-item {
-  width: 220px;
-  padding-left: 30px;
-  border-left: solid 1px var(--text-muted);
+  width: 13.75rem;
+  padding-left: 1.875rem;
+  border-left: solid 0.0625rem var(--text-muted);
 }
 .p-footer__nav-item:first-child {
   border: none;
 }
 .p-footer__nav-item li {
-  position: relative;
   display: flex;
   flex-direction: row;
   justify-content: flex-start;
@@ -1459,19 +1458,17 @@ p.p-member__intro {
   border: solid 0.0625rem var(--bg-primary);
   font-family: "kokoro";
   letter-spacing: 0;
-  padding: 10px 20px;
-  margin: 30px auto;
+  padding: 0.625rem 1.25rem;
+  margin: 1.875rem auto;
   border-radius: 9999px;
-  text-align: center;
   transition: 0.3s ease;
   display: flex;
   align-items: center;
 }
 .p-footer__entry-link a p svg {
   width: auto;
-  height: 8px;
-  margin-left: 5px;
-  margin: 0 4px 0 12px;
+  height: 0.5rem;
+  margin: 0 0.25rem 0 0.75rem;
   transition: 0.3s ease;
 }
 
@@ -1488,17 +1485,13 @@ p.p-member__intro {
   .p-footer__nav-item li a:hover {
     opacity: 0.5;
   }
-  .p-footer__nav-item li:hover::before {
-    width: 100%;
-    height: 0.0625rem;
-  }
   .p-footer__entry-link a:hover p {
     color: var(--highlight-00);
     background-color: var(--bg-primary);
     border: solid 0.0625rem var(--highlight-00);
   }
   .p-footer__entry-link a:hover svg {
-    margin: 0 0 0 16px;
+    margin: 0 0 0 1rem;
   }
   .p-footer__entry-link a:hover line {
     stroke: var(--highlight-00);
@@ -1531,8 +1524,8 @@ p.p-member__intro {
     margin: 1.25rem 0;
   }
   .p-footer__sub-nav {
-    padding-left: 30px;
-    border-left: solid 1px var(--text-muted);
+    padding-left: 1.875rem;
+    border-left: solid 0.0625rem var(--text-muted);
   }
   .p-footer__entry-link a p {
     margin: 1.875rem auto 0;

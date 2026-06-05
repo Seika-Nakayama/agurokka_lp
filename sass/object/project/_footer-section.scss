@@ -28,17 +28,16 @@
     }
     
     &-item{
-        width: 220px;
+        width: to-rem(220);
 
-        padding-left: 30px;
-        border-left: solid 1px var(--text-muted);
+        padding-left: to-rem(30);
+        border-left: solid to-rem(1) var(--text-muted);
         &:first-child{
             border: none;
         }
 
 
         li{
-            position: relative;
             display: flex;
             flex-direction: row;
             justify-content: flex-start;
@@ -97,21 +96,17 @@
             border: solid to-rem(1) var(--bg-primary);
             font-family: 'kokoro';
             letter-spacing: 0;
-            padding: 10px 20px;
-            margin: 30px auto;
+            padding: to-rem(10) to-rem(20);
+            margin: to-rem(30) auto;
             border-radius: $radius-full;
-            text-align: center;
             transition: $transition-md;
-
             display: flex;
             align-items: center;
 
             svg{
                 width: auto;
-                height: 8px;
-                margin-left: 5px;
-
-                margin: 0 4px 0 12px;
+                height: to-rem(8);
+                margin: 0 to-rem(4) 0 to-rem(12);
                 transition: $transition-md;
             }
         }
@@ -132,23 +127,19 @@
 		opacity: 0.5;
 	}
 
-    .p-footer__nav-item li:hover::before{
-        width: 100%;
-        height: to-rem(1);
-    }
-
     .p-footer__entry-link a:hover p{
         color: var(--highlight-00);
         background-color: var(--bg-primary);
         border: solid to-rem(1) var(--highlight-00);
     }
+
     .p-footer__entry-link a:hover svg{
-        margin: 0 0 0 16px;
+        margin: 0 0 0 to-rem(16);
     }
+
     .p-footer__entry-link a:hover line{
         stroke: var(--highlight-00);
     }
-
 }
 
 @include media(mb){
@@ -156,7 +147,7 @@
         width: fit-content;
         margin: 0 auto;
 	}
-    
+
     .p-footer__nav-item{
         margin: to-rem(30) 0 to-rem(60);
 
@@ -177,15 +168,15 @@
         margin: to-rem(30) 0 0;
         border: none;
     }
-        
+
     a.p-footer__nav-category{
     font-size: to-rem(15);
     margin: to-rem(20) 0;
     }
 
     .p-footer__sub-nav{
-        padding-left: 30px;
-        border-left: solid 1px var(--text-muted);
+        padding-left: to-rem(30);
+        border-left: solid to-rem(1) var(--text-muted);
     }
 
     .p-footer__entry-link a p{
