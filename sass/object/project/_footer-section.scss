@@ -175,7 +175,7 @@
     }
 
     .p-footer__sub-nav{
-        padding-left: to-rem(30);
+        padding-left: fluid( 10, 30, 375, 2000);
         border-left: solid to-rem(1) var(--text-muted);
     }
 

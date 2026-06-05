@@ -1933,10 +1933,12 @@ p.p-member__intro {
     margin: 1.25rem 0;
   }
   .p-footer__sub-nav {
-    padding-left: 1.875rem;
+    padding-left: clamp(0.625rem, 0.3365384615rem + 1.2307692308vw, 1.875rem);
     border-left: solid 0.0625rem var(--text-muted);
   }
   .p-footer__entry-link a p {
     margin: 1.875rem auto 0;
   }
 }
+
+/*# sourceMappingURL=style.css.map */
