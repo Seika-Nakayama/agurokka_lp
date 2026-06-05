@@ -3,15 +3,9 @@
 	<div class="l-footer__inner">
 		<div class="p-footer__logo">
 			<img src="images/logo/agurokka_logo.webp" alt="AguRokkaのロゴ">
-			<!-- <div class="p-footer__entry-link">
-				<a href="https://docs.google.com/forms/d/1y0TlJKK-Ip5nqA4ef7zxUNKzVR2Dzr_bWXMSe7v3G1A/viewform?edit_requested=true" target="_blank"><img src="images/main-img/entory-link.webp" alt="入会フォーム誘導バナー"></a>
-			</div> -->
 			<div class="p-footer__entry-link">
 				<a href="https://docs.google.com/forms/d/1y0TlJKK-Ip5nqA4ef7zxUNKzVR2Dzr_bWXMSe7v3G1A/viewform?edit_requested=true" target="_blank">
-					<p>入会フォームはこちら
-						<!-- <img src="images/icon/arrow-white.svg" alt="入会フォームへのリンクを示す矢印の画像"> -->
-						 <svg width="17" height="31" viewBox="0 0 17 31" fill="none" xmlns="http://www.w3.org/2000/svg"><line x1="2" y1="-2" x2="19.2133" y2="-2" transform="matrix(-0.707107 0.707107 0.707107 0.707107 17 15.2734)" stroke="#FFFEF8" stroke-width="4" stroke-linecap="round"/><line x1="14.1716" y1="15" x2="1.99991" y2="2.82833" stroke="#FFFEF8" stroke-width="4" stroke-linecap="round"/></svg>
-					</p>
+					<p>入会フォームはこちら <svg width="17" height="31" viewBox="0 0 17 31" fill="none" xmlns="http://www.w3.org/2000/svg"><line x1="2" y1="-2" x2="19.2133" y2="-2" transform="matrix(-0.707107 0.707107 0.707107 0.707107 17 15.2734)" stroke="#FFFEF8" stroke-width="4" stroke-linecap="round"/><line x1="14.1716" y1="15" x2="1.99991" y2="2.82833" stroke="#FFFEF8" stroke-width="4" stroke-linecap="round"/></svg></p>
 				</a>
 			</div>
 		</div>
@@ -52,14 +46,6 @@
 						</ul>
 					</li>
 				</ul>
-				<!-- <div class="p-footer__entry-link">
-					<a href="https://docs.google.com/forms/d/1y0TlJKK-Ip5nqA4ef7zxUNKzVR2Dzr_bWXMSe7v3G1A/viewform?edit_requested=true" target="_blank"><img src="images/main-img/entory-link.webp" alt="入会フォーム誘導バナー"></a>
-				</div> -->
-				<!-- <div class="p-footer__entry-link">
-					<a href="https://docs.google.com/forms/d/1y0TlJKK-Ip5nqA4ef7zxUNKzVR2Dzr_bWXMSe7v3G1A/viewform?edit_requested=true" target="_blank">
-						<p>入会フォームはこちら</p>
-					</a>
-				</div> -->
 			</div>
 		</div>
 	<p class="p-footer__copyright">&copy;くまもと農業女史コミュニティAguRokka</p>
