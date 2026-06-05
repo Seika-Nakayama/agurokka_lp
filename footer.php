@@ -21,8 +21,8 @@
 					<li class="p-footer__nav-item">
 						<a href="#members" class="p-footer__nav-category">メンバー紹介</a>
 						<ul class="p-footer__sub-nav">
-							<li><a href="#members">メンバーインタビュー</a></li>
-							<li><a href="#all-mem-list">AguRokkaメンバー紹介</a></li>
+							<li><a href="#l-member-list">AguRokkaメンバー紹介</a></li>
+							<li><a href="#l-interview">メンバーインタビュー</a></li>
 							<li><a href="#faq">よくあるご質問</a></li>
 						</ul>
 					</li>
