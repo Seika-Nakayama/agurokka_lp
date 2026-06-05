@@ -1432,17 +1432,6 @@ p.p-member__intro {
   margin: 0.125rem 0.625rem 0 0;
   transition: 0.3s ease;
 }
-.p-footer__nav-item li::before {
-  content: "";
-  background-color: var(--text-muted);
-  width: 0.1875rem;
-  height: 0.1875rem;
-  border-radius: 5px;
-  transition: 1s ease;
-  display: block;
-  margin: 0 0 7px;
-  display: none;
-}
 .p-footer__nav-category {
   margin: 0 0 1.875rem;
   font-family: "kokoro";
