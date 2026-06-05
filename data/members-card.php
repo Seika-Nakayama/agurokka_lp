@@ -1,6 +1,6 @@
 <?php
 $members = [
-    // --- スライダー1（前半10人）---
+    // --- スライダー（前半10人）---
     [
         'farm' => 'ミヤザキファーム',
         'image' => 'images/main-img/member-list/miyazaki-farm.jpg',
@@ -101,7 +101,7 @@ $members = [
         'voice' => '人にも環境にも牛にも優しい農業を目指しています。',
         'color' => '#F2C9C9',
     ],
-    // --- スライダー2（後半10人）---
+    // --- スライダー（後半10人）---
     [
         'farm' => '本田農園',
         'image' => 'images/main-img/member-list/honda.jpg',
