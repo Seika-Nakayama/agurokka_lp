@@ -114,7 +114,7 @@
 }
 
 .p-footer__copyright{
-	font-size: to-rem(13);
+	font-size: fluid( 10, 13, 375, 2000);
 	color: var(--text-inverse);
 	background-color: var(--text-title);
 	text-align: center;
