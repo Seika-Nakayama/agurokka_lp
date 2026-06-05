@@ -368,6 +368,30 @@ ul, ol {
     height: 9.375rem;
   }
 }
+body:not(.is-loaded) .l-fv svg path {
+  stroke-dashoffset: inherit;
+}
+body:not(.is-loaded) .l-fv * {
+  opacity: 0 !important;
+  transform: none !important;
+  animation: none !important;
+}
+body.is-loaded .l-fv svg path {
+  stroke-dashoffset: 0;
+  transition: stroke-dashoffset 5s ease;
+}
+body.is-loaded .l-fv .veg-img {
+  opacity: 1;
+  transform: scale(1);
+  transition-delay: 0.8s;
+}
+body.is-loaded .l-fv .copy:nth-child(1) {
+  transition-delay: 0.2s;
+}
+body.is-loaded .l-fv .copy:nth-child(2) {
+  transition-delay: 0.4s;
+}
+
 .l-fv {
   width: 100%;
   height: 100vh;
@@ -1899,3 +1923,5 @@ p.p-member__intro {
     margin: 1.875rem auto 0;
   }
 }
+
+/*# sourceMappingURL=style.css.map */
