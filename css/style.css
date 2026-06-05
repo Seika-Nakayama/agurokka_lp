@@ -845,6 +845,7 @@ body.is-loaded .l-fv .copy:nth-child(2) {
   }
   .l-faq__answers ul {
     border: solid 0.0625rem var(--main-bg-color);
+    margin-top: 1.875rem;
   }
 }
 .l-activity__inner {
@@ -1695,6 +1696,16 @@ p.p-member__intro {
   justify-content: center;
 }
 
+@media screen and (max-width: 768px) {
+  .l-faq__questions li {
+    background-color: var(--bg-primary);
+    border: none;
+  }
+  .p-faq__question.is-active {
+    color: var(--highlight-00);
+    background-color: var(--bg-primary);
+  }
+}
 .p-activity__list {
   margin-top: clamp(1.875rem, 1.4423076923rem + 1.8461538462vw, 3.75rem);
 }
@@ -1929,5 +1940,3 @@ p.p-member__intro {
     margin: 1.875rem auto 0;
   }
 }
-
-/*# sourceMappingURL=style.css.map */

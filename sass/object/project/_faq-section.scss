@@ -72,3 +72,16 @@
         justify-content: center;
     }
 }
+
+@include media(mb2){
+    .l-faq__questions li{
+        background-color: var(--bg-primary);
+        border: none;
+    }
+    .p-faq__question{
+        &.is-active{
+            color: var(--highlight-00);
+            background-color: var(--bg-primary);
+        }
+}
+}
