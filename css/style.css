@@ -277,7 +277,7 @@ ul, ol {
 }
 
 .l-nav__item > .l-nav__link {
-  font-family: "utsukushi";
+  font-family: "kokoro";
   text-align: center;
   transition: 0.2s ease;
   margin: clamp(1.875rem, 1.5865384615rem + 1.2307692308vw, 3.125rem) 0;
