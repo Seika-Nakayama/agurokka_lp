@@ -1,5 +1,13 @@
 <div class="l-fv">
 	<div class="l-fv__copy">
+		<!-- <div class="l-fv__copy-items">
+			<img src="images/fv/nougyouto.svg" class="p-char js-svg" data-delay="0.2" alt="農業と">
+			<img src="images/fv/hitoto.svg" class="p-char js-svg" data-delay="0.7" alt="人と">
+		</div>
+		<div class="l-fv__copy-items">
+			<img src="images/fv/tunagu.svg" class="p-char js-svg" data-delay="1.5" alt="繋ぐ">
+			<img src="images/fv/tunagaru.svg" class="p-char js-svg" data-delay="2" alt="繋がる">
+		</div> -->
 		<div class="l-fv__copy-items">
 			<img src="images/fv/nougyouto.svg" class="p-char js-svg" data-delay="0.2" alt="農業と">
 			<img src="images/fv/hitoto.svg" class="p-char js-svg" data-delay="0.7" alt="人と">

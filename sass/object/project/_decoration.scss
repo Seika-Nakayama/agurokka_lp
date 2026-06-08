@@ -18,21 +18,24 @@
 }
 
 .p-pepper{
-	width: fluid( 90, 255, 1025, 3000);
+	// width: fluid( 90, 255, 1025, 3000);
+	width: 20%;
 	top: 10%;
 	left: 2%;
     animation-delay: var(--animation-no1-delay);
 }
 
 .p-corn{
-	width: fluid( 130, 300, 1025, 3000);
+	// width: fluid( 130, 300, 1025, 3000);
+	width: 22%;
 	top: 5%;
 	left: 90%;
     animation-delay: var(--animation-no2-delay);
 }
 
 .p-tomat{
-	width: fluid( 60, 180, 1025, 3000);
+	// width: fluid( 60, 180, 1025, 3000);
+	width: 10%;
 	top: 64%;
 	left: initial;
 	right: -11%;
@@ -40,63 +43,64 @@
 }
 
 .p-spinach{
-	width: fluid( 130, 375, 1025, 3000);
+	// width: fluid( 130, 375, 1025, 3000);
+	width: 23%;
 	top: 85%;
 	left: 3%;
     animation-delay: var(--animation-no4-delay);
 }
 
 
-@include media(mb){
-	.p-corn{
-		display: none;
-	}
+// @include media(mb){
+// 	.p-corn{
+// 		display: none;
+// 	}
 
-	.p-pepper{
-		width: fluid( 90, 165, 551, 1024);
-		top: 3%;
-		left: 8%;
-	}
+// 	.p-pepper{
+// 		width: fluid( 90, 165, 551, 1024);
+// 		top: 3%;
+// 		left: 8%;
+// 	}
 	
-	.p-tomat{
-		width: fluid( 65, 115, 551, 1024);
-		top: 21%;
-		left: 92%;
-	}
+// 	.p-tomat{
+// 		width: fluid( 65, 115, 551, 1024);
+// 		top: 21%;
+// 		left: 92%;
+// 	}
 	
-	.p-spinach{
-		width: fluid( 130, 240, 551, 1024);
-		left: 10%;
-	}
-}
+// 	.p-spinach{
+// 		width: fluid( 130, 240, 551, 1024);
+// 		left: 10%;
+// 	}
+// }
 
-@include media(sp){
-	.p-lines-flex{
-		left: 77%;
-	}
+// @include media(sp){
+// 	.p-lines-flex{
+// 		left: 77%;
+// 	}
 	
-	.p-lines-flex img.caw{
-		width: 80%;
-	}
+// 	.p-lines-flex img.caw{
+// 		width: 80%;
+// 	}
 	
-	.p-pepper{
-		width: fluid( 72, 123, 375, 550);
-		top: 0;
-		left: 23%;
-	}
+// 	.p-pepper{
+// 		width: fluid( 72, 123, 375, 550);
+// 		top: 0;
+// 		left: 23%;
+// 	}
 	
-	.p-tomat{
-		width: fluid( 45, 77, 375, 550);
-		left: 79%;
-	}
+// 	.p-tomat{
+// 		width: fluid( 45, 77, 375, 550);
+// 		left: 79%;
+// 	}
 	
-	.p-spinach{
-		width: fluid( 113, 193, 375, 550);
-		top: 104%;
-		left: 27%;
-	}
+// 	.p-spinach{
+// 		width: fluid( 113, 193, 375, 550);
+// 		top: 104%;
+// 		left: 27%;
+// 	}
 
-	.p-lines-flex{
-		top: 100%;
-	}
-}
+// 	.p-lines-flex{
+// 		top: 100%;
+// 	}
+// }
