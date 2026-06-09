@@ -5,7 +5,7 @@
 	@include absolute-position;
 
 	// width: 56%;
-	width: 85vmin;
+	width: 95vmin;
 	// width: 54vmax;
 
 	&__inner{
@@ -36,18 +36,18 @@
 	}
 }
 
-@include media(mb){
-    .c-slider{
-        width: 95%;
+// @include media(mb){
+//     .c-slider{
+//         width: 95%;
 		// top: 60%;
-    }
-}
+//     }
+// }
 
-@include media(sp){
-    .c-slider{
-        width: 140%;
-    }
-}
+// @include media(sp){
+//     .c-slider{
+//         width: 140%;
+//     }
+// }
 
 // @include media(sp2){
 //     .c-slider{
@@ -55,9 +55,9 @@
 //     }
 // }
 
-@include media(sp3){
-    .c-slider{
-        width: 120%;
+// @include media(sp3){
+//     .c-slider{
+        // width: 120%;
 		// top: 65%;
-    }
-}
+//     }
+// }
