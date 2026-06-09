@@ -904,7 +904,7 @@ body.is-loaded .l-fv .copy:nth-child(2) {
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
-  width: 85vmin;
+  width: 95vmin;
 }
 .c-slider__inner {
   aspect-ratio: 841/598;
@@ -942,21 +942,6 @@ body.is-loaded .l-fv .copy:nth-child(2) {
   transform: scale(1.08);
 }
 
-@media screen and (max-width: 1024px) {
-  .c-slider {
-    width: 95%;
-  }
-}
-@media screen and (max-width: 550px) {
-  .c-slider {
-    width: 140%;
-  }
-}
-@media screen and (max-width: 376px) {
-  .c-slider {
-    width: 120%;
-  }
-}
 .c-member-slider {
   overflow: visible !important;
 }
