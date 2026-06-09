@@ -1,4 +1,4 @@
-<div class="l-loading" id="l-loading">
+<!-- <div class="l-loading" id="l-loading">
 	<div class="l-loading__inner">
 		<p class="l-loading__text">
 			<span>一緒に未来ば</span>
@@ -10,4 +10,4 @@
 		</div>
 		<p class="l-loading__count" style="color: #309E66;"><span id="l-loadingCount" style="font-size: 50px; color: #309E66;">0</span>%</p>
 	</div>
-</div>
+</div> -->
